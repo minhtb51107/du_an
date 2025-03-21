@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mycompany</groupId>
+    <artifactId>du_an_tot_nghiep</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <exec.mainClass>com.mycompany.du_an_tot_nghiep.Du_an_tot_nghiep</exec.mainClass>
+    </properties>
+
+    <dependencies>
+
+        <!-- FlatLaf UI -->
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf-extras</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf-fonts-roboto</artifactId>
+            <version>2.137</version>
+        </dependency>
+        <dependency>
+            <groupId>com.miglayout</groupId>
+            <artifactId>miglayout-swing</artifactId>
+            <version>11.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>12.8.1.jre8</version>
+        </dependency>
+        
+        <!-- Thư viện OAuth 2.0 của Google -->
+    <dependency>
+        <groupId>com.google.auth</groupId>
+    <artifactId>google-auth-library-oauth2-http</artifactId>
+    <version>0.26.0</version> <!-- Bạn có thể thay version tùy theo nhu cầu -->
+    </dependency>
+
+    <!-- Thư viện hỗ trợ API Google -->
+<dependency>
+    <groupId>com.google.api-client</groupId>
+    <artifactId>google-api-client</artifactId>
+    <version>2.2.0</version>
+</dependency>
+
+
+    <!-- Thư viện xử lý JSON (nếu cần) -->
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.15.0</version>
+    </dependency>
+        <dependency>
+            <groupId>com.google.http-client</groupId>
+            <artifactId>google-http-client-jackson2</artifactId>
+            <version>1.42.3</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.1.0</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client</artifactId>
+            <version>1.37.0</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20230227</version> <!-- Bạn có thể chọn phiên bản mới nhất -->
+    </dependency>
+    
+        <dependency>
+            <groupId>one.xingyi</groupId>
+            <artifactId>json</artifactId>
+            <version>1.1</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>AbsoluteLayout</artifactId>
+            <version>RELEASE210</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.softappeal.yass2</groupId>
+            <artifactId>yass2-coroutines-jvm</artifactId>
+            <version>10.0.2</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.github.yanana</groupId>
+            <artifactId>agni-free_2.11</artifactId>
+            <version>0.12.1</version>
+            <type>jar</type>
+        </dependency>
+<!--        <dependency>
+            <groupId>org.tomitribe.jkta</groupId>
+            <artifactId>jkta</artifactId>
+            <version>0.12</version>
+            <type>jar</type>
+        </dependency>-->
+        <dependency>
+            <groupId>jakarta.mail</groupId>
+            <artifactId>jakarta.mail-api</artifactId>
+            <version>1.6.7</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>jakarta.mail</artifactId>
+        <version>1.6.7</version> <!-- Kiểm tra phiên bản mới nhất trên Maven Repository -->
+    </dependency>
+        <dependency>
+            <groupId>com.github.insubstantial</groupId>
+            <artifactId>trident</artifactId>
+            <version>7.3</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.2.2.1-jre17</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.5.5</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+    <repository>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+    <repository>
+        <id>google-repo</id>
+        <url>https://maven.google.com</url>
+    </repository>
+</repositories>
+    
+    <pluginRepositories>
+    <pluginRepository>
+        <id>google-repo</id>
+        <url>https://maven.google.com</url>
+    </pluginRepository>
+</pluginRepositories>
+    <name>du_an_tot_nghiep sao chép</name>
+</project>

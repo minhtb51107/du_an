@@ -1,0 +1,11 @@
+[KHÓA HỌC]
+Java từ cơ bản đến nâng cao
+Lập trình Python chuyên sâu
+
+[NỘI DUNG]
+- Giới thiệu về Java
+- Hướng dẫn cài đặt môi trường
+- OOP trong Java
+
+[THỜI LƯỢNG]
+60 giờ, 3 tháng học

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng nhập Google</title>
+    <script>
+        window.onload = function () {
+            // Chuyển hướng tới trang đăng nhập Google
+            window.location.href = "http://localhost:3000/auth/google";
+        };
+
+        window.onbeforeunload = function () {
+            // Gửi yêu cầu tắt server khi đóng tab trình duyệt
+            fetch('http://localhost:3000/shutdown', { method: 'POST' });
+        };
+    </script>
+</head>
+<body>
+    <h1>Đang chuyển hướng tới trang đăng nhập Google...</h1>
+</body>
+</html>
