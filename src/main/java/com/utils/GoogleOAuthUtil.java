@@ -16,7 +16,7 @@ public class GoogleOAuthUtil {
 //921416426640-0c17hi0qbqicfi0atrc3n2hddrqj4j0k.apps.googleusercontent.com
     //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
     
-    private static final String CLIENT_ID = "";
+    private static final String CLIENT_ID = "921416426640-0c17hi0qbqicfi0atrc3n2hddrqj4j0k.apps.googleusercontent.com";
     private static final String CLIENT_SECRET = "";
     private static final String REDIRECT_URI = "http://localhost:3000/auth/google/callback";
     private static final String TOKEN_SERVER_URL = "https://oauth2.googleapis.com/token";
