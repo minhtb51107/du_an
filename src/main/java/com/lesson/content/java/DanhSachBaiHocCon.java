@@ -38,11 +38,6 @@ public class DanhSachBaiHocCon extends JPanel {
     private JScrollPane scrollPane;
     private int startY;
 
-    private String[] icons = {
-        "", "", "", "", "",
-        "", "", "", "", ""
-    };
-
     public DanhSachBaiHocCon(String content) {
 //                System.out.println(content);
         setLayout(new BorderLayout());
@@ -91,6 +86,7 @@ public class DanhSachBaiHocCon extends JPanel {
     }
 
     private JPanel createItemPanel(int index, String content) {
+        String[] icons = DanhSachBaiHocConData.getIcons(content);
 
         String[] descriptions = DanhSachBaiHocConData.getDescriptions(content);
 
@@ -111,7 +107,14 @@ public class DanhSachBaiHocCon extends JPanel {
         gbc.weightx = 0.3;
         gbc.insets = new Insets(5, 5, 5, 5);
         gbc.anchor = GridBagConstraints.WEST;
-        JLabel iconLabel = new JLabel(new ImageIcon(getClass().getResource(icons[index])));
+        
+        //JLabel iconLabel = new JLabel(new ImageIcon(getClass().getResource(icons[index])));
+        
+                ImageIcon originalIcon1 = new ImageIcon(getClass().getResource(icons[index]));
+        Image scaledImage1 = originalIcon1.getImage().getScaledInstance(42, 42, Image.SCALE_SMOOTH);
+        ImageIcon scaledIcon1 = new ImageIcon(scaledImage1);
+        JLabel iconLabel = new JLabel(scaledIcon1);
+    
         panel.add(iconLabel, gbc);
 
 // Cột 2 - Nội dung (Tiêu đề & Mô tả)
