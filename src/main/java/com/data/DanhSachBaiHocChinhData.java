@@ -19,13 +19,10 @@ public class DanhSachBaiHocChinhData {
 
     static {
         TITLE_MAP.put("Java", new String[]{
-            "GIỚI THIỆU VỀ JAVA",
-            "CƠ BẢN VỀ JAVA",
-            "LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG (OOP)",
-            "XỬ LÝ NGOẠI LỆ, TẬP TIN, VÀ COLLECTION",
-            "LẬP TRÌNH ĐA LUỒNG VÀ MẠNG",
-            "CÁC CHỦ ĐỀ NÂNG CAO",
-            "JDBC VÀ LẬP TRÌNH WEB"
+            "Java Cơ Bản",
+            "Java Nâng Cao",
+            "Java Chuyên Nghiệp",
+            "Java Ứng Dụng Thực Tế"
         });
 
         TITLE_MAP.put("PYTHON", new String[]{
@@ -49,13 +46,10 @@ public class DanhSachBaiHocChinhData {
         });
 
         TITLE_MAP.put("JAVASCRIPT", new String[]{
-            "GIỚI THIỆU VỀ JAVASCRIPT",
-            "BIẾN, KIỂU DỮ LIỆU VÀ TOÁN TỬ",
-            "CẤU TRÚC ĐIỀU KHIỂN TRONG JS",
-            "HÀM VÀ CÁC PHƯƠNG THỨC",
-            "DOM VÀ EVENT HANDLING",
-            "ASYNCHRONOUS JAVASCRIPT: CALLBACKS, PROMISES, ASYNC/AWAIT",
-            "LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG TRONG JS"
+            "JavaScript Cơ Bản",
+            "JavaScript Nâng Cao",
+            "JavaScript Chuyên Nghiệp",
+            "Ứng Dụng Thực Tế"
         });
 
         TITLE_MAP.put("C", new String[]{
@@ -95,14 +89,31 @@ public class DanhSachBaiHocChinhData {
     private static final Map<String, String[]> DESCRIPTION_MAP = new HashMap<>();
 
     static {
-        DESCRIPTION_MAP.put("Java", new String[]{
-            "Tổng quan về Java, lịch sử phát triển và cách cài đặt môi trường.",
-            "Các kiểu dữ liệu, biến, toán tử và cấu trúc điều khiển trong Java.",
-            "Các khái niệm class, object, kế thừa, đa hình và đóng gói.",
-            "Xử lý ngoại lệ, làm việc với tập tin và quản lý dữ liệu bằng Collection Framework.",
-            "Tạo và quản lý luồng (Thread), lập trình mạng với Socket và HTTP.",
-            "Các chủ đề nâng cao như JavaFX, Lambda Expression, và Reflection.",
-            "Kết nối cơ sở dữ liệu bằng JDBC, lập trình Web với Servlet và JSP."
+       DESCRIPTION_MAP.put("Java", new String[]{
+            "Cơ bản \n"
+            + "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.\n"
+            + "Cấu trúc chương trình Java, cài đặt JDK, IDE.. \n"
+            + "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu. \n"
+            + "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi.",
+            
+            " Nâng cao (Lập trình đa luồng, mạng, JDBC, Web) \n"
+            + "Lập trình đa luồng, xử lý sự kiện. \n"
+            + "Lập trình mạng (Socket, TCP/IP, UDP). \n"
+            + "JDBC: Kết nối cơ sở dữ liệu, CRUD. \n"
+            + "Lập trình Web: Servlet, JSP, MVC.",
+             
+            "Chuyên nghiệp (OOP và các kỹ thuật quan trọng) \n"
+            + "Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức. \n"
+            + "Đóng gói, kế thừa, đa hình, interface, abstract class. \n"
+            + "Xử lý ngoại lệ, làm việc với tập tin. \n"
+            + "Collection Framework: ArrayList, LinkedList, HashMap,... \n",
+            
+            "Ứng dụng thực tế \n"
+            + "JavaFX: Xây dựng giao diện đồ họa. \n"
+            + "Spring Boot: REST API, kết nối cơ sở dữ liệu. \n"
+            + "Microservices với Spring Cloud. \n"
+            + "Bảo mật (Spring Security, OAuth2, JWT)."
+            + "Hiệu năng & tối ưu hóa, kiểm thử với JUnit, Mockito. \n",
         });
 
         DESCRIPTION_MAP.put("PYTHON", new String[]{
@@ -126,13 +137,20 @@ public class DanhSachBaiHocChinhData {
         });
 
         DESCRIPTION_MAP.put("JAVASCRIPT", new String[]{
-            "Giới thiệu về JavaScript, cách nhúng vào HTML.",
-            "Khai báo biến, kiểu dữ liệu, toán tử và cách sử dụng.",
-            "Cấu trúc điều khiển: if-else, switch-case, vòng lặp for và while.",
-            "Định nghĩa và sử dụng hàm, các phương thức trong object.",
-            "Tương tác với DOM, bắt sự kiện và thao tác với HTML.",
-            "Lập trình bất đồng bộ: Callbacks, Promises, Async/Await.",
-            "Ứng dụng lập trình hướng đối tượng trong JavaScript."
+            "JavaScript Cơ Bản\n"
+                    + "Giới thiệu Javascript\n"
+                    + "Biến và kiểu dữ liệu\n"
+                    + "Toán tử và Cấu trúc điều kiện\n",
+            "JavaScript Nâng Cao\n"
+                    + "Vòng lặp và Hàm\n"
+                    + "Lập trình hướng đối tượng (OOP)\n",
+            "JavaScript Chuyên Nghiệp\n"
+                    + "Lập trình bất đồng bồ (Asynchronous)\n"
+                    + "Làm việc với API\n"
+                    + "DOM và Xử lý sự kiện\n",
+            "Ứng Dụng Thực Tế\n"
+                    + "JavaScript Trong Dự Án Web\n"
+                    + "Framework JavaScript (React, Vue, Node.js"
         });
 
         DESCRIPTION_MAP.put("C", new String[]{

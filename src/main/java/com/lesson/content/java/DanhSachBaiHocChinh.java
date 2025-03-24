@@ -129,25 +129,19 @@ public class DanhSachBaiHocChinh extends JPanel {
             button.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                    if (selectedLanguage.equals("Java")) {
+                   if (selectedLanguage.equals("Java")) {
                         switch (index) {
                             case 0:
-                                parentTrangChinh.updateDanhSachBaiHocCon("Java");
+                                parentTrangChinh.updateDanhSachBaiHocCon("Java Cơ Bản");
                                 break;
                             case 1:
-                                parentTrangChinh.updateDanhSachBaiHocCon("PYTHON");
+                                parentTrangChinh.updateDanhSachBaiHocCon("Java Nâng Cao");
                                 break;
                             case 2:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 3");
+                                parentTrangChinh.updateDanhSachBaiHocCon("Java Chuyên Nghiệp");
                                 break;
                             case 3:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 4");
-                                break;
-                            case 4:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 5");
-                                break;
-                            case 5:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 6");
+                                parentTrangChinh.updateDanhSachBaiHocCon("Java Ứng Dụng Thực Tế");
                                 break;
                             default:
                                 JOptionPane.showMessageDialog(null, "Lựa chọn không hợp lệ!");
@@ -180,22 +174,16 @@ public class DanhSachBaiHocChinh extends JPanel {
                     if (selectedLanguage.equals("JAVASCRIPT")) {
                         switch (index) {
                             case 0:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 11");
+                                parentTrangChinh.updateDanhSachBaiHocCon("JavaScript Cơ Bản");
                                 break;
                             case 1:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 2");
+                                parentTrangChinh.updateDanhSachBaiHocCon("JavaScript Nâng Cao");
                                 break;
                             case 2:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 3");
+                                parentTrangChinh.updateDanhSachBaiHocCon("JavaScript Chuyên Nghiệp");
                                 break;
                             case 3:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 4");
-                                break;
-                            case 4:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 5");
-                                break;
-                            case 5:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 6");
+                                parentTrangChinh.updateDanhSachBaiHocCon("Ứng Dụng Thực Tế");
                                 break;
                             default:
                                 JOptionPane.showMessageDialog(null, "Lựa chọn không hợp lệ!");

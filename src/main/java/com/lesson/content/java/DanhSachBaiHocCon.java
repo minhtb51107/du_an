@@ -110,7 +110,7 @@ public class DanhSachBaiHocCon extends JPanel {
         
         //JLabel iconLabel = new JLabel(new ImageIcon(getClass().getResource(icons[index])));
         
-                ImageIcon originalIcon1 = new ImageIcon(getClass().getResource(icons[index]));
+        ImageIcon originalIcon1 = new ImageIcon(getClass().getResource(icons[index]));
         Image scaledImage1 = originalIcon1.getImage().getScaledInstance(42, 42, Image.SCALE_SMOOTH);
         ImageIcon scaledIcon1 = new ImageIcon(scaledImage1);
         JLabel iconLabel = new JLabel(scaledIcon1);
