@@ -12,7 +12,8 @@ import java.util.Map;
  * @author PC
  */
 public class DanhSachBaiHocConData {
-     private static final Map<String, String[]> TITLE_MAP = new HashMap<>();
+
+    private static final Map<String, String[]> TITLE_MAP = new HashMap<>();
 
     static {
         TITLE_MAP.put("Java", new String[]{
@@ -65,14 +66,33 @@ public class DanhSachBaiHocConData {
             "LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG VỚI C (OOP)"
         });
 
-        TITLE_MAP.put("SQL", new String[]{
-            "GIỚI THIỆU VỀ SQL",
-            "CÁC LỆNH CƠ BẢN: SELECT, INSERT, UPDATE, DELETE",
-            "CÁC HÀM TÍNH TOÁN VÀ NHÓM DỮ LIỆU",
-            "LIÊN KẾT BẢNG (JOIN)",
-            "SUBQUERY VÀ CTE (COMMON TABLE EXPRESSIONS)",
-            "LẬP TRÌNH STORED PROCEDURE, TRIGGER",
-            "TỐI ƯU HÓA TRUY VẤN VÀ INDEXING"
+        TITLE_MAP.put("SQL cơ bản", new String[]{
+            "Giới thiệu SQL",
+            "Các lệnh truy vấn dữ liệu cơ bản",
+            "Kiểu dữ liệu và toán tử",
+            "Các hàm SQL cơ bản",
+            "Ràng buộc SQL(Constraints)"
+        });
+
+        TITLE_MAP.put("SQL trung bình", new String[]{
+            "Quản lý cơ sở dữ liệu",
+            "Quản lý bảng",
+            "Kết hợp dữ liệu",
+            "Nhóm và tính toán dữ liệu",
+            "Xử lý chuỗi và dữ liệu"
+        });
+
+        TITLE_MAP.put("SQL nâng cao", new String[]{
+            "Xử lý dữ liệu",
+            "Thủ tục lưu trữ",
+            "Bảo mật SQL",
+            "Quản lý dữ liệu quy mô lớn"
+        });
+
+        TITLE_MAP.put("SQL chuyên nghiệp", new String[]{
+            "Quản lý truy vấn phức tạp",
+            "SQL trong các hệ quản trị cơ sở dữ liệu",
+            "Các công cụ hỗ trợ SQL"
         });
 
     }
@@ -92,7 +112,7 @@ public class DanhSachBaiHocConData {
     public static String[] getTitles(String language) {
         return TITLE_MAP.getOrDefault(language, new String[]{"Không có danh sách tiêu đề"});
     }
-    
+
     private static final Map<String, String[]> DESCRIPTION_MAP = new HashMap<>();
 
     static {
@@ -146,14 +166,33 @@ public class DanhSachBaiHocConData {
             "Giới thiệu về lập trình hướng đối tượng trong C."
         });
 
-        DESCRIPTION_MAP.put("SQL", new String[]{
-            "Tổng quan về SQL, hệ quản trị cơ sở dữ liệu (DBMS).",
-            "Các lệnh cơ bản: SELECT, INSERT, UPDATE, DELETE.",
-            "Sử dụng các hàm tính toán, GROUP BY, HAVING.",
-            "Cách liên kết bảng với JOIN: INNER, LEFT, RIGHT, FULL.",
-            "Sử dụng Subquery và Common Table Expressions (CTE).",
-            "Lập trình với Stored Procedure, Trigger, Function.",
-            "Tối ưu hóa truy vấn và sử dụng Index để tăng hiệu suất."
+        DESCRIPTION_MAP.put("SQL cơ bản", new String[]{
+            "SQL (Structured Query Language) là ngôn ngữ tiêu chuẩn để quản lý và thao tác với cơ sở dữ liệu quan hệ (RDBMS).",
+            "SELECT, INSERT, UPDATE, DELETE",
+            "Kiểu dữ liệu Số, chuỗi, ngày tháng và toán tử số học, so sánh, logic",
+            "Hàm tổng hợp, xử lý chuỗi, ngày tháng",
+            "PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK, NOT NULL, DEFAULT"
+        });
+
+        DESCRIPTION_MAP.put("SQL trung bình", new String[]{
+            "Tạo, xóa cơ sở dữ liệu, sao lưu & phục hồi, quản lý quyền truy cập",
+            "Tạo, xóa, sửa bảng, tăng giá trị, tạo views",
+            "JOIN, SELF JOIN, UNION",
+            "Group by: thường kết hợp(COUNT, SUM, AVG), Having: lọc nhóm dữ liệu(dùng sau Group by)",
+            "UCASE()/LCASE(), MID()/SUBSTRING(), ROUND(), NOW()/GETDATE(), FORMAT()"
+        });
+
+        DESCRIPTION_MAP.put("SQL nâng cao", new String[]{
+            "SELECT INTO, INSERT, INTO, SELECT, CASE",
+            "STORED PROCEDURES",
+            "Phòng chống SQL Injection, Least Privilege",
+            "Partitioning, Sharding, Batch Processing"
+        });
+
+        DESCRIPTION_MAP.put("SQL chuyên nghiệp", new String[]{
+            "Recursive Queries, CTE, Window Functions, Dynamic SQL",
+            "My SQL, SQL Server, PostgreSQL, Oracle",
+            "IDE, GUI Tools, ORM, Perfrmance Tools"
         });
     }
 
@@ -172,7 +211,7 @@ public class DanhSachBaiHocConData {
     public static String[] getDescriptions(String language) {
         return DESCRIPTION_MAP.getOrDefault(language, new String[]{"Không có mô tả nào."});
     }
-    
+
     private static final Map<String, String[]> ICON_MAP = new HashMap<>();
 
     static {
@@ -231,10 +270,40 @@ public class DanhSachBaiHocConData {
             "",
             "",
             "",
+            ""
+        });
+
+        ICON_MAP.put("SQL cơ bản", new String[]{
+            "",
+            "",
             "",
             "",
             ""
         });
+
+        ICON_MAP.put("SQL trung bình", new String[]{
+            "",
+            "",
+            "",
+            "", 
+            ""
+
+        });
+
+        ICON_MAP.put("SQL nâng cao", new String[]{
+            "",
+            "",
+            "",
+            ""
+
+        });
+
+        ICON_MAP.put("SQL chuyên nghiệp", new String[]{
+            "",
+            "",
+            ""
+        });
+
     }
 
     // Lấy mô tả của bài học dựa vào ngôn ngữ và chỉ số tiêu đề

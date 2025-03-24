@@ -69,15 +69,11 @@ public class DanhSachBaiHocChinhData {
         });
 
         TITLE_MAP.put("SQL", new String[]{
-            "GIỚI THIỆU VỀ SQL",
-            "CÁC LỆNH CƠ BẢN: SELECT, INSERT, UPDATE, DELETE",
-            "CÁC HÀM TÍNH TOÁN VÀ NHÓM DỮ LIỆU",
-            "LIÊN KẾT BẢNG (JOIN)",
-            "SUBQUERY VÀ CTE (COMMON TABLE EXPRESSIONS)",
-            "LẬP TRÌNH STORED PROCEDURE, TRIGGER",
-            "TỐI ƯU HÓA TRUY VẤN VÀ INDEXING"
+            "SQL cơ bản",
+            "SQL trung bình",
+            "SQL nâng cao",
+            "SQL chuyên nghiệp"
         });
-
     }
 
     // Phương thức lấy tiêu đề theo chỉ số dựa vào ngôn ngữ
@@ -95,7 +91,7 @@ public class DanhSachBaiHocChinhData {
     public static String[] getTitles(String language) {
         return TITLE_MAP.getOrDefault(language, new String[]{"Không có danh sách tiêu đề"});
     }
-    
+
     private static final Map<String, String[]> DESCRIPTION_MAP = new HashMap<>();
 
     static {
@@ -150,14 +146,27 @@ public class DanhSachBaiHocChinhData {
         });
 
         DESCRIPTION_MAP.put("SQL", new String[]{
-            "Tổng quan về SQL, hệ quản trị cơ sở dữ liệu (DBMS).",
-            "Các lệnh cơ bản: SELECT, INSERT, UPDATE, DELETE.",
-            "Sử dụng các hàm tính toán, GROUP BY, HAVING.",
-            "Cách liên kết bảng với JOIN: INNER, LEFT, RIGHT, FULL.",
-            "Sử dụng Subquery và Common Table Expressions (CTE).",
-            "Lập trình với Stored Procedure, Trigger, Function.",
-            "Tối ưu hóa truy vấn và sử dụng Index để tăng hiệu suất."
-        });
+            "Giới thiệu SQL \n"
+            + "Các lệnh truy vấn dữ liệu cơ bản \n"
+            + "Kiểu dữ liệu và toán tử \n"
+            + "Các hàm SQL cơ bản \n"
+            + "Ràng buộc SQL(Constraints)",
+            
+            "Quản lý cơ sở dữ liệu \n"
+            + "Quản lý bảng \n"
+            + "Kết hợp dữ liệu \n"
+            + "Nhóm và tính toán dữ liệu \n"
+            + "Xử lý chuỗi và dữ liệu",
+            
+            "Xử lý dữ liệu \n"
+            + "Thủ tục lưu trữ \n"
+            + "Bảo mật SQL \n"
+            + "Quản lý dữ liệu quy mô lớn \n",
+            
+            "Quản lý truy vấn phức tạp \n"
+            + "SQL trong các hệ quản trị CSDL \n"
+            + "Các công cụ hỗ trợ SQL \n",});
+        
     }
 
     // Lấy mô tả của bài học dựa vào ngôn ngữ và chỉ số tiêu đề

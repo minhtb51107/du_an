@@ -53,7 +53,7 @@ public class DanhSachBaiHocChinh extends JPanel {
     private TrangChinh parentTrangChinh;
 
     public DanhSachBaiHocChinh(TrangChinh trangChinh, String selectedLanguage) {
-            this.parentTrangChinh = trangChinh;
+        this.parentTrangChinh = trangChinh;
         setLayout(new BorderLayout());
         setOpaque(false);
         setBorder(BorderFactory.createEmptyBorder());
@@ -252,22 +252,16 @@ public class DanhSachBaiHocChinh extends JPanel {
                     if (selectedLanguage.equals("SQL")) {
                         switch (index) {
                             case 0:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 1");
+                                parentTrangChinh.updateDanhSachBaiHocCon("SQL cơ bản");
                                 break;
                             case 1:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 2");
+                                parentTrangChinh.updateDanhSachBaiHocCon("SQL trung bình");
                                 break;
                             case 2:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 3");
+                                parentTrangChinh.updateDanhSachBaiHocCon("SQL nâng cao");
                                 break;
                             case 3:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 4");
-                                break;
-                            case 4:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 5");
-                                break;
-                            case 5:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 6");
+                                parentTrangChinh.updateDanhSachBaiHocCon("SQL chuyên nghiệp");
                                 break;
                             default:
                                 JOptionPane.showMessageDialog(null, "Lựa chọn không hợp lệ!");
@@ -422,6 +416,7 @@ public class DanhSachBaiHocChinh extends JPanel {
 //                        break;
 //                    case 1:
 //                        TrangChinh cd1 = new TrangChinh(0, "Java", "JAVASCRIPT");
+
 ////                        cd1.resetTrangChinh(0, "Java", "JAVASCRIPT");
 //                        break;
 //                    case 2:
