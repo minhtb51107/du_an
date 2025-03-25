@@ -26,13 +26,10 @@ public class DanhSachBaiHocChinhData {
         });
 
         TITLE_MAP.put("PYTHON", new String[]{
-            "GIỚI THIỆU VỀ PYTHON",
-            "BIẾN VÀ KIỂU DỮ LIỆU",
-            "CẤU TRÚC ĐIỀU KHIỂN",
-            "HÀM VÀ MODULE",
-            "XỬ LÝ NGOẠI LỆ VÀ FILE",
-            "LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG TRONG PYTHON",
-            "PYTHON CHO PHÂN TÍCH DỮ LIỆU"
+            "Python Cơ Bản",
+            "Python Nâng Cao",
+            "Python Chuyên Nghiệp",
+            "Python Ứng Dụng Thực Tế"
         });
 
         TITLE_MAP.put("HTML & CSS", new String[]{
@@ -54,12 +51,11 @@ public class DanhSachBaiHocChinhData {
 
         TITLE_MAP.put("C", new String[]{
             "GIỚI THIỆU VỀ NGÔN NGỮ C",
-            "CẤU TRÚC CHƯƠNG TRÌNH C",
-            "BIẾN, TOÁN TỬ VÀ KIỂU DỮ LIỆU",
-            "CẤU TRÚC ĐIỀU KHIỂN VÀ HÀM",
-            "CON TRỎ VÀ QUẢN LÝ BỘ NHỚ",
-            "XỬ LÝ FILE TRONG C",
-            "LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG VỚI C (OOP)"
+            "CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP",
+            "MẢNG, CHUỖI & CON TRỎ",
+            "HÀM & QUẢN LÝ BỘ NHỚ",
+            "CẤU TRÚC DỮ LIỆU & FILE I/O",
+            "LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG"
         });
 
         TITLE_MAP.put("SQL", new String[]{
@@ -89,41 +85,50 @@ public class DanhSachBaiHocChinhData {
     private static final Map<String, String[]> DESCRIPTION_MAP = new HashMap<>();
 
     static {
-       DESCRIPTION_MAP.put("Java", new String[]{
-            "Cơ bản \n"
+        DESCRIPTION_MAP.put("Java", new String[]{
+            "Python Cơ Bản\n"
             + "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.\n"
             + "Cấu trúc chương trình Java, cài đặt JDK, IDE.. \n"
             + "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu. \n"
             + "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi.",
-            
-            " Nâng cao (Lập trình đa luồng, mạng, JDBC, Web) \n"
+            "Python Nâng Cao\n"
             + "Lập trình đa luồng, xử lý sự kiện. \n"
             + "Lập trình mạng (Socket, TCP/IP, UDP). \n"
             + "JDBC: Kết nối cơ sở dữ liệu, CRUD. \n"
             + "Lập trình Web: Servlet, JSP, MVC.",
-             
-            "Chuyên nghiệp (OOP và các kỹ thuật quan trọng) \n"
+            "Python Chuyên nghiệp\n"
             + "Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức. \n"
             + "Đóng gói, kế thừa, đa hình, interface, abstract class. \n"
             + "Xử lý ngoại lệ, làm việc với tập tin. \n"
             + "Collection Framework: ArrayList, LinkedList, HashMap,... \n",
-            
-            "Ứng dụng thực tế \n"
+            "Python Ứng dụng thực tế\n"
             + "JavaFX: Xây dựng giao diện đồ họa. \n"
             + "Spring Boot: REST API, kết nối cơ sở dữ liệu. \n"
             + "Microservices với Spring Cloud. \n"
             + "Bảo mật (Spring Security, OAuth2, JWT)."
-            + "Hiệu năng & tối ưu hóa, kiểm thử với JUnit, Mockito. \n",
-        });
+            + "Hiệu năng & tối ưu hóa, kiểm thử với JUnit, Mockito. \n",});
 
         DESCRIPTION_MAP.put("PYTHON", new String[]{
-            "Giới thiệu về Python, cài đặt và sử dụng cơ bản.",
-            "Tìm hiểu các kiểu dữ liệu phổ biến như số, chuỗi, danh sách, từ điển.",
-            "Câu lệnh điều kiện, vòng lặp for và while trong Python.",
-            "Định nghĩa và sử dụng hàm, import module và tạo package.",
-            "Xử lý lỗi với try-except, đọc và ghi file trong Python.",
-            "Lập trình hướng đối tượng: class, object, kế thừa và đa hình.",
-            "Ứng dụng Python trong phân tích dữ liệu với Pandas, Numpy và Matplotlib."
+            "Cơ bản \n"
+            + "Giới thiệu về Python, lịch sử phát triển, lý do chọn Python\n"
+            + "Cài đặt Python, sử dụng IDE (VS Code, PyCharm).\n"
+            + "Biến, kiểu dữ liệu, toán tử và nhập xuất dữ liệu.\n"
+            + "Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.",
+            "Nâng cao (Lập trình hướng đối tượng, xử lý tập tin, ngoại lệ)\n"
+            + "Lập trình hướng đối tượng (OOP): lớp, đối tượng, kế thừa, đa hình.\n"
+            + "Xử lý tập tin: đọc/ghi file CSV, JSON.\n"
+            + "Xử lý ngoại lệ: try-except, finally, tạo ngoại lệ tùy chỉnh.\n"
+            + "Các thư viện tiêu chuẩn: datetime, os, sys, random.",
+            "Chuyên nghiệp (Lập trình bất đồng bộ, API, cơ sở dữ liệu)\n"
+            + "Lập trình bất đồng bộ: async, await, threading, multiprocessing.\n"
+            + "Làm việc với API: requests, BeautifulSoup, Selenium.\n"
+            + "Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, SQLAlchemy.\n"
+            + "Xử lý dữ liệu lớn: pandas, numpy, matplotlib.",
+            "Ứng dụng thực tế\n"
+            + "Xây dựng ứng dụng Web với Flask/Django.\n"
+            + "Machine Learning với scikit-learn, TensorFlow, PyTorch.\n"
+            + "Tự động hóa với Selenium, bot Telegram/Discord.\n"
+            + "Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest.\n"
         });
 
         DESCRIPTION_MAP.put("HTML & CSS", new String[]{
@@ -138,30 +143,40 @@ public class DanhSachBaiHocChinhData {
 
         DESCRIPTION_MAP.put("JAVASCRIPT", new String[]{
             "JavaScript Cơ Bản\n"
-                    + "Giới thiệu Javascript\n"
-                    + "Biến và kiểu dữ liệu\n"
-                    + "Toán tử và Cấu trúc điều kiện\n",
+            + "Giới thiệu Javascript\n"
+            + "Biến và kiểu dữ liệu\n"
+            + "Toán tử và Cấu trúc điều kiện\n",
             "JavaScript Nâng Cao\n"
-                    + "Vòng lặp và Hàm\n"
-                    + "Lập trình hướng đối tượng (OOP)\n",
+            + "Vòng lặp và Hàm\n"
+            + "Lập trình hướng đối tượng (OOP)\n",
             "JavaScript Chuyên Nghiệp\n"
-                    + "Lập trình bất đồng bồ (Asynchronous)\n"
-                    + "Làm việc với API\n"
-                    + "DOM và Xử lý sự kiện\n",
+            + "Lập trình bất đồng bồ (Asynchronous)\n"
+            + "Làm việc với API\n"
+            + "DOM và Xử lý sự kiện\n",
             "Ứng Dụng Thực Tế\n"
-                    + "JavaScript Trong Dự Án Web\n"
-                    + "Framework JavaScript (React, Vue, Node.js"
+            + "JavaScript Trong Dự Án Web\n"
+            + "Framework JavaScript (React, Vue, Node.js"
         });
 
         DESCRIPTION_MAP.put("C", new String[]{
-            "Giới thiệu về ngôn ngữ C, ứng dụng và môi trường lập trình.",
-            "Cấu trúc chương trình C, cách viết code cơ bản.",
-            "Khai báo biến, toán tử và kiểu dữ liệu trong C.",
-            "Sử dụng if-else, vòng lặp và hàm để điều khiển chương trình.",
-            "Làm việc với con trỏ, quản lý bộ nhớ động trong C.",
-            "Cách đọc và ghi dữ liệu vào file bằng C.",
-            "Giới thiệu về lập trình hướng đối tượng trong C."
-        });
+            "GIỚI THIỆU NGÔN NGỮ C\n"
+            + "Giới thiệu ngôn ngữ C\n"
+            + "Cấu trúc chương trình C\n"
+            + "Biến, kiểu dữ liệu và toán tử\n",
+            "CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP\n"
+            + "Câu lệnh điều kiện\n"
+            + "Vòng lặp\n",
+            "MẢNG, CHUỖI & CON TRỎ\n"
+            + "Mảng một chiều và hai chiều\n"
+            + "Xử lý  chuỗi và con trỏ\n",
+            "HÀM & QUẢN LÝ BỘ NHỚ\n"
+            + "Hàm và đệ quy\n"
+            + "Cấp phát bộ nhớ động\n",
+            "CẤU TRÚC DỮ LIỆU & FILE I/O\n"
+            + "Cấu trúc dữ liệu\n"
+            + "File I/O",
+            "LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG\n"
+            + "Dự án cuối khóa\n",});
 
         DESCRIPTION_MAP.put("SQL", new String[]{
             "Giới thiệu SQL \n"
@@ -169,22 +184,20 @@ public class DanhSachBaiHocChinhData {
             + "Kiểu dữ liệu và toán tử \n"
             + "Các hàm SQL cơ bản \n"
             + "Ràng buộc SQL(Constraints)",
-            
             "Quản lý cơ sở dữ liệu \n"
             + "Quản lý bảng \n"
             + "Kết hợp dữ liệu \n"
             + "Nhóm và tính toán dữ liệu \n"
             + "Xử lý chuỗi và dữ liệu",
-            
             "Xử lý dữ liệu \n"
             + "Thủ tục lưu trữ \n"
             + "Bảo mật SQL \n"
             + "Quản lý dữ liệu quy mô lớn \n",
-            
             "Quản lý truy vấn phức tạp \n"
             + "SQL trong các hệ quản trị CSDL \n"
-            + "Các công cụ hỗ trợ SQL \n",});
-        
+            + "Các công cụ hỗ trợ SQL \n",}
+        );
+
     }
 
     // Lấy mô tả của bài học dựa vào ngôn ngữ và chỉ số tiêu đề

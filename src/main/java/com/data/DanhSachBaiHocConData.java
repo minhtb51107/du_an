@@ -61,6 +61,33 @@ public class DanhSachBaiHocConData {
             "LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG TRONG PYTHON",
             "PYTHON CHO PHÂN TÍCH DỮ LIỆU"
         });
+        TITLE_MAP.put("Python Cơ Bản", new String[]{
+            "Giới thiệu về Python, lịch sử phát triển, lý do chọn Python.",
+            "Cấu trúc chương trình Python, cài đặt môi trường và IDE.",
+            "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.",
+            "Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary."
+        });
+
+        TITLE_MAP.put("Python Nâng Cao", new String[]{
+            "Lập trình hướng đối tượng (OOP) trong Python.",
+            "Xử lý tập tin: đọc/ghi file CSV, JSON, XML.",
+            "Xử lý ngoại lệ: try-except, finally, tạo ngoại lệ tùy chỉnh.",
+            "Lập trình đa luồng và bất đồng bộ (async, threading)."
+        });
+
+        TITLE_MAP.put("Python Chuyên Nghiệp", new String[]{
+            "Làm việc với API: requests, BeautifulSoup, Selenium.",
+            "Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.",
+            "Xử lý dữ liệu lớn: pandas, numpy, matplotlib.",
+            "Lập trình mạng: socket, giao thức TCP/IP, UDP."
+        });
+
+        TITLE_MAP.put("Python Ứng Dụng Thực Tế", new String[]{
+            "Xây dựng ứng dụng Web với Flask/Django.",
+            "Machine Learning với scikit-learn, TensorFlow, PyTorch.",
+            "Tự động hóa với Selenium, bot Telegram/Discord.",
+            "Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest."
+        });
 
         TITLE_MAP.put("HTML & CSS", new String[]{
             "GIỚI THIỆU VỀ HTML & CSS",
@@ -106,6 +133,28 @@ public class DanhSachBaiHocConData {
             "XỬ LÝ FILE TRONG C",
             "LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG VỚI C (OOP)"
         });
+        TITLE_MAP.put("GIỚI THIỆU VỀ NGÔN NGỮ C", new String[]{
+            "Giới thiệu ngôn ngữ C",
+            "Cấu trúc chương trình C",
+            "Biến, kiểu dữ liệu và toán tử"
+        });
+        TITLE_MAP.put("CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP", new String[]{
+            "Câu lệnh điều kiện",
+            "Vòng lặp"
+        });
+        TITLE_MAP.put("MẢNG, CHUỖI & CON TRỎ", new String[]{
+            "Mảng một chiều và hai chiều",
+            "Xử lý chuỗi và con trỏ"
+        });
+        TITLE_MAP.put("HÀM & QUẢN LÝ BỘ NHỚ", new String[]{
+            "Hàm và đệ quy",
+            "Cấp phát bộ nhớ tự động"
+        });
+        TITLE_MAP.put("CẤU TRÚC DỮ LIỆU & FILE I/O", new String[]{
+            "Cấu trúc dữ liệu & File I/O",
+            "File I/O",});
+        TITLE_MAP.put("LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG", new String[]{
+            "Dự án cuối khóa",});
 
         TITLE_MAP.put("SQL cơ bản", new String[]{
             "Giới thiệu SQL",
@@ -206,6 +255,34 @@ public class DanhSachBaiHocConData {
             "Lập trình hướng đối tượng: class, object, kế thừa và đa hình.",
             "Ứng dụng Python trong phân tích dữ liệu với Pandas, Numpy và Matplotlib."
         });
+        DESCRIPTION_MAP.put("Python Cơ Bản", new String[]{
+            "Giới thiệu về Python: Lịch sử, đặc điểm, và lý do chọn Python.",
+            "Cấu trúc chương trình Python: Cài đặt Python, cách viết và chạy chương trình.",
+            "Biến, kiểu dữ liệu, toán tử: Khai báo, sử dụng biến, kiểu dữ liệu phổ biến, toán tử số học và logic.",
+            "Cấu trúc điều kiện, vòng lặp: If-else, for, while, break, continue.",
+            "Danh sách, tuple, dictionary: Cách khai báo, truy xuất, vòng lặp trên danh sách."
+        });
+
+        DESCRIPTION_MAP.put("Python Nâng Cao", new String[]{
+            "Lập trình hướng đối tượng (OOP): Lớp, đối tượng, kế thừa, đa hình.",
+            "Xử lý tập tin: Đọc/ghi file CSV, JSON, XML.",
+            "Xử lý ngoại lệ: Try-except-finally, ngoại lệ tùy chỉnh.",
+            "Lập trình đa luồng và bất đồng bộ: Threading, multiprocessing, async/await."
+        });
+
+        DESCRIPTION_MAP.put("Python Chuyên Nghiệp", new String[]{
+            "Làm việc với API: Gửi request, xử lý JSON/XML, BeautifulSoup, Selenium.",
+            "Cơ sở dữ liệu: Kết nối SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.",
+            "Xử lý dữ liệu lớn: pandas để thao tác dữ liệu, numpy cho tính toán khoa học, vẽ biểu đồ với matplotlib.",
+            "Lập trình mạng: Xây dựng ứng dụng mạng với socket, giao tiếp TCP/IP, UDP."
+        });
+
+        DESCRIPTION_MAP.put("Python Ứng Dụng Thực Tế", new String[]{
+            "Xây dựng ứng dụng Web: Flask, Django, REST API, ORM.",
+            "Machine Learning: Giới thiệu ML, sử dụng scikit-learn, TensorFlow, PyTorch.",
+            "Tự động hóa: Selenium để thao tác trình duyệt, bot Telegram/Discord bằng Python.",
+            "Bảo mật & kiểm thử: Tối ưu hiệu năng, unittest, pytest, bảo mật API."
+        });
 
         DESCRIPTION_MAP.put("HTML & CSS", new String[]{
             "Tổng quan về HTML & CSS, cách hoạt động của trình duyệt.",
@@ -254,6 +331,41 @@ public class DanhSachBaiHocConData {
             "Làm việc với con trỏ, quản lý bộ nhớ động trong C.",
             "Cách đọc và ghi dữ liệu vào file bằng C.",
             "Giới thiệu về lập trình hướng đối tượng trong C."
+        });
+        DESCRIPTION_MAP.put("GIỚI THIỆU VỀ NGÔN NGỮ C", new String[]{
+            "Tổng quan về ngôn ngữ C, lịch sử phát triển và vai trò trong lập trình.",
+            "Cách cài đặt môi trường lập trình C trên các hệ điều hành.",
+            "Cấu trúc cơ bản của một chương trình C, cách biên dịch và chạy chương trình."
+        });
+
+        DESCRIPTION_MAP.put("CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP", new String[]{
+            "Tìm hiểu câu lệnh điều kiện if-else, switch-case để kiểm soát luồng thực thi.",
+            "Khám phá vòng lặp for, while, do-while và cách sử dụng trong các bài toán thực tế.",
+            "Ứng dụng của cấu trúc điều khiển trong xử lý dữ liệu và thuật toán."
+        });
+
+        DESCRIPTION_MAP.put("MẢNG, CHUỖI & CON TRỎ", new String[]{
+            "Khái niệm mảng một chiều, hai chiều và cách thao tác dữ liệu trong mảng.",
+            "Xử lý chuỗi trong C, các hàm làm việc với chuỗi như strlen, strcpy, strcat.",
+            "Tìm hiểu con trỏ,  cách cấp phát động bộ nhớ và ứng dụng trong lập trình hiệu quả."
+        });
+
+        DESCRIPTION_MAP.put("HÀM & QUẢN LÝ BỘ NHỚ", new String[]{
+            "Cách khai báo và sử dụng hàm trong C, tham số truyền vào và giá trị trả về.",
+            "Tìm hiểu đệ quy, ứng dụng trong giải thuật và tối ưu chương trình.",
+            "Quản lý bộ nhớ trong C: malloc, calloc, realloc và free."
+        });
+
+        DESCRIPTION_MAP.put("CẤU TRÚC DỮ LIỆU & FILE I/O", new String[]{
+            "Tìm hiểu các cấu trúc dữ liệu cơ bản như struct, union và cách sử dụng.",
+            "Làm việc với tập tin trong C: đọc, ghi file với fprintf, fscanf, fread, fwrite.",
+            "Ứng dụng File I/O trong việc lưu trữ và xử lý dữ liệu."
+        });
+
+        DESCRIPTION_MAP.put("LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG", new String[]{
+            "Thực hiện dự án cuối khóa áp dụng tất cả kiến thức đã học.",
+            "Tối ưu hóa hiệu năng chương trình C, các kỹ thuật lập trình nâng cao.",
+            "Phân tích, thiết kế và triển khai một ứng dụng thực tế sử dụng C."
         });
 
         DESCRIPTION_MAP.put("SQL cơ bản", new String[]{
@@ -354,6 +466,31 @@ public class DanhSachBaiHocConData {
             "",
             ""
         });
+        ICON_MAP.put("Python Cơ Bản", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Python Nâng Cao", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Python Chuyên Nghiệp", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Python Ứng Dụng Thực Tế", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
 
         ICON_MAP.put("HTML & CSS", new String[]{
             "",
@@ -398,6 +535,36 @@ public class DanhSachBaiHocConData {
             "",
             "",
             "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("GIỚI THIỆU VỀ NGÔN NGỮ C", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("MẢNG, CHUỖI & CON TRỎ", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("HÀM & QUẢN LÝ BỘ NHỚ", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("CẤU TRÚC DỮ LIỆU & FILE I/O", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG", new String[]{
             "",
             "",
             ""

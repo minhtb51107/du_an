@@ -129,7 +129,7 @@ public class DanhSachBaiHocChinh extends JPanel {
             button.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                   if (selectedLanguage.equals("Java")) {
+                    if (selectedLanguage.equals("Java")) {
                         switch (index) {
                             case 0:
                                 parentTrangChinh.updateDanhSachBaiHocCon("Java Cơ Bản");
@@ -192,22 +192,16 @@ public class DanhSachBaiHocChinh extends JPanel {
                     if (selectedLanguage.equals("PYTHON")) {
                         switch (index) {
                             case 0:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 11");
+                                parentTrangChinh.updateDanhSachBaiHocCon("Python Cơ Bản");
                                 break;
                             case 1:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 2");
+                                parentTrangChinh.updateDanhSachBaiHocCon("Python Nâng Cao");
                                 break;
                             case 2:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 3");
+                                parentTrangChinh.updateDanhSachBaiHocCon("Python Chuyên Nghiệp");
                                 break;
                             case 3:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 4");
-                                break;
-                            case 4:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 5");
-                                break;
-                            case 5:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 6");
+                                parentTrangChinh.updateDanhSachBaiHocCon("Python Ứng Dụng Thực Tế");
                                 break;
                             default:
                                 JOptionPane.showMessageDialog(null, "Lựa chọn không hợp lệ!");
@@ -216,22 +210,22 @@ public class DanhSachBaiHocChinh extends JPanel {
                     if (selectedLanguage.equals("C")) {
                         switch (index) {
                             case 0:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 111");
+                                parentTrangChinh.updateDanhSachBaiHocCon("GIỚI THIỆU VỀ NGÔN NGỮ C");
                                 break;
                             case 1:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 2");
+                                parentTrangChinh.updateDanhSachBaiHocCon("CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP");
                                 break;
                             case 2:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 3");
+                                parentTrangChinh.updateDanhSachBaiHocCon("MẢNG, CHUỖI & CON TRỎ");
                                 break;
                             case 3:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 4");
+                                parentTrangChinh.updateDanhSachBaiHocCon("HÀM & QUẢN LÝ BỘ NHỚ");
                                 break;
                             case 4:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 5");
+                                parentTrangChinh.updateDanhSachBaiHocCon("CẤU TRÚC DỮ LIỆU & FILE I/O");
                                 break;
                             case 5:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 6");
+                                parentTrangChinh.updateDanhSachBaiHocCon("LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG");
                                 break;
                             default:
                                 JOptionPane.showMessageDialog(null, "Lựa chọn không hợp lệ!");
@@ -404,7 +398,6 @@ public class DanhSachBaiHocChinh extends JPanel {
 //                        break;
 //                    case 1:
 //                        TrangChinh cd1 = new TrangChinh(0, "Java", "JAVASCRIPT");
-
 ////                        cd1.resetTrangChinh(0, "Java", "JAVASCRIPT");
 //                        break;
 //                    case 2:
