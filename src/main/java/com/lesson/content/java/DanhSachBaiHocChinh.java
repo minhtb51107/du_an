@@ -150,22 +150,22 @@ public class DanhSachBaiHocChinh extends JPanel {
                     if (selectedLanguage.equals("HTML & CSS")) {
                         switch (index) {
                             case 0:
-
+                                parentTrangChinh.updateDanhSachBaiHocCon("HTML Cơ Bản");
                                 break;
                             case 1:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 2");
+                                parentTrangChinh.updateDanhSachBaiHocCon("HTML Nâng Cao");
                                 break;
                             case 2:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 3");
+                                parentTrangChinh.updateDanhSachBaiHocCon("CSS Cơ Bản");
                                 break;
                             case 3:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 4");
+                                parentTrangChinh.updateDanhSachBaiHocCon("CSS Nâng Cao");
                                 break;
                             case 4:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 5");
+                                parentTrangChinh.updateDanhSachBaiHocCon("CSS Chuyên Nghiệp");
                                 break;
                             case 5:
-                                JOptionPane.showMessageDialog(null, "Bạn đã chọn Bài 6");
+                                parentTrangChinh.updateDanhSachBaiHocCon("Ứng Dụng & Dự Án Thực Tế");
                                 break;
                             default:
                                 JOptionPane.showMessageDialog(null, "Lựa chọn không hợp lệ!");

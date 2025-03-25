@@ -98,6 +98,92 @@ public class DanhSachBaiHocConData {
             "THIẾT KẾ GIAO DIỆN RESPONSIVE",
             "ANIMATION VÀ HIỆU ỨNG VỚI CSS"
         });
+        TITLE_MAP.put("HTML Cơ Bản", new String[]{
+            "HTML là gì?",
+            "CẤU TRÚC CƠ BẢN CỦA HTML",
+            "Cách viết file HTML và hiển thị trên trình duyệt",
+            "Tiêu đề (<h1> đến <h6>)",
+            "Đoạn văn (<p>), Xuống dòng (<br>), Đường ngang (<hr>)",
+            "Định dạng văn bản (<b>, <i>, <u>, <strong>, <em>, <mark>, <small>)",
+            "Danh sách: có thứ tự (<ol>), không thứ tự (<ul>), mô tả (<dl>)",
+            "Chèn ảnh (<img>), video (<video>), âm thanh (<audio>)",
+            "Tạo liên kết (<a>) và điều hướng trang web",
+            "Nhúng iframe (<iframe>)",
+            "Bảng (<table>, <tr>, <td>, <th>)",
+            "Biểu mẫu (<form>, <input>, <textarea>, <select>)"
+        });
+
+        TITLE_MAP.put("HTML Nâng Cao", new String[]{
+            "Các thẻ Semantic (<header>, <footer>, <nav>, <article>, <section>)",
+            "Ứng dụng Semantic HTML để tối ưu SEO",
+            "Sử dụng <meta> để tối ưu công cụ tìm kiếm",
+            "Open Graph, Twitter Card",
+            "Favicon, Sitemap, robots.txt",
+            "Local Storage & Session Storage",
+            "Geolocation API (Xác định vị trí người dùng)",
+            "Drag & Drop API"
+        });
+
+        TITLE_MAP.put("CSS Cơ Bản", new String[]{
+            "Inline CSS, Internal CSS, External CSS",
+            "Cú pháp CSS cơ bản",
+            "Selectors cơ bản: class, id, tag, attribute",
+            "Đơn vị đo lường: px, %, em, rem, vw, vh",
+            "Margin, Border, Padding, Content",
+            "Các thuộc tính width, height, max-width, min-height",
+            "Positioning (static, relative, absolute, fixed, sticky)",
+            "Màu HEX, RGB, HSL",
+            "Font-family, font-size, font-weight",
+            "Line-height, letter-spacing",
+            "display: block, inline, inline-block, flex, grid",
+            "Viewport meta tag"
+        });
+
+        TITLE_MAP.put("CSS Nâng Cao", new String[]{
+            "display: flex",
+            "Căn chỉnh bằng justify-content, align-items, align-self",
+            "flex-wrap, flex-direction",
+            "display: grid",
+            "grid-template-columns, grid-template-rows, gap, align-items, justify-content",
+            "Media Queries (@media)",
+            "Mobile-first vs. Desktop-first",
+            "CSS Container Queries",
+            "transition, animation, keyframes",
+            "Hover effect nâng cao",
+            ":nth-child(), :not(), :focus-within",
+            "Pseudo-elements (::before, ::after)"
+        });
+
+        TITLE_MAP.put("CSS Chuyên Nghiệp", new String[]{
+            "BEM (Block Element Modifier)",
+            "OOCSS (Object-Oriented CSS)",
+            "SMACSS (Scalable and Modular Architecture for CSS)",
+            "Biến trong CSS (--main-color)",
+            "Nested Rules, Mixins, Functions",
+            "Tối ưu hóa mã CSS với SCSS",
+            "Minify CSS",
+            "Load font tối ưu",
+            "Critical CSS & Lazy Loading",
+            "Bootstrap",
+            "Tailwind CSS",
+            "ARIA Roles",
+            "Keyboard Navigation",
+            "Dark Mode hỗ trợ người dùng khiếm thị",
+            "Tạo hình ảnh, animations phức tạp bằng CSS",
+            "CSS Art & Pure CSS Illustrations"
+        });
+
+        TITLE_MAP.put("Ứng Dụng & Dự Án Thực Tế", new String[]{
+            "Blog cá nhân",
+            "Landing Page sản phẩm",
+            "Web bán hàng cơ bản",
+            "Hiệu ứng scroll, parallax",
+            "Dark Mode",
+            "Animation nâng cao",
+            "Tạo manifest.json",
+            "Service Worker & Caching",
+            "Offline Mode & Push Notifications"
+        });
 
         TITLE_MAP.put("JAVASCRIPT", new String[]{
             "Giới thiệu JavaScript",
@@ -293,7 +379,89 @@ public class DanhSachBaiHocConData {
             "Thiết kế giao diện responsive cho nhiều loại màn hình khác nhau.",
             "Tạo hiệu ứng động và animation với CSS."
         });
+        DESCRIPTION_MAP.put("HTML Cơ Bản", new String[]{
+            "HTML (HyperText Markup Language) là ngôn ngữ đánh dấu tiêu chuẩn để tạo và thiết kế các trang web. Nó sử dụng các thẻ (tags) để định nghĩa cấu trúc và nội dung của trang web, bao gồm văn bản, hình ảnh, liên kết, bảng biểu, và các yếu tố khác.",
+            "<!DOCTYPE html>, <head>, <html>, <body>",
+            "Tạo một file với đuôi .html, Mở file bằng trình soạn thảo văn bản, Viết mã HTML vào file, Lưu file và mở bằng trình duyệt",
+            "Các thẻ tiêu đề từ <h1> đến <h6> dùng để định nghĩa các cấp độ tiêu đề, trong đó <h1> là lớn nhất và <h6> là nhỏ nhất.",
+            "<p>: Định nghĩa một đoạn văn bản, <br>: Xuống dòng trong văn bản, <hr>: Tạo một đường ngang phân cách",
+            "<b>: In đậm văn bản, <i>: In nghiêng văn bản, <u>: Gạch chân văn bản, <strong>: Nhấn mạnh văn bản (in đậm, có ý nghĩa ngữ nghĩa), <em>: Nhấn mạnh văn bản (in nghiêng, có ý nghĩa ngữ nghĩa),<mark>: Đánh dấu văn bản, <small>: Làm nhỏ văn bản",
+            "<ol>: Danh sách có thứ tự (đánh số), <ul>: Danh sách không thứ tự (gạch đầu dòng), <dl>: Danh sách mô tả (kết hợp <dt> và <dd>)",
+            "<img>: Chèn hình ảnh, <video>: Chèn video, <audio>: Chèn âm thanh",
+            "Thẻ <a> dùng để tạo liên kết đến các trang web khác hoặc các phần trong cùng trang",
+            "Thẻ <iframe> dùng để nhúng một trang web hoặc nội dung từ nguồn khác vào trang hiện tại",
+            "<table>: Tạo bảng, <tr>: Tạo hàng, <td>: Tạo ô dữ liệu, <th>: Tạo ô tiêu đề",
+            "<form>: Tạo biểu mẫu để thu thập dữ liệu, <input>: Tạo các trường nhập liệu (text, password, checkbox, radio, v.v.), <textarea>: Tạo vùng nhập văn bản nhiều dòng, <select>: Tạo danh sách thả xuống"
+        });
 
+        DESCRIPTION_MAP.put("HTML Nâng Cao", new String[]{
+            "Các thẻ Semantic (<header>, <footer>, <nav>, <article>, <section>) giúp cải thiện cấu trúc và ý nghĩa của trang web.",
+            "Ứng dụng Semantic HTML để tối ưu SEO giúp công cụ tìm kiếm hiểu nội dung trang web dễ dàng hơn.",
+            "Sử dụng <meta> để tối ưu công cụ tìm kiếm giúp kiểm soát cách trang web hiển thị trên Google.",
+            "Open Graph, Twitter Card giúp tối ưu hiển thị khi chia sẻ nội dung lên mạng xã hội.",
+            "Favicon, Sitemap, robots.txt giúp điều hướng bot tìm kiếm và cải thiện trải nghiệm người dùng.",
+            "Local Storage & Session Storage giúp lưu trữ dữ liệu trên trình duyệt mà không cần máy chủ.",
+            "Geolocation API giúp lấy vị trí của người dùng để cá nhân hóa trải nghiệm.",
+            "Drag & Drop API cho phép kéo thả phần tử trực tiếp trong trình duyệt một cách dễ dàng.",});
+
+        DESCRIPTION_MAP.put("CSS Cơ Bản", new String[]{
+            "Inline CSS, Internal CSS, External CSS là ba cách để áp dụng CSS vào trang web.",
+            "Cú pháp CSS cơ bản bao gồm selectors, thuộc tính và giá trị để định dạng nội dung.",
+            "Selectors cơ bản giúp chọn phần tử HTML theo class, id, tag hoặc attribute.",
+            "Đơn vị đo lường trong CSS như px, %, em, rem, vw, vh giúp kiểm soát kích thước linh hoạt.",
+            "Margin, Border, Padding, Content là các phần tạo nên mô hình hộp (box model) trong CSS.",
+            "Các thuộc tính width, height, max-width, min-height giúp kiểm soát kích thước phần tử.",
+            "Positioning xác định cách phần tử được sắp xếp trên trang: static, relative, absolute, fixed, sticky.",
+            "Màu sắc trong CSS có thể được định dạng bằng HEX, RGB hoặc HSL để tạo giao diện đẹp mắt.",
+            "Font-family, font-size, font-weight giúp tùy chỉnh kiểu chữ và kích thước văn bản.",
+            "Line-height, letter-spacing giúp điều chỉnh khoảng cách giữa các dòng và chữ cái.",
+            "Thuộc tính display xác định cách phần tử hiển thị: block, inline, inline-block, flex, grid.",
+            "Viewport meta tag giúp tối ưu trang web trên thiết bị di động và màn hình nhỏ.",});
+
+        DESCRIPTION_MAP.put("CSS Nâng Cao", new String[]{
+            "display: flex giúp tạo layout linh hoạt với các phần tử con sắp xếp theo hàng hoặc cột.",
+            "Căn chỉnh bằng justify-content, align-items, align-self giúp bố cục dễ dàng và linh hoạt hơn.",
+            "flex-wrap, flex-direction điều chỉnh hướng và cách các phần tử flex-box phân bố.",
+            "display: grid tạo layout dạng lưới mạnh mẽ và dễ kiểm soát hơn so với flexbox.",
+            "grid-template-columns, grid-template-rows, gap, align-items, justify-content giúp thiết lập lưới chi tiết.",
+            "Media Queries (@media) giúp tạo thiết kế responsive phù hợp với từng kích thước màn hình.",
+            "Mobile-first vs. Desktop-first là hai cách tiếp cận khi viết CSS responsive.",
+            "CSS Container Queries giúp áp dụng kiểu dựa trên kích thước container thay vì viewport.",
+            "transition, animation, keyframes giúp tạo hiệu ứng mượt mà và sinh động cho website.",
+            "Hover effect nâng cao giúp cải thiện trải nghiệm tương tác với người dùng.",
+            ":nth-child(), :not(), :focus-within giúp chọn phần tử theo điều kiện đặc biệt.",
+            "Pseudo-elements (::before, ::after) giúp thêm nội dung ảo mà không cần HTML.",});
+
+        DESCRIPTION_MAP.put("CSS Chuyên Nghiệp", new String[]{
+            "BEM giúp tổ chức mã CSS rõ ràng, dễ bảo trì với quy tắc đặt tên có cấu trúc.",
+            "OOCSS tách biệt cấu trúc và ngoại hình, giúp tái sử dụng mã CSS hiệu quả hơn.",
+            "SMACSS cung cấp nguyên tắc tổ chức CSS theo mô-đun, giúp duy trì và mở rộng dễ dàng.",
+            "Biến trong CSS (--main-color) giúp quản lý màu sắc, kích thước dễ dàng và linh hoạt hơn.",
+            "Nested Rules, Mixins, Functions trong SCSS giúp viết CSS gọn gàng, tái sử dụng tốt hơn.",
+            "Tối ưu hóa mã CSS với SCSS giúp giảm trùng lặp, viết code dễ hiểu và dễ bảo trì.",
+            "Minify CSS giúp giảm dung lượng file, tăng tốc độ tải trang.",
+            "Load font tối ưu giúp cải thiện hiệu suất và trải nghiệm người dùng.",
+            "Critical CSS & Lazy Loading giúp hiển thị nội dung quan trọng trước, tăng tốc load trang.",
+            "Bootstrap là framework CSS phổ biến giúp tạo giao diện responsive nhanh chóng.",
+            "Tailwind CSS là utility-first framework giúp viết CSS nhanh hơn, linh hoạt hơn.",
+            "ARIA Roles giúp cải thiện khả năng truy cập cho người dùng có nhu cầu đặc biệt.",
+            "Keyboard Navigation giúp trang web hỗ trợ điều hướng bằng bàn phím tốt hơn.",
+            "Dark Mode hỗ trợ người dùng khiếm thị bằng cách giảm ánh sáng chói, dễ đọc hơn.",
+            "Tạo hình ảnh, animations phức tạp bằng CSS giúp website sinh động, thu hút hơn.",
+            "CSS Art & Pure CSS Illustrations giúp tạo hình ảnh sáng tạo mà không cần dùng ảnh."
+        });
+
+        DESCRIPTION_MAP.put("Ứng Dụng & Dự Án Thực Tế", new String[]{
+            "Xây dựng trang web cá nhân để chia sẻ kiến thức, kinh nghiệm hoặc portfolio.",
+            "Thu hút khách hàng tiềm năng và chuyển đổi thành đơn hàng/đăng ký.",
+            "Trang danh sách sản phẩm với bộ lọc (giá, danh mục), Giỏ hàng và thanh toán online (tích hợp VNPay, PayPal), Quản lý đơn hàng và thông báo trạng thái qua email Hệ thống đăng nhập/đăng ký tài khoản.",
+            " Tăng trải nghiệm tương tác và tính thẩm mỹ khi cuộn trang.",
+            "Sử dụng CSS Variables để định nghĩa chủ đề sáng/tối, Toggle class hoặc sử dụng prefers-color-scheme để tự động theo hệ thống.",
+            "Chuyển động phức tạp với @keyframes và animation-timeline, Scroll-triggered animation: Kích hoạt hiệu ứng khi cuộn đến một section, SVG animation: Vẽ đường path hoặc hiệu ứng morphing.",
+            "Biến website thành Progressive Web App (PWA) có thể cài đặt trên thiết bị.",
+            "Giúp web hoạt động offline và tải nhanh hơn.",
+            "Hiển thị trang Bạn đang offline khi mất kết nối, Lưu trữ dữ liệu tạm thời bằng IndexedDB."
+        });
         DESCRIPTION_MAP.put("JAVASCRIPT", new String[]{
             "Tìm hiểu tổng quan về JavaScript, cách nhúng vào HTML và vai trò của nó trong lập trình web.",
             "Giải thích về biến, kiểu dữ liệu trong JavaScript và cách khai báo bằng var, let, const.",
@@ -493,6 +661,92 @@ public class DanhSachBaiHocConData {
         });
 
         ICON_MAP.put("HTML & CSS", new String[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("HTML Cơ Bản", new String[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("HTML Nâng Cao", new String[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("CSS Cơ Bản", new String[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("CSS Nâng Cao", new String[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("CSS Chuyên Nghiệp", new String[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Ứng Dụng & Dự Án Thực Tế", new String[]{
+            "",
+            "",
             "",
             "",
             "",

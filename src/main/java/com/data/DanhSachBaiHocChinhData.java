@@ -33,13 +33,12 @@ public class DanhSachBaiHocChinhData {
         });
 
         TITLE_MAP.put("HTML & CSS", new String[]{
-            "GIỚI THIỆU VỀ HTML & CSS",
-            "CẤU TRÚC CƠ BẢN CỦA HTML",
-            "CÁC THẺ HTML QUAN TRỌNG",
-            "CSS CƠ BẢN VÀ CÁCH ÁP DỤNG",
-            "LAYOUT VỚI FLEXBOX & GRID",
-            "THIẾT KẾ GIAO DIỆN RESPONSIVE",
-            "ANIMATION VÀ HIỆU ỨNG VỚI CSS"
+             "HTML Cơ B  ản",
+             "HTML Nâng Cao",
+             "CSS Cơ Bản",
+             "CSS Nâng Cao",
+             "CSS Chuyên Nghiệp",
+             "Ứng Dụng & Dự Án Thực Tế"
         });
 
         TITLE_MAP.put("JAVASCRIPT", new String[]{
@@ -132,13 +131,32 @@ public class DanhSachBaiHocChinhData {
         });
 
         DESCRIPTION_MAP.put("HTML & CSS", new String[]{
-            "Tổng quan về HTML & CSS, cách hoạt động của trình duyệt.",
-            "Cấu trúc cơ bản của một trang HTML, cách tổ chức nội dung.",
-            "Các thẻ quan trọng như div, span, form, table, và list.",
-            "Cách áp dụng CSS để định dạng văn bản, hình ảnh và bố cục.",
-            "Sử dụng Flexbox và CSS Grid để tạo giao diện hiện đại.",
-            "Thiết kế giao diện responsive cho nhiều loại màn hình khác nhau.",
-            "Tạo hiệu ứng động và animation với CSS."
+             "Giới thiệu HTML \n"
+                     + "Các thẻ HTML quan trọng \n"
+                     + "Hình ảnh, liên kết & điều hướng \n"
+                     + "Bảng và biểu mẫu",
+             "Semantic HTML \n"
+                     + "Metadata & SEO \n"
+                     + "HTML5 API",
+             "Cú pháp và cách nhúng CSS \n"
+                     + "Selectors & Units \n"
+                     + "Box Model & Positioning \n"
+                     + "Màu sắc & Typography \n"
+                     + " Display & Responsive cơ bản",
+             "Flexbox \n"
+                     + "Grid Layout \n"
+                     + "Responsive Design \n"
+                     + "Animation & Transition \n"
+                     + "Advanced Selectors",
+             "CSS Architecture & Best Practices \n"
+                     + "Preprocessors: SCSS & LESS \n"
+                     + "Tối ưu hiệu suất CSS \n"
+                     + "CSS Frameworks \n"
+                     + "Accessibility (A11Y) \n"
+                     + "CSS Generative Art & Creative Coding",
+             "Xây dựng website hoàn chỉnh \n"
+                     + "Tích hợp CSS với JavaScript \n"
+                         + "Progressive Web Apps (PWA)"
         });
 
         DESCRIPTION_MAP.put("JAVASCRIPT", new String[]{
