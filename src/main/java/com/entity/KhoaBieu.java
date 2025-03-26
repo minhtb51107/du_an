@@ -14,6 +14,16 @@ public class KhoaBieu {
     private int tuan;  // Số tuần trong tháng
     private int ngay;  // Số ngày trong tuần
 
+    public int getId_kehoach() {
+        return id_kehoach;
+    }
+
+    public void setId_kehoach(int id_kehoach) {
+        this.id_kehoach = id_kehoach;
+    }
+    
+    int id_kehoach;
+
     // Constructor mặc định
     public KhoaBieu() {
     }

@@ -9,7 +9,9 @@ package com.kehoach;
  * @author PC
  */
 import com.dao.KhoaBieuDAO;
+import com.dao.UserDAO;
 import com.entity.KhoaBieu;
+import com.entity.NguoiDung;
 import com.text.text_swing.ImagePanel;
 import com.text.text_swing.RoundedPanel;
 import javax.swing.*;
@@ -24,14 +26,20 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 public class GiaoDienKeHoach extends JPanel {
+    NguoiDung nguoiDung = new NguoiDung();
     
-    boolean aa = false;
+//    boolean aa = false;
 
     KhoaBieuDAO dao = new KhoaBieuDAO();
+
+    String o = nguoiDung.getMaNguoiDung();
+    
+    int v = dao.getIdKeHoachByIdUser(o);;
+
     
     boolean isFakeClick = false; // Cờ xác định click giả lập
 
-    private final java.util.List<JPanel> panels = new ArrayList<>();
+    //private final java.util.List<JPanel> panels = new ArrayList<>();
 
     private final Map<Integer, Integer> dayClickCounts = new HashMap<>(); // Lưu số lần nhấn PanelDay của mỗi tháng
 
@@ -63,6 +71,8 @@ public class GiaoDienKeHoach extends JPanel {
     private int extraVerticalLength1 = 100; // Độ dài đoạn dọc thêm
 
     public GiaoDienKeHoach(JScrollPane scrollPane) {
+//        System.out.println("getMaNguoiDung " + nguoiDung.getMaNguoiDung());
+        System.out.println("v1 " + v);
 
         this.scrollPane = scrollPane;
         setLayout(null);
@@ -233,10 +243,10 @@ public class GiaoDienKeHoach extends JPanel {
             add(newPanel);
         }
 
-        JPanel Panel = PanelAndContent(newX, newY);
+        JPanel Panel = PanelAndContent(newX, newY, i, a);
         add(Panel);
 
-        List<int[]> clickSimulationData = dao.getAllDataTUAN();
+        //List<int[]> clickSimulationData = dao.getAllDataTUAN();
 
         addNewExtraSegment1(Panel, 0, clickCount1);
 
@@ -258,9 +268,18 @@ public class GiaoDienKeHoach extends JPanel {
         int newY = centerY + extraVerticalLength1;
 
         horizontalLines2.add(new Point(newX, centerY));
-
-        JPanel newPanel = PanelContent(newX, newY);
-        add(newPanel);
+        k++;
+        if (isFakeClick) {
+            JPanel newPanel = PanelContent(newX, newY, k);
+            add(newPanel);
+        } else {
+            JPanel newPanel = PanelContent(newX, newY, k);
+            add(newPanel);
+            dao.insertNgay(b, k, "", b, v);
+            dao.callCapNhatNgay(v);
+        }
+//        JPanel newPanel = PanelContent(newX, newY, i);
+//        add(newPanel);
 
         if (i < 5) {
             verticalLines2.add(new Point(centerX, newY));
@@ -283,7 +302,6 @@ public class GiaoDienKeHoach extends JPanel {
 
                 }
             });
-       
 //            maxVerticalY = Math.max(maxVerticalY, newY);
 //            setPreferredSize(new Dimension(getPreferredSize().width, maxVerticalY));
         }
@@ -299,7 +317,7 @@ public class GiaoDienKeHoach extends JPanel {
         panel.setLayout(new BorderLayout());
 
         // Tạo JTextField
-        JTextField textField = new JTextField("a");
+        JTextField textField = new JTextField("");
         textField.setOpaque(false);  // Làm nền trong suốt
         textField.setForeground(Color.WHITE); // Chữ màu trắng
         textField.setBorder(null); // Xóa viền
@@ -311,15 +329,16 @@ public class GiaoDienKeHoach extends JPanel {
         //currentClicks1 = monthClickCounts.getOrDefault(i, 0);
         textField.getDocument().addDocumentListener(new DocumentListener() {
             final int currentIndex = i; // Tạo bản sao để cố định giá trị
-
+            final int a1 = a;
             @Override
             public void insertUpdate(DocumentEvent e) {
                 //System.out.println("Văn bản đã được thêm: " + textField.getText());
                 if (!isFakeClick) {
                     String titleText = textField.getText();
-                    dao.updateTieuDeCuaTuan(titleText, currentIndex);
+                    dao.updateTieuDeCuaTuan(titleText, currentIndex, a1, v);
                 }
                 //System.out.println("clickCount1 " + currentIndex);
+                //System.out.println("a1 " + a1);
             }
 
             @Override
@@ -327,9 +346,10 @@ public class GiaoDienKeHoach extends JPanel {
                 //System.out.println("Văn bản đã bị xóa: " + textField.getText());
                 if (!isFakeClick) {
                     String titleText = textField.getText();
-                    dao.updateTieuDeCuaTuan(titleText, currentIndex);
+                    dao.updateTieuDeCuaTuan(titleText, currentIndex, a1, v);
                 }
                 //System.out.println("clickCount1 " + currentIndex);
+                //System.out.println("a1 " + a1);
             }
 
             @Override
@@ -337,15 +357,16 @@ public class GiaoDienKeHoach extends JPanel {
                 //System.out.println("Văn bản đã thay đổi: " + textField.getText());
                 if (!isFakeClick) {
                     String titleText = textField.getText();
-                    dao.updateTieuDeCuaTuan(titleText, currentIndex);
+                    dao.updateTieuDeCuaTuan(titleText, currentIndex, a1, v);
                 }
-                //System.out.println("clickCount1 " + currentIndex);
+               // System.out.println("clickCount1 " + currentIndex);
+                //System.out.println("a1 " + a1);
             }
         });
         int currentIndex = i;
         //System.out.println("currentIndex " + currentIndex);
-        String title = dao.selectTieuDeByTuan(currentIndex, a);
-        //System.out.println("a " + a);
+        String title = dao.selectTieuDeByTuan(currentIndex, v);
+//        System.out.println("a " + a);
 
         textField.setText(title);
         
@@ -353,13 +374,13 @@ public class GiaoDienKeHoach extends JPanel {
         return panel;
     }
 
-    private JPanel PanelAndContent(int x, int y) {
+    private JPanel PanelAndContent(int x, int y, int i, int b) {
         RoundedPanel panel = new RoundedPanel(50);
         panel.setBackground(Color.darkGray);
         panel.setBounds(x - 25, y - 25, 50, 50);
         panel.setLayout(new BorderLayout());
 
-        addPanelDiary(x, y);
+        addPanelDiary(x, y, i, b);
 
         // Thêm JLabel chứa dấu "+"
 //        JLabel plusLabel = new JLabel("+");
@@ -399,6 +420,9 @@ public class GiaoDienKeHoach extends JPanel {
 //        });
 //        return panel;
 //    }
+    
+    int k;
+    
     private JPanel PanelDay(int x, int y, int i) {
         RoundedPanel panel = new RoundedPanel(50);
         panel.setBackground(Color.GRAY);
@@ -423,11 +447,11 @@ public class GiaoDienKeHoach extends JPanel {
         panel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                                if ((boolean) panel.getClientProperty("clicked")) {
-                //System.out.println("Panel đã được nhấn, không thực hiện lại.");
-                return;
-            }
-                                
+                if ((boolean) panel.getClientProperty("clicked")) {
+                    //System.out.println("Panel đã được nhấn, không thực hiện lại.");
+                    return;
+                }
+
                 int currentClicks = dayClickCounts.getOrDefault(i, 0);
                 //System.out.println("c " + c);
                 if (currentClicks < 6) {
@@ -444,7 +468,7 @@ public class GiaoDienKeHoach extends JPanel {
                     if (isFakeClick) {
 
                     } else {
-                        dao.updateSoNgayTheoTuan(d + 1, i);
+                        dao.updateSoNgayTheoTuan(d + 1, i, v);
                     }
 
                     panel.putClientProperty("clicked", true); // Đánh dấu đã nhấn
@@ -456,7 +480,7 @@ public class GiaoDienKeHoach extends JPanel {
         return panel;
     }
 
-    private JPanel PanelContent(int x, int y) {
+    private JPanel PanelContent(int x, int y, int i) {
         RoundedPanel panel = new RoundedPanel(50);
         panel.setBackground(Color.darkGray);
         panel.setBounds(x, y - 125, 250, 50);
@@ -473,7 +497,7 @@ public class GiaoDienKeHoach extends JPanel {
 //        panel.add(textField, BorderLayout.CENTER);
         // Thêm một panel mới bên trái
         addPanelLeft(x, y);
-        addPanelRight(x, y);
+        addPanelRight(x, y, i);
 
         return panel;
     }
@@ -497,7 +521,7 @@ public class GiaoDienKeHoach extends JPanel {
         repaint();
     }
 
-    private void addPanelRight(int x, int y) {
+    private void addPanelRight(int x, int y, int i) {
         int newX = x + 55; // Đặt panel mới sang bên trái
         JPanel rightPanel = new RoundedPanel(40);
         rightPanel.setBounds(newX, y - 120, 190, 40);
@@ -515,6 +539,42 @@ public class GiaoDienKeHoach extends JPanel {
         textField.setFont(new Font("Arial", Font.BOLD, 14));
 
         rightPanel.add(textField, BorderLayout.CENTER);
+        
+                        //currentClicks1 = monthClickCounts.getOrDefault(i, 0);
+        textField.getDocument().addDocumentListener(new DocumentListener() {
+            final int currentIndex = i; // Tạo bản sao để cố định giá trị
+            //final int a1 = a;
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                //System.out.println("Văn bản đã được thêm: " + textField.getText());
+                if (!isFakeClick) {
+                    String titleText = textField.getText();
+                    dao.updateGhiChuCuaNgay(titleText, currentIndex, v);
+                }
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                //System.out.println("Văn bản đã bị xóa: " + textField.getText());
+                if (!isFakeClick) {
+                    String titleText = textField.getText();
+                    dao.updateGhiChuCuaNgay(titleText, currentIndex, v);
+                }
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                //System.out.println("Văn bản đã thay đổi: " + textField.getText());
+                if (!isFakeClick) {
+                    String titleText = textField.getText();
+                    dao.updateGhiChuCuaNgay(titleText, currentIndex, v);
+                }
+            }
+        });
+        int currentIndex = i;
+        String title = dao.selectGhiChuByNgay(k, v);
+
+        textField.setText(title);
 
         // Thêm panel vào giao diện
         add(rightPanel);
@@ -522,7 +582,7 @@ public class GiaoDienKeHoach extends JPanel {
         repaint();
     }
 
-    private void addPanelDiary(int x, int y) {
+    private void addPanelDiary(int x, int y, int i, int b) {
         int newX = x + 400; // Đặt panel mới sang bên trái
         JPanel rightPanel = new RoundedPanel(60);
         rightPanel.setBounds(newX, y - 25, 300, 300);
@@ -531,7 +591,7 @@ public class GiaoDienKeHoach extends JPanel {
         rightPanel.setBackground(Color.GRAY);
 
         addPanelDiaryChilde(x, y);
-        addPanelDiaryChilde1(x, y);
+        addPanelDiaryChilde1(x, y, i, b);
         // Thêm panel vào giao diện
         add(rightPanel);
         revalidate();
@@ -563,7 +623,7 @@ public class GiaoDienKeHoach extends JPanel {
         repaint();
     }
 
-    private void addPanelDiaryChilde1(int x, int y) {
+    private void addPanelDiaryChilde1(int x, int y, int i, int a) {
         int newX = x + 430; // Đặt panel mới sang bên trái
         JPanel rightPanel = new RoundedPanel(0);
         rightPanel.setBounds(newX, y + 40, 280, 210);
@@ -581,6 +641,42 @@ public class GiaoDienKeHoach extends JPanel {
         textField.setOpaque(false);
 
         rightPanel.add(textField, BorderLayout.CENTER);
+        
+                //currentClicks1 = monthClickCounts.getOrDefault(i, 0);
+        textField.getDocument().addDocumentListener(new DocumentListener() {
+            final int currentIndex = i; // Tạo bản sao để cố định giá trị
+            final int a1 = a;
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                //System.out.println("Văn bản đã được thêm: " + textField.getText());
+                if (!isFakeClick) {
+                    String titleText = textField.getText();
+                    dao.updateGhiChuCuaTuan(titleText, currentIndex, a1, v);
+                }
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                //System.out.println("Văn bản đã bị xóa: " + textField.getText());
+                if (!isFakeClick) {
+                    String titleText = textField.getText();
+                    dao.updateGhiChuCuaTuan(titleText, currentIndex, a1, v);
+                }
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                //System.out.println("Văn bản đã thay đổi: " + textField.getText());
+                if (!isFakeClick) {
+                    String titleText = textField.getText();
+                    dao.updateGhiChuCuaTuan(titleText, currentIndex, a1, v);
+                }
+            }
+        });
+        int currentIndex = i;
+        String title = dao.selectGhiChuByTuan(currentIndex, v);
+
+        textField.setText(title);
 
         // Thêm panel vào giao diện
         add(rightPanel);
@@ -618,10 +714,8 @@ public class GiaoDienKeHoach extends JPanel {
 
     int c;
     
-    int globalWeekIndex = 1; // Bắt đầu từ 1
+    //int globalWeekIndex = 1; // Bắt đầu từ 1
     
-    Map<Integer, Integer> index1Map = new HashMap<>();
-
     private JPanel createPanelMonth(int x, int y, int i, int a) {
         RoundedPanel panel = new RoundedPanel(50);
         panel.setBackground(Color.GRAY);
@@ -637,6 +731,10 @@ public class GiaoDienKeHoach extends JPanel {
 
         if (isFakeClick) {
             clickCount1++;
+//            if (clickCount1 == totalThang + 1 || clickCount1 == currentClicks1 + 1) {
+//                clickCount1 = 0;
+//                clickCount1++;
+//            }
         }
 
         JLabel plusLabel = new JLabel("+");
@@ -649,7 +747,6 @@ public class GiaoDienKeHoach extends JPanel {
 
         panel.putClientProperty("clicked", false);
 
-        int finalI = i; // Lưu giá trị cố định để dùng trong lambda
         panel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -660,25 +757,23 @@ public class GiaoDienKeHoach extends JPanel {
                 currentClicks1 = monthClickCounts.getOrDefault(i, 0);
                 //System.out.println("tuần " + (currentClicks1 + 1));
                 if (currentClicks1 < 4) {
-                    int weekIndex = globalWeekIndex++;
-                    int correctIndex1 = index1Map.getOrDefault(i, 1);
-                    addNewExtraSegment(panel, weekIndex, correctIndex1);
-                    System.out.println("index1Map: " + index1Map);
-                    System.out.println("finalI: " + finalI);
-                    System.out.println("correctIndex1 " + correctIndex1);
+
+                    addNewExtraSegment(panel, clickCount1, currentClicks1 + 1);
                     addNewVerticalSegment(panel, i, a);
                     monthClickCounts.put(i, currentClicks1 + 1);
                     panel.removeAll();
                     panel.setBackground(Color.YELLOW);
                     ImagePanel panel2 = new ImagePanel("/com/img/calendar.png", 28, 28);
-                    KhoaBieu model = getForm();
+//                    KhoaBieu model = getForm();
 
                     if (isFakeClick) {
 
                     } else {
                         clickCount1++;
-                        update();
-                        dao.insertTuan(c + 1, clickCount1 - 1, 0, "");
+                        //update();
+                        dao.updateKhoaBieu(currentClicks1 + 1, c + 1, v);
+                        dao.insertTuan(c + 1, clickCount1 - 1, 0, "", "", currentClicks1 + 1, v);
+                        dao.callCapNhatTuan(v);
                         //System.out.println("clickCount1 " + clickCount1);
                     }
 
@@ -695,12 +790,13 @@ public class GiaoDienKeHoach extends JPanel {
     }
 
     int b;
-    
-    int index1;
 
+    int index1;
+    
     private void simulateClicks() {
-        // Lấy danh sách từ database
-        List<int[]> clickSimulationData = dao.getAllData();
+        // Lấy danh sách từ database 
+        System.out.println("v " + v);
+        List<int[]> clickSimulationData = dao.getAllData(v);
 
         for (int[] data : clickSimulationData) {
             int index = data[0];
@@ -728,14 +824,6 @@ public class GiaoDienKeHoach extends JPanel {
             revalidate();
             repaint();
         }
-
-        List<int[]> clickSimulationData1 = dao.getAllDataTUAN();
-        int i = 0;
-        for (int[] data : clickSimulationData1) {
-            index1Map.put(i++, data[0]); // Bắt đầu từ 1
-            index1 = data[0];
-            System.out.println("index1 " + index1);
-        }
     }
 
 // Biến đếm số lần nhấn
@@ -754,14 +842,17 @@ public class GiaoDienKeHoach extends JPanel {
         } else {
             cd.setThang(c);
         }
-        //System.out.println("KhoaBieu " + c);
+        System.out.println("getId_kehoach " + cd.getId_kehoach());
         cd.setTuan(currentClicks1 + 1);
+        System.out.println("currentClicks1 " + (currentClicks1 + 1));
+        cd.setId_kehoach(v);
         return cd;
     }
 
     KhoaBieu getForm1() {
         KhoaBieu cd = new KhoaBieu();
         cd.setTuan(currentClicks1 + 1);
+        cd.setId_kehoach(v);
         return cd;
     }
 
@@ -774,14 +865,14 @@ public class GiaoDienKeHoach extends JPanel {
         }
     }
     
-    void insert1() {
-        KhoaBieu model = getForm1();
-        try {
-            dao.insert(model);
-        } catch (Exception e) {
-
-        }
-    }
+//    void insert1() {
+//        KhoaBieu model = getForm1();
+//        try {
+//            dao.insert(model);
+//        } catch (Exception e) {
+//
+//        }
+//    }
 
     private JPanel createPanelyear(int x, int y) {
         RoundedPanel panel = new RoundedPanel(50);
@@ -808,7 +899,8 @@ public class GiaoDienKeHoach extends JPanel {
                     addNewHorizontalSegment(clickCount);
                     clickCount++; // Tăng biến đếm sau mỗi lần nhấn
                     text++;
-                    insert();
+                    dao.insertKhoaBieu(currentClicks1 + 1, v);
+                    //insert();
                 }
             });
         }

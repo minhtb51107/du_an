@@ -4,6 +4,7 @@
  */
 package com.lesson.content.java;
 
+import com.data.DanhSachBaiHocChinhData;
 import java.awt.Color;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -18,65 +19,106 @@ import javax.swing.SwingConstants;
  * @author PC
  */
 class MucConCuaBieuDo extends JPanel {
+
     private static final Color[] COLORS = {
-        new Color(255, 99, 132),   // Đỏ hồng
-        new Color(54, 162, 235),   // Xanh dương
-        new Color(255, 206, 86),   // Vàng
-        new Color(75, 192, 192),   // Xanh ngọc
-        new Color(153, 102, 255),  // Tím
-        new Color(255, 159, 64)    // Cam
+        new Color(255, 99, 132), // Đỏ hồng
+        new Color(54, 162, 235), // Xanh dương
+        new Color(255, 206, 86), // Vàng
+        new Color(75, 192, 192), // Xanh ngọc
+        new Color(153, 102, 255), // Tím
+        new Color(255, 159, 64) // Cam
     };
 
-    public MucConCuaBieuDo() {
+    public MucConCuaBieuDo(String selectedLanguage) {
         setLayout(new GridBagLayout());
         setOpaque(false);
         setBorder(null);
-        
+
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.BOTH;
         gbc.weightx = 1;
         gbc.weighty = 1;
         gbc.insets = new Insets(10, 5, 10, 5); // Thêm padding giữa các hàng
-        
+
+        //String[] subjects = {"Java", "Python", "C", "C++", "JavaScript", "Ruby"};
+        String[] titles = DanhSachBaiHocChinhData.getTitles(selectedLanguage);
+
+        int index = 0;
+        int soLuong = titles.length; // Thay đổi số lượng bạn muốn hiển thị
+
         for (int i = 0; i < 3; i++) {
             gbc.gridy = i;
             for (int j = 0; j < 2; j++) {
-                gbc.gridx = j;
-                int index = i * 2 + j;
-                if (index < COLORS.length) {
-                    add(createRowPanel(index + 1, COLORS[index]), gbc);
+                // Điều kiện bỏ bớt cột nếu không đủ số lượng
+                if ((i == 2 && soLuong == 5 && j == 1)
+                        || (i == 2 && soLuong == 4)) {
+                    continue; // Bỏ qua cột thứ 2 hoặc toàn bộ hàng
+                }
+
+                if (index < soLuong && index < titles.length && index < COLORS.length) {
+                    gbc.gridx = j;
+                    add(createRowPanel(titles[index], COLORS[index]), gbc);
+                    index++;
                 }
             }
         }
     }
 
-    private JPanel createRowPanel(int lessonNumber, Color color) {
+    private JPanel createRowPanel(String subjectName, Color color) {
         JPanel rowPanel = new JPanel(new GridBagLayout());
         rowPanel.setOpaque(false);
         rowPanel.setBorder(null);
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.BOTH;
-        
+
+        // Panel màu sắc
         gbc.gridx = 0;
         gbc.weightx = 0.2;
         JPanel colorPanel = new JPanel();
-
         colorPanel.setBackground(color);
         rowPanel.add(colorPanel, gbc);
-        
+
+        // Label hiển thị tên môn học với dấu ...
         gbc.gridx = 1;
         gbc.weightx = 0.6;
-        JLabel titleLabel = new JLabel("Bài " + lessonNumber, SwingConstants.LEFT);
+        JLabel titleLabel = new JLabel(subjectName, SwingConstants.LEFT);
         titleLabel.setForeground(Color.WHITE);
+        titleLabel.setBorder(BorderFactory.createEmptyBorder(0, 5, 0, 5));
+        titleLabel.setPreferredSize(new java.awt.Dimension(100, 20)); // Giới hạn chiều rộng
+        titleLabel.setToolTipText(subjectName); // Hiển thị tooltip khi hover
+        titleLabel.setHorizontalAlignment(SwingConstants.LEFT);
+        titleLabel.setHorizontalTextPosition(SwingConstants.LEFT);
+        titleLabel.setText(shortenText(subjectName, titleLabel)); // Cắt chữ nếu cần
         rowPanel.add(titleLabel, gbc);
-                titleLabel.setBorder(BorderFactory.createEmptyBorder(0, 5, 0, 5)); // Tạo khoảng trống xung quanh
-        
+
+        // Label phần trăm
         gbc.gridx = 2;
         gbc.weightx = 0.2;
         JLabel percentageLabel = new JLabel("0%/100%", SwingConstants.RIGHT);
-                percentageLabel.setForeground(Color.WHITE);
+        percentageLabel.setForeground(Color.WHITE);
         rowPanel.add(percentageLabel, gbc);
-        
+
         return rowPanel;
+    }
+
+// Hàm để cắt chữ và thêm dấu "..."
+    private String shortenText(String text, JLabel label) {
+        java.awt.FontMetrics fm = label.getFontMetrics(label.getFont());
+        int maxWidth = label.getPreferredSize().width;
+
+        if (fm.stringWidth(text) <= maxWidth) {
+            return text;
+        }
+
+        String ellipsis = "...";
+        int ellipsisWidth = fm.stringWidth(ellipsis);
+        int textWidth = maxWidth - ellipsisWidth;
+
+        for (int i = text.length() - 1; i >= 0; i--) {
+            if (fm.stringWidth(text.substring(0, i)) <= textWidth) {
+                return text.substring(0, i) + ellipsis;
+            }
+        }
+        return ellipsis;
     }
 }

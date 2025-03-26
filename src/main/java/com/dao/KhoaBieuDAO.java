@@ -6,6 +6,8 @@ package com.dao;
 
 import com.entity.KhoaBieu;
 import com.utils.XJdbc;
+import java.sql.CallableStatement;
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -18,15 +20,31 @@ import java.util.List;
 public class KhoaBieuDAO extends DAO<KhoaBieu, Integer> {
 
     public void insert(KhoaBieu model) {
-        String sql = "INSERT INTO KHOABIEU (TUAN) VALUES (?)";
+        String sql = "INSERT INTO KHOABIEU (TUAN, ID_KEHOACH) VALUES (?, ?)";
         XJdbc.update(sql,
-                //                model.getPanelIndex(),
                 model.getTuan());
+                model.getId_kehoach();
+    }
+    
+    public void insertKhoaBieu(int tuan, int id_kehoach) {
+        String sql = "INSERT INTO KHOABIEU (TUAN, ID_KEHOACH) VALUES (?, ?)";
+        XJdbc.update(sql, tuan, id_kehoach);
     }
 
-    public void insertTuan(int thang, int tuan, int soNgay, String tieuDe) {
-        String sql = "INSERT INTO TUAN (THANG, ID_TUAN, SO_NGAY, TIEU_DE) VALUES (?, ?, ?, ?)";
-        XJdbc.update(sql, thang, tuan, soNgay, tieuDe);
+
+    public void insertTuan(int thang, int tuan, int soNgay, String tieuDe, String ghiChu, int toHop, int id_kehoach) {
+        String sql = "INSERT INTO TUAN (THANG, ID_TUAN, SO_NGAY, TIEU_DE, GHI_CHU, TO_HOP, ID_KEHOACH) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        XJdbc.update(sql, thang, tuan, soNgay, tieuDe, ghiChu, toHop, id_kehoach);
+    }
+
+    public void insertNgay(int tuan, int soNgay, String ghiChu, int toHop, int id_kehoach) {
+        String sql = "INSERT INTO NGAY (ID_TUAN,Id_NGAY, GHI_CHU, TO_HOP, ID_KEHOACH) VALUES (?, ?, ?, ?, ?)";
+        XJdbc.update(sql, tuan, soNgay, ghiChu, toHop, id_kehoach);
+    }
+
+    public void insertKeHoach(String user_id) {
+        String sql = "INSERT INTO KEHOACH (ID_USER) VALUES (?)";
+        XJdbc.update(sql, user_id);
     }
 
     protected List<KhoaBieu> selectBySql(String sql, Object... args) {
@@ -55,12 +73,12 @@ public class KhoaBieuDAO extends DAO<KhoaBieu, Integer> {
         return selectBySql(sql);
     }
 
-    public List<int[]> getAllData() {
+    public List<int[]> getAllData(int idKeHoach) {
         List<int[]> dataList = new ArrayList<>();
-        String sql = "SELECT THANG, TUAN FROM KHOABIEU";
+        String sql = "SELECT THANG, TUAN FROM KHOABIEU WHERE ID_KEHOACH = ?";
 
         try {
-            ResultSet rs = XJdbc.query(sql);
+            ResultSet rs = XJdbc.query(sql, idKeHoach);
             while (rs.next()) {
                 int thang = rs.getInt("THANG");
                 int tuan = rs.getInt("TUAN");
@@ -95,20 +113,36 @@ public class KhoaBieuDAO extends DAO<KhoaBieu, Integer> {
     }
 
     public void update(KhoaBieu model) {
-        String sql = "UPDATE KHOABIEU SET TUAN = ? WHERE THANG = ?";
+        String sql = "UPDATE KHOABIEU SET TUAN = ? WHERE THANG = ? AND ID_KEHOACH = ?";
         XJdbc.update(sql,
                 model.getTuan(), // Cập nhật TUAN
-                model.getThang()); // Điều kiện WHERE dựa trên THANG
+                model.getThang(),
+                model.getId_kehoach()); // Điều kiện WHERE dựa trên THANG
     }
 
-    public void updateSoNgayTheoTuan(int soNgay, int tuan) {
-        String sql = "UPDATE TUAN SET SO_NGAY = ? WHERE ID_TUAN = ?";
-        XJdbc.update(sql, soNgay, tuan);
+    public void updateKhoaBieu(int tuan, int thang, int id_kehoach) {
+        String sql = "UPDATE KHOABIEU SET TUAN = ? WHERE THANG = ? AND ID_KEHOACH = ?";
+        XJdbc.update(sql, tuan, thang, id_kehoach);
     }
 
-    public void updateTieuDeCuaTuan(String tieuDe, int tuan) {
-        String sql = "UPDATE TUAN SET Tieu_De = ? WHERE ID_TUAN = ?";
-        XJdbc.update(sql, tieuDe, tuan);
+    public void updateSoNgayTheoTuan(int soNgay, int tuan, int id_kehoach) {
+        String sql = "UPDATE TUAN SET SO_NGAY = ? WHERE ID_TUAN = ? AND ID_KEHOACH = ?";
+        XJdbc.update(sql, soNgay, tuan, id_kehoach);
+    }
+
+    public void updateTieuDeCuaTuan(String tieuDe, int tuan, int toHop, int id_kehoach) {
+        String sql = "UPDATE TUAN SET Tieu_De = ? WHERE ID_TUAN = ? AND TO_HOP = ? AND ID_KEHOACH = ?";
+        XJdbc.update(sql, tieuDe, tuan, toHop, id_kehoach);
+    }
+
+    public void updateGhiChuCuaTuan(String ghiChu, int tuan, int toHop, int id_kehoach) {
+        String sql = "UPDATE TUAN SET GHI_CHU = ? WHERE ID_TUAN = ? AND TO_HOP = ? AND ID_KEHOACH = ?";
+        XJdbc.update(sql, ghiChu, tuan, toHop, id_kehoach);
+    }
+
+    public void updateGhiChuCuaNgay(String ghiChu, int ngay, int id_kehoach) {
+        String sql = "UPDATE NGAY SET GHI_CHU = ? WHERE ID_NGAY = ? AND ID_KEHOACH = ?";
+        XJdbc.update(sql, ghiChu, ngay, id_kehoach);
     }
 
     public int getMaxThang() {
@@ -139,7 +173,21 @@ public class KhoaBieuDAO extends DAO<KhoaBieu, Integer> {
         return 0; // Trả về 0 nếu không tìm thấy
     }
     
-        public int getSoTuanByThang(int thang) {
+    public int getIdKeHoachByIdUser(String id_user) {
+        String sql = "SELECT ID_KEHOACH FROM KEHOACH WHERE ID_USER = ?";
+        try {
+            ResultSet rs = XJdbc.query(sql, id_user);
+            if (rs.next()) {
+                return rs.getInt("ID_KEHOACH"); 
+            }
+            rs.getStatement().getConnection().close();
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
+        }
+        return 0; // Trả về 0 nếu không tìm thấy
+    }
+
+    public int getSoTuanByThang(int thang) {
         String sql = "SELECT TUAN FROM KHOABIEU WHERE THANG = ?";
         try {
             ResultSet rs = XJdbc.query(sql, thang);
@@ -153,10 +201,10 @@ public class KhoaBieuDAO extends DAO<KhoaBieu, Integer> {
         return 0; // Trả về 0 nếu không tìm thấy
     }
 
-    public String selectTieuDeByTuan(int tuan, int thang) {
-        String sql = "SELECT TIEU_DE FROM TUAN WHERE ID_TUAN = ? AND THANG = ?";
+    public String selectTieuDeByTuan(int tuan, int id_kehoach) {
+        String sql = "SELECT * FROM TUAN WHERE ID_TUAN = ? AND ID_KEHOACH = ? ORDER BY ID_KEHOACH ASC;";
         try {
-            ResultSet rs = XJdbc.query(sql, tuan, thang);
+            ResultSet rs = XJdbc.query(sql, tuan, id_kehoach);
             if (rs.next()) {
                 return rs.getString("TIEU_DE"); // Lấy tiêu đề từ kết quả
             }
@@ -167,33 +215,98 @@ public class KhoaBieuDAO extends DAO<KhoaBieu, Integer> {
         return null; // Trả về null nếu không tìm thấy
     }
 
+    public String selectGhiChuByTuan(int tuan, int id_kehoach) {
+        String sql = "SELECT * FROM TUAN WHERE ID_TUAN = ? AND ID_KEHOACH = ? ORDER BY ID_KEHOACH ASC;";
+        try {
+            ResultSet rs = XJdbc.query(sql, tuan, id_kehoach);
+            if (rs.next()) {
+                return rs.getString("GHI_CHU"); // Lấy tiêu đề từ kết quả
+            }
+            rs.getStatement().getConnection().close();
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
+        }
+        return null; // Trả về null nếu không tìm thấy
+    }
+
+    public String selectGhiChuByNgay(int ngay, int id_kehoach) {
+        String sql = "SELECT * FROM NGAY WHERE ID_NGAY = ? AND ID_KEHOACH = ? ORDER BY ID_KEHOACH ASC;";
+        try {
+            ResultSet rs = XJdbc.query(sql, ngay, id_kehoach);
+            if (rs.next()) {
+                return rs.getString("GHI_CHU"); // Lấy tiêu đề từ kết quả
+            }
+            rs.getStatement().getConnection().close();
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
+        }
+        return null; // Trả về null nếu không tìm thấy
+    }
+
     public List<Integer> selectIdTuanByThang(int thang) {
-    List<Integer> idTuanList = new ArrayList<>();
-    String sql = "SELECT ID_TUAN FROM TUAN WHERE THANG = ?";
-    try {
-        ResultSet rs = XJdbc.query(sql, thang);
-        while (rs.next()) {
-            idTuanList.add(rs.getInt("ID_TUAN"));
+        List<Integer> idTuanList = new ArrayList<>();
+        String sql = "SELECT ID_TUAN FROM TUAN WHERE THANG = ?";
+        try {
+            ResultSet rs = XJdbc.query(sql, thang);
+            while (rs.next()) {
+                idTuanList.add(rs.getInt("ID_TUAN"));
+            }
+            rs.getStatement().getConnection().close();
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
         }
-        rs.getStatement().getConnection().close();
-    } catch (SQLException ex) {
-        throw new RuntimeException(ex);
+        return idTuanList;
     }
-    return idTuanList;
-}
 
-public int countTuanByThang(int thang) {
-    String sql = "SELECT COUNT(*) FROM TUAN WHERE THANG = ?";
-    try {
-        ResultSet rs = XJdbc.query(sql, thang);
-        if (rs.next()) {
-            return rs.getInt(1); // Lấy giá trị COUNT(*)
+    public int countTuanByThang(int thang) {
+        String sql = "SELECT COUNT(*) FROM TUAN WHERE THANG = ?";
+        try {
+            ResultSet rs = XJdbc.query(sql, thang);
+            if (rs.next()) {
+                return rs.getInt(1); // Lấy giá trị COUNT(*)
+            }
+            rs.getStatement().getConnection().close();
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
         }
-        rs.getStatement().getConnection().close();
-    } catch (SQLException ex) {
-        throw new RuntimeException(ex);
+        return 0; // Trả về 0 nếu không có dữ liệu
     }
-    return 0; // Trả về 0 nếu không có dữ liệu
-}
 
+    public static void callCapNhatTuan() {
+        String sql = "{CALL CapNhatTuan}";
+        try {
+            XJdbc.update(sql);
+            System.out.println("Procedure CapNhatTuan đã được thực thi thành công.");
+        } catch (Exception e) {
+            System.err.println("Lỗi khi gọi Procedure CapNhatTuan: " + e.getMessage());
+        }
+    }
+
+    public static void callCapNhatNgay() {
+        try {
+            XJdbc.update("{CALL CapNhatNgay}");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void callCapNhatTuan(int idKeHoach) {
+        try {
+            // Gọi procedure bằng cách sử dụng XJdbc
+            String sql = "{CALL CapNhatTuan(?)}";
+            XJdbc.update(sql, idKeHoach);
+            System.out.println("Procedure CapNhatTuan được thực thi thành công cho ID_KEHOACH = " + idKeHoach);
+        } catch (Exception e) {
+            System.err.println("Lỗi khi gọi procedure CapNhatTuan: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    public static void callCapNhatNgay(int idKeHoach) {
+        String sql = "{CALL CapNhatNgay(?)}";
+        try {
+            XJdbc.update(sql, idKeHoach);
+        } catch (Exception e) {
+        }
+    }
 }

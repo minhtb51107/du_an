@@ -1,6 +1,7 @@
 package com.dao;
 
 import com.entity.NguoiDung;
+import com.utils.Auth;
 import com.utils.XJdbc;
 import java.sql.*;
 import java.util.ArrayList;
@@ -28,6 +29,10 @@ public class UserDAO /*extends DAO<NguoiDung, String>*/ {
 
                 if (rs.next()) {
                     System.out.println("Người dùng đã tồn tại trong hệ thống.");
+                    UserDAO us = new UserDAO();
+                    NguoiDung nguoiDung = new NguoiDung();
+                    String a = us.getMaNguoiDungByEmail(email);
+                    nguoiDung.setMaNguoiDung(a);
                 } else {
                     // Lấy mã người dùng mới, đảm bảo mã bắt đầu từ ND021 trở đi
                     String newUserCode = generateNewUserCode(connection);
@@ -48,6 +53,17 @@ public class UserDAO /*extends DAO<NguoiDung, String>*/ {
                         int rowsInserted = insertStmt.executeUpdate();
                         if (rowsInserted > 0) {
                             System.out.println("Người dùng mới đã được thêm vào cơ sở dữ liệu.");
+                            UserDAO us = new UserDAO();
+                            NguoiDung nguoiDung = new NguoiDung();
+                            String a = us.getMaNguoiDungByEmail(email);
+                            nguoiDung.setMaNguoiDung(a);
+                            KhoaBieuDAO kb = new KhoaBieuDAO();
+                            //System.out.println("a " + a);
+                            if (a != null) {
+                                kb.insertKeHoach(a);
+                            }
+                            nguoiDung.setMaNguoiDung(a);
+                            //System.out.println("getMaNguoiDung " + nguoiDung.getMaNguoiDung());
                         }
                     }
                 }
@@ -118,6 +134,23 @@ public class UserDAO /*extends DAO<NguoiDung, String>*/ {
         String sql = "SELECT * FROM NGUOIDUNG WHERE TenDangNhap = ?";
         List<NguoiDung> list = this.selectBySql(sql, maNguoiDung);
         return list.size() > 0 ? list.get(0) : null;
+    }
+   
+    public List<NguoiDung> selectAll(){
+        String sql="SELECT * FROM NGUOIDUNG";
+        return selectBySql(sql);
+    }
+    
+    public String getMaNguoiDungByEmail(String email) {
+        String sql = "SELECT MaNguoiDung FROM NGUOIDUNG WHERE Email = ?";
+        try (ResultSet rs = XJdbc.query(sql, email)) {
+            if (rs.next()) {
+                return rs.getString("MaNguoiDung");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     protected List<NguoiDung> selectBySql(String sql, Object... args) {

@@ -105,7 +105,7 @@ private DanhSachBaiHocCon danhSachBaiHocCon;
         topSubPanel.setBackground(new Color(37, 36, 41, 0)); // Đổi màu để dễ nhận diện
         topSubPanel.setPreferredSize(new Dimension(100, 100)); // Kích thước mẫu
         topSubPanel.setLayout(new BorderLayout());
-        topSubPanel.add(new PanelAA1(), BorderLayout.CENTER);
+        topSubPanel.add(new PanelAA1(selectedLanguage), BorderLayout.CENTER);
         topSubPanel.setOpaque(false);
 
         gbc.gridx = 0;
@@ -173,7 +173,7 @@ private DanhSachBaiHocCon danhSachBaiHocCon;
 
     public class PanelAA1 extends JPanel {
 
-        public PanelAA1() {
+        public PanelAA1(String selectedLanguage) {
             setLayout(new GridBagLayout());
             setOpaque(false);
             setBorder(null);
@@ -189,7 +189,7 @@ private DanhSachBaiHocCon danhSachBaiHocCon;
 
             gbc.gridy = 1;
             gbc.weighty = 0.1;
-            add(new MucConCuaBieuDo(), gbc);
+            add(new MucConCuaBieuDo(selectedLanguage), gbc);
         }
     }
     
