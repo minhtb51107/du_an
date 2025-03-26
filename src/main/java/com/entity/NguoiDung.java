@@ -10,7 +10,7 @@ package com.entity;
  */
 
 public class NguoiDung {
-    private String maNguoiDung;
+    static String maNguoiDung;
     private String tenDangNhap;
     private String matKhau;
     private String hoTen;
@@ -24,7 +24,7 @@ public class NguoiDung {
         return this.hoTen;
     }
 
-    public String getMaNguoiDung() {
+    public static String getMaNguoiDung() {
         return maNguoiDung;
     }
 
