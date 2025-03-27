@@ -4,6 +4,9 @@
  */
 package com.ui;
 
+import com.baihoc.DanhSachBaiHoc;
+import com.baihoc.DynamicPanelExample;
+import com.baihoc.ModernBarChart;
 import java.awt.Graphics;
 import java.awt.GraphicsEnvironment;
 import java.awt.Image;
@@ -30,6 +33,7 @@ import java.awt.FontMetrics;
 import java.awt.Graphics2D;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.Insets;
 import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -54,6 +58,15 @@ public class MainFrame extends javax.swing.JFrame {
 
     String content;
 
+    private LessonContentPanel lessonContentPanel;
+
+    EmptyPanel emptyPanel;
+
+    //JPanel[] contentPanels;
+    JPanel panelA = new JPanel();
+
+    DanhSachBaiHoc danhSachBaiHoc;
+
     /**
      * Creates new form MainFrame
      */
@@ -68,11 +81,11 @@ public class MainFrame extends javax.swing.JFrame {
         setLayout(null); // Vô hiệu hóa layout để tự quản lý vị trí các component
 
         setTitle("Dashboard với Thanh Menu Dọc Chuyên Nghiệp"); // Đặt tiêu đề cho cửa sổ
-        setSize(1000, 600); // Kích thước cửa sổ ban đầu
+        //setSize(1000, 600); // Kích thước cửa sổ ban đầu
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Đóng ứng dụng khi nhấn nút đóng
         setLocationRelativeTo(null); // Căn giữa cửa sổ trên màn hình
         setLayout(null); // Sử dụng layout null để tự do đặt vị trí các thành phần
-        setExtendedState(JFrame.MAXIMIZED_BOTH); // Mở rộng cửa sổ toàn màn hình
+        //setExtendedState(JFrame.MAXIMIZED_BOTH); // Mở rộng cửa sổ toàn màn hình
 
         // Tạo một JPanel bọc ngoài để tạo khoảng cách
         JPanel wrapperPanel = new JPanel(new BorderLayout());
@@ -141,9 +154,9 @@ public class MainFrame extends javax.swing.JFrame {
 
 // Tạo nội dung hiển thị khác nhau cho từng item menu
         for (int i = 0; i < menuItems.length; i++) {
-            JPanel panel = new JPanel();
-            panel.setOpaque(false);
-            panel.setLayout(new BorderLayout());
+            JPanel panelA = new JPanel();
+            panelA.setOpaque(false);
+            panelA.setLayout(new BorderLayout());
 
             switch (i) {
                 case 0 -> { // Item 1: Hiển thị toàn panel
@@ -153,13 +166,15 @@ public class MainFrame extends javax.swing.JFrame {
 
                 }
                 case 2 -> { // Item 3: Sử dụng JTextArea
-                    panel.add(new LessonContentPanel(), BorderLayout.CENTER);
+//                    lessonContentPanel = new LessonContentPanel(this);
+                    emptyPanel = new EmptyPanel(this);
+                    panelA.add(emptyPanel, BorderLayout.CENTER);
                 }
                 case 3 -> { // Item 4: Sử dụng hình ảnh
-
+                    panelA.add(new TrangBaiHoc(this, "Java"), BorderLayout.CENTER);
                 }
                 case 4 -> { // Item 5: Form nhập liệu
-                    panel.add(new GridBagPanelDemo(), BorderLayout.CENTER);
+                    panelA.add(new GridBagPanelDemo(), BorderLayout.CENTER);
                 }
                 case 5 -> { // Item 6: Hiển thị bảng dữ liệu
 
@@ -169,7 +184,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
             }
 
-            contentPanels[i] = panel;
+            contentPanels[i] = panelA;
         }
 
 // Tạo các menu item riêng lẻ
@@ -291,6 +306,25 @@ public class MainFrame extends javax.swing.JFrame {
         backgroundPanel.add(mainContent, BorderLayout.CENTER); // Thêm nội dung chính vào background
     }
 
+    public class EmptyPanel extends JPanel {
+
+        public EmptyPanel(MainFrame mainFrame) {
+            setLayout(new BorderLayout());
+            setOpaque(false);
+            lessonContentPanel = new LessonContentPanel(mainFrame);
+            add(lessonContentPanel, BorderLayout.CENTER);
+        }
+    }
+
+    public void updateDanhSachBai(JPanel newPanel) {
+
+        emptyPanel.removeAll();
+        emptyPanel.add(newPanel, BorderLayout.CENTER);
+        emptyPanel.revalidate();
+        emptyPanel.repaint();
+
+    }
+
     class BackgroundPanel extends JPanel {
 
         private Image backgroundImage;
@@ -375,7 +409,7 @@ public class MainFrame extends javax.swing.JFrame {
         private int currentPage = 0;
         private final int totalPages = 6; // Số trang nội dung bài học
 
-        public LessonContentPanel() {
+        public LessonContentPanel(MainFrame mainFrame) {
             setLayout(new BorderLayout());
             cardLayout = new CardLayout();
             mainContent = new JPanel(cardLayout);
@@ -384,7 +418,7 @@ public class MainFrame extends javax.swing.JFrame {
 
             // Tạo các trang nội dung với switch case
             for (int i = 1; i <= totalPages; i++) {
-                JPanel page = createPage(i);
+                JPanel page = createPage(i, mainFrame);
                 page.setOpaque(false);
                 mainContent.add(page, "Page" + i);
             }
@@ -426,29 +460,29 @@ public class MainFrame extends javax.swing.JFrame {
         }
 
         // Phương thức tạo nội dung trang dựa trên chỉ số trang
-        private JPanel createPage(int pageIndex) {
+        private JPanel createPage(int pageIndex, MainFrame mainFrame) {
             this.removeAll();
             JPanel page = new JPanel(); // Tạo lại trang có TrangChinh mới
             page.setLayout(new BorderLayout());
 
             switch (pageIndex) {
                 case 1 -> {
-                    page.add(new TrangChinh(0, "Java", "Java"), BorderLayout.CENTER);
+                    page.add(new TrangChinh(0, "Java", "Java", mainFrame), BorderLayout.CENTER);
                 }
                 case 2 -> {
-                    page.add(new TrangChinh(1, "HTML & CSS", "HTML & CSS"), BorderLayout.CENTER);
+                    page.add(new TrangChinh(1, "HTML & CSS", "HTML & CSS", mainFrame), BorderLayout.CENTER);
                 }
                 case 3 -> {
-                    page.add(new TrangChinh(2, "JAVASCRIPT", "JAVASCRIPT"), BorderLayout.CENTER);
+                    page.add(new TrangChinh(2, "JAVASCRIPT", "JAVASCRIPT", mainFrame), BorderLayout.CENTER);
                 }
                 case 4 -> {
-                    page.add(new TrangChinh(3, "PYTHON", "PYTHON"), BorderLayout.CENTER);
+                    page.add(new TrangChinh(3, "PYTHON", "PYTHON", mainFrame), BorderLayout.CENTER);
                 }
                 case 5 -> {
-                    page.add(new TrangChinh(4, "C", "C"), BorderLayout.CENTER);
+                    page.add(new TrangChinh(4, "C", "C", mainFrame), BorderLayout.CENTER);
                 }
                 case 6 -> {
-                    page.add(new TrangChinh(5, "SQL", "SQL"), BorderLayout.CENTER);
+                    page.add(new TrangChinh(5, "SQL", "SQL", mainFrame), BorderLayout.CENTER);
                 }
                 default -> {
                     page.add(new JLabel("Nội dung không khả dụng", SwingConstants.CENTER), BorderLayout.CENTER);
@@ -617,6 +651,195 @@ public class MainFrame extends javax.swing.JFrame {
             button.setContentAreaFilled(false);
             button.setBorderPainted(false);
             button.setFont(new Font("Arial", Font.PLAIN, 12));
+            button.setHorizontalAlignment(SwingConstants.LEFT); // Căn text về bên phải icon
+            button.setVerticalAlignment(SwingConstants.CENTER);
+            button.setIconTextGap(5); // Khoảng cách giữa icon và text
+            return button;
+        }
+    }
+
+    public class TrangBaiHoc extends JPanel {
+
+        private JPanel mainPanel;
+        private DanhSachBaiHoc danhSachBaiHoc;
+
+        public TrangBaiHoc(MainFrame mainFrame, String content) {
+            setLayout(new BorderLayout()); // Sử dụng BorderLayout cho việc mở rộng toàn bộ
+            setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 10));
+            GridBagConstraints gbc = new GridBagConstraints();
+
+            // Panel chứa 2 hàng
+            JPanel topContainerPanel = new JPanel(new GridBagLayout());
+            GridBagConstraints topGbc = new GridBagConstraints();
+            topGbc.gridx = 0;
+            topGbc.fill = GridBagConstraints.BOTH;
+
+            // Header Panel (Hàng 1 - 10%)
+            JPanel headerPanel = new JPanel(new BorderLayout());
+            headerPanel.setBorder(BorderFactory.createEmptyBorder(10, 0, 0, 0)); // Xóa viền gốc
+            headerPanel.setOpaque(false);
+            headerPanel.setPreferredSize(new Dimension(100, 5));
+            //headerPanel.setBorder(BorderFactory.createEmptyBorder(10, 0, 0, 0));
+            topGbc.gridy = 0;
+            topGbc.weightx = 1.0;
+            topGbc.weighty = 0.1;
+            topContainerPanel.add(headerPanel, topGbc);
+            
+            // Tạo JLabel tiêu đề
+            JLabel lblTitle = new JLabel("Quản lý công việc");
+            lblTitle.setFont(new Font("Arial", Font.BOLD, 34));
+            lblTitle.setForeground(Color.BLACK);
+            lblTitle.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 20)); // Cách phải 1 chút
+
+            // Tạo panel chứa các nút, dùng FlowLayout.RIGHT
+            JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 10, 0));
+
+            // Tạo RoundedPanel chứa JButton
+            //RoundedPanel KhoaBieu = createRoundedPanel();
+            RoundedPanel baitap = createRoundedPanel();
+            RoundedPanel Thoattrang = createRoundedPanel();
+
+            // Tạo JButton với icon
+//            JButton btnKhoaBieu = createButtonWithIcon("Khóa biểu", "/com/img/calendar (1).png");
+//            KhoaBieu.setBackground(new Color(238, 239, 233, 255));
+//            btnKhoaBieu.addMouseListener(new MouseAdapter() {
+//                @Override
+//                public void mouseClicked(MouseEvent e) {
+//                    KhoaBieu.setBackground(new Color(238, 239, 233, 255));
+//                    TodoList.setBackground(new Color(223, 223, 215, 255));
+//                    NhatKy.setBackground(new Color(223, 223, 215, 255));
+//                }
+//            });
+            JButton btnbaitap = createButtonWithIcon("Bài tập", "/com/img/to-do-list.png");
+
+            JButton btnThoattrang = createButtonWithIcon("Thoát", "/com/img/diary.png");
+            btnThoattrang.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    lessonContentPanel = new LessonContentPanel(mainFrame);
+                    updateDanhSachBai(lessonContentPanel);
+                }
+            });
+
+            // Đặt JButton vào RoundedPanel với GridBagConstraints để căn giữa
+            gbc.gridx = 0;
+            gbc.gridy = 0;
+            gbc.anchor = GridBagConstraints.CENTER;
+
+            //KhoaBieu.add(btnKhoaBieu, gbc);
+            baitap.add(btnbaitap, gbc);
+            Thoattrang.add(btnThoattrang, gbc);
+
+            // Thêm các RoundedPanel vào buttonPanel
+            //buttonPanel.add(KhoaBieu);
+            buttonPanel.add(baitap);
+            buttonPanel.add(Thoattrang);
+            buttonPanel.setBorder(BorderFactory.createEmptyBorder(20, 0, 0, 0)); // Xóa viền gốc
+
+            // Thêm tiêu đề và các nút vào menuPanel
+            headerPanel.add(lblTitle, BorderLayout.WEST);
+            headerPanel.add(buttonPanel, BorderLayout.CENTER);
+
+            // Main Panel (Hàng 2 - 90%)
+            mainPanel = new JPanel(new GridBagLayout());
+            gbc.insets = new Insets(10, 10, 10, 10);
+            gbc.fill = GridBagConstraints.BOTH;
+
+            // Left Panel
+            JPanel leftPanel = new JPanel(new GridBagLayout());
+            leftPanel.setOpaque(false);
+            GridBagConstraints leftGbc = new GridBagConstraints();
+            leftGbc.weightx = 1.0;
+            leftGbc.weighty = 1.0;
+            leftGbc.fill = GridBagConstraints.BOTH;
+
+            // Top Panel
+            JPanel topPanel = new JPanel();
+            topPanel.setOpaque(false);
+            topPanel.setPreferredSize(new Dimension(100, 100));
+            RoundedPanel topPanelA = new RoundedPanel(50);
+            //topPanelA.setPreferredSize(new Dimension(100, 100));
+            topPanelA.setBackground(new Color(21, 63, 77, 255));
+            topPanelA.setLayout(new BorderLayout());
+            topPanelA.add(new ModernBarChart(""), BorderLayout.CENTER);
+            topPanel.setLayout(new BorderLayout());
+            topPanel.add(topPanelA, BorderLayout.CENTER);
+            topPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
+            leftGbc.gridx = 0;
+            leftGbc.gridy = 0;
+            leftPanel.add(topPanel, leftGbc);
+
+            // Bottom Panel
+            RoundedPanel bottomPanel = new RoundedPanel(50);
+            bottomPanel.setBackground(new Color(21, 63, 77, 255));
+            bottomPanel.setPreferredSize(new Dimension(100, 100)); // Kích thước mẫu
+            bottomPanel.setLayout(new BorderLayout());
+            danhSachBaiHoc = new DanhSachBaiHoc(content);
+            bottomPanel.add(danhSachBaiHoc, BorderLayout.CENTER);
+            bottomPanel.setBorder(BorderFactory.createEmptyBorder(15, 5, 15, 5));
+            leftGbc.gridx = 0;
+            leftGbc.gridy = 1;
+            leftPanel.add(bottomPanel, leftGbc);
+            leftPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
+
+            // Thêm Left Panel vào Main Panel
+// Thêm Left Panel vào Main Panel
+            gbc.gridx = 0;
+            gbc.gridy = 0;
+            gbc.weightx = 0.3; // Tăng trọng số để giữ lại diện tích
+            gbc.weighty = 1.0;
+            mainPanel.add(leftPanel, gbc);
+
+            // Right Panel
+// Right Panel
+            JPanel rightPanel = new JPanel(new BorderLayout());
+            rightPanel.setOpaque(false);
+
+            RoundedPanel newPanel = new RoundedPanel(50);
+            newPanel.setBackground(new Color(200, 226, 225, 255));
+            newPanel.setPreferredSize(new Dimension(150, 10));
+            newPanel.setLayout(new BorderLayout());
+            newPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+            newPanel.add(new DynamicPanelExample(), BorderLayout.CENTER);
+            rightPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
+            rightPanel.add(newPanel, BorderLayout.CENTER);
+
+            gbc.gridx = 1;
+            gbc.weightx = 0.7;
+            gbc.weighty = 1.0;
+            mainPanel.add(rightPanel, gbc);
+
+// Cập nhật lại giao diện
+            mainPanel.revalidate();
+            mainPanel.repaint();
+
+            // Thêm Main Panel vào topContainerPanel
+            topGbc.gridy = 1;
+            topGbc.weighty = 0.9;
+            topContainerPanel.add(mainPanel, topGbc);
+
+            add(topContainerPanel, BorderLayout.CENTER); // Đảm bảo toàn bộ giao diện được hiển thị
+        }
+        
+        private RoundedPanel createRoundedPanel() {
+            RoundedPanel panel = new RoundedPanel(50);
+            panel.setBackground(new Color(200, 226, 225, 255));
+            panel.setPreferredSize(new Dimension(130, 50)); // Tăng kích thước để vừa icon + text
+            panel.setLayout(new GridBagLayout()); // Căn giữa
+            return panel;
+        }
+
+        private JButton createButtonWithIcon(String text, String iconPath) {
+            ImageIcon originalIcon = new ImageIcon(getClass().getResource(iconPath));
+
+            // Thay đổi kích thước icon (32x32)
+            Image scaledImage = originalIcon.getImage().getScaledInstance(28, 28, Image.SCALE_SMOOTH);
+            ImageIcon scaledIcon = new ImageIcon(scaledImage);
+
+            JButton button = new JButton(text, scaledIcon);
+            button.setContentAreaFilled(false);
+            button.setBorderPainted(false);
+            button.setFont(new Font("Arial", Font.PLAIN, 14));
             button.setHorizontalAlignment(SwingConstants.LEFT); // Căn text về bên phải icon
             button.setVerticalAlignment(SwingConstants.CENTER);
             button.setIconTextGap(5); // Khoảng cách giữa icon và text

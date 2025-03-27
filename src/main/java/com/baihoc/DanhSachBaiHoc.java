@@ -2,12 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.lesson.content.java;
+package com.baihoc;
 
-import com.baihoc.DanhSachBaiHoc;
 import com.data.DanhSachBaiHocConData;
-import com.ui.MainFrame;
-import com.ui.MainFrame.TrangBaiHoc;
+import com.data.DanhSachBaiHocData;
+import com.swing.RoundedPanel;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -35,20 +34,14 @@ import javax.swing.SwingConstants;
  *
  * @author PC
  */
-public class DanhSachBaiHocCon extends JPanel {
+public class DanhSachBaiHoc extends JPanel{
     
-    private MainFrame mainFrame;
-
     private JPanel containerPanel;
     private JScrollPane scrollPane;
     private int startY;
-    
-    DanhSachBaiHoc danhSachBaiHoc;
-    //TrangBaiHoc trangBaiHoc;
 
-    public DanhSachBaiHocCon(String content, MainFrame mainFrame) {
+    public DanhSachBaiHoc(String content) {
 //                System.out.println(content);
-        this.mainFrame = mainFrame;
         setLayout(new BorderLayout());
         setOpaque(false);
         setBackground(null);
@@ -84,7 +77,7 @@ public class DanhSachBaiHocCon extends JPanel {
         gbc.weightx = 1.0;
 
         // Lấy danh sách tiêu đề từ hashmap
-        String[] titles = DanhSachBaiHocConData.getTitles(content);
+        String[] titles = DanhSachBaiHocData.getTitles(content);
 
         for (int i = 0; i < titles.length; i++) {
             containerPanel.add(createItemPanel(i, content), gbc);
@@ -95,15 +88,17 @@ public class DanhSachBaiHocCon extends JPanel {
     }
 
     private JPanel createItemPanel(int index, String content) {
-        String[] icons = DanhSachBaiHocConData.getIcons(content);
+        String[] icons = DanhSachBaiHocData.getIcons(content);
 
-        String[] descriptions = DanhSachBaiHocConData.getDescriptions(content);
+        String[] descriptions = DanhSachBaiHocData.getDescriptions(content);
 
         // Lấy danh sách tiêu đề từ hashmap
-        String[] titles = DanhSachBaiHocConData.getTitles(content);
+        String[] titles = DanhSachBaiHocData.getTitles(content);
+        //RoundedPanel
 
-        JPanel panel = new JPanel(new GridBagLayout());
-        panel.setBackground(new Color(255, 99, 132));
+        RoundedPanel panel = new RoundedPanel(30);
+        panel.setLayout(new GridBagLayout());
+        panel.setBackground(new Color(119,200,191,255));
         panel.setPreferredSize(new Dimension(350, 70));
         panel.setBorder(null);
 
@@ -199,84 +194,31 @@ public class DanhSachBaiHocCon extends JPanel {
     }
 
     private void openLesson(int index, String content) {
-        //danhSachBaiHoc = new DanhSachBaiHoc("Java");
-//        MainFrame.TrangBaiHoc example = mainFrame.new TrangBaiHoc(mainFrame, "Java");
-        MainFrame.TrangBaiHoc example;
         // Lấy danh sách tiêu đề từ hashmap
-        System.out.println("content "+ content);
-        if (content.equals("Java Cơ Bản")) {
-            switch (index) {
-                case 0:
-                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.");
-                    mainFrame.updateDanhSachBai(example);
-                    break;
-                case 1:
-                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.");
-                    mainFrame.updateDanhSachBai(example);
-                    break;
-                case 2:
-
-                    break;
-                case 3:
-
-                    break;
-                default:
-
-            }
-        }
-        if (content.equals("Java Nâng Cao")) {
-            switch (index) {
-                case 0:
- 
-                    break;
-                case 1:
-
-                    break;
-                case 2:
-
-                    break;
-                case 3:
-
-                    break;
-                default:
-
-            }
-        }
-        if (content.equals("Java Chuyên Nghiệp")) {
-            switch (index) {
-                case 0:
-  
-                    break;
-                case 1:
-
-                    break;
-                case 2:
-
-                    break;
-                case 3:
-
-                    break;
-                default:
-
-            }
-        }
-        if (content.equals("Java Ứng Dụng Thực Tế")) {
-            switch (index) {
-                case 0:
-
-                    break;
-                case 1:
-
-                    break;
-                case 2:
-
-                    break;
-                case 3:
-
-                    break;
-                default:
-
-            }
+        String[] titles = DanhSachBaiHocConData.getTitles(content);
+        switch (index) {
+            case 0 ->
+                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
+            case 1 ->
+                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
+            case 2 ->
+                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
+            case 3 ->
+                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
+            case 4 ->
+                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
+            case 5 ->
+                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
+            case 6 ->
+                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
+            case 7 ->
+                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
+            case 8 ->
+                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
+            case 9 ->
+                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
+            default ->
+                JOptionPane.showMessageDialog(this, "Bài học không tồn tại.");
         }
     }
 

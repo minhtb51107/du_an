@@ -27,10 +27,13 @@ import javax.swing.JPanel;
  */
 public class TrangChinh extends JPanel {
 
-private DanhSachBaiHocCon danhSachBaiHocCon;
-        JPanel bottomSubPanel = new JPanel();
+    private DanhSachBaiHocCon danhSachBaiHocCon;
+    JPanel bottomSubPanel = new JPanel();
 
-    public TrangChinh(int index, String selectedLanguage, String content) {
+    MainFrame mainFrame;
+
+    public TrangChinh(int index, String selectedLanguage, String content, MainFrame mainFrame) {
+        this.mainFrame = mainFrame;
 //                System.out.println(content);
         setLayout(new BorderLayout());
         setOpaque(false);
@@ -118,8 +121,8 @@ private DanhSachBaiHocCon danhSachBaiHocCon;
         bottomSubPanel.setOpaque(false);
         bottomSubPanel.setPreferredSize(new Dimension(100, 100)); // Kích thước mẫu
         bottomSubPanel.setLayout(new BorderLayout());
-        
-        danhSachBaiHocCon = new DanhSachBaiHocCon(content);
+
+        danhSachBaiHocCon = new DanhSachBaiHocCon(content, mainFrame);
         bottomSubPanel.add(danhSachBaiHocCon, BorderLayout.CENTER);
         bottomSubPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
 
@@ -192,17 +195,16 @@ private DanhSachBaiHocCon danhSachBaiHocCon;
             add(new MucConCuaBieuDo(selectedLanguage), gbc);
         }
     }
-    
-public void updateDanhSachBaiHocCon(String content) {
-    if (danhSachBaiHocCon != null) {
-        bottomSubPanel.remove(danhSachBaiHocCon);
-    }
-    danhSachBaiHocCon = new DanhSachBaiHocCon(content);
-    bottomSubPanel.add(danhSachBaiHocCon, BorderLayout.CENTER);
-    
-    // Cập nhật lại giao diện
-    bottomSubPanel.revalidate();
-    bottomSubPanel.repaint();
-}
 
+    public void updateDanhSachBaiHocCon(String content) {
+        if (danhSachBaiHocCon != null) {
+            bottomSubPanel.remove(danhSachBaiHocCon);
+        }
+        danhSachBaiHocCon = new DanhSachBaiHocCon(content, mainFrame);
+        bottomSubPanel.add(danhSachBaiHocCon, BorderLayout.CENTER);
+
+        // Cập nhật lại giao diện
+        bottomSubPanel.revalidate();
+        bottomSubPanel.repaint();
+    }
 }
