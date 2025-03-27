@@ -818,13 +818,13 @@ public class DanhSachBaiHocConData {
             ""
         });
         ICON_MAP.put("C cơ bản", new String[]{
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "/com/img/c.png",
+            "/com/img/vitamin-c.png",
+            "/com/img/c (1).png",
+            "/com/img/c.png",
+            "/com/img/c (2).png",
+            "/com/img/what-if.png",
+            "/com/img/loop.png"
         });
         ICON_MAP.put("C trung bình", new String[]{
             "",
@@ -856,34 +856,34 @@ public class DanhSachBaiHocConData {
         });
 
         ICON_MAP.put("SQL cơ bản", new String[]{
-            "",
-            "",
-            "",
-            "",
-            ""
+            "/com/img/sql-server.png",
+            "/com/img/database.png",
+            "/com/img/kieudulieu&toantu.png",
+            "/com/img/sql.png",
+            "/com/img/rangbuoc.png"
         });
 
         ICON_MAP.put("SQL trung bình", new String[]{
-            "",
-            "",
-            "",
-            "",
-            ""
+            "/com/img/csdl.png",
+            "/com/img/bang.png",
+            "/com/img/join.png",
+            "/com/img/group by.png",
+            "/com/img/dulieu.png"
 
         });
 
         ICON_MAP.put("SQL nâng cao", new String[]{
-            "",
-            "",
-            "",
-            ""
+            "/com/img/select.png",
+            "/com/img/procedure.png",
+            "/com/img/sql-injection.png",
+            "/com/img/big-data.png"
 
         });
 
         ICON_MAP.put("SQL chuyên nghiệp", new String[]{
-            "",
-            "",
-            ""
+            "/com/img/planning.png",
+            "/com/img/csdlquantri.png",
+            "/com/img/ide.png"
         });
 
     }
