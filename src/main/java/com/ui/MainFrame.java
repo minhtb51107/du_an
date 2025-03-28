@@ -56,7 +56,7 @@ import javax.swing.UnsupportedLookAndFeelException;
  */
 public class MainFrame extends javax.swing.JFrame {
 
-    String content;
+        String content;
 
     private LessonContentPanel lessonContentPanel;
 
@@ -138,7 +138,7 @@ public class MainFrame extends javax.swing.JFrame {
         mainContent.setOpaque(false); // Nền trong suốt (để hiển thị nền phía sau)
 
 // Các mục menu và đường dẫn icon tương ứng
-        String[] menuItems = {"Trang chủ", "Cá nhân", "Bài học", "Tương tác", "Kế hoạch", "Cài đặt", "Trợ giúp"};
+        String[] menuItems = {"Trang chủ", "Chat AI", "Bài học", "Tương tác", "Kế hoạch", "Cài đặt", "Trợ giúp"};
         String[] iconPaths = {
             "/com/img/home.png",
             "/com/img/people.png",
@@ -171,7 +171,7 @@ public class MainFrame extends javax.swing.JFrame {
                     panelA.add(emptyPanel, BorderLayout.CENTER);
                 }
                 case 3 -> { // Item 4: Sử dụng hình ảnh
-                    panelA.add(new TrangBaiHoc(this, "Java"), BorderLayout.CENTER);
+                    //panelA.add(new TrangBaiHoc(this, "Java"), BorderLayout.CENTER);
                 }
                 case 4 -> { // Item 5: Form nhập liệu
                     panelA.add(new GridBagPanelDemo(), BorderLayout.CENTER);
@@ -663,7 +663,8 @@ public class MainFrame extends javax.swing.JFrame {
         private JPanel mainPanel;
         private DanhSachBaiHoc danhSachBaiHoc;
 
-        public TrangBaiHoc(MainFrame mainFrame, String content) {
+        public TrangBaiHoc(MainFrame mainFrame, String content, String content1) {
+            //System.out.println("content "+ content);
             setLayout(new BorderLayout()); // Sử dụng BorderLayout cho việc mở rộng toàn bộ
             setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 10));
             GridBagConstraints gbc = new GridBagConstraints();
@@ -712,7 +713,7 @@ public class MainFrame extends javax.swing.JFrame {
 //            });
             JButton btnbaitap = createButtonWithIcon("Bài tập", "/com/img/to-do-list.png");
 
-            JButton btnThoattrang = createButtonWithIcon("Thoát", "/com/img/diary.png");
+            JButton btnThoattrang = createButtonWithIcon("Thoát", "/com/img/logout1.png");
             btnThoattrang.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
@@ -761,7 +762,7 @@ public class MainFrame extends javax.swing.JFrame {
             //topPanelA.setPreferredSize(new Dimension(100, 100));
             topPanelA.setBackground(new Color(21, 63, 77, 255));
             topPanelA.setLayout(new BorderLayout());
-            topPanelA.add(new ModernBarChart(""), BorderLayout.CENTER);
+            topPanelA.add(new ModernBarChart("",content), BorderLayout.CENTER);
             topPanel.setLayout(new BorderLayout());
             topPanel.add(topPanelA, BorderLayout.CENTER);
             topPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
@@ -774,7 +775,7 @@ public class MainFrame extends javax.swing.JFrame {
             bottomPanel.setBackground(new Color(21, 63, 77, 255));
             bottomPanel.setPreferredSize(new Dimension(100, 100)); // Kích thước mẫu
             bottomPanel.setLayout(new BorderLayout());
-            danhSachBaiHoc = new DanhSachBaiHoc(content);
+            danhSachBaiHoc = new DanhSachBaiHoc(content, mainFrame);
             bottomPanel.add(danhSachBaiHoc, BorderLayout.CENTER);
             bottomPanel.setBorder(BorderFactory.createEmptyBorder(15, 5, 15, 5));
             leftGbc.gridx = 0;
@@ -797,10 +798,10 @@ public class MainFrame extends javax.swing.JFrame {
 
             RoundedPanel newPanel = new RoundedPanel(50);
             newPanel.setBackground(new Color(200, 226, 225, 255));
-            newPanel.setPreferredSize(new Dimension(150, 10));
+            newPanel.setPreferredSize(new Dimension(150, 100));
             newPanel.setLayout(new BorderLayout());
             newPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
-            newPanel.add(new DynamicPanelExample(), BorderLayout.CENTER);
+            newPanel.add(new DynamicPanelExample(content1), BorderLayout.CENTER);
             rightPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
             rightPanel.add(newPanel, BorderLayout.CENTER);
 
@@ -846,7 +847,6 @@ public class MainFrame extends javax.swing.JFrame {
             return button;
         }
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

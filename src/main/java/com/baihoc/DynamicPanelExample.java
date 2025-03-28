@@ -1,5 +1,6 @@
 package com.baihoc;
 
+import com.data.NoiDungBaiHoc;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
@@ -8,60 +9,97 @@ import java.awt.event.MouseEvent;
 
 public class DynamicPanelExample extends JPanel {
 
-    public DynamicPanelExample() {
+    int indexTitle = 0;
+    int indexContent = 0;
+    int indexCode = 0;
+    private JPanel parentPanel;
+    JPanel panel;
+
+    public DynamicPanelExample(String content) {
         setLayout(new BorderLayout());
         setOpaque(false);
         setBackground(null);
         setBorder(BorderFactory.createEmptyBorder());
+        setPreferredSize(new Dimension(350, 110));
 
-        int[] dataArray = {2, 0, 2, 1, 0, 2, 1, 0, 0, 0, 2, 0};
+        int[] dataArrayIndex = NoiDungBaiHoc.getIndex(content);
+        String[] dataArrayTitle = NoiDungBaiHoc.getTitle(content);
+        String[] dataArrayContent = NoiDungBaiHoc.getContent(content);
+        String[] dataArrayCode = NoiDungBaiHoc.getCode(content);
 
-        JPanel parentPanel = new JPanel();
+        parentPanel = new JPanel();
         parentPanel.setOpaque(false);
         parentPanel.setBackground(null);
         parentPanel.setLayout(new BoxLayout(parentPanel, BoxLayout.Y_AXIS));
 
-        for (int value : dataArray) {
+        for (int value : dataArrayIndex) {
             if (value == 0) {
-                parentPanel.add(createPanelA());
+                parentPanel.add(createPanelC(content, indexTitle));
+                if (indexTitle < dataArrayTitle.length - 1) {
+                    indexTitle++;
+                }
             } else if (value == 1) {
-                parentPanel.add(createPanelB());
+                parentPanel.add(createPanelA(content, indexContent));
+                if (indexContent < dataArrayContent.length - 1) {
+                    indexContent++;
+                }
             } else if (value == 2) {
-                parentPanel.add(createPanelC());
+                parentPanel.add(createPanelB(content, indexCode));
+                if (indexCode < dataArrayCode.length - 1) {
+                    indexCode++;
+                }
             }
         }
+        
+//        System.out.println("indexTitle: " + indexTitle);
+//        System.out.println("indexContent: " + indexContent);
+//        System.out.println("indexCode: " + indexCode);
+//
+//        System.out.println("dataArrayTitle.length: " + dataArrayTitle.length);
+//        System.out.println("dataArrayContent.length: " + dataArrayContent.length);
+//        System.out.println("dataArrayCode.length: " + dataArrayCode.length);
 
         JScrollPane scrollPane = new JScrollPane(parentPanel);
         scrollPane.setBorder(BorderFactory.createEmptyBorder());
         scrollPane.setOpaque(false);
         scrollPane.getViewport().setOpaque(false);
-        scrollPane.getViewport().setBackground(null);
-        scrollPane.setViewportBorder(null);
+        //scrollPane.getViewport().setBackground(null);
+        //scrollPane.setViewportBorder(null);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         scrollPane.setPreferredSize(new Dimension(500, 200));
         add(scrollPane);
+
     }
 
-    private JPanel createPanelA() {
-        JPanel panel = new JPanel(new BorderLayout());
+    private JPanel createPanelA(String content, int a) {
+        panel = new JPanel(new BorderLayout());
         panel.setOpaque(false);
         panel.setBackground(null);
-        panel.setPreferredSize(new Dimension(350, 80));
+        //panel.setMinimumSize(new Dimension(350, 100)); // Chiều rộng tối thiểu 200px, chiều cao tối thiểu 100px
+        //panel.setMaximumSize(new Dimension(350, 300)); // Không lớn hơn 500x300
+        //panel.setPreferredSize(new Dimension(350, 100));
+
+        String[] dataArrayContent = NoiDungBaiHoc.getContent(content);
 
         JTextArea textArea = createTransparentTextArea();
-        textArea.setBorder(BorderFactory.createEmptyBorder(10, 0, 0, 10));
+        textArea.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 10));
         textArea.setEditable(false);
         textArea.setFocusable(false);
-        textArea.setText("Panel A Content\nMore text can go here...");
+        textArea.setText(dataArrayContent[a]);
 
         panel.add(textArea, BorderLayout.CENTER);
         return panel;
     }
 
-    private JPanel createPanelB() {
-        JPanel panel = new JPanel(new GridBagLayout());
+    private JPanel createPanelB(String content, int a) {
+        JPanel newPanel = new JPanel(new BorderLayout());
+        newPanel.setOpaque(false);
+        panel = new JPanel(new GridBagLayout());
+        newPanel.setBorder(BorderFactory.createEmptyBorder(20, 0, 20, 15));
         panel.setBackground(Color.BLACK);
-        panel.setPreferredSize(new Dimension(350, 80));
+        //panel.setMinimumSize(new Dimension(350, 100)); // Chiều rộng tối thiểu 200px, chiều cao tối thiểu 100px
+        //panel.setMaximumSize(new Dimension(350, 300)); // Không lớn hơn 500x300
+        //panel.setPreferredSize(new Dimension(350, 140));
 
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(5, 5, 5, 5);
@@ -76,10 +114,12 @@ public class DynamicPanelExample extends JPanel {
         gbc.anchor = GridBagConstraints.NORTHEAST;
         panel.add(copyLabel, gbc);
 
+        String[] dataArrayCode = NoiDungBaiHoc.getCode(content);
+
         JTextArea textArea = createAutoResizeTextArea(Color.WHITE);
         textArea.setEditable(false);
         textArea.setFocusable(false);
-        textArea.setText("Panel B Content\nMore text can go here...");
+        textArea.setText(dataArrayCode[a]);
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = 2;
@@ -96,20 +136,26 @@ public class DynamicPanelExample extends JPanel {
             }
         });
 
-        return panel;
+        newPanel.add(panel, BorderLayout.CENTER);
+
+        return newPanel;
     }
 
-    private JPanel createPanelC() {
-        JPanel panel = new JPanel(new BorderLayout());
+    private JPanel createPanelC(String content, int a) {
+        panel = new JPanel(new BorderLayout());
         panel.setOpaque(false);
         panel.setBackground(null);
-        panel.setPreferredSize(new Dimension(350, 20));
+        //panel.setMinimumSize(new Dimension(350, 100)); // Chiều rộng tối thiểu 200px, chiều cao tối thiểu 100px
+        //panel.setMaximumSize(new Dimension(350, 300)); // Không lớn hơn 500x300
+        //panel.setPreferredSize(new Dimension(350, 35));
+
+        String[] dataArrayTitle = NoiDungBaiHoc.getTitle(content);
 
         JTextArea textArea = createTransparentTextArea();
-        textArea.setBorder(BorderFactory.createEmptyBorder(5, 0, 0, 5));
+        textArea.setBorder(BorderFactory.createEmptyBorder(5, 0, 0, 0));
         textArea.setEditable(false);
         textArea.setFocusable(false);
-        textArea.setText("Tiêu đề...");
+        textArea.setText(dataArrayTitle[a]);
         textArea.setFont(new Font("Arial", Font.BOLD, 20));
 
         panel.add(textArea, BorderLayout.CENTER);
@@ -117,7 +163,8 @@ public class DynamicPanelExample extends JPanel {
     }
 
     private JTextArea createTransparentTextArea() {
-        JTextArea textArea = new JTextArea(5, 30);
+        JTextArea textArea = new JTextArea();
+
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
         textArea.setOpaque(false);
@@ -127,14 +174,53 @@ public class DynamicPanelExample extends JPanel {
         return textArea;
     }
 
+//    private JTextArea createAutoResizeTextArea(Color backgroundColor) {
+//        JTextArea textArea = new JTextArea();
+//        textArea.setLineWrap(true);
+//        textArea.setWrapStyleWord(true);
+//        textArea.setBackground(backgroundColor);
+//        textArea.setFont(new Font("Arial", Font.PLAIN, 14));
+//        textArea.setForeground(Color.BLACK);
+//        return textArea;
+//    }
+    
     private JTextArea createAutoResizeTextArea(Color backgroundColor) {
-        JTextArea textArea = new JTextArea(5, 30);
+        JTextArea textArea = new JTextArea(1, 0);
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
-        textArea.setBackground(backgroundColor.darker());
+        textArea.setBackground(backgroundColor);
         textArea.setFont(new Font("Arial", Font.PLAIN, 14));
-        textArea.setForeground(Color.BLACK);
+
+        // Theo dõi thay đổi để tự mở rộng
+        textArea.getDocument().addDocumentListener(new javax.swing.event.DocumentListener() {
+            @Override
+            public void insertUpdate(javax.swing.event.DocumentEvent e) {
+                adjustTextAreaSize(textArea);
+            }
+
+            @Override
+            public void removeUpdate(javax.swing.event.DocumentEvent e) {
+                adjustTextAreaSize(textArea);
+            }
+
+            @Override
+            public void changedUpdate(javax.swing.event.DocumentEvent e) {
+                adjustTextAreaSize(textArea);
+            }
+        });
+
         return textArea;
+    }
+
+    private void adjustTextAreaSize(JTextArea textArea) {
+        FontMetrics metrics = textArea.getFontMetrics(textArea.getFont());
+        int lineHeight = metrics.getHeight();
+        int lines = textArea.getLineCount();
+        int newHeight = lines * lineHeight;
+
+        textArea.setPreferredSize(new Dimension(textArea.getWidth(), newHeight));
+        textArea.revalidate();
+        parentPanel.revalidate();
     }
 
 //    public static void main(String[] args) {

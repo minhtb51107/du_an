@@ -203,16 +203,15 @@ public class DanhSachBaiHocCon extends JPanel {
 //        MainFrame.TrangBaiHoc example = mainFrame.new TrangBaiHoc(mainFrame, "Java");
         MainFrame.TrangBaiHoc example;
         // Lấy danh sách tiêu đề từ hashmap
-        System.out.println("content "+ content);
+        //System.out.println("content "+ content);
         if (content.equals("Java Cơ Bản")) {
             switch (index) {
                 case 0:
-                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.");
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Java", "");
                     mainFrame.updateDanhSachBai(example);
                     break;
                 case 1:
-                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.");
-                    mainFrame.updateDanhSachBai(example);
+                    
                     break;
                 case 2:
 
@@ -264,6 +263,25 @@ public class DanhSachBaiHocCon extends JPanel {
             switch (index) {
                 case 0:
 
+                    break;
+                case 1:
+
+                    break;
+                case 2:
+
+                    break;
+                case 3:
+
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("JavaScript Cơ Bản")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu Javascript", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 1:
 

@@ -1,5 +1,6 @@
 package com.baihoc;
 
+import com.data.DanhSachBaiHocData;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -14,7 +15,7 @@ import java.awt.*;
 
 public class ModernBarChart extends JPanel {
 
-    public ModernBarChart(String title) {
+    public ModernBarChart(String title, String content) {
         setLayout(new BorderLayout());
         setOpaque(false);
         setBackground(null);
@@ -23,7 +24,7 @@ public class ModernBarChart extends JPanel {
         //setPreferredSize(new Dimension(400, 400));
 
         // Tạo dataset
-        CategoryDataset dataset = createDataset();
+        CategoryDataset dataset = createDataset(content);
 
         // Tạo biểu đồ
         JFreeChart chart = ChartFactory.createBarChart(
@@ -80,9 +81,10 @@ public class ModernBarChart extends JPanel {
         add(scrollPane);
     }
 
-    private CategoryDataset createDataset() {
+    private CategoryDataset createDataset(String content) {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        for (int i = 1; i <= 5; i++) {
+        String[] titles = DanhSachBaiHocData.getTitles(content);
+        for (int i = 1; i <= titles.length; i++) {
             dataset.addValue(100 + (int) (Math.random() * 100), "", "Bài: " + i);
         }
         return dataset;

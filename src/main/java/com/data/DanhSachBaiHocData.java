@@ -12,22 +12,22 @@ import java.util.Map;
  * @author PC
  */
 public class DanhSachBaiHocData {
-    
+
     private static final Map<String, String[]> TITLE_MAP = new HashMap<>();
 
     static {
-        TITLE_MAP.put("Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.", new String[]{
+        TITLE_MAP.put("Java", new String[]{
             "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.",
             "Cấu trúc chương trình Java, cài đặt JDK, IDE.",
             "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.",
             "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi."
         });
-        
-        TITLE_MAP.put("Cấu trúc chương trình Java, cài đặt JDK, IDE.", new String[]{
-            "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.",
-            "Cấu trúc chương trình Java, cài đặt JDK, IDE.",
-            "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.",
-            "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi."
+
+        TITLE_MAP.put("Giới thiệu Javascript", new String[]{
+            "1",
+            "2",
+            "3",
+            "4"
         });
 
         TITLE_MAP.put("Java Cơ Bản", new String[]{
@@ -200,23 +200,39 @@ public class DanhSachBaiHocData {
 
         TITLE_MAP.put("JavaScript Cơ Bản", new String[]{
             "Giới thiệu JavaScript",
+            "Cách nhúng JavaScript vào HTML",
             "Biến và Kiểu dữ liệu",
-            "Toán tử và Cấu trúc điều kiện"
+            "Toán tử và Cấu trúc điều kiện",
+            "Vòng lặp và Mảng",
+            "Hàm và Phạm vi biến",
+            "Thực hành: Xây dựng trò chơi nhỏ"
         });
+
         TITLE_MAP.put("JavaScript Nâng Cao", new String[]{
             "Vòng lặp và Hàm",
-            "Lập trình hướng đối tượng (OOP)"
+            "Lập trình hướng đối tượng (OOP)",
+            "Closure và Hoisting",
+            "ES6+ và Các tính năng mới",
+            "Xử lý lỗi và Debugging",
+            "Thực hành: Xây dựng ứng dụng To-Do List"
         });
+
         TITLE_MAP.put("JavaScript Chuyên Nghiệp", new String[]{
             "Lập trình bất đồng bộ (Asynchronous)",
             "Làm việc với API",
-            "DOM và Xử lý sự kiện"
-        });
-        TITLE_MAP.put("Ứng Dụng Thực Tế", new String[]{
-            "JavaScript trong dự án Web",
-            "Framework JavaScript (React, Vue, Node.js)"
+            "DOM và Xử lý sự kiện",
+            "LocalStorage và SessionStorage",
+            "Web Workers và Hiệu suất JavaScript",
+            "Thực hành: Xây dựng ứng dụng thời tiết"
         });
 
+        TITLE_MAP.put("Ứng Dụng Thực Tế", new String[]{
+            "JavaScript trong dự án Web",
+            "Framework JavaScript (React, Vue, Node.js)",
+            "Webpack và tối ưu hiệu suất",
+            "Viết Unit Test với Jest",
+            "Thực hành: Xây dựng ứng dụng Chat thời gian thực"
+        });
         TITLE_MAP.put("C", new String[]{
             "GIỚI THIỆU VỀ NGÔN NGỮ C",
             "CẤU TRÚC CHƯƠNG TRÌNH C",
@@ -228,26 +244,49 @@ public class DanhSachBaiHocData {
         });
         TITLE_MAP.put("GIỚI THIỆU VỀ NGÔN NGỮ C", new String[]{
             "Giới thiệu ngôn ngữ C",
+            "Lịch sử phát triển và ứng dụng",
             "Cấu trúc chương trình C",
-            "Biến, kiểu dữ liệu và toán tử"
+            "Biến, kiểu dữ liệu và toán tử",
+            "Cách biên dịch và chạy chương trình C"
         });
+
         TITLE_MAP.put("CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP", new String[]{
-            "Câu lệnh điều kiện",
-            "Vòng lặp"
+            "Câu lệnh điều kiện (if-else, switch-case)",
+            "Vòng lặp for, while, do-while",
+            "Các lệnh điều khiển vòng lặp (break, continue)",
+            "Ứng dụng vòng lặp trong thuật toán tìm kiếm và sắp xếp"
         });
+
         TITLE_MAP.put("MẢNG, CHUỖI & CON TRỎ", new String[]{
             "Mảng một chiều và hai chiều",
-            "Xử lý chuỗi và con trỏ"
+            "Các thao tác trên mảng: thêm, xóa, cập nhật",
+            "Xử lý chuỗi với thư viện string.h",
+            "Con trỏ: Khái niệm, cách sử dụng và ứng dụng",
+            "Cấp phát bộ nhớ động với con trỏ"
         });
+
         TITLE_MAP.put("HÀM & QUẢN LÝ BỘ NHỚ", new String[]{
-            "Hàm và đệ quy",
-            "Cấp phát bộ nhớ tự động"
+            "Hàm: Khai báo, định nghĩa và cách gọi",
+            "Tham trị và tham chiếu trong hàm",
+            "Đệ quy và ứng dụng trong thuật toán",
+            "Cấp phát bộ nhớ động: malloc, calloc, realloc, free",
+            "Quản lý bộ nhớ hiệu quả trong C"
         });
+
         TITLE_MAP.put("CẤU TRÚC DỮ LIỆU & FILE I/O", new String[]{
-            "Cấu trúc dữ liệu & File I/O",
-            "File I/O",});
+            "Struct và Union trong C",
+            "Làm việc với danh sách liên kết",
+            "Ghi và đọc dữ liệu từ file văn bản",
+            "Ghi và đọc dữ liệu từ file nhị phân",
+            "Ứng dụng File I/O trong quản lý dữ liệu"
+        });
+
         TITLE_MAP.put("LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG", new String[]{
-            "Dự án cuối khóa",});
+            "Kỹ thuật tối ưu hiệu suất trong lập trình C",
+            "Sử dụng đa luồng để tăng hiệu quả xử lý",
+            "Tối ưu bộ nhớ và thời gian chạy chương trình",
+            "Xây dựng một ứng dụng hoàn chỉnh với C"
+        });
 
         TITLE_MAP.put("SQL cơ bản", new String[]{
             "Giới thiệu SQL",
@@ -305,6 +344,13 @@ public class DanhSachBaiHocData {
             "Biến, kiểu dữ liệu, toán tử: Khai báo, sử dụng biến, hằng, toán tử số học và logic.",
             "Cấu trúc điều kiện, vòng lặp: If-else, switch-case, for, while, do-while.",
             "Mảng và xử lý chuỗi: Mảng một chiều, hai chiều, String, StringBuilder, StringBuffer."
+        });
+
+        DESCRIPTION_MAP.put("Giới thiệu Javascript", new String[]{
+            "Giới thiệu về Java: Lịch sử, đặc điểm, và lý do chọn Java.",
+            "Cấu trúc chương trình Java: Cài đặt JDK, IDE, cách biên dịch và chạy chương trình.",
+            "Biến, kiểu dữ liệu, toán tử: Khai báo, sử dụng biến, hằng, toán tử số học và logic.",
+            "Cấu trúc điều kiện, vòng lặp: If-else, switch-case, for, while, do-while."
         });
 
         DESCRIPTION_MAP.put("Java Cơ Bản", new String[]{
@@ -477,25 +523,39 @@ public class DanhSachBaiHocData {
 
         DESCRIPTION_MAP.put("JavaScript Cơ Bản", new String[]{
             "Tìm hiểu tổng quan về JavaScript, cách nhúng vào HTML và vai trò của nó trong lập trình web.",
+            "Cách nhúng JavaScript vào HTML: sử dụng thẻ `<script>` và cách viết code nội tuyến hoặc file ngoài.",
             "Giải thích về biến, kiểu dữ liệu trong JavaScript và cách khai báo bằng var, let, const.",
-            "Tìm hiểu về các toán tử, cấu trúc điều kiện (if-else, switch-case) giúp xử lý logic trong chương trình."
+            "Tìm hiểu về các toán tử, cấu trúc điều kiện (if-else, switch-case) giúp xử lý logic trong chương trình.",
+            "Giới thiệu về vòng lặp (for, while, do-while) và cách sử dụng để tối ưu hóa chương trình.",
+            "Tìm hiểu về hàm trong JavaScript, cách khai báo và gọi hàm, cũng như phạm vi biến (scope).",
+            "Thực hành: Xây dựng trò chơi đoán số ngẫu nhiên sử dụng JavaScript."
         });
 
         DESCRIPTION_MAP.put("JavaScript Nâng Cao", new String[]{
             "Khám phá vòng lặp for, while, do-while và cách sử dụng chúng để tối ưu hóa chương trình.",
             "Hiểu về khái niệm hàm, cách tạo hàm trong JavaScript, và sử dụng hàm để tổ chức code.",
-            "Lập trình hướng đối tượng (OOP) trong JavaScript: Class, Object, Constructor, Prototype và cách ứng dụng."
+            "Lập trình hướng đối tượng (OOP) trong JavaScript: Class, Object, Constructor, Prototype và cách ứng dụng.",
+            "Tìm hiểu Closure và Hoisting trong JavaScript, cách sử dụng để tối ưu hóa code.",
+            "Giới thiệu các tính năng mới trong ES6+: Arrow function, Spread, Destructuring, Template literals, Modules.",
+            "Xử lý lỗi và Debugging: Sử dụng try-catch, console.log và các công cụ trình duyệt để gỡ lỗi.",
+            "Thực hành: Xây dựng ứng dụng To-Do List sử dụng JavaScript thuần."
         });
 
         DESCRIPTION_MAP.put("JavaScript Chuyên Nghiệp", new String[]{
             "Giới thiệu về lập trình bất đồng bộ trong JavaScript, cách sử dụng Callback, Promise và Async/Await.",
             "Làm việc với API: Gửi yêu cầu HTTP bằng Fetch, xử lý dữ liệu JSON từ server, và quản lý lỗi.",
-            "Tìm hiểu về Document Object Model (DOM), cách thao tác với các phần tử HTML và xử lý sự kiện."
+            "Tìm hiểu về Document Object Model (DOM), cách thao tác với các phần tử HTML và xử lý sự kiện.",
+            "LocalStorage và SessionStorage: Lưu trữ dữ liệu trên trình duyệt và cách sử dụng.",
+            "Tối ưu hiệu suất JavaScript với Web Workers, cách xử lý tác vụ nền.",
+            "Thực hành: Xây dựng ứng dụng thời tiết hiển thị thông tin theo vị trí người dùng."
         });
 
         DESCRIPTION_MAP.put("Ứng Dụng Thực Tế", new String[]{
             "Ứng dụng JavaScript trong dự án web: Xử lý form, tạo hiệu ứng động, tối ưu hiệu suất.",
-            "Giới thiệu về các framework phổ biến như React, Vue.js và Node.js giúp xây dựng ứng dụng web hiện đại."
+            "Giới thiệu về các framework phổ biến như React, Vue.js và Node.js giúp xây dựng ứng dụng web hiện đại.",
+            "Sử dụng Webpack để tối ưu hiệu suất JavaScript và cải thiện tốc độ tải trang.",
+            "Viết Unit Test với Jest để đảm bảo chất lượng code và kiểm tra lỗi.",
+            "Thực hành: Xây dựng ứng dụng Chat thời gian thực sử dụng WebSocket và JavaScript."
         });
 
         DESCRIPTION_MAP.put("C", new String[]{
@@ -600,8 +660,7 @@ public class DanhSachBaiHocData {
             ""
         });
 
-        ICON_MAP.put("Java Cơ Bản", new String[]{
-            "",
+        ICON_MAP.put("Giới thiệu Javascript", new String[]{
             "",
             "",
             "",
@@ -766,27 +825,38 @@ public class DanhSachBaiHocData {
         ICON_MAP.put("JAVASCRIPT", new String[]{
             "",
             "",
-            "",
-            "",
-            "",
-            "",
             ""
         });
         ICON_MAP.put("JavaScript Cơ Bản", new String[]{
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             ""
         });
         ICON_MAP.put("JavaScript Nâng Cao", new String[]{
             "",
+            "",
+            "",
+            "",
+            "",
+            "",
             ""
         });
         ICON_MAP.put("JavaScript Chuyên Nghiệp", new String[]{
             "",
             "",
+            "",
+            "",
+            "",
             ""
         });
         ICON_MAP.put("Ứng Dụng Thực Tế", new String[]{
+            "",
+            "",
+            "",
             "",
             ""
         });

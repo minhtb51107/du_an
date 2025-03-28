@@ -7,6 +7,7 @@ package com.baihoc;
 import com.data.DanhSachBaiHocConData;
 import com.data.DanhSachBaiHocData;
 import com.swing.RoundedPanel;
+import com.ui.MainFrame;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -39,8 +40,10 @@ public class DanhSachBaiHoc extends JPanel{
     private JPanel containerPanel;
     private JScrollPane scrollPane;
     private int startY;
+    private MainFrame mainFrame;
 
-    public DanhSachBaiHoc(String content) {
+    public DanhSachBaiHoc(String content, MainFrame mainFram) {
+        this.mainFrame = mainFram;
 //                System.out.println(content);
         setLayout(new BorderLayout());
         setOpaque(false);
@@ -114,7 +117,7 @@ public class DanhSachBaiHoc extends JPanel{
         
         //JLabel iconLabel = new JLabel(new ImageIcon(getClass().getResource(icons[index])));
         
-                ImageIcon originalIcon1 = new ImageIcon(getClass().getResource(icons[index]));
+        ImageIcon originalIcon1 = new ImageIcon(getClass().getResource(icons[index]));
         Image scaledImage1 = originalIcon1.getImage().getScaledInstance(45,45, Image.SCALE_SMOOTH);
         ImageIcon scaledIcon1 = new ImageIcon(scaledImage1);
         JLabel iconLabel = new JLabel(scaledIcon1);
@@ -195,30 +198,26 @@ public class DanhSachBaiHoc extends JPanel{
 
     private void openLesson(int index, String content) {
         // Lấy danh sách tiêu đề từ hashmap
-        String[] titles = DanhSachBaiHocConData.getTitles(content);
-        switch (index) {
-            case 0 ->
-                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
-            case 1 ->
-                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
-            case 2 ->
-                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
-            case 3 ->
-                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
-            case 4 ->
-                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
-            case 5 ->
-                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
-            case 6 ->
-                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
-            case 7 ->
-                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
-            case 8 ->
-                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
-            case 9 ->
-                JOptionPane.showMessageDialog(this, "Mở: " + titles[index]);
-            default ->
-                JOptionPane.showMessageDialog(this, "Bài học không tồn tại.");
+        MainFrame.TrangBaiHoc example;
+        if (content.equals("Giới thiệu Javascript")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu Javascript", "1");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu Javascript", "2");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+
+                    break;
+                case 3:
+
+                    break;
+                default:
+
+            }
         }
     }
 
