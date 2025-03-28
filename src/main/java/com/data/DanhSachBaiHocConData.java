@@ -827,24 +827,24 @@ public class DanhSachBaiHocConData {
             "/com/img/loop.png"
         });
         ICON_MAP.put("C trung bình", new String[]{
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "/com/img/mangmotchieu.png",
+            "/com/img/manghaichieu.png",
+            "/com/img/xulychuoi.png",
+            "/com/img/contro.png",
+            "/com/img/c.png",
+            "/com/img/truyenthamso.png",
+            "/com/img/hamdequy.png"
         });
         ICON_MAP.put("C nâng cao", new String[]{
-            "",
-            "",
-            "",
-            ""
+            "/com/img/dulieu_1.png",
+            "/com/img/dulieu_2.png",
+            "/com/img/list.png",
+            "/com/img/xulytep.png"
         });
         ICON_MAP.put("C chuyên nghiệp", new String[]{
-            "",
-            "",
-            ""
+            "/com/img/toiuu.png",
+            "/com/img/laptrinh.png",
+            "/com/img/project.png"
         });
 
         ICON_MAP.put("SQL", new String[]{
