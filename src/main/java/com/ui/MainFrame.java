@@ -4,9 +4,6 @@
  */
 package com.ui;
 
-import com.baihoc.DanhSachBaiHoc;
-import com.baihoc.DynamicPanelExample;
-import com.baihoc.ModernBarChart;
 import java.awt.Graphics;
 import java.awt.GraphicsEnvironment;
 import java.awt.Image;
@@ -21,6 +18,9 @@ import com.lesson.content.java.TrangChinh;
 import com.swing.ProfessionalSidebarForm;
 import com.swing.RoundedPanel;
 import com.kehoach.GiaoDienKeHoach;
+import com.baihoc.DanhSachBaiHoc;
+import com.baihoc.DynamicPanelExample;
+import com.baihoc.ModernBarChart;
 import java.awt.BasicStroke;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
@@ -56,7 +56,7 @@ import javax.swing.UnsupportedLookAndFeelException;
  */
 public class MainFrame extends javax.swing.JFrame {
 
-        String content;
+    String content;
 
     private LessonContentPanel lessonContentPanel;
 
@@ -510,7 +510,7 @@ public class MainFrame extends javax.swing.JFrame {
             menuPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0)); // Xóa viền gốc
 
             // Tạo JLabel tiêu đề
-            JLabel lblTitle = new JLabel("Quản lý công việc");
+            JLabel lblTitle = new JLabel("Trang bài học");
             lblTitle.setFont(new Font("Arial", Font.BOLD, 34));
             lblTitle.setForeground(Color.BLACK);
             lblTitle.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 20)); // Cách phải 1 chút
@@ -687,7 +687,7 @@ public class MainFrame extends javax.swing.JFrame {
             topContainerPanel.add(headerPanel, topGbc);
             
             // Tạo JLabel tiêu đề
-            JLabel lblTitle = new JLabel("Quản lý công việc");
+            JLabel lblTitle = new JLabel("Bài học");
             lblTitle.setFont(new Font("Arial", Font.BOLD, 34));
             lblTitle.setForeground(Color.BLACK);
             lblTitle.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 20)); // Cách phải 1 chút
