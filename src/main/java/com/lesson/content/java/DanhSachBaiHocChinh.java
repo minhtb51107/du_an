@@ -210,22 +210,16 @@ public class DanhSachBaiHocChinh extends JPanel {
                     if (selectedLanguage.equals("C")) {
                         switch (index) {
                             case 0:
-                                parentTrangChinh.updateDanhSachBaiHocCon("GIỚI THIỆU VỀ NGÔN NGỮ C");
+                                parentTrangChinh.updateDanhSachBaiHocCon("C cơ bản");
                                 break;
                             case 1:
-                                parentTrangChinh.updateDanhSachBaiHocCon("CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP");
+                                parentTrangChinh.updateDanhSachBaiHocCon("C trung bình");
                                 break;
                             case 2:
-                                parentTrangChinh.updateDanhSachBaiHocCon("MẢNG, CHUỖI & CON TRỎ");
+                                parentTrangChinh.updateDanhSachBaiHocCon("C nâng cao");
                                 break;
                             case 3:
-                                parentTrangChinh.updateDanhSachBaiHocCon("HÀM & QUẢN LÝ BỘ NHỚ");
-                                break;
-                            case 4:
-                                parentTrangChinh.updateDanhSachBaiHocCon("CẤU TRÚC DỮ LIỆU & FILE I/O");
-                                break;
-                            case 5:
-                                parentTrangChinh.updateDanhSachBaiHocCon("LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG");
+                                parentTrangChinh.updateDanhSachBaiHocCon("C chuyên nghiệp");
                                 break;
                             default:
                                 JOptionPane.showMessageDialog(null, "Lựa chọn không hợp lệ!");
@@ -398,6 +392,7 @@ public class DanhSachBaiHocChinh extends JPanel {
 //                        break;
 //                    case 1:
 //                        TrangChinh cd1 = new TrangChinh(0, "Java", "JAVASCRIPT");
+
 ////                        cd1.resetTrangChinh(0, "Java", "JAVASCRIPT");
 //                        break;
 //                    case 2:

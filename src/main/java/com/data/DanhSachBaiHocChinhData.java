@@ -33,12 +33,12 @@ public class DanhSachBaiHocChinhData {
         });
 
         TITLE_MAP.put("HTML & CSS", new String[]{
-             "HTML Cơ Bản",
-             "HTML Nâng Cao",
-             "CSS Cơ Bản",
-             "CSS Nâng Cao",
-             "CSS Chuyên Nghiệp",
-             "Ứng Dụng & Dự Án Thực Tế"
+            "HTML Cơ Bản",
+            "HTML Nâng Cao",
+            "CSS Cơ Bản",
+            "CSS Nâng Cao",
+            "CSS Chuyên Nghiệp",
+            "Ứng Dụng & Dự Án Thực Tế"
         });
 
         TITLE_MAP.put("JAVASCRIPT", new String[]{
@@ -49,12 +49,10 @@ public class DanhSachBaiHocChinhData {
         });
 
         TITLE_MAP.put("C", new String[]{
-            "GIỚI THIỆU VỀ NGÔN NGỮ C",
-            "CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP",
-            "MẢNG, CHUỖI & CON TRỎ",
-            "HÀM & QUẢN LÝ BỘ NHỚ",
-            "CẤU TRÚC DỮ LIỆU & FILE I/O",
-            "LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG"
+            "C cơ bản",
+            "C trung bình",
+            "C nâng cao",
+            "C chuyên nghiệp"
         });
 
         TITLE_MAP.put("SQL", new String[]{
@@ -131,32 +129,32 @@ public class DanhSachBaiHocChinhData {
         });
 
         DESCRIPTION_MAP.put("HTML & CSS", new String[]{
-             "Giới thiệu HTML \n"
-                     + "Các thẻ HTML quan trọng \n"
-                     + "Hình ảnh, liên kết & điều hướng \n"
-                     + "Bảng và biểu mẫu",
-             "Semantic HTML \n"
-                     + "Metadata & SEO \n"
-                     + "HTML5 API",
-             "Cú pháp và cách nhúng CSS \n"
-                     + "Selectors & Units \n"
-                     + "Box Model & Positioning \n"
-                     + "Màu sắc & Typography \n"
-                     + " Display & Responsive cơ bản",
-             "Flexbox \n"
-                     + "Grid Layout \n"
-                     + "Responsive Design \n"
-                     + "Animation & Transition \n"
-                     + "Advanced Selectors",
-             "CSS Architecture & Best Practices \n"
-                     + "Preprocessors: SCSS & LESS \n"
-                     + "Tối ưu hiệu suất CSS \n"
-                     + "CSS Frameworks \n"
-                     + "Accessibility (A11Y) \n"
-                     + "CSS Generative Art & Creative Coding",
-             "Xây dựng website hoàn chỉnh \n"
-                     + "Tích hợp CSS với JavaScript \n"
-                         + "Progressive Web Apps (PWA)"
+            "Giới thiệu HTML \n"
+            + "Các thẻ HTML quan trọng \n"
+            + "Hình ảnh, liên kết & điều hướng \n"
+            + "Bảng và biểu mẫu",
+            "Semantic HTML \n"
+            + "Metadata & SEO \n"
+            + "HTML5 API",
+            "Cú pháp và cách nhúng CSS \n"
+            + "Selectors & Units \n"
+            + "Box Model & Positioning \n"
+            + "Màu sắc & Typography \n"
+            + " Display & Responsive cơ bản",
+            "Flexbox \n"
+            + "Grid Layout \n"
+            + "Responsive Design \n"
+            + "Animation & Transition \n"
+            + "Advanced Selectors",
+            "CSS Architecture & Best Practices \n"
+            + "Preprocessors: SCSS & LESS \n"
+            + "Tối ưu hiệu suất CSS \n"
+            + "CSS Frameworks \n"
+            + "Accessibility (A11Y) \n"
+            + "CSS Generative Art & Creative Coding",
+            "Xây dựng website hoàn chỉnh \n"
+            + "Tích hợp CSS với JavaScript \n"
+            + "Progressive Web Apps (PWA)"
         });
 
         DESCRIPTION_MAP.put("JAVASCRIPT", new String[]{
@@ -177,24 +175,32 @@ public class DanhSachBaiHocChinhData {
         });
 
         DESCRIPTION_MAP.put("C", new String[]{
-            "GIỚI THIỆU NGÔN NGỮ C\n"
-            + "Giới thiệu ngôn ngữ C\n"
-            + "Cấu trúc chương trình C\n"
-            + "Biến, kiểu dữ liệu và toán tử\n",
-            "CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP\n"
-            + "Câu lệnh điều kiện\n"
-            + "Vòng lặp\n",
-            "MẢNG, CHUỖI & CON TRỎ\n"
-            + "Mảng một chiều và hai chiều\n"
-            + "Xử lý  chuỗi và con trỏ\n",
-            "HÀM & QUẢN LÝ BỘ NHỚ\n"
-            + "Hàm và đệ quy\n"
-            + "Cấp phát bộ nhớ động\n",
-            "CẤU TRÚC DỮ LIỆU & FILE I/O\n"
-            + "Cấu trúc dữ liệu\n"
-            + "File I/O",
-            "LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG\n"
-            + "Dự án cuối khóa\n",});
+            "CƠ BẢN\n"
+            + "Giới thiệu về ngôn ngữ C\n"
+            + "Lịch sử và sự phát triển của ngôn ngữ C\n"
+            + "Đặc điểm và ứng dụng của C\n"
+            + "Cấu trúc cơ bản của một chương trình C\n"
+            + "Quá trình biên dịch và thực thi chương trình C\n"
+            + "Các câu lệnh điều kiện (if, if-else, switch-case)\n"
+            + "Các vòng lặp (for, while, do-while)\n",
+            "TRUNG BÌNH\n"
+            + "Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử\n"
+            + "Mảng hai chiều: Ứng dụng và thao tác\n"
+            + "Xử lý chuỗi trong C (thư viện string.h)\n"
+            + "Con trỏ: Khái niệm, khai báo, toán tử con trỏ\n"
+            + "Định nghĩa và sử dụng hàm\n"
+            + "Truyền tham số vào hàm\n"
+            + "Hàm đệ quy\n",
+            "NÂNG CAO\n"
+            + "Cấu trúc dữ liệu & file I/O\n"
+            + "Kiểu dữ liệu struct và union\n"
+            + "Danh sách liên kết, ngăn xếp, hàng đợi\n"
+            + "Xử lý tệp tin (File I/O): fopen, fclose, fread, fwrite, fprintf, fscanf\n",
+            "CHUYÊN NGHIỆP\n"
+            + "Các phương pháp tối ưu mã nguồn trong C\n"
+            + "Lập trình hệ thống với C\n"
+            + "Dự án cuối khóa: Xây dựng ứng dụng thực tế\n"
+        });
 
         DESCRIPTION_MAP.put("SQL", new String[]{
             "Giới thiệu SQL \n"

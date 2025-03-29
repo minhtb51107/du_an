@@ -36,13 +36,13 @@ import javax.swing.SwingConstants;
  * @author PC
  */
 public class DanhSachBaiHocCon extends JPanel {
-    
+
     private MainFrame mainFrame;
 
     private JPanel containerPanel;
     private JScrollPane scrollPane;
     private int startY;
-    
+
     DanhSachBaiHoc danhSachBaiHoc;
     //TrangBaiHoc trangBaiHoc;
 
@@ -116,14 +116,13 @@ public class DanhSachBaiHocCon extends JPanel {
         gbc.weightx = 0.3;
         gbc.insets = new Insets(5, 5, 5, 5);
         gbc.anchor = GridBagConstraints.WEST;
-        
+
         //JLabel iconLabel = new JLabel(new ImageIcon(getClass().getResource(icons[index])));
-        
-                ImageIcon originalIcon1 = new ImageIcon(getClass().getResource(icons[index]));
-        Image scaledImage1 = originalIcon1.getImage().getScaledInstance(45,45, Image.SCALE_SMOOTH);
+        ImageIcon originalIcon1 = new ImageIcon(getClass().getResource(icons[index]));
+        Image scaledImage1 = originalIcon1.getImage().getScaledInstance(45, 45, Image.SCALE_SMOOTH);
         ImageIcon scaledIcon1 = new ImageIcon(scaledImage1);
         JLabel iconLabel = new JLabel(scaledIcon1);
-    
+
         panel.add(iconLabel, gbc);
 
 // Cột 2 - Nội dung (Tiêu đề & Mô tả)
@@ -211,7 +210,7 @@ public class DanhSachBaiHocCon extends JPanel {
                     mainFrame.updateDanhSachBai(example);
                     break;
                 case 1:
-                    
+
                     break;
                 case 2:
 
@@ -226,7 +225,7 @@ public class DanhSachBaiHocCon extends JPanel {
         if (content.equals("Java Nâng Cao")) {
             switch (index) {
                 case 0:
- 
+
                     break;
                 case 1:
 
@@ -244,7 +243,7 @@ public class DanhSachBaiHocCon extends JPanel {
         if (content.equals("Java Chuyên Nghiệp")) {
             switch (index) {
                 case 0:
-  
+
                     break;
                 case 1:
 
@@ -291,6 +290,102 @@ public class DanhSachBaiHocCon extends JPanel {
                     break;
                 case 3:
 
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("SQL cơ bản")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu SQL", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các lệnh truy vấn dữ liệu cơ bản", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Kiểu dữ liệu và toán tử", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các hàm SQL cơ bản", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 4:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Ràng buộc SQL(Constraints)", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("SQL trung bình")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quản lý cơ sở dữ liệu", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quản lý bảng", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Kết hợp dữ liệu", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Nhóm và tính toán dữ liệu", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 4:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý chuỗi và dữ liệu", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("SQL nâng cao")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý dữ liệu", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Thủ tục lưu trữ", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Bảo mật SQL", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quản lý dữ liệu quy mô lớn", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("SQL chuyên nghiệp")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quản lý truy vấn phức tạp", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "SQL trong các hệ quản trị cơ sở dữ liệu", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các công cụ hỗ trợ SQL", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 default:
 

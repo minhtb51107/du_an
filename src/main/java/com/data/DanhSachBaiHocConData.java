@@ -226,59 +226,31 @@ public class DanhSachBaiHocConData {
             "Viết Unit Test với Jest",
             "Thực hành: Xây dựng ứng dụng Chat thời gian thực"
         });
-        TITLE_MAP.put("C", new String[]{
-            "GIỚI THIỆU VỀ NGÔN NGỮ C",
-            "CẤU TRÚC CHƯƠNG TRÌNH C",
-            "BIẾN, TOÁN TỬ VÀ KIỂU DỮ LIỆU",
-            "CẤU TRÚC ĐIỀU KHIỂN VÀ HÀM",
-            "CON TRỎ VÀ QUẢN LÝ BỘ NHỚ",
-            "XỬ LÝ FILE TRONG C",
-            "LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG VỚI C (OOP)"
-        });
-        TITLE_MAP.put("GIỚI THIỆU VỀ NGÔN NGỮ C", new String[]{
-            "Giới thiệu ngôn ngữ C",
-            "Lịch sử phát triển và ứng dụng",
-            "Cấu trúc chương trình C",
-            "Biến, kiểu dữ liệu và toán tử",
-            "Cách biên dịch và chạy chương trình C"
+        TITLE_MAP.put("C cơ bản", new String[]{
+            "Giới thiệu về ngôn ngữ C",
+            "Lịch sử và sự phát triển của ngôn ngữ C",
+            "Đặc điểm và ứng dụng của C",
+            "Cấu trúc cơ bản của một chương trình C",
+            "Quá trình biên dịch và thực thi chương trình C",
+            "Các câu lệnh điều kiện (if, if-else, switch-case)",
+            "Các vòng lặp (for, while, do-while)\n"
         });
 
-        TITLE_MAP.put("CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP", new String[]{
-            "Câu lệnh điều kiện (if-else, switch-case)",
-            "Vòng lặp for, while, do-while",
-            "Các lệnh điều khiển vòng lặp (break, continue)",
-            "Ứng dụng vòng lặp trong thuật toán tìm kiếm và sắp xếp"
+        TITLE_MAP.put("C trung bình", new String[]{
+            "Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử",
+            "Mảng hai chiều: Ứng dụng và thao tác",
+            "Xử lý chuỗi trong C (thư viện string.h)",
+            "Con trỏ: Khái niệm, khai báo, toán tử con trỏ",
+            "Định nghĩa và sử dụng hàm",
+            "Truyền tham số vào hàm",
+            "Hàm đệ quy"
         });
 
-        TITLE_MAP.put("MẢNG, CHUỖI & CON TRỎ", new String[]{
-            "Mảng một chiều và hai chiều",
-            "Các thao tác trên mảng: thêm, xóa, cập nhật",
-            "Xử lý chuỗi với thư viện string.h",
-            "Con trỏ: Khái niệm, cách sử dụng và ứng dụng",
-            "Cấp phát bộ nhớ động với con trỏ"
-        });
-
-        TITLE_MAP.put("HÀM & QUẢN LÝ BỘ NHỚ", new String[]{
-            "Hàm: Khai báo, định nghĩa và cách gọi",
-            "Tham trị và tham chiếu trong hàm",
-            "Đệ quy và ứng dụng trong thuật toán",
-            "Cấp phát bộ nhớ động: malloc, calloc, realloc, free",
-            "Quản lý bộ nhớ hiệu quả trong C"
-        });
-
-        TITLE_MAP.put("CẤU TRÚC DỮ LIỆU & FILE I/O", new String[]{
-            "Struct và Union trong C",
-            "Làm việc với danh sách liên kết",
-            "Ghi và đọc dữ liệu từ file văn bản",
-            "Ghi và đọc dữ liệu từ file nhị phân",
-            "Ứng dụng File I/O trong quản lý dữ liệu"
-        });
-
-        TITLE_MAP.put("LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG", new String[]{
-            "Kỹ thuật tối ưu hiệu suất trong lập trình C",
-            "Sử dụng đa luồng để tăng hiệu quả xử lý",
-            "Tối ưu bộ nhớ và thời gian chạy chương trình",
-            "Xây dựng một ứng dụng hoàn chỉnh với C"
+        TITLE_MAP.put("C nâng cao", new String[]{
+            "Cấu trúc dữ liệu & file I/O",
+            "Kiểu dữ liệu struct và union",
+            "Danh sách liên kết, ngăn xếp, hàng đợi",
+            "Xử lý tệp tin (File I/O): fopen, fclose, fread, fwrite, fprintf, fscanf"
         });
 
         TITLE_MAP.put("SQL cơ bản", new String[]{
@@ -544,49 +516,37 @@ public class DanhSachBaiHocConData {
             "Thực hành: Xây dựng ứng dụng Chat thời gian thực sử dụng WebSocket và JavaScript."
         });
 
-        DESCRIPTION_MAP.put("C", new String[]{
-            "Giới thiệu về ngôn ngữ C, ứng dụng và môi trường lập trình.",
-            "Cấu trúc chương trình C, cách viết code cơ bản.",
-            "Khai báo biến, toán tử và kiểu dữ liệu trong C.",
-            "Sử dụng if-else, vòng lặp và hàm để điều khiển chương trình.",
-            "Làm việc với con trỏ, quản lý bộ nhớ động trong C.",
-            "Cách đọc và ghi dữ liệu vào file bằng C.",
-            "Giới thiệu về lập trình hướng đối tượng trong C."
-        });
-        DESCRIPTION_MAP.put("GIỚI THIỆU VỀ NGÔN NGỮ C", new String[]{
-            "Tổng quan về ngôn ngữ C, lịch sử phát triển và vai trò trong lập trình.",
-            "Cách cài đặt môi trường lập trình C trên các hệ điều hành.",
-            "Cấu trúc cơ bản của một chương trình C, cách biên dịch và chạy chương trình."
+        DESCRIPTION_MAP.put("C cơ bản", new String[]{
+            "C là một ngôn ngữ lập trình bậc trung, mạnh mẽ, linh hoạt, và hiệu suất cao, thường được dùng trong hệ điều hành, lập trình nhúng, và ứng dụng hiệu năng cao.",
+            "Ra đời năm 1972 bởi Dennis Ritchie tại Bell Labs, C đã trở thành nền tảng cho nhiều ngôn ngữ hiện đại và hệ điều hành như Unix/Linux.",
+            "Ngôn ngữ C có cú pháp tối giản, truy cập bộ nhớ cấp thấp, tốc độ thực thi nhanh, được ứng dụng rộng rãi từ hệ thống đến ứng dụng.",
+            "Một chương trình C cơ bản gồm: thư viện, hàm main(), khai báo biến, các câu lệnh xử lý và cấu trúc điều khiển.",
+            "Quá trình biên dịch C gồm 4 giai đoạn: tiền xử lý, biên dịch, assembly và liên kết, tạo ra file thực thi từ mã nguồn.",
+            "Các cấu trúc điều kiện if, if-else và switch-case giúp kiểm soát luồng chương trình dựa trên các điều kiện logic.",
+            "Vòng lặp for, while và do-while cho phép thực hiện lặp lại các khối lệnh với điều kiện xác định, tối ưu hóa xử lý."
         });
 
-        DESCRIPTION_MAP.put("CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP", new String[]{
-            "Tìm hiểu câu lệnh điều kiện if-else, switch-case để kiểm soát luồng thực thi.",
-            "Khám phá vòng lặp for, while, do-while và cách sử dụng trong các bài toán thực tế.",
-            "Ứng dụng của cấu trúc điều khiển trong xử lý dữ liệu và thuật toán."
+        DESCRIPTION_MAP.put("C trung bình", new String[]{
+            "Mảng một chiều là cấu trúc lưu trữ tuần tự các phần tử cùng kiểu, được truy cập qua chỉ số, giúp quản lý dữ liệu hiệu quả.",
+            "Mảng hai chiều (ma trận) là công cụ mạnh để xử lý dữ liệu dạng bảng, ứng dụng trong đồ họa, xử lý ảnh và tính toán ma trận.",
+            "Thư viện string.h cung cấp các hàm xử lý chuỗi cơ bản như sao chép, nối, so sánh và tìm kiếm trong chuỗi ký tự.",
+            "Con trỏ là biến lưu địa chỉ bộ nhớ, cho phép truy cập trực tiếp vào dữ liệu và quản lý bộ nhớ động một cách linh hoạt.",
+            "Hàm trong C giúp chia chương trình thành các module độc lập, tái sử dụng code và tổ chức chương trình khoa học hơn.",
+            "Truyền tham số vào hàm có hai dạng: tham trị (truyền giá trị) và tham chiếu (truyền con trỏ), ảnh hưởng đến cách dữ liệu được xử lý.",
+            "Hàm đệ quy là hàm gọi lại chính nó, thích hợp giải quyết các bài toán có tính chất lặp lại như giai thừa, Fibonacci."
         });
 
-        DESCRIPTION_MAP.put("MẢNG, CHUỖI & CON TRỎ", new String[]{
-            "Khái niệm mảng một chiều, hai chiều và cách thao tác dữ liệu trong mảng.",
-            "Xử lý chuỗi trong C, các hàm làm việc với chuỗi như strlen, strcpy, strcat.",
-            "Tìm hiểu con trỏ,  cách cấp phát động bộ nhớ và ứng dụng trong lập trình hiệu quả."
+        DESCRIPTION_MAP.put("C nâng cao", new String[]{
+            "Cấu trúc dữ liệu và file I/O là nền tảng để xây dựng ứng dụng phức tạp, cho phép lưu trữ và truy xuất dữ liệu lâu dài.",
+            "Struct nhóm các biến khác kiểu thành một kiểu dữ liệu mới, trong khi union cho phép nhiều biến chia sẻ cùng vùng nhớ.",
+            "Danh sách liên kết, ngăn xếp và hàng đợi là các cấu trúc dữ liệu động quan trọng, giúp quản lý dữ liệu linh hoạt hơn mảng.",
+            "File I/O trong C bao gồm các thao tác mở/đóng file, đọc/ghi dữ liệu dạng text hoặc binary, quản lý con trỏ file."
         });
 
-        DESCRIPTION_MAP.put("HÀM & QUẢN LÝ BỘ NHỚ", new String[]{
-            "Cách khai báo và sử dụng hàm trong C, tham số truyền vào và giá trị trả về.",
-            "Tìm hiểu đệ quy, ứng dụng trong giải thuật và tối ưu chương trình.",
-            "Quản lý bộ nhớ trong C: malloc, calloc, realloc và free."
-        });
-
-        DESCRIPTION_MAP.put("CẤU TRÚC DỮ LIỆU & FILE I/O", new String[]{
-            "Tìm hiểu các cấu trúc dữ liệu cơ bản như struct, union và cách sử dụng.",
-            "Làm việc với tập tin trong C: đọc, ghi file với fprintf, fscanf, fread, fwrite.",
-            "Ứng dụng File I/O trong việc lưu trữ và xử lý dữ liệu."
-        });
-
-        DESCRIPTION_MAP.put("LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG", new String[]{
-            "Thực hiện dự án cuối khóa áp dụng tất cả kiến thức đã học.",
-            "Tối ưu hóa hiệu năng chương trình C, các kỹ thuật lập trình nâng cao.",
-            "Phân tích, thiết kế và triển khai một ứng dụng thực tế sử dụng C."
+        DESCRIPTION_MAP.put("C chuyên nghiệp", new String[]{
+            "Tối ưu mã nguồn C bao gồm các kỹ thuật giảm thời gian chạy, tối ưu bộ nhớ, sử dụng inline functions và macro hiệu quả.",
+            "Lập trình hệ thống với C liên quan đến làm việc trực tiếp với hệ điều hành: quản lý tiến trình, bộ nhớ, file system và mạng.",
+            "Dự án thực tế tổng hợp tất cả kiến thức đã học để xây dựng ứng dụng hoàn chỉnh, từ thiết kế đến triển khai và kiểm thử."
         });
 
         DESCRIPTION_MAP.put("SQL cơ bản", new String[]{
@@ -857,32 +817,31 @@ public class DanhSachBaiHocConData {
             "",
             ""
         });
-        ICON_MAP.put("GIỚI THIỆU VỀ NGÔN NGỮ C", new String[]{
+        ICON_MAP.put("C cơ bản", new String[]{
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             ""
         });
-        ICON_MAP.put("CẤU TRÚC ĐIỀU KHIỂN & VÒNG LẶP", new String[]{
+        ICON_MAP.put("C trung bình", new String[]{
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             ""
         });
-        ICON_MAP.put("MẢNG, CHUỖI & CON TRỎ", new String[]{
+        ICON_MAP.put("C nâng cao", new String[]{
             "",
-            "",
-            ""
-        });
-        ICON_MAP.put("HÀM & QUẢN LÝ BỘ NHỚ", new String[]{
             "",
             "",
             ""
         });
-        ICON_MAP.put("CẤU TRÚC DỮ LIỆU & FILE I/O", new String[]{
-            "",
-            "",
-            ""
-        });
-        ICON_MAP.put("LẬP TRÌNH HƯỚNG DẪN HIỆU NĂNG & ỨNG DỤNG", new String[]{
+        ICON_MAP.put("C chuyên nghiệp", new String[]{
             "",
             "",
             ""
