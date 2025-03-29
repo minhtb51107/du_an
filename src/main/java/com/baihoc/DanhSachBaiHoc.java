@@ -199,14 +199,14 @@ public class DanhSachBaiHoc extends JPanel{
     private void openLesson(int index, String content) {
         // Lấy danh sách tiêu đề từ hashmap
         MainFrame.TrangBaiHoc example;
-        if (content.equals("Giới thiệu Javascript")) {
+        if (content.equals("Giới thiệu SQL")) {
             switch (index) {
                 case 0:
-                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu Javascript", "1");
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu SQL", "1");
                     mainFrame.updateDanhSachBai(example);
                     break;
                 case 1:
-                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu Javascript", "2");
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu SQL", "2");
                     mainFrame.updateDanhSachBai(example);
                     break;
                 case 2:
