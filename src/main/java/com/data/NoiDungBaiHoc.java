@@ -261,6 +261,12 @@ public class NoiDungBaiHoc {
             "Database là gì?",
             "Cú pháp SQL cơ bản"
         });
+        
+        TITLE_MAP.put("Kiểu dữ liệu, toán tử, biểu thức", new String[]{
+            "Kiểu dữ liệu",
+            "Toán tử",
+            "Biểu thức"
+        });
 
         TITLE_MAP.put("SELECT", new String[]{
             "công dụng",
