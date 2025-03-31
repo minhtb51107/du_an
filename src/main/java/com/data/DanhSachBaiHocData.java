@@ -16,10 +16,120 @@ public class DanhSachBaiHocData {
     private static final Map<String, String[]> TITLE_MAP = new HashMap<>();
 
     static {
+        TITLE_MAP.put("Giới thiệu về ngôn ngữ C", new String[]{
+            "C là gì?",
+            "Tại sao nên học C?",
+            "Các đặc điểm nổi bật của C"
+        });
+
+        TITLE_MAP.put("Lịch sử và sự phát triển của ngôn ngữ C", new String[]{
+            "Nguồn gốc của C",
+            "Các phiên bản của C",
+            "C và các ngôn ngữ lập trình khác"
+        });
+
+        TITLE_MAP.put("Đặc điểm và ứng dụng của C", new String[]{
+            "Đặc điểm của C",
+            "Ứng dụng của C trong lập trình hệ thống",
+            "C trong phát triển phần mềm nhúng"
+        });
+
+        TITLE_MAP.put("Cấu trúc cơ bản của một chương trình C", new String[]{
+            "Cấu trúc tổng quát",
+            "Khai báo biến",
+            "Hàm main"
+        });
+
+        TITLE_MAP.put("Quá trình biên dịch và thực thi chương trình C", new String[]{
+            "Các bước biên dịch",
+            "Trình biên dịch và trình liên kết",
+            "Quá trình thực thi"
+        });
+
+        TITLE_MAP.put("Các câu lệnh điều kiện (if, if-else, switch-case)", new String[]{
+            "Câu lệnh if",
+            "Câu lệnh if-else",
+            "Câu lệnh switch-case"
+        });
+
+        TITLE_MAP.put("Các vòng lặp (for, while, do-while)", new String[]{
+            "Vòng lặp for",
+            "Vòng lặp while",
+            "Vòng lặp do-while"
+        });
+
+        TITLE_MAP.put("Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử", new String[]{
+            "Khai báo mảng một chiều",
+            "Khởi tạo mảng một chiều",
+            "Truy cập và thao tác với phần tử trong mảng"
+        });
+
+        TITLE_MAP.put("Mảng hai chiều: Ứng dụng và thao tác", new String[]{
+            "Khai báo mảng hai chiều",
+            "Khởi tạo mảng hai chiều",
+            "Truy cập và thao tác với phần tử"
+        });
+
+        TITLE_MAP.put("Xử lý chuỗi trong C (thư viện string.h)", new String[]{
+            "Khai báo chuỗi",
+            "Các hàm xử lý chuỗi",
+            "So sánh và nối chuỗi"
+        });
+
+        TITLE_MAP.put("Con trỏ: Khái niệm, khai báo, toán tử con trỏ", new String[]{
+            "Khái niệm về con trỏ",
+            "Khai báo con trỏ",
+            "Toán tử con trỏ"
+        });
+
+        TITLE_MAP.put("Định nghĩa và sử dụng hàm", new String[]{
+            "Cú pháp định nghĩa hàm",
+            "Gọi hàm",
+            "Hàm trả về giá trị"
+        });
+
+        TITLE_MAP.put("Truyền tham số vào hàm", new String[]{
+            "Truyền tham số theo giá trị",
+            "Truyền tham số theo tham chiếu",
+            "Sử dụng con trỏ để truyền tham số"
+        });
+
+        TITLE_MAP.put("Hàm đệ quy", new String[]{
+            "Khái niệm hàm đệ quy",
+            "Cách hoạt động của hàm đệ quy",
+            "Ví dụ về hàm đệ quy"
+        });
+
+        TITLE_MAP.put("Cấu trúc dữ liệu & file I/O", new String[]{
+            "Cấu trúc dữ liệu cơ bản",
+            "File I/O trong C",
+            "Các hàm file I/O"
+        });
+
+        TITLE_MAP.put("Kiểu dữ liệu struct và union", new String[]{
+            "Khái niệm về struct",
+            "Khái niệm về union",
+            "Sự khác biệt giữa struct và union"
+        });
+
+        TITLE_MAP.put("Danh sách liên kết, ngăn xếp, hàng đợi", new String[]{
+            "Danh sách liên kết",
+            "Ngăn xếp",
+            "Hàng đợi"
+        });
+
+        TITLE_MAP.put("Xử lý tệp tin (File I/O): fopen, fclose, fread, fwrite, fprintf, fscanf", new String[]{
+            "Mở và đóng tệp tin",
+            "Đọc và ghi tệp tin",
+            "Các hàm xử lý tệp tin"
+        });
+
+//SQL
         TITLE_MAP.put("Giới thiệu SQL", new String[]{
-            "SQL là gì?",
-            "Lịch sử và ứng dụng của SQL",
-            "Các hệ quản trị cơ sở dữ liệu phổ biến"
+            "Giới thiệu SQL",
+            "Khái niệm",
+            "Kiểu dữ liệu, toán tử, biểu thức"
+
         });
 
         TITLE_MAP.put("Các lệnh truy vấn dữ liệu cơ bản", new String[]{
@@ -95,8 +205,7 @@ public class DanhSachBaiHocData {
         });
 
         TITLE_MAP.put("Quản lý dữ liệu quy mô lớn", new String[]{
-            "PARTITIONING",
-            "HASH PARTITIONING",
+            "PARTITIONING, HASH PARTITIONING",
             "SHARDING",
             "BATCH PROCESSING"
         });
@@ -142,10 +251,119 @@ public class DanhSachBaiHocData {
     private static final Map<String, String[]> DESCRIPTION_MAP = new HashMap<>();
 
     static {
+        DESCRIPTION_MAP.put("Giới thiệu về ngôn ngữ C", new String[]{
+            "Ngôn ngữ C là một ngôn ngữ lập trình bậc cao được phát triển vào những năm 1970.",
+            "C là ngôn ngữ nền tảng cho nhiều ngôn ngữ lập trình hiện đại và được sử dụng rộng rãi trong phát triển phần mềm.",
+            "C có tính linh hoạt, hiệu suất cao và khả năng truy cập phần cứng."
+        });
+
+        DESCRIPTION_MAP.put("Lịch sử và sự phát triển của ngôn ngữ C", new String[]{
+            "Ngôn ngữ C được phát triển bởi Dennis Ritchie tại Bell Labs vào năm 1972.",
+            "C đã trải qua nhiều phiên bản, từ C89, C99 đến C11 và C18.",
+            "C đã ảnh hưởng đến nhiều ngôn ngữ lập trình khác như C++, Java, và C#."
+        });
+
+        DESCRIPTION_MAP.put("Đặc điểm và ứng dụng của C", new String[]{
+            "C có cú pháp đơn giản, hiệu suất cao và khả năng kiểm soát bộ nhớ tốt.",
+            "C thường được sử dụng để phát triển hệ điều hành, trình biên dịch và phần mềm hệ thống.",
+            "C cũng được sử dụng trong lập trình nhúng và phát triển ứng dụng."
+        });
+
+        DESCRIPTION_MAP.put("Cấu trúc cơ bản của một chương trình C", new String[]{
+            "Một chương trình C cơ bản bao gồm các phần khai báo thư viện, khai báo biến và hàm main.",
+            "Biến được khai báo trước khi sử dụng và có thể có nhiều kiểu dữ liệu khác nhau.",
+            "Hàm main là điểm bắt đầu của chương trình."
+        });
+
+        DESCRIPTION_MAP.put("Quá trình biên dịch và thực thi chương trình C", new String[]{
+            "Quá trình biên dịch bao gồm tiền xử lý, biên dịch, liên kết và thực thi.",
+            "Trình biên dịch chuyển đổi mã nguồn thành mã máy, trong khi trình liên kết kết hợp các tệp đối tượng.",
+            "Sau khi biên dịch, chương trình có thể được thực thi trên máy tính."
+        });
+
+        DESCRIPTION_MAP.put("Các câu lệnh điều kiện (if, if-else, switch-case)", new String[]{
+            "Câu lệnh if cho phép thực hiện một khối mã nếu điều kiện đúng.",
+            "Câu lệnh if-else cho phép thực hiện một khối mã khác nếu điều kiện sai.",
+            "Câu lệnh switch-case cho phép kiểm tra nhiều điều kiện khác nhau."
+        });
+
+        DESCRIPTION_MAP.put("Các vòng lặp (for, while, do-while)", new String[]{
+            "Vòng lặp for thường được sử dụng khi số lần lặp đã biết trước.",
+            "Vòng lặp while lặp lại cho đến khi điều kiện sai.",
+            "Vòng lặp do-while đảm bảo rằng khối mã được thực thi ít nhất một lần."
+        });
+
+        DESCRIPTION_MAP.put("Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử", new String[]{
+            "Mảng một chiều là một tập hợp các phần tử cùng kiểu dữ liệu, được lưu trữ liên tiếp trong bộ nhớ.",
+            "Mảng một chiều có thể được khai báo bằng cách sử dụng cú pháp: `type arrayName[size];`, ví dụ: `int arr[10];`.",
+            "Để khởi tạo mảng, bạn có thể sử dụng cú pháp: `type arrayName[size] = {value1, value2, ...};`, ví dụ: `int arr[5] = {1, 2, 3, 4, 5};`. Truy cập phần tử trong mảng được thực hiện bằng cách sử dụng chỉ số, ví dụ: `arr[0]` để truy cập phần tử đầu tiên."
+        });
+
+        DESCRIPTION_MAP.put("Mảng hai chiều: Ứng dụng và thao tác", new String[]{
+            "Mảng hai chiều là một mảng có hai chỉ số, thường được sử dụng để lưu trữ dữ liệu dạng bảng.",
+            "Mảng hai chiều có thể được khởi tạo bằng cách sử dụng cú pháp giống như mảng một chiều, nhưng với hai chỉ số.",
+            "Có thể truy cập và thao tác với các phần tử của mảng hai chiều bằng cách sử dụng chỉ số hàng và cột."
+        });
+
+        DESCRIPTION_MAP.put("Xử lý chuỗi trong C (thư viện string.h)", new String[]{
+            "Chuỗi trong C được khai báo như một mảng ký tự và kết thúc bằng ký tự null ('\\0').",
+            "Thư viện string.h cung cấp nhiều hàm hữu ích như strlen, strcpy, strcat, và strcmp để xử lý chuỗi.",
+            "Có thể so sánh và nối chuỗi bằng các hàm có sẵn trong thư viện string.h."
+        });
+
+        DESCRIPTION_MAP.put("Con trỏ: Khái niệm, khai báo, toán tử con trỏ", new String[]{
+            "Con trỏ là một biến lưu trữ địa chỉ của một biến khác trong bộ nhớ.",
+            "Con trỏ được khai báo bằng cách sử dụng ký hiệu '*' trước tên biến.",
+            "Toán tử '&' được sử dụng để lấy địa chỉ của một biến, trong khi toán tử '*' được sử dụng để truy cập giá trị tại địa chỉ mà con trỏ trỏ tới."
+        });
+
+        DESCRIPTION_MAP.put("Định nghĩa và sử dụng hàm", new String[]{
+            "Hàm được định nghĩa bằng cách chỉ định kiểu trả về, tên hàm và danh sách tham số.",
+            "Hàm có thể được gọi từ bất kỳ đâu trong chương trình, miễn là nó đã được định nghĩa trước đó.",
+            "Hàm có thể trả về giá trị hoặc không trả về giá trị (void)."
+        });
+
+        DESCRIPTION_MAP.put("Truyền tham số vào hàm", new String[]{
+            "Tham số có thể được truyền vào hàm theo giá trị, nghĩa là một bản sao của giá trị được gửi đến hàm.",
+            "Tham số cũng có thể được truyền theo tham chiếu, cho phép hàm thay đổi giá trị của biến gốc.",
+            "Sử dụng con trỏ để truyền tham số cho phép hàm truy cập và thay đổi giá trị của biến bên ngoài."
+        });
+
+        DESCRIPTION_MAP.put("Hàm đệ quy", new String[]{
+            "Hàm đệ quy là hàm gọi chính nó trong quá trình thực thi.",
+            "Hàm đệ quy thường bao gồm một điều kiện dừng để tránh việc gọi vô hạn.",
+            "Ví dụ điển hình của hàm đệ quy là tính giai thừa của một số."
+        });
+
+        DESCRIPTION_MAP.put("Cấu trúc dữ liệu & file I/O", new String[]{
+            "Cấu trúc dữ liệu là cách tổ chức và lưu trữ dữ liệu để có thể sử dụng hiệu quả.",
+            "File I/O cho phép chương trình đọc và ghi dữ liệu từ và vào tệp tin.",
+            "Các hàm file I/O như fopen, fclose, fread, fwrite, fprintf, và fscanf được sử dụng để thao tác với tệp tin."
+        });
+
+        DESCRIPTION_MAP.put("Kiểu dữ liệu struct và union", new String[]{
+            "Struct là một kiểu dữ liệu cho phép nhóm nhiều biến khác nhau thành một đơn vị duy nhất.",
+            "Union cũng cho phép nhóm nhiều biến, nhưng chỉ một biến có thể được lưu trữ tại một thời điểm.",
+            "Sự khác biệt chính giữa struct và union là struct chiếm bộ nhớ cho tất cả các thành viên, trong khi union chỉ chiếm bộ nhớ cho thành viên lớn nhất."
+        });
+
+        DESCRIPTION_MAP.put("Danh sách liên kết, ngăn xếp, hàng đợi", new String[]{
+            "Danh sách liên kết là một cấu trúc dữ liệu cho phép lưu trữ các phần tử không liên tiếp trong bộ nhớ.",
+            "Ngăn xếp là một cấu trúc dữ liệu theo nguyên tắc LIFO (Last In, First Out), cho phép thêm và xóa phần tử từ đầu danh sách.",
+            "Hàng đợi là một cấu trúc dữ liệu theo nguyên tắc FIFO (First In, First Out), cho phép thêm phần tử ở cuối và xóa phần tử ở đầu."
+        });
+
+        DESCRIPTION_MAP.put("Xử lý tệp tin (File I/O): fopen, fclose, fread, fwrite, fprintf, fscanf", new String[]{
+            "Hàm fopen được sử dụng để mở tệp tin và trả về con trỏ đến tệp tin đó.",
+            "Hàm fclose được sử dụng để đóng tệp tin đã mở, giải phóng tài nguyên.",
+            "Các hàm fread và fwrite được sử dụng để đọc và ghi dữ liệu từ và vào tệp tin, trong khi fprintf và fscanf được sử dụng để định dạng và xử lý dữ liệu."
+        });
+
+        //SQL
         DESCRIPTION_MAP.put("Giới thiệu SQL", new String[]{
-            "SQL (Structured Query Language) là ngôn ngữ tiêu chuẩn để quản lý và thao tác với cơ sở dữ liệu quan hệ (RDBMS).",
-            "SQL (Structured Query Language) là ngôn ngữ truy vấn có cấu trúc được sử dụng để tương tác với cơ sở dữ liệu quan hệ (RDBMS - Relational Database Management System).",
-            "MySQL, PostgreSQL, SQL Server, Oracle"
+            "SQL là gì?, lịch sử và ứng dụng của SQL, Các hệ quản trị cơ sở dữ liệu phổ biến",
+            "Các khái niệm RDBMS, DATABASE là gì?, cú pháp SQL cơ bản",
+            "Kiểu dữ liệu, toán tử, biểu thức(EXPRESSION)"
         });
 
         DESCRIPTION_MAP.put("Các lệnh truy vấn dữ liệu cơ bản", new String[]{
@@ -221,8 +439,7 @@ public class DanhSachBaiHocData {
         });
 
         DESCRIPTION_MAP.put("Quản lý dữ liệu quy mô lớn", new String[]{
-            "Phân vùng dữ liệu, phân vùng theo danh sách giá trị cụ thể",
-            "Phân vùng theo hàm băm",
+            "Phân vùng dữ liệu, phân vùng theo danh sách giá trị cụ thể, phân vùng theo hàm băm",
             "Chia nhỏ dữ liệu",
             "Xử lý hàng loạt"
         });
@@ -268,6 +485,115 @@ public class DanhSachBaiHocData {
     private static final Map<String, String[]> ICON_MAP = new HashMap<>();
 
     static {
+        ICON_MAP.put("Giới thiệu về ngôn ngữ C", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Lịch sử và sự phát triển của ngôn ngữ C", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Đặc điểm và ứng dụng của C", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Cấu trúc cơ bản của một chương trình C", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Quá trình biên dịch và thực thi chương trình C", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Các câu lệnh điều kiện (if, if-else, switch-case)", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Các vòng lặp (for, while, do-while)", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Mảng hai chiều: Ứng dụng và thao tác", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Xử lý chuỗi trong C (thư viện string.h)", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Con trỏ: Khái niệm, khai báo, toán tử con trỏ", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Định nghĩa và sử dụng hàm", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Truyền tham số vào hàm", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Hàm đệ quy", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Cấu trúc dữ liệu & file I/O", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Kiểu dữ liệu struct và union", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Danh sách liên kết, ngăn xếp, hàng đợi", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Xử lý tệp tin (File I/O): fopen, fclose, fread, fwrite, fprintf, fscanf", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        //SQL
         ICON_MAP.put("Giới thiệu SQL", new String[]{
             "",
             "",
@@ -347,7 +673,6 @@ public class DanhSachBaiHocData {
         });
 
         ICON_MAP.put("Quản lý dữ liệu quy mô lớn", new String[]{
-            "",
             "",
             "",
             ""

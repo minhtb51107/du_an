@@ -233,7 +233,7 @@ public class DanhSachBaiHocConData {
             "Cấu trúc cơ bản của một chương trình C",
             "Quá trình biên dịch và thực thi chương trình C",
             "Các câu lệnh điều kiện (if, if-else, switch-case)",
-            "Các vòng lặp (for, while, do-while)\n"
+            "Các vòng lặp (for, while, do-while)"
         });
 
         TITLE_MAP.put("C trung bình", new String[]{

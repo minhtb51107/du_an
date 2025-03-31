@@ -296,6 +296,99 @@ public class DanhSachBaiHocCon extends JPanel {
             }
         }
 
+        if (content.equals("C cơ bản")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về ngôn ngữ C", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lịch sử và sự phát triển của ngôn ngữ C", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Đặc điểm và ứng dụng của C", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc cơ bản của một chương trình C", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 4:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quá trình biên dịch và thực thi chương trình C", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 5:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các câu lệnh điều kiện (if, if-else, switch-case)", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 6:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các vòng lặp (for, while, do-while)", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("C trung bình")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Mảng hai chiều: Ứng dụng và thao tác", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý chuỗi trong C (thư viện string.h)", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Con trỏ: Khái niệm, khai báo, toán tử con trỏ", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 4:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Định nghĩa và sử dụng hàm", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 5:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Truyền tham số vào hàm", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 6:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Hàm đệ quy", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("C nâng cao")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc dữ liệu & file I/O", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Kiểu dữ liệu struct và union", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Danh sách liên kết, ngăn xếp, hàng đợi", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý tệp tin (File I/O): fopen, fclose, fread, fwrite, fprintf, fscanf", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
         if (content.equals("SQL cơ bản")) {
             switch (index) {
                 case 0:
