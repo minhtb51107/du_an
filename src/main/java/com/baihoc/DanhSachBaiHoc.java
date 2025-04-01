@@ -539,6 +539,284 @@ public class DanhSachBaiHoc extends JPanel {
 
             }
         }
+
+        //Python
+        if (content.equals("Giới thiệu về Python, lịch sử phát triển, lý do chọn Python.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Python, lịch sử phát triển, lý do chọn Python.", "Giới thiệu về Python");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Python, lịch sử phát triển, lý do chọn Python.", "Lịch sử phát triển");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Python, lịch sử phát triển, lý do chọn Python.", "Lý do chọn Python");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Cấu trúc chương trình Python, cài đặt môi trường và IDE.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc chương trình Python, cài đặt môi trường và IDE.", "Cấu trúc chương trình Python");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc chương trình Python, cài đặt môi trường và IDE.", "Cài đặt môi trường và IDE");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.", "Biến");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.", "Kiểu dữ liệu");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.", "Toán tử");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.", "Nhập xuất dữ liệu");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.", "Cấu trúc điều kiện");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.", "Vòng lặp");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.", "Danh sách");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.", "Tuple");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 4:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.", "Dictionary");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Lập trình hướng đối tượng (OOP) trong Python.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình hướng đối tượng (OOP) trong Python.", "OOP");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Xử lý tập tin: đọc/ghi file CSV, JSON, XML.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý tập tin: đọc/ghi file CSV, JSON, XML.", "Đọc/ghi file CSV");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý tập tin: đọc/ghi file CSV, JSON, XML.", "JSON");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý tập tin: đọc/ghi file CSV, JSON, XML.", "XML");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Xử lý ngoại lệ: try-except, finally, tạo ngoại lệ tùy chỉnh.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý ngoại lệ: try-except, finally, tạo ngoại lệ tùy chỉnh.", "Try-except");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý ngoại lệ: try-except, finally, tạo ngoại lệ tùy chỉnh.", "Finally");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý ngoại lệ: try-except, finally, tạo ngoại lệ tùy chỉnh.", "Tạo ngoại lệ tùy chỉnh");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Lập trình đa luồng và bất đồng bộ (async, threading).")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình đa luồng và bất đồng bộ (async, threading).", "Lập trình đa luồng");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình đa luồng và bất đồng bộ (async, threading).", "Bất đồng bộ");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Làm việc với API: requests, BeautifulSoup, Selenium.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Làm việc với API: requests, BeautifulSoup, Selenium.", "Requests");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Làm việc với API: requests, BeautifulSoup, Selenium.", "BeautifulSoup");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Làm việc với API: requests, BeautifulSoup, Selenium.", "Selenium");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.", "SQLite");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.", "MySQL");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.", "PostgreSQL");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.", "ORM với SQLAlchemy");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Xử lý dữ liệu lớn: pandas, numpy, matplotlib.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý dữ liệu lớn: pandas, numpy, matplotlib.", "Pandas");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý dữ liệu lớn: pandas, numpy, matplotlib.", "Numpy");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý dữ liệu lớn: pandas, numpy, matplotlib.", "Matplotlib");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Lập trình mạng: socket, giao thức TCP/IP, UDP.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình mạng: socket, giao thức TCP/IP, UDP.", "Socket");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình mạng: socket, giao thức TCP/IP, UDP.", "Giao thức TCP/IP");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình mạng: socket, giao thức TCP/IP, UDP.", "UDP");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Xây dựng ứng dụng Web với Flask/Django.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xây dựng ứng dụng Web với Flask/Django.", "Xây dựng ứng dụng Web với Flask/Django");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Machine Learning với scikit-learn, TensorFlow, PyTorch.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Machine Learning với scikit-learn, TensorFlow, PyTorch.", "Machine Learning với scikit-learn, TensorFlow, PyTorch");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Tự động hóa với Selenium, bot Telegram/Discord.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Tự động hóa với Selenium, bot Telegram/Discord.", "Tự động hóa với Selenium, bot Telegram/Discord.");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest.")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest.", "Bảo mật, tối ưu hiệu năng");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest.", "kiểm thử với pytest, unittest");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
     }
 
     private void addDragScrolling() {

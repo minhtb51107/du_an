@@ -296,6 +296,98 @@ public class DanhSachBaiHocCon extends JPanel {
             }
         }
 
+        if (content.equals("Python Cơ Bản")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Python, lịch sử phát triển, lý do chọn Python.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc chương trình Python, cài đặt môi trường và IDE.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Python Nâng Cao")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình hướng đối tượng (OOP) trong Python.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý tập tin: đọc/ghi file CSV, JSON, XML.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý ngoại lệ: try-except, finally, tạo ngoại lệ tùy chỉnh.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình đa luồng và bất đồng bộ (async, threading).", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Python Chuyên Nghiệp")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Làm việc với API: requests, BeautifulSoup, Selenium.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý dữ liệu lớn: pandas, numpy, matplotlib.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình mạng: socket, giao thức TCP/IP, UDP.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Python Ứng Dụng Thực Tế")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xây dựng ứng dụng Web với Flask/Django.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Machine Learning với scikit-learn, TensorFlow, PyTorch.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Tự động hóa với Selenium, bot Telegram/Discord.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest.", "");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
         if (content.equals("C cơ bản")) {
             switch (index) {
                 case 0:

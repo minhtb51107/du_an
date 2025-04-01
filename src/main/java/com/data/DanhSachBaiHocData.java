@@ -230,6 +230,97 @@ public class DanhSachBaiHocData {
             "ORM",
             "Công cụ tối ưu hiệu suất"
         });
+
+        //Python
+        TITLE_MAP.put("Giới thiệu về Python, lịch sử phát triển, lý do chọn Python.", new String[]{
+            "Giới thiệu về Python",
+            "Lịch sử phát triển",
+            "Lý do chọn Python"
+        });
+
+        TITLE_MAP.put("Cấu trúc chương trình Python, cài đặt môi trường và IDE.", new String[]{
+            "Cấu trúc chương trình Python",
+            "Cài đặt môi trường và IDE"
+        });
+
+        TITLE_MAP.put("Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.", new String[]{
+            "Biến",
+            "Kiểu dữ liệu",
+            "Toán tử",
+            "Nhập xuất dữ liệu"
+        });
+
+        TITLE_MAP.put("Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.", new String[]{
+            "Cấu trúc điều kiện",
+            "Vòng lặp",
+            "Danh sách",
+            "Tuple",
+            "Dictionary"
+        });
+
+        TITLE_MAP.put("Lập trình hướng đối tượng (OOP) trong Python.", new String[]{
+            "OOP"
+        });
+
+        TITLE_MAP.put("Xử lý tập tin: đọc/ghi file CSV, JSON, XML.", new String[]{
+            "Đọc/ghi file CSV",
+            "JSON",
+            "XML"
+        });
+
+        TITLE_MAP.put("Xử lý ngoại lệ: try-except, finally, tạo ngoại lệ tùy chỉnh.", new String[]{
+            "Try-except",
+            "Finally",
+            "Tạo ngoại lệ tùy chỉnh"
+        });
+
+        TITLE_MAP.put("Lập trình đa luồng và bất đồng bộ (async, threading).", new String[]{
+            "Lập trình đa luồng",
+            "Bất đồng bộ"
+        });
+
+        TITLE_MAP.put("Làm việc với API: requests, BeautifulSoup, Selenium.", new String[]{
+            "Requests",
+            "BeautifulSoup",
+            "Selenium"
+
+        });
+
+        TITLE_MAP.put("Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.", new String[]{
+            "SQLite",
+            "MySQL",
+            "PostgreSQL",
+            "ORM với SQLAlchemy"
+        });
+
+        TITLE_MAP.put("Xử lý dữ liệu lớn: pandas, numpy, matplotlib.", new String[]{
+            "Pandas",
+            "Numpy",
+            "Matplotlib"
+        });
+
+        TITLE_MAP.put("Lập trình mạng: socket, giao thức TCP/IP, UDP.", new String[]{
+            "Socket",
+            "Giao thức TCP/IP",
+            "UDP"
+        });
+
+        TITLE_MAP.put("Xây dựng ứng dụng Web với Flask/Django.", new String[]{
+            "Xây dựng ứng dụng Web với Flask/Django"
+        });
+
+        TITLE_MAP.put("Machine Learning với scikit-learn, TensorFlow, PyTorch.", new String[]{
+            "Machine Learning với scikit-learn, TensorFlow, PyTorch"
+        });
+
+        TITLE_MAP.put("Tự động hóa với Selenium, bot Telegram/Discord.", new String[]{
+            "Tự động hóa với Selenium, bot Telegram/Discord."
+        });
+
+        TITLE_MAP.put("Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest.", new String[]{
+            "Bảo mật, tối ưu hiệu năng",
+            "kiểm thử với pytest, unittest"
+        });
     }
 
     // Phương thức lấy tiêu đề theo chỉ số dựa vào ngôn ngữ
@@ -464,6 +555,95 @@ public class DanhSachBaiHocData {
             "Hibernate, SQLAlchemy",
             "EXPLAIN, Query Profiler"
         });
+
+        //Python
+        DESCRIPTION_MAP.put("Giới thiệu về Python, lịch sử phát triển, lý do chọn Python.", new String[]{
+            "Python là một ngôn ngữ lập trình bậc cao, thông dịch, mạnh mẽ và dễ học",
+            "1989 đến nay",
+            "Python có cú pháp gần với ngôn ngữ tự nhiên, giúp người mới học dễ tiếp cận hơn so với các ngôn ngữ lập trình khác như C++ hay Java."
+        });
+
+        DESCRIPTION_MAP.put("Cấu trúc chương trình Python, cài đặt môi trường và IDE.", new String[]{
+            "Cấu trúc",
+            "Cài đặt môi trường Python và Cài đặt IDE để lập trình Python"
+        });
+
+        DESCRIPTION_MAP.put("Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.", new String[]{
+            "Biến là tên đại diện cho một giá trị trong bộ nhớ. Python không yêu cầu khai báo kiểu dữ liệu trước khi sử dụng biến.",
+            "Kiểu dữ liệu số (Numeric Types), Kiểu dữ liệu chuỗi (Text Type), Kiểu dữ liệu chuỗi (Sequence Types), Kiểu dữ liệu ánh xạ (Mapping Type), Kiểu dữ liệu tập hợp (Set Types), Kiểu dữ liệu Boolean (Boolean Type), Kiểu dữ liệu nhị phân (Binary Types), Kiểu dữ liệu None (None Type)",
+            "Toán tử số học (Arithmetic Operators), Toán tử so sánh (Comparison Operators), Toán tử gán (Assignment Operators), Toán tử logic (Logical Operators), Toán tử bitwise (Bitwise Operators), Toán tử thành viên (Membership Operators), Toán tử nhận dạng (Identity Operators)",
+            "Xuất dữ liệu (Output), Nhập dữ liệu (Input), Đọc/Ghi file (File I/O)"
+        });
+
+        DESCRIPTION_MAP.put("Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.", new String[]{
+            "Cấu trúc điều kiện giúp kiểm tra điều kiện và thực thi các khối lệnh khác nhau tùy vào kết quả kiểm tra.",
+            "Vòng lặp giúp thực thi một khối lệnh nhiều lần.",
+            "Danh sách là một cấu trúc dữ liệu có thể chứa nhiều phần tử.",
+            "Tuple tương tự List nhưng không thể thay đổi giá trị sau khi khởi tạo.",
+            "Dictionary lưu dữ liệu dưới dạng cặp key-value."
+        });
+
+        DESCRIPTION_MAP.put("Lập trình hướng đối tượng (OOP) trong Python.", new String[]{
+            "Lập trình hướng đối tượng (OOP) là một phương pháp lập trình dựa trên việc sử dụng các đối tượng để tổ chức và quản lý mã nguồn."
+        });
+
+        DESCRIPTION_MAP.put("Xử lý tập tin: đọc/ghi file CSV, JSON, XML.", new String[]{
+            "CSV (Comma-Separated Values) là định dạng phổ biến để lưu trữ dữ liệu dạng bảng.",
+            "JSON (JavaScript Object Notation) là định dạng lưu trữ phổ biến, dễ đọc và trao đổi dữ liệu.",
+            "XML (Extensible Markup Language) được sử dụng để trao đổi dữ liệu có cấu trúc."
+        });
+
+        DESCRIPTION_MAP.put("Xử lý ngoại lệ: try-except, finally, tạo ngoại lệ tùy chỉnh.", new String[]{
+            "Câu lệnh try-except giúp bắt lỗi và ngăn chặn chương trình bị dừng đột ngột.",
+            "Khối finally luôn được thực thi dù có lỗi hay không, giúp thực hiện các thao tác dọn dẹp tài nguyên.",
+            "Python cho phép bạn định nghĩa ngoại lệ riêng bằng cách kế thừa từ lớp Exception."
+        });
+
+        DESCRIPTION_MAP.put("Lập trình đa luồng và bất đồng bộ (async, threading).", new String[]{
+            "Thư viện threading trong Python giúp chạy nhiều luồng đồng thời để tối ưu hiệu suất.",
+            "Thư viện asyncio giúp thực thi tác vụ bất đồng bộ mà không cần tạo luồng mới."
+        });
+
+        DESCRIPTION_MAP.put("Làm việc với API: requests, BeautifulSoup, Selenium.", new String[]{
+            "Thư viện requests giúp gửi các yêu cầu HTTP GET, POST đến API.",
+            "BeautifulSoup giúp trích xuất dữ liệu từ trang web bằng HTML.",
+            "Selenium giúp thao tác với trình duyệt, tự động nhập dữ liệu và bấm nút."
+        });
+
+        DESCRIPTION_MAP.put("Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.", new String[]{
+            "SQLite là một CSDL nhẹ, dễ sử dụng.",
+            "MySQL là một hệ quản trị CSDL phổ biến, được sử dụng trong nhiều ứng dụng thực tế.",
+            "PostgreSQL là một hệ quản trị CSDL mạnh mẽ, hỗ trợ nhiều tính năng nâng cao.",
+            "SQLAlchemy giúp làm việc với CSDL dễ dàng hơn bằng cách sử dụng ORM (Object-Relational Mapping).",});
+
+        DESCRIPTION_MAP.put("Xử lý dữ liệu lớn: pandas, numpy, matplotlib.", new String[]{
+            "pandas là một thư viện mạnh mẽ để thao tác dữ liệu có cấu trúc như bảng và chuỗi thời gian.",
+            "numpy là một thư viện hỗ trợ tính toán khoa học và xử lý mảng lớn.",
+            "matplotlib là thư viện phổ biến để vẽ biểu đồ và trực quan hóa dữ liệu."
+        });
+
+        DESCRIPTION_MAP.put("Lập trình mạng: socket, giao thức TCP/IP, UDP.", new String[]{
+            "socket là một giao diện lập trình cho phép giao tiếp giữa các tiến trình qua mạng.",
+            "Giao thức TCP/IP trong Python là cách sử dụng thư viện Python để lập trình mạng dựa trên bộ giao thức TCP/IP (Transmission Control Protocol/Internet Protocol) – nền tảng của mọi kết nối Internet. ",
+            "UDP không đảm bảo dữ liệu đến đúng thứ tự hoặc không bị mất, nhưng nhanh hơn TCP."
+        });
+
+        DESCRIPTION_MAP.put("Xây dựng ứng dụng Web với Flask/Django.", new String[]{
+            "Xây dựng ứng dụng web là một trong những ứng dụng phổ biến nhất của Python. Hai framework mạnh mẽ giúp phát triển web nhanh chóng là Flask (nhẹ, linh hoạt) và Django (mạnh mẽ, đầy đủ tính năng)."
+        });
+
+        DESCRIPTION_MAP.put("Machine Learning với scikit-learn, TensorFlow, PyTorch.", new String[]{
+            "Machine Learning (ML) là một lĩnh vực quan trọng trong khoa học máy tính, giúp máy tính học từ dữ liệu và đưa ra dự đoán. Python là một ngôn ngữ phổ biến để triển khai ML với nhiều thư viện mạnh mẽ như scikit-learn, TensorFlow, PyTorch."
+        });
+
+        DESCRIPTION_MAP.put("Tự động hóa với Selenium, bot Telegram/Discord.", new String[]{
+            "Tự động hóa là một trong những ứng dụng mạnh mẽ của Python, giúp tiết kiệm thời gian và tăng hiệu suất công việc. Trong bài học này, chúng ta sẽ tìm hiểu cách sử dụng Selenium để tự động hóa trình duyệt web và cách tạo bot Telegram/Discord."
+        });
+
+        DESCRIPTION_MAP.put("Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest.", new String[]{
+            "Bảo mật, tối ưu hiệu năng trong Python",
+            "Kiểm thử giúp đảm bảo chất lượng mã nguồn. Python có hai thư viện phổ biến là unittest (tích hợp sẵn) và pytest (mạnh mẽ hơn)."
+        });
     }
 
     // Lấy mô tả của bài học dựa vào ngôn ngữ và chỉ số tiêu đề
@@ -695,6 +875,95 @@ public class DanhSachBaiHocData {
         ICON_MAP.put("Các công cụ hỗ trợ SQL", new String[]{
             "",
             "",
+            "",
+            ""
+        });
+
+        //Python 
+        ICON_MAP.put("Giới thiệu về Python, lịch sử phát triển, lý do chọn Python.", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Cấu trúc chương trình Python, cài đặt môi trường và IDE.", new String[]{
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Cấu trúc điều kiện, vòng lặp, danh sách, tuple, dictionary.", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Lập trình hướng đối tượng (OOP) trong Python.", new String[]{
+            "",});
+
+        ICON_MAP.put("Xử lý tập tin: đọc/ghi file CSV, JSON, XML.", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Xử lý ngoại lệ: try-except, finally, tạo ngoại lệ tùy chỉnh.", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Lập trình đa luồng và bất đồng bộ (async, threading).", new String[]{
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Làm việc với API: requests, BeautifulSoup, Selenium.", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Cơ sở dữ liệu: SQLite, MySQL, PostgreSQL, ORM với SQLAlchemy.", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Xử lý dữ liệu lớn: pandas, numpy, matplotlib.", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Lập trình mạng: socket, giao thức TCP/IP, UDP.", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Xây dựng ứng dụng Web với Flask/Django.", new String[]{
+            ""
+        });
+
+        ICON_MAP.put("Machine Learning với scikit-learn, TensorFlow, PyTorch.", new String[]{
+            ""
+        });
+
+        ICON_MAP.put("Tự động hóa với Selenium, bot Telegram/Discord.", new String[]{
+            ""
+        });
+
+        ICON_MAP.put("Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest.", new String[]{
             "",
             ""
         });
