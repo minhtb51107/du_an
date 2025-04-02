@@ -29,7 +29,6 @@ public class DanhSachBaiHocData {
         });
 
         TITLE_MAP.put("Đặc điểm và ứng dụng của C", new String[]{
-            "Đặc điểm của C",
             "Ứng dụng của C trong lập trình hệ thống",
             "C trong phát triển phần mềm nhúng"
         });
@@ -355,7 +354,6 @@ public class DanhSachBaiHocData {
         });
 
         DESCRIPTION_MAP.put("Đặc điểm và ứng dụng của C", new String[]{
-            "C có cú pháp đơn giản, hiệu suất cao và khả năng kiểm soát bộ nhớ tốt.",
             "C thường được sử dụng để phát triển hệ điều hành, trình biên dịch và phần mềm hệ thống.",
             "C cũng được sử dụng trong lập trình nhúng và phát triển ứng dụng."
         });
@@ -678,7 +676,6 @@ public class DanhSachBaiHocData {
         });
 
         ICON_MAP.put("Đặc điểm và ứng dụng của C", new String[]{
-            "",
             "",
             ""
         });

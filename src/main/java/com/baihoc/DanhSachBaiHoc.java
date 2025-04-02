@@ -837,6 +837,97 @@ public class DanhSachBaiHoc extends JPanel {
 
             }
         }
+
+        if (content.equals("Lịch sử và sự phát triển của ngôn ngữ C")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lịch sử và sự phát triển của ngôn ngữ C", "Nguồn gốc của C");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lịch sử và sự phát triển của ngôn ngữ C", "Các phiên bản của C");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lịch sử và sự phát triển của ngôn ngữ C", "C và các ngôn ngữ lập trình khác");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Đặc điểm và ứng dụng của C")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Đặc điểm và ứng dụng của C", "Ứng dụng của C trong lập trình hệ thống");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Đặc điểm và ứng dụng của C", "C trong phát triển phần mềm nhúng");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Cấu trúc cơ bản của một chương trình C")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc cơ bản của một chương trình C", "Cấu trúc tổng quát");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc cơ bản của một chương trình C", "Khai báo biến");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc cơ bản của một chương trình C", "Hàm main");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Các câu lệnh điều kiện (if, if-else, switch-case)")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các câu lệnh điều kiện (if, if-else, switch-case)", "Câu lệnh if");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các câu lệnh điều kiện (if, if-else, switch-case)", "Câu lệnh if-else");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các câu lệnh điều kiện (if, if-else, switch-case)", "Câu lệnh switch-case");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Quá trình biên dịch và thực thi chương trình C")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quá trình biên dịch và thực thi chương trình C", "Các bước biên dịch");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quá trình biên dịch và thực thi chương trình C", "Trình biên dịch và trình liên kết");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quá trình biên dịch và thực thi chương trình C", "Quá trình thực thi");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
     }
 
     private void addDragScrolling() {

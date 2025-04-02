@@ -405,6 +405,62 @@ public class NoiDungBaiHoc {
             0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2
         });
 
+        Index_MAP.put("Nguồn gốc của C", new int[]{
+            0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Các phiên bản của C", new int[]{
+            0, 1, 1, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 2
+        });
+
+        Index_MAP.put("C và các ngôn ngữ lập trình khác", new int[]{
+            0, 1, 1, 0, 1, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 1, 2, 0, 1, 2, 1, 1, 2, 0, 1, 1, 1, 0, 1, 1, 0, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Ứng dụng của C trong lập trình hệ thống", new int[]{
+            0, 1, 1, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("C trong phát triển phần mềm nhúng", new int[]{
+            0, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Cấu trúc tổng quát", new int[]{
+            0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 2, 0, 1
+        });
+
+        Index_MAP.put("Khai báo biến", new int[]{
+            0, 1, 0, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 2, 0, 2, 0, 1, 2, 0, 2, 0, 2, 0, 2, 0, 1, 2, 1, 2, 0, 2, 0, 1, 1, 2, 0, 1, 2
+        });
+
+        Index_MAP.put("Hàm main", new int[]{
+            0, 1, 1, 1, 0, 1, 2, 1, 2, 1, 2, 0, 2, 0, 1, 0, 1
+        });
+
+        Index_MAP.put("Các bước biên dịch", new int[]{
+            0, 1, 1, 1, 2, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 2, 2, 2, 1, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2
+        });
+
+        Index_MAP.put("Trình biên dịch và trình liên kết", new int[]{
+            0, 1, 1, 1, 2, 1, 2, 0, 1, 1, 1, 2, 1, 2, 1, 2, 0, 1, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2
+        });
+
+        Index_MAP.put("Quá trình thực thi", new int[]{
+            0, 1, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1, 0, 1, 0, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Câu lệnh if", new int[]{
+            0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1
+        });
+
+        Index_MAP.put("Câu lệnh if-else", new int[]{
+            0, 1, 0, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 0, 2
+        });
+
+        Index_MAP.put("Câu lệnh switch-case", new int[]{
+            0, 1, 0, 2, 0, 1, 1, 1, 1, 0, 1, 2, 1, 2, 1, 2, 0, 1
+        });
+
         Index_MAP.put("", new int[]{});
     }
 
@@ -1230,6 +1286,147 @@ public class NoiDungBaiHoc {
             "8. Ngôn ngữ đơn giản và nhỏ gọn",
             "9. Hỗ trợ lập trình hệ thống",
             "10. Khả năng mở rộng"
+        });
+
+        TITLE_MAP.put("Nguồn gốc của C", new String[]{
+            "1. Bối cảnh ra đời",
+            "2. Các mốc phát triển chính",
+            "3. Đặc điểm nổi bật",
+            "4. Ảnh hưởng và ứng dụng",
+            "5. Code mẫu minh họa",
+            "6. Kết luận"
+        });
+
+        TITLE_MAP.put("Các phiên bản của C", new String[]{
+            "1. K&R C (1978)",
+            "2. ANSI C (C89/C90)",
+            "3. C99",
+            "4. C11",
+            "5. C17 (C18)",
+            "6. C23 (Dự thảo)"
+        });
+
+        TITLE_MAP.put("C và các ngôn ngữ lập trình khác", new String[]{
+            "1. Giới thiệu tổng quan",
+            "2. So sánh cú pháp cơ bản",
+            "3. Quản lý bộ nhớ",
+            "4. Hướng đối tượng",
+            "5. Hiệu suất",
+            "6. Ứng dụng thực tế",
+            "7. Ví dụ thuật toán (Tính giai thừa)",
+            "8. Kết luận"
+        });
+
+        TITLE_MAP.put("Ứng dụng của C trong lập trình hệ thống", new String[]{
+            "1. Hệ điều hành (Operating Systems)",
+            "2. Trình điều khiển thiết bị (Device Drivers)",
+            "3. Hệ thống nhúng (Embedded Systems)",
+            "4. Mạng máy tính (Networking)",
+            "5. Công cụ hệ thống (System Utilities)",
+            "6. Bảo mật hệ thống (System Security)",
+            "7. Hệ thống file (File Systems)",
+            "8. Ảo hóa (Virtualization)",
+            "Kết luận"
+        });
+
+        TITLE_MAP.put("C trong phát triển phần mềm nhúng", new String[]{
+            "1. Giới thiệu về C trong lập trình nhúng",
+            "2. Các khái niệm cơ bản trong C cho hệ thống nhúng",
+            "3. Lập trình phần cứng với C",
+            "4. Quản lý bộ nhớ trong hệ thống nhúng",
+            "5. Giao tiếp phần cứng",
+            "6. Real-Time Operating Systems (RTOS) với C",
+            "7. Tối ưu hóa code nhúng",
+            "8. Debug và kiểm tra phần mềm nhúng",
+            "9. Best practices trong lập trình nhúng bằng C",
+            "Kết luận"
+        });
+
+        TITLE_MAP.put("Cấu trúc tổng quát", new String[]{
+            "1. Phần khai báo thư viện (Includes)",
+            "2. Phần định nghĩa hằng số (Macros/Constants)",
+            "3. Phần khai báo nguyên mẫu hàm (Function Prototypes)",
+            "4. Phần khai báo biến toàn cục (Global Variables)",
+            "5. Hàm main (Main Function)",
+            "6. Phần định nghĩa hàm (Function Definitions)",
+            "Chương trình mẫu hoàn chỉnh",
+            "Giải thích các phần:"
+        });
+
+        TITLE_MAP.put("Khai báo biến", new String[]{
+            "1. Giới thiệu về biến trong C",
+            "2. Cú pháp khai báo biến",
+            "3. Các kiểu dữ liệu cơ bản",
+            "4. Khai báo nhiều biến cùng kiểu",
+            "5. Biến static",
+            "6. Biến register (gợi ý lưu trong thanh ghi)",
+            "7. Biến volatile (ngăn trình biên dịch tối ưu)",
+            "8. Biến const (hằng số)",
+            "9. Biến extern (khai báo biến toàn cục)",
+            "10. Ví dụ hoàn chỉnh",
+            "11. Quy tắc đặt tên biến",
+            "12. Phạm vi biến"
+        });
+
+        TITLE_MAP.put("Hàm main", new String[]{
+            "Các thành phần chính của hàm main",
+            "Các dạng hàm main phổ biến",
+            "Ví dụ đầy đủ với chức năng cụ thể",
+            "Giải thích ví dụ trên",
+            "Lưu ý quan trọng"
+        });
+
+        TITLE_MAP.put("Các bước biên dịch", new String[]{
+            "1. Tiền xử lý (Preprocessing)",
+            "2. Biên dịch (Compilation)",
+            "3. Dịch sang ngôn ngữ máy (Assembly)",
+            "4. Liên kết (Linking)",
+            "Ví dụ hoàn chỉnh"
+        });
+
+        TITLE_MAP.put("Trình biên dịch và trình liên kết", new String[]{
+            "1. Trình biên dịch (Compiler)",
+            "2. Trình liên kết (Linker)",
+            "3. Quá trình từ mã nguồn đến file thực thi",
+            "4. Các tùy chọn biên dịch quan trọng"
+        });
+
+        TITLE_MAP.put("Quá trình thực thi", new String[]{
+            "1. Viết mã nguồn (Source Code)",
+            "2. Tiền xử lý (Preprocessing)",
+            "3. Biên dịch (Compilation)",
+            "4. Dịch sang ngôn ngữ máy (Assembly)",
+            "5. Liên kết (Linking)",
+            "6. Nạp chương trình (Loading)",
+            "7. Thực thi (Execution)",
+            "Chương trình mẫu đầy đủ",
+            "Quá trình biên dịch và thực thi đầy đủ",
+            "Các loại file trong quá trình biên dịch"
+        });
+
+        TITLE_MAP.put("Câu lệnh if", new String[]{
+            "1. Cú pháp cơ bản của if",
+            "2. Câu lệnh if-else",
+            "3. Câu lệnh if-else if-else",
+            "4. If lồng nhau",
+            "5. Toán tử điều kiện và if",
+            "6. If với phép gán và so sánh"
+        });
+
+        TITLE_MAP.put("Câu lệnh if-else", new String[]{
+            "1. Giới thiệu",
+            "2. Cú pháp đầy đủ",
+            "3. Ví dụ minh họa",
+            "4. Lưu ý quan trọng",
+            "5. Ví dụ kết hợp toán tử logic"
+        });
+
+        TITLE_MAP.put("Câu lệnh switch-case", new String[]{
+            "1. Giới thiệu",
+            "2. Cú pháp đầy đủ",
+            "3. Các thành phần chi tiết",
+            "4. Code mẫu đầy đủ",
+            "5. Lưu ý quan trọng"
         });
 
         TITLE_MAP.put("", new String[]{});
@@ -4546,6 +4743,680 @@ public class NoiDungBaiHoc {
             "C chỉ có khoảng 32 từ khóa và cú pháp đơn giản.",
             "C thường được dùng để phát triển hệ điều hành, trình biên dịch, driver.",
             "Có thể dễ dàng mở rộng chức năng bằng cách thêm các hàm mới."
+        });
+
+        Content_MAP.put("Nguồn gốc của C", new String[]{
+            "Ngôn ngữ C được phát triển vào đầu những năm 1970 tại Bell Labs (Phòng thí nghiệm Bell) bởi Dennis Ritchie. Ngôn ngữ này ra đời trong bối cảnh:\n"
+            + "\n"
+            + "Hệ điều hành UNIX đang được phát triển tại Bell Labs\n"
+            + "\n"
+            + "Cần một ngôn ngữ lập trình hệ thống hiệu quả hơn assembly\n"
+            + "\n"
+            + "Kế thừa từ ngôn ngữ B (do Ken Thompson phát triển) và BCPL",
+            "1969-1973: Giai đoạn phát triển ban đầu bởi Dennis Ritchie\n"
+            + "\n"
+            + "1978: Xuất bản cuốn \"The C Programming Language\" (K&R C)\n"
+            + "\n"
+            + "1989: Chuẩn hóa bởi ANSI (ANSI C hay C89)\n"
+            + "\n"
+            + "1990: ISO chấp nhận thành chuẩn ISO/IEC 9899:1990 (C90)\n"
+            + "\n"
+            + "1999: Chuẩn C99 với nhiều cải tiến\n"
+            + "\n"
+            + "2011: Chuẩn C11 bổ sung tính năng đa luồng\n"
+            + "\n"
+            + "2018: Chuẩn C18 (chủ yếu sửa lỗi)",
+            "Ngôn ngữ bậc trung (middle-level)\n"
+            + "\n"
+            + "Cấu trúc và thủ tục (structured/procedural)\n"
+            + "\n"
+            + "Tương thích với phần cứng\n"
+            + "\n"
+            + "Hiệu suất cao\n"
+            + "\n"
+            + "Thư viện phong phú\n"
+            + "\n"
+            + "Tính linh hoạt và khả năng di động",
+            "C đã ảnh hưởng đến nhiều ngôn ngữ khác như C++, Java, C#, Objective-C. Ứng dụng chính:\n"
+            + "\n"
+            + "Hệ điều hành (UNIX, Linux, Windows kernel)\n"
+            + "\n"
+            + "Hệ thống nhúng\n"
+            + "\n"
+            + "Trình biên dịch\n"
+            + "\n"
+            + "Cơ sở dữ liệu\n"
+            + "\n"
+            + "Ứng dụng hiệu suất cao",
+            "Chương trình \"Hello World\" cơ bản",
+            "Ví dụ về cấu trúc điều khiển",
+            "Ví dụ về hàm và con trỏ",
+            "Ví dụ về struct",
+            "Ví dụ về quản lý bộ nhớ động",
+            "Ngôn ngữ C đã tồn tại hơn 50 năm nhưng vẫn giữ vị trí quan trọng trong lập trình hệ thống và các ứng dụng hiệu suất cao. Sự đơn giản, hiệu quả và khả năng kiểm soát phần cứng khiến C trở thành ngôn ngữ không thể thay thế trong nhiều lĩnh vực."
+        });
+
+        Content_MAP.put("Các phiên bản của C", new String[]{
+            "Mô tả: Phiên bản đầu tiên được mô tả trong cuốn \"The C Programming Language\" bởi Brian Kernighan và Dennis Ritchie.",
+            "Đặc điểm:\n"
+            + "\n"
+            + "Không có prototype hàm\n"
+            + "\n"
+            + "Khai báo hàm kiểu cũ\n"
+            + "\n"
+            + "Không có kiểu void\n"
+            + "\n"
+            + "Xử lý kiểu đơn giản",
+            "Code mẫu:",
+            "Mô tả: Chuẩn hóa đầu tiên bởi ANSI (1989) và ISO (1990).",
+            "Đặc điểm mới:\n"
+            + "\n"
+            + "Thêm prototype hàm\n"
+            + "\n"
+            + "Thêm kiểu void\n"
+            + "\n"
+            + "Thêm hằng chuỗi (string literal)\n"
+            + "\n"
+            + "Thêm thư viện chuẩn\n"
+            + "\n"
+            + "Hỗ trợ comment //",
+            "Code mẫu:",
+            "Mô tả: Chuẩn ISO năm 1999, bổ sung nhiều tính năng quan trọng.",
+            "Đặc điểm mới:\n"
+            + "\n"
+            + "Biến có thể khai báo ở bất kỳ đâu\n"
+            + "\n"
+            + "Hỗ trợ comment một dòng //\n"
+            + "\n"
+            + "Kiểu long long\n"
+            + "\n"
+            + "Mảng có kích thước thay đổi (VLA)\n"
+            + "\n"
+            + "Hỗ trợ số học phức tạp\n"
+            + "\n"
+            + "Macro với số lượng đối số thay đổi",
+            "Code mẫu:",
+            "Mô tả: Chuẩn ISO năm 2011, tập trung vào đa luồng và an toàn.",
+            "Đặc điểm mới:\n"
+            + "\n"
+            + "Hỗ trợ đa luồng (_Thread_local, <threads.h>)\n"
+            + "\n"
+            + "Biểu thức kiểu generic (_Generic)\n"
+            + "\n"
+            + "Hàm an toàn (bounds-checking) trong Annex K\n"
+            + "\n"
+            + "Macro static_assert\n"
+            + "\n"
+            + "Hủy bỏ gets()",
+            "Code mẫu:",
+            "Mô tả: Chuẩn ISO năm 2018, chủ yếu sửa lỗi và cải tiến nhỏ.",
+            "Đặc điểm mới:\n"
+            + "\n"
+            + "Sửa lỗi từ C11\n"
+            + "\n"
+            + "Thêm một số tính năng từ thư viện\n"
+            + "\n"
+            + "Không thay đổi ngôn ngữ cốt lõi",
+            "Code mẫu:",
+            "Mô tả: Chuẩn sắp tới (dự kiến 2023), nhiều cải tiến quan trọng.",
+            "Đặc điểm mới (dự kiến):\n"
+            + "\n"
+            + "#elifdef và #elifndef\n"
+            + "\n"
+            + "Thuộc tính [[deprecated]]\n"
+            + "\n"
+            + "Hỗ trợ UTF-8 tốt hơn\n"
+            + "\n"
+            + "Thêm constexpr\n"
+            + "\n"
+            + "nullptr thay cho NULL",
+            "Code mẫu (dự thảo):"
+        });
+
+        Content_MAP.put("C và các ngôn ngữ lập trình khác", new String[]{
+            "Ngôn ngữ C\n"
+            + "Mục đích: Ngôn ngữ lập trình hệ thống, phát triển hệ điều hành, driver, embedded systems\n"
+            + "\n"
+            + "Năm ra đời: 1972\n"
+            + "\n"
+            + "Đặc điểm: Ngôn ngữ bậc thấp, thủ tục, biên dịch\n"
+            + "\n"
+            + "Ưu điểm: Hiệu suất cao, kiểm soát phần cứng tốt, nhỏ gọn\n"
+            + "\n"
+            + "Nhược điểm: Không hỗ trợ OOP, quản lý bộ nhớ thủ công",
+            "Các ngôn ngữ khác\n"
+            + "Java: Hướng đối tượng, đa nền tảng (JVM), tự động quản lý bộ nhớ\n"
+            + "\n"
+            + "Python: Ngôn ngữ bậc cao, thông dịch, đa mục đích, cú pháp đơn giản\n"
+            + "\n"
+            + "JavaScript: Ngôn ngữ kịch bản web, chạy trên trình duyệt\n"
+            + "\n"
+            + "C++: Mở rộng từ C, hỗ trợ OOP và lập trình đa hình",
+            "Hello World trong các ngôn ngữ",
+            "C:",
+            "Java:",
+            "Python:",
+            "JavaScript:",
+            "C++:",
+            "C\n"
+            + "Quản lý thủ công bằng malloc/calloc/realloc/free\n"
+            + "\n"
+            + "Dễ xảy ra rò rỉ bộ nhớ nếu không giải phóng",
+            "Java/Python/JavaScript\n"
+            + "Tự động quản lý bộ nhớ (Garbage Collection)\n"
+            + "\n"
+            + "Lập trình viên không cần quan tâm đến giải phóng bộ nhớ",
+            "Java:",
+            "C\n"
+            + "Không hỗ trợ OOP nguyên bản\n"
+            + "\n"
+            + "Có thể mô phỏng bằng struct và function pointer",
+            "C++/Java/Python\n"
+            + "Hỗ trợ đầy đủ OOP: lớp, đối tượng, kế thừa, đa hình",
+            "C++:",
+            "C\n"
+            + "Hiệu suất cao nhất do gần với phần cứng\n"
+            + "\n"
+            + "Tối ưu hóa tốt khi biên dịch\n"
+            + "\n"
+            + "Không có overhead từ runtime environment",
+            "C++\n"
+            + "Hiệu suất gần bằng C, có thể chậm hơn đôi chút do các tính năng OOP",
+            "Java/Python/JavaScript\n"
+            + "Chậm hơn do chạy trên máy ảo hoặc thông dịch\n"
+            + "\n"
+            + "Java nhanh hơn Python/JavaScript nhờ JIT compiler",
+            "C\n"
+            + "Hệ điều hành (Linux, Windows kernel)\n"
+            + "\n"
+            + "Driver phần cứng\n"
+            + "\n"
+            + "Hệ thống nhúng (IoT, vi điều khiển)\n"
+            + "\n"
+            + "Các thư viện hiệu suất cao",
+            "Các ngôn ngữ khác\n"
+            + "Java: Ứng dụng doanh nghiệp, Android\n"
+            + "\n"
+            + "Python: Khoa học dữ liệu, AI, scripting, web backend\n"
+            + "\n"
+            + "JavaScript: Web frontend (React, Angular), Node.js\n"
+            + "\n"
+            + "C++: Game development, hệ thống hiệu suất cao",
+            "C",
+            "Java",
+            "Python",
+            "JavaScript",
+            "C phù hợp cho lập trình hệ thống, nơi cần hiệu suất cao và kiểm soát phần cứng\n"
+            + "\n"
+            + "C++ kết hợp sức mạnh của C với OOP, phù hợp cho game, ứng dụng hiệu suất cao\n"
+            + "\n"
+            + "Java/Python/JavaScript phù hợp cho ứng dụng cấp cao, phát triển nhanh\n"
+            + "\n"
+            + "Lựa chọn ngôn ngữ phụ thuộc vào yêu cầu dự án: hiệu suất, thời gian phát triển, nền tảng mục tiêu"
+        });
+
+        Content_MAP.put("Ứng dụng của C trong lập trình hệ thống", new String[]{
+            "C là ngôn ngữ chính để phát triển hệ điều hành do khả năng truy cập trực tiếp vào phần cứng và hiệu suất cao.",
+            "Nội dung:\n"
+            + "\n"
+            + "Unix và các hệ điều hành giống Unix (Linux, macOS) được viết chủ yếu bằng C\n"
+            + "\n"
+            + "Cung cấp khả năng kiểm soát bộ nhớ và tài nguyên hệ thống\n"
+            + "\n"
+            + "Cho phép tương tác trực tiếp với kernel và driver",
+            "Code mẫu: Tạo tiến trình con bằng fork()",
+            "Nội dung:\n"
+            + "\n"
+            + "C cho phép truy cập trực tiếp vào thanh ghi phần cứng\n"
+            + "\n"
+            + "Có thể quản lý ngắt (interrupt) và DMA\n"
+            + "\n"
+            + "Tương tác với phần cứng ở mức thấp",
+            "Code mẫu: Driver đơn giản cho GPIO",
+            "Nội dung:\n"
+            + "\n"
+            + "C được sử dụng rộng rãi trong lập trình vi điều khiển\n"
+            + "\n"
+            + "Hiệu quả về tài nguyên và tốc độ thực thi\n"
+            + "\n"
+            + "Có thể tương tác trực tiếp với phần cứng mà không cần hệ điều hành",
+            "Code mẫu: Điều khiển LED trên vi điều khiển AVR",
+            "Nội dung:\n"
+            + "\n"
+            + "C được dùng để phát triển giao thức mạng và stack mạng\n"
+            + "\n"
+            + "Hiệu suất cao trong xử lý packet\n"
+            + "\n"
+            + "Có thể làm việc với socket ở mức thấp",
+            "Code mẫu: TCP Server đơn giản",
+            "Nội dung:\n"
+            + "\n"
+            + "C được dùng để phát triển các công cụ hệ thống như shell, trình biên dịch, debugger\n"
+            + "\n"
+            + "Cung cấp khả năng kiểm soát tiến trình và tài nguyên hệ thống\n"
+            + "\n"
+            + "Hiệu suất cao trong xử lý file và I/O",
+            "Code mẫu: Lệnh ls đơn giản",
+            "Nội dung:\n"
+            + "\n"
+            + "Phát triển các công cụ bảo mật như firewall, IDS/IPS\n"
+            + "\n"
+            + "Làm việc với các cơ chế bảo mật của hệ điều hành\n"
+            + "\n"
+            + "Phân tích và xử lý các lỗ hổng hệ thống",
+            "Code mẫu: Kiểm tra quyền root",
+            "Nội dung:\n"
+            + "\n"
+            + "Phát triển hệ thống file và các công cụ quản lý file\n"
+            + "\n"
+            + "Làm việc với các thao tác I/O mức thấp\n"
+            + "\n"
+            + "Quản lý metadata và cấu trúc file system",
+            "Code mẫu: Đọc thông tin inode",
+            "Nội dung:\n"
+            + "\n"
+            + "Phát triển hypervisor và các công cụ ảo hóa\n"
+            + "\n"
+            + "Quản lý tài nguyên ảo hóa\n"
+            + "\n"
+            + "Tương tác với phần cứng ảo hóa",
+            "Code mẫu: Kiểm tra ảo hóa bằng CPUID",
+            "Ngôn ngữ C tiếp tục là lựa chọn hàng đầu cho lập trình hệ thống nhờ:\n"
+            + "\n"
+            + "Hiệu suất gần với ngôn ngữ assembly\n"
+            + "\n"
+            + "Khả năng kiểm soát phần cứng\n"
+            + "\n"
+            + "Tính di động và ổn định\n"
+            + "\n"
+            + "Thư viện hệ thống phong phú\n"
+            + "\n"
+            + "Cộng đồng hỗ trợ mạnh mẽ"
+        });
+
+        Content_MAP.put("C trong phát triển phần mềm nhúng", new String[]{
+            "Ngôn ngữ C là ngôn ngữ lập trình phổ biến nhất trong phát triển phần mềm nhúng do:\n"
+            + "\n"
+            + "Hiệu suất cao, gần với phần cứng\n"
+            + "\n"
+            + "Tiêu thụ tài nguyên thấp (bộ nhớ, CPU)\n"
+            + "\n"
+            + "Khả năng kiểm soát trực tiếp phần cứng\n"
+            + "\n"
+            + "Tính di động cao giữa các kiến trúc vi điều khiển",
+            "2.1. Kiểu dữ liệu và kích thước\n"
+            + "Trong hệ thống nhúng, việc hiểu rõ kích thước kiểu dữ liệu là quan trọng:",
+            "2.2. Bit manipulation\n"
+            + "Thao tác bit là kỹ thuật quan trọng để điều khiển phần cứng:",
+            "3.1. Truy cập thanh ghi phần cứng\n"
+            + "Cách truy cập thanh ghi phần cứng thông qua con trỏ:",
+            "3.2. Ngắt (Interrupts)\n"
+            + "Xử lý ngắt trong hệ thống nhúng:",
+            "4.1. Bộ nhớ tĩnh và stack",
+            "4.2. Quản lý heap (hạn chế sử dụng trong hệ thống nhúng)",
+            "5.1. UART Communication",
+            "5.2. SPI Communication",
+            "6.1. Tạo task cơ bản (FreeRTOS example)",
+            "6.2. Semaphore và Queue",
+            "7.1. Sử dụng inline và macro",
+            "7.2. Tối ưu vòng lặp",
+            "8.1. Sử dụng assert",
+            "8.2. Logging trong hệ thống nhúng",
+            "9.1. Coding style",
+            "9.2. Xử lý lỗi",
+            "Ngôn ngữ C tiếp tục là lựa chọn hàng đầu cho phát triển phần mềm nhúng do:\n"
+            + "\n"
+            + "Hiệu suất cao và kiểm soát trực tiếp phần cứng\n"
+            + "\n"
+            + "Tiêu thụ tài nguyên thấp\n"
+            + "\n"
+            + "Hỗ trợ rộng rãi từ các nhà sản xuất vi điều khiển\n"
+            + "\n"
+            + "Cộng đồng phát triển mạnh mẽ"
+        });
+
+        Content_MAP.put("Cấu trúc tổng quát", new String[]{
+            "Chứa các khai báo thư viện cần thiết cho chương trình.",
+            "Định nghĩa các hằng số sẽ được sử dụng trong chương trình.",
+            "Khai báo các hàm sẽ được sử dụng trong chương trình.",
+            "Các biến có thể được truy cập từ mọi nơi trong chương trình.",
+            "Hàm chính, điểm bắt đầu của chương trình.",
+            "Triển khai chi tiết các hàm đã được khai báo.",
+            "Thư viện: Chứa các file header cần thiết cho chương trình\n"
+            + "\n"
+            + "Hằng số: Định nghĩa các giá trị không đổi trong chương trình\n"
+            + "\n"
+            + "Nguyên mẫu hàm: Khai báo các hàm trước khi sử dụng\n"
+            + "\n"
+            + "Biến toàn cục: Có thể truy cập từ mọi hàm trong chương trình\n"
+            + "\n"
+            + "Hàm main: Điểm bắt đầu thực thi chương trình\n"
+            + "\n"
+            + "Định nghĩa hàm: Triển khai chi tiết các hàm đã khai báo"
+        });
+
+        Content_MAP.put("Khai báo biến", new String[]{
+            "Biến trong C là tên gọi của một vùng nhớ được sử dụng để lưu trữ dữ liệu trong chương trình. Mỗi biến có một kiểu dữ liệu xác định và có thể thay đổi giá trị trong quá trình thực thi chương trình.",
+            "Cú pháp cơ bản để khai báo biến trong C:",
+            "a. Kiểu số nguyên",
+            "b. Kiểu số thực",
+            "c. Kiểu ký tự",
+            "d. Kiểu boolean (C99 trở lên)",
+            "Biến static giữ nguyên giá trị giữa các lần gọi hàm:",
+            "File1.c:",
+            "File2.c:",
+            "Tên biến chỉ có thể chứa chữ cái, số và dấu gạch dưới\n"
+            + "\n"
+            + "Tên biến phải bắt đầu bằng chữ cái hoặc dấu gạch dưới\n"
+            + "\n"
+            + "Tên biến phân biệt hoa thường\n"
+            + "\n"
+            + "Không được trùng với từ khóa của C",
+            "Ví dụ tên biến hợp lệ:",
+            "Biến cục bộ: Chỉ có tác dụng trong khối lệnh hoặc hàm chứa nó\n"
+            + "\n"
+            + "Biến toàn cục: Có tác dụng trong toàn chương trình\n"
+            + "\n"
+            + "Biến tham số hàm: Có tác dụng trong hàm chứa nó\n"
+            + "\n"
+            + "Ví dụ:"
+        });
+
+        Content_MAP.put("Hàm main", new String[]{
+            "1. Kiểu trả về\n"
+            + "Hàm main thường có kiểu trả về int để báo cáo trạng thái thoát của chương trình cho hệ điều hành:\n"
+            + "\n"
+            + "0: Thành công\n"
+            + "\n"
+            + "Khác 0: Lỗi (thường là 1)",
+            "2. Tham số\n"
+            + "Hàm main có thể nhận các tham số từ dòng lệnh:\n"
+            + "\n"
+            + "argc (argument count): Số lượng tham số\n"
+            + "\n"
+            + "argv (argument vector): Mảng các chuỗi tham số",
+            "3. Nội dung hàm\n"
+            + "Phần thân hàm chứa các lệnh sẽ được thực thi khi chương trình chạy.",
+            "1. Không tham số",
+            "2. Có tham số dòng lệnh",
+            "3. Sử dụng tham số môi trường (ít phổ biến hơn)",
+            "Phần khai báo: Bao gồm các thư viện cần thiết\n"
+            + "\n"
+            + "Hàm phụ trợ: factorial() để tính giai thừa\n"
+            + "\n"
+            + "Kiểm tra tham số: Đảm bảo người dùng nhập đúng định dạng\n"
+            + "\n"
+            + "Xử lý lỗi: Thông báo lỗi và trả về mã lỗi khi cần\n"
+            + "\n"
+            + "Xử lý chính: Chuyển đổi tham số và tính toán kết quả\n"
+            + "\n"
+            + "Trả về kết quả: In ra màn hình và trả về mã thành công",
+            "Luôn trả về giá trị từ hàm main (thường là 0 cho thành công)\n"
+            + "\n"
+            + "Kiểm tra số lượng và kiểu tham số khi sử dụng tham số dòng lệnh\n"
+            + "\n"
+            + "Trong C99 và C11, return 0; có thể được bỏ qua (compiler sẽ tự thêm)\n"
+            + "\n"
+            + "void trong main(void) là cách rõ ràng để chỉ ra không có tham số\n"
+            + "\n"
+            + "Hàm main là nơi bắt đầu và kết thúc luồng thực thi của chương trình C, vì vậy việc thiết kế hàm main rõ ràng, xử lý lỗi tốt là rất quan trọng."
+        });
+
+        Content_MAP.put("Các bước biên dịch", new String[]{
+            "Trong giai đoạn này, trình tiền xử lý (preprocessor) sẽ xử lý các chỉ thị tiền xử lý (bắt đầu bằng #) trong mã nguồn.",
+            "Các công việc chính:\n"
+            + "\n"
+            + "Bao gồm các file header (#include)\n"
+            + "\n"
+            + "Xử lý các macro (#define)\n"
+            + "\n"
+            + "Xử lý điều kiện biên dịch (#ifdef, #ifndef, #endif)\n"
+            + "\n"
+            + "Bỏ các comment trong mã nguồn",
+            "Ví dụ:",
+            "Sau khi tiền xử lý (có thể xem bằng gcc -E sample.c):",
+            "Trình biên dịch (compiler) sẽ chuyển mã nguồn đã qua tiền xử lý thành mã assembly tương ứng với kiến trúc máy đích.",
+            "Công việc chính:\n"
+            + "\n"
+            + "Kiểm tra cú pháp và ngữ nghĩa\n"
+            + "\n"
+            + "Phân tích mã nguồn và tạo mã assembly\n"
+            + "\n"
+            + "Tối ưu hóa code (nếu được bật)",
+            "Ví dụ mã assembly (xem bằng gcc -S sample.c):",
+            "Trình dịch hợp ngữ (assembler) sẽ chuyển mã assembly thành mã máy (object code) và tạo ra file object (.o hoặc .obj).",
+            "Công việc chính:\n"
+            + "\n"
+            + "Dịch lệnh assembly sang mã máy\n"
+            + "\n"
+            + "Tạo các bảng tham chiếu (symbol table)\n"
+            + "\n"
+            + "Đóng gói thành file object",
+            "Ví dụ (tạo file object bằng gcc -c sample.c sẽ tạo ra sample.o)",
+            "Trình liên kết (linker) sẽ kết hợp các file object và thư viện để tạo ra file thực thi cuối cùng.",
+            "Công việc chính:\n"
+            + "\n"
+            + "Giải quyết các tham chiếu chéo giữa các file object\n"
+            + "\n"
+            + "Liên kết với các thư viện (libc, ...)\n"
+            + "\n"
+            + "Phân bổ bộ nhớ cho chương trình\n"
+            + "\n"
+            + "Tạo file thực thi (executable)",
+            "Ví dụ (tạo file thực thi bằng gcc sample.c -o sample)",
+            "Chương trình chia thành nhiều file:",
+            "Quá trình biên dịch từng bước:",
+            "Tiền xử lý từng file:",
+            "Biên dịch sang assembly:",
+            "Dịch sang ngôn ngữ máy:",
+            "Liên kết các file object:",
+            "Chạy chương trình:",
+            "Kết quả:"
+        });
+
+        Content_MAP.put("Quá trình thực thi", new String[]{
+            "Nội dung: Đây là bước đầu tiên, lập trình viên viết mã nguồn bằng ngôn ngữ C theo cú pháp của ngôn ngữ.",
+            "Code mẫu:",
+            "Nội dung: Trình tiền xử lý (preprocessor) xử lý các chỉ thị bắt đầu bằng #:\n"
+            + "\n"
+            + "Bao gồm các file header (#include)\n"
+            + "\n"
+            + "Thay thế macro (#define)\n"
+            + "\n"
+            + "Xử lý điều kiện biên dịch (#ifdef, #ifndef)",
+            "Kết quả sau tiền xử lý (có thể xem bằng gcc -E hello.c):",
+            "Nội dung: Trình biên dịch (compiler) chuyển mã nguồn đã tiền xử lý thành mã assembly tương ứng với kiến trúc CPU.",
+            "Lệnh biên dịch:",
+            "Mã assembly mẫu (hello.s):",
+            "Nội dung: Trình dịch hợp ngữ (assembler) chuyển mã assembly thành mã máy (object code) dạng nhị phân.",
+            "Lệnh tạo file object:",
+            "Nội dung: Trình liên kết (linker) kết hợp các file object và thư viện để tạo ra file thực thi hoàn chỉnh:\n"
+            + "\n"
+            + "Giải quyết các tham chiếu chéo giữa các file object\n"
+            + "\n"
+            + "Liên kết với các thư viện chuẩn (như thư viện C - libc)",
+            "Lệnh liên kết:",
+            "Nội dung: Hệ điều hành nạp chương trình vào bộ nhớ để thực thi:\n"
+            + "\n"
+            + "Đọc file thực thi\n"
+            + "\n"
+            + "Cấp phát bộ nhớ\n"
+            + "\n"
+            + "Nạp các thư viện động (nếu có)\n"
+            + "\n"
+            + "Thiết lập môi trường thực thi",
+            "Nội dung: CPU thực thi các lệnh máy của chương trình:\n"
+            + "\n"
+            + "Thực thi từ hàm main()\n"
+            + "\n"
+            + "Quản lý bộ nhớ stack và heap\n"
+            + "\n"
+            + "Xử lý các lời gọi hàm và hệ thống",
+            "Dưới đây là một chương trình C đầy đủ hơn minh họa các khái niệm:",
+            "Tiền xử lý:",
+            "Biên dịch sang assembly:",
+            "Dịch sang ngôn ngữ máy:",
+            "Liên kết:",
+            "Thực thi:",
+            "Kết quả khi chạy chương trình:",
+            "File .c: Mã nguồn C\n"
+            + "\n"
+            + "File .i: Mã nguồn đã qua tiền xử lý\n"
+            + "\n"
+            + "File .s: Mã assembly\n"
+            + "\n"
+            + "File .o: Mã máy (object file)\n"
+            + "\n"
+            + "File thực thi (hoặc .exe trên Windows): Chương trình hoàn chỉnh"
+        });
+
+        Content_MAP.put("Trình biên dịch và trình liên kết", new String[]{
+            "Trình biên dịch trong C là chương trình chuyển đổi mã nguồn (source code) viết bằng ngôn ngữ C thành mã máy (machine code) hoặc mã trung gian. Quá trình biên dịch bao gồm các giai đoạn chính:",
+            "Tiền xử lý (Preprocessing): Xử lý các chỉ thị tiền xử lý như #include, #define, #ifdef...\n"
+            + "\n"
+            + "Biên dịch (Compilation): Chuyển mã nguồn đã qua tiền xử lý thành mã assembly\n"
+            + "\n"
+            + "Dịch assembly (Assembly): Chuyển mã assembly thành mã máy (tạo file object .o hoặc .obj)\n"
+            + "\n"
+            + "Liên kết (Linking): Kết hợp các file object và thư viện để tạo file thực thi\n"
+            + "\n"
+            + "Trình biên dịch C phổ biến nhất là GCC (GNU Compiler Collection).",
+            "Code mẫu:",
+            "Biên dịch với GCC:",
+            "Trình liên kết có nhiệm vụ kết hợp các file object (.o hoặc .obj) được tạo ra bởi trình biên dịch và các thư viện (libraries) để tạo ra file thực thi cuối cùng. Công việc chính của linker:",
+            "Liên kết các file object: Kết hợp mã máy từ nhiều file nguồn khác nhau\n"
+            + "\n"
+            + "Giải quyết các tham chiếu: Tìm và kết nối các hàm, biến được khai báo nhưng định nghĩa ở file khác\n"
+            + "\n"
+            + "Liên kết thư viện: Thêm các hàm từ thư viện chuẩn hoặc thư viện bên ngoài\n"
+            + "\n"
+            + "Phân bổ bộ nhớ: Sắp xếp các đoạn mã và dữ liệu vào các vùng nhớ phù hợp",
+            "Có 2 loại liên kết chính:\n"
+            + "\n"
+            + "Liên kết tĩnh (Static linking): Code từ thư viện được nhúng trực tiếp vào file thực thi\n"
+            + "\n"
+            + "Liên kết động (Dynamic linking): File thực thi chỉ chứa tham chiếu đến thư viện, thư viện được nạp khi chạy chương trình",
+            "Code mẫu liên kết nhiều file:\n"
+            + "File 1: main.c",
+            "File 2: math.c",
+            "Biên dịch và liên kết:",
+            "Chi tiết các bước:\n"
+            + "Viết mã nguồn: Tạo các file .c và .h\n"
+            + "\n"
+            + "Tiền xử lý:\n"
+            + "\n"
+            + "Mở rộng #include\n"
+            + "\n"
+            + "Xử lý macro (#define)\n"
+            + "\n"
+            + "Điều kiện biên dịch (#ifdef, #ifndef)\n"
+            + "\n"
+            + "Biên dịch:\n"
+            + "\n"
+            + "Phân tích cú pháp (parsing)\n"
+            + "\n"
+            + "Kiểm tra kiểu\n"
+            + "\n"
+            + "Tối ưu hóa mã\n"
+            + "\n"
+            + "Tạo mã assembly\n"
+            + "\n"
+            + "Dịch assembly:\n"
+            + "\n"
+            + "Chuyển assembly thành mã máy\n"
+            + "\n"
+            + "Tạo file object (.o)\n"
+            + "\n"
+            + "Liên kết:\n"
+            + "\n"
+            + "Kết hợp các file object\n"
+            + "\n"
+            + "Giải quyết các tham chiếu\n"
+            + "\n"
+            + "Thêm code từ thư viện\n"
+            + "\n"
+            + "Tạo file thực thi",
+            "Ví dụ đầy đủ với nhiều file:\n"
+            + "File: utils.h",
+            "File: utils.c",
+            "File: app.c",
+            "Biên dịch và liên kết:",
+            "-o: Chỉ định tên file đầu ra",
+            "-c: Chỉ biên dịch thành file object, không liên kết",
+            "-I: Thêm thư mục tìm kiếm header file",
+            "-L và -l: Liên kết với thư viện",
+            "-g: Thêm thông tin debug",
+            "-O: Tối ưu hóa mã",
+            "-Wall: Bật tất cả cảnh báo"
+        });
+
+        Content_MAP.put("Câu lệnh if", new String[]{
+            "Câu lệnh if trong C là một cấu trúc điều khiển cơ bản cho phép thực hiện các hành động khác nhau dựa trên các điều kiện khác nhau.",
+            "Ví dụ:",
+            "Khi muốn xử lý cả trường hợp điều kiện sai (false):",
+            "Ví dụ:",
+            "Khi có nhiều điều kiện cần kiểm tra:",
+            "Ví dụ:",
+            "Có thể lồng các câu lệnh if bên trong nhau:",
+            "Ví dụ:",
+            "Có thể sử dụng các toán tử logic (&&, ||, !) để kết hợp nhiều điều kiện:",
+            "Ví dụ:",
+            "Trong C, có thể kết hợp phép gán và so sánh trong điều kiện if:",
+            "Ví dụ:",
+            "Lưu ý: Cần cẩn thận khi sử dụng phép gán trong điều kiện if để tránh nhầm lẫn với phép so sánh (==)."
+        });
+
+        Content_MAP.put("Câu lệnh if-else", new String[]{
+            "Câu lệnh if-else trong C là một cấu trúc điều khiển cơ bản cho phép thực hiện các khối lệnh khác nhau dựa trên điều kiện đúng hoặc sai.",
+            "2.1. Câu lệnh if đơn giản",
+            "2.2. Câu lệnh if-else",
+            "2.3. Câu lệnh if-else if-else (nhiều điều kiện)",
+            "2.4. Câu lệnh if lồng nhau",
+            "3.1. Ví dụ if đơn giản",
+            "3.2. Ví dụ if-else",
+            "3.3. Ví dụ if-else if-else",
+            "3.4. Ví dụ if lồng nhau",
+            "Điều kiện trong if phải là biểu thức trả về giá trị boolean (0 là false, khác 0 là true)\n"
+            + "\n"
+            + "Có thể bỏ qua dấu ngoặc nhọn {} nếu khối lệnh chỉ có 1 câu lệnh\n"
+            + "\n"
+            + "Nên sử dụng dấu ngoặc nhọn {} ngay cả khi chỉ có 1 câu lệnh để tránh nhầm lẫn\n"
+            + "\n"
+            + "Có thể sử dụng các toán tử logic (&&, ||, !) để kết hợp nhiều điều kiện"
+        });
+
+        Content_MAP.put("Câu lệnh switch-case", new String[]{
+            "Câu lệnh switch-case trong C là một cấu trúc điều khiển cho phép thực hiện nhiều nhánh khác nhau dựa trên giá trị của một biểu thức. Nó thường được sử dụng thay thế cho chuỗi các câu lệnh if-else khi cần kiểm tra nhiều giá trị khác nhau của cùng một biến.",
+            "a. Biểu thức trong switch\n"
+            + "Biểu thức phải trả về giá trị kiểu số nguyên (int, char, enum)\n"
+            + "\n"
+            + "Không thể sử dụng kiểu float, double hoặc chuỗi",
+            "b. Các case\n"
+            + "Mỗi case theo sau là một giá trị cụ thể để so sánh\n"
+            + "\n"
+            + "Giá trị trong case phải là hằng số (không thể là biến)\n"
+            + "\n"
+            + "Các giá trị case phải là duy nhất (không trùng lặp)",
+            "c. Câu lệnh break\n"
+            + "break dùng để thoát khỏi khối switch\n"
+            + "\n"
+            + "Nếu không có break, chương trình sẽ tiếp tục thực hiện các case tiếp theo (hiện tượng \"fall through\")",
+            "d. Default case\n"
+            + "Là trường hợp mặc định khi không có case nào khớp\n"
+            + "\n"
+            + "Không bắt buộc phải có, nhưng nên sử dụng để xử lý các trường hợp không mong muốn",
+            "Ví dụ 1: Đánh giá điểm số",
+            "Ví dụ 2: Tính toán đơn giản",
+            "Ví dụ 3: Sử dụng fall through có chủ đích",
+            "Biểu thức trong switch phải có kiểu nguyên (int, char, enum)\n"
+            + "\n"
+            + "Các case phải là giá trị hằng số, không thể là biến\n"
+            + "\n"
+            + "Luôn sử dụng break trừ khi có lý do cụ thể để fall through\n"
+            + "\n"
+            + "Nên sử dụng default case để xử lý các trường hợp không mong muốn\n"
+            + "\n"
+            + "Switch-case thường hiệu quả hơn chuỗi if-else dài khi so sánh cùng một biến"
         });
 
         Content_MAP.put("", new String[]{});
@@ -12346,6 +13217,1823 @@ public class NoiDungBaiHoc {
             + "int main() {\n"
             + "    greet(); // Gọi hàm gốc\n"
             + "    greetByName(\"Nguyễn Văn A\"); // Gọi hàm mở rộng\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Nguồn gốc của C", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    printf(\"Hello, World!\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int number = 10;\n"
+            + "    \n"
+            + "    // If-else\n"
+            + "    if (number > 0) {\n"
+            + "        printf(\"Number is positive\\n\");\n"
+            + "    } else if (number < 0) {\n"
+            + "        printf(\"Number is negative\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"Number is zero\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    // For loop\n"
+            + "    for (int i = 0; i < 5; i++) {\n"
+            + "        printf(\"%d \", i);\n"
+            + "    }\n"
+            + "    printf(\"\\n\");\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Khai báo hàm\n"
+            + "int add(int a, int b);\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int x = 5, y = 3;\n"
+            + "    int sum = add(x, y);\n"
+            + "    \n"
+            + "    printf(\"Sum of %d and %d is %d\\n\", x, y, sum);\n"
+            + "    \n"
+            + "    // Con trỏ\n"
+            + "    int *ptr = &x;\n"
+            + "    printf(\"Value of x: %d, Address of x: %p\\n\", x, (void*)ptr);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}\n"
+            + "\n"
+            + "// Định nghĩa hàm\n"
+            + "int add(int a, int b) {\n"
+            + "    return a + b;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "// Định nghĩa struct\n"
+            + "struct Student {\n"
+            + "    char name[50];\n"
+            + "    int age;\n"
+            + "    float gpa;\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Khai báo và khởi tạo struct\n"
+            + "    struct Student student1;\n"
+            + "    strcpy(student1.name, \"Nguyen Van A\");\n"
+            + "    student1.age = 20;\n"
+            + "    student1.gpa = 3.5;\n"
+            + "    \n"
+            + "    // In thông tin\n"
+            + "    printf(\"Student Information:\\n\");\n"
+            + "    printf(\"Name: %s\\n\", student1.name);\n"
+            + "    printf(\"Age: %d\\n\", student1.age);\n"
+            + "    printf(\"GPA: %.2f\\n\", student1.gpa);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int *arr;\n"
+            + "    int n = 5;\n"
+            + "    \n"
+            + "    // Cấp phát bộ nhớ động\n"
+            + "    arr = (int*)malloc(n * sizeof(int));\n"
+            + "    \n"
+            + "    if (arr == NULL) {\n"
+            + "        printf(\"Memory allocation failed\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Gán giá trị\n"
+            + "    for (int i = 0; i < n; i++) {\n"
+            + "        arr[i] = i * 10;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // In giá trị\n"
+            + "    for (int i = 0; i < n; i++) {\n"
+            + "        printf(\"%d \", arr[i]);\n"
+            + "    }\n"
+            + "    printf(\"\\n\");\n"
+            + "    \n"
+            + "    // Giải phóng bộ nhớ\n"
+            + "    free(arr);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Các phiên bản của C", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "/* Khai báo hàm kiểu K&R */\n"
+            + "power(base, n)\n"
+            + "int base, n;\n"
+            + "{\n"
+            + "    int p;\n"
+            + "    \n"
+            + "    for (p = 1; n > 0; --n)\n"
+            + "        p = p * base;\n"
+            + "    return p;\n"
+            + "}\n"
+            + "\n"
+            + "main()\n"
+            + "{\n"
+            + "    int i;\n"
+            + "    \n"
+            + "    for (i = 0; i < 10; ++i)\n"
+            + "        printf(\"%d %d %d\\n\", i, power(2,i), power(-3,i));\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "/* Prototype hàm */\n"
+            + "int power(int base, int n);\n"
+            + "\n"
+            + "int main(void)\n"
+            + "{\n"
+            + "    int i;\n"
+            + "    \n"
+            + "    for (i = 0; i < 10; ++i) {\n"
+            + "        printf(\"%d %d %d\\n\", i, power(2,i), power(-3,i));\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Comment kiểu mới\n"
+            + "    return EXIT_SUCCESS;\n"
+            + "}\n"
+            + "\n"
+            + "int power(int base, int n)\n"
+            + "{\n"
+            + "    int p = 1;\n"
+            + "    \n"
+            + "    for (; n > 0; --n) {\n"
+            + "        p = p * base;\n"
+            + "    }\n"
+            + "    return p;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdbool.h>\n"
+            + "\n"
+            + "// Hàm với số lượng đối số thay đổi\n"
+            + "#define print(...) printf(__VA_ARGS__)\n"
+            + "\n"
+            + "int main(void)\n"
+            + "{\n"
+            + "    // Khai báo biến trong for\n"
+            + "    for (int i = 0; i < 10; i++) {\n"
+            + "        print(\"i = %d\\n\", i);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Mảng kích thước thay đổi\n"
+            + "    int n = 5;\n"
+            + "    float arr[n];\n"
+            + "    \n"
+            + "    // Kiểu bool\n"
+            + "    bool flag = true;\n"
+            + "    \n"
+            + "    // Số phức\n"
+            + "    double complex z = 1.0 + 2.0 * I;\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <threads.h>\n"
+            + "#include <stdalign.h>\n"
+            + "\n"
+            + "_Thread_local int tls_var = 10;\n"
+            + "\n"
+            + "void print_type(int x) {\n"
+            + "    _Generic(x,\n"
+            + "        int: printf(\"int\\n\"),\n"
+            + "        float: printf(\"float\\n\"),\n"
+            + "        default: printf(\"other\\n\")\n"
+            + "    );\n"
+            + "}\n"
+            + "\n"
+            + "int main(void)\n"
+            + "{\n"
+            + "    // Kiểm tra align\n"
+            + "    alignas(16) int aligned_arr[4];\n"
+            + "    \n"
+            + "    // Generic selection\n"
+            + "    print_type(0);\n"
+            + "    print_type(0.0f);\n"
+            + "    \n"
+            + "    // Static assert\n"
+            + "    static_assert(sizeof(int) >= 2, \"int must be at least 16 bits\");\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stddef.h>\n"
+            + "\n"
+            + "int main(void)\n"
+            + "{\n"
+            + "    // Tính năng từ C11 vẫn hoạt động\n"
+            + "    auto x = 3.14;\n"
+            + "    \n"
+            + "    // __STDC_VERSION__ cho biết phiên bản\n"
+            + "    printf(\"C standard version: %ld\\n\", __STDC_VERSION__);\n"
+            + "    \n"
+            + "    // C17 không thêm cú pháp mới đáng kể\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "[[deprecated(\"Use new_function instead\")]]\n"
+            + "void old_function() {\n"
+            + "    printf(\"This is old function\\n\");\n"
+            + "}\n"
+            + "\n"
+            + "int main(void)\n"
+            + "{\n"
+            + "    // Thuộc tính mới\n"
+            + "    [[maybe_unused]] int x = 42;\n"
+            + "    \n"
+            + "    // Unicode hỗ trợ tốt hơn\n"
+            + "    char8_t utf8_str[] = u8\"UTF-8 string\";\n"
+            + "    \n"
+            + "    // old_function(); // Cảnh báo deprecated\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("C và các ngôn ngữ lập trình khác", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    printf(\"Hello, World!\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "public class HelloWorld {\n"
+            + "    public static void main(String[] args) {\n"
+            + "        System.out.println(\"Hello, World!\");\n"
+            + "    }\n"
+            + "}",
+            "print(\"Hello, World!\")",
+            "console.log(\"Hello, World!\");",
+            "#include <iostream>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    std::cout << \"Hello, World!\" << std::endl;\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int *arr = (int*)malloc(5 * sizeof(int)); // Cấp phát\n"
+            + "    if (arr == NULL) {\n"
+            + "        // Xử lý lỗi\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Sử dụng mảng\n"
+            + "    for (int i = 0; i < 5; i++) {\n"
+            + "        arr[i] = i * 2;\n"
+            + "    }\n"
+            + "    \n"
+            + "    free(arr); // Giải phóng bộ nhớ\n"
+            + "    return 0;\n"
+            + "}",
+            "public class MemoryExample {\n"
+            + "    public static void main(String[] args) {\n"
+            + "        int[] arr = new int[5]; // Tự động quản lý bộ nhớ\n"
+            + "        \n"
+            + "        for (int i = 0; i < arr.length; i++) {\n"
+            + "            arr[i] = i * 2;\n"
+            + "        }\n"
+            + "        \n"
+            + "        // Không cần giải phóng bộ nhớ\n"
+            + "    }\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "// Mô phỏng lớp\n"
+            + "typedef struct {\n"
+            + "    int x;\n"
+            + "    void (*print)(int);\n"
+            + "} Number;\n"
+            + "\n"
+            + "void printNumber(int num) {\n"
+            + "    printf(\"Number: %d\\n\", num);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    Number n;\n"
+            + "    n.x = 10;\n"
+            + "    n.print = printNumber;\n"
+            + "    \n"
+            + "    n.print(n.x); // Gọi phương thức\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <iostream>\n"
+            + "\n"
+            + "class Number {\n"
+            + "private:\n"
+            + "    int x;\n"
+            + "public:\n"
+            + "    Number(int val) : x(val) {}\n"
+            + "    void print() {\n"
+            + "        std::cout << \"Number: \" << x << std::endl;\n"
+            + "    }\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    Number n(10);\n"
+            + "    n.print();\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int factorial(int n) {\n"
+            + "    if (n == 0) return 1;\n"
+            + "    return n * factorial(n - 1);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int num = 5;\n"
+            + "    printf(\"Factorial of %d is %d\\n\", num, factorial(num));\n"
+            + "    return 0;\n"
+            + "}",
+            "public class Factorial {\n"
+            + "    static int factorial(int n) {\n"
+            + "        if (n == 0) return 1;\n"
+            + "        return n * factorial(n - 1);\n"
+            + "    }\n"
+            + "    \n"
+            + "    public static void main(String[] args) {\n"
+            + "        int num = 5;\n"
+            + "        System.out.println(\"Factorial of \" + num + \" is \" + factorial(num));\n"
+            + "    }\n"
+            + "}",
+            "def factorial(n):\n"
+            + "    return 1 if n == 0 else n * factorial(n - 1)\n"
+            + "\n"
+            + "num = 5\n"
+            + "print(f\"Factorial of {num} is {factorial(num)}\")",
+            "function factorial(n) {\n"
+            + "    return n === 0 ? 1 : n * factorial(n - 1);\n"
+            + "}\n"
+            + "\n"
+            + "const num = 5;\n"
+            + "console.log(`Factorial of ${num} is ${factorial(num)}`);"
+        });
+
+        Code_MAP.put("Ứng dụng của C trong lập trình hệ thống", new String[]{
+            "#include <stdio.h>\n"
+            + "#include <unistd.h>\n"
+            + "#include <sys/types.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    pid_t pid = fork();\n"
+            + "    \n"
+            + "    if (pid == 0) {\n"
+            + "        // Code executed by child process\n"
+            + "        printf(\"Child Process - PID: %d\\n\", getpid());\n"
+            + "    } else if (pid > 0) {\n"
+            + "        // Code executed by parent process\n"
+            + "        printf(\"Parent Process - PID: %d, Child PID: %d\\n\", getpid(), pid);\n"
+            + "    } else {\n"
+            + "        // Fork failed\n"
+            + "        perror(\"fork failed\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <linux/module.h>\n"
+            + "#include <linux/fs.h>\n"
+            + "#include <linux/uaccess.h>\n"
+            + "\n"
+            + "#define DEVICE_NAME \"simple_gpio\"\n"
+            + "\n"
+            + "static int Major;\n"
+            + "static int gpio_state = 0;\n"
+            + "\n"
+            + "static int device_open(struct inode *inode, struct file *file) {\n"
+            + "    printk(KERN_INFO \"GPIO device opened\\n\");\n"
+            + "    return 0;\n"
+            + "}\n"
+            + "\n"
+            + "static ssize_t device_read(struct file *filp, char *buffer, size_t length, loff_t *offset) {\n"
+            + "    copy_to_user(buffer, &gpio_state, sizeof(gpio_state));\n"
+            + "    return sizeof(gpio_state);\n"
+            + "}\n"
+            + "\n"
+            + "static ssize_t device_write(struct file *filp, const char *buf, size_t len, loff_t *off) {\n"
+            + "    copy_from_user(&gpio_state, buf, sizeof(gpio_state));\n"
+            + "    printk(KERN_INFO \"GPIO state changed to %d\\n\", gpio_state);\n"
+            + "    return len;\n"
+            + "}\n"
+            + "\n"
+            + "static struct file_operations fops = {\n"
+            + "    .read = device_read,\n"
+            + "    .write = device_write,\n"
+            + "    .open = device_open,\n"
+            + "};\n"
+            + "\n"
+            + "int init_module(void) {\n"
+            + "    Major = register_chrdev(0, DEVICE_NAME, &fops);\n"
+            + "    if (Major < 0) {\n"
+            + "        printk(KERN_ALERT \"Registering char device failed with %d\\n\", Major);\n"
+            + "        return Major;\n"
+            + "    }\n"
+            + "    printk(KERN_INFO \"GPIO driver registered with major number %d\\n\", Major);\n"
+            + "    return 0;\n"
+            + "}\n"
+            + "\n"
+            + "void cleanup_module(void) {\n"
+            + "    unregister_chrdev(Major, DEVICE_NAME);\n"
+            + "    printk(KERN_INFO \"GPIO driver unregistered\\n\");\n"
+            + "}\n"
+            + "\n"
+            + "MODULE_LICENSE(\"GPL\");",
+            "#include <avr/io.h>\n"
+            + "#include <util/delay.h>\n"
+            + "\n"
+            + "#define LED_PIN PB0\n"
+            + "#define DELAY_MS 500\n"
+            + "\n"
+            + "int main(void) {\n"
+            + "    // Set LED pin as output\n"
+            + "    DDRB |= (1 << LED_PIN);\n"
+            + "    \n"
+            + "    while(1) {\n"
+            + "        // Toggle LED\n"
+            + "        PORTB ^= (1 << LED_PIN);\n"
+            + "        _delay_ms(DELAY_MS);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "#include <string.h>\n"
+            + "#include <unistd.h>\n"
+            + "#include <sys/socket.h>\n"
+            + "#include <netinet/in.h>\n"
+            + "\n"
+            + "#define PORT 8080\n"
+            + "#define BUFFER_SIZE 1024\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int server_fd, new_socket;\n"
+            + "    struct sockaddr_in address;\n"
+            + "    int opt = 1;\n"
+            + "    int addrlen = sizeof(address);\n"
+            + "    char buffer[BUFFER_SIZE] = {0};\n"
+            + "    \n"
+            + "    // Creating socket file descriptor\n"
+            + "    if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) {\n"
+            + "        perror(\"socket failed\");\n"
+            + "        exit(EXIT_FAILURE);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Forcefully attaching socket to the port 8080\n"
+            + "    if (setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR | SO_REUSEPORT, &opt, sizeof(opt))) {\n"
+            + "        perror(\"setsockopt\");\n"
+            + "        exit(EXIT_FAILURE);\n"
+            + "    }\n"
+            + "    \n"
+            + "    address.sin_family = AF_INET;\n"
+            + "    address.sin_addr.s_addr = INADDR_ANY;\n"
+            + "    address.sin_port = htons(PORT);\n"
+            + "    \n"
+            + "    // Bind the socket to the port\n"
+            + "    if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0) {\n"
+            + "        perror(\"bind failed\");\n"
+            + "        exit(EXIT_FAILURE);\n"
+            + "    }\n"
+            + "    \n"
+            + "    if (listen(server_fd, 3) < 0) {\n"
+            + "        perror(\"listen\");\n"
+            + "        exit(EXIT_FAILURE);\n"
+            + "    }\n"
+            + "    \n"
+            + "    if ((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen)) < 0) {\n"
+            + "        perror(\"accept\");\n"
+            + "        exit(EXIT_FAILURE);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Read and echo back the message\n"
+            + "    read(new_socket, buffer, BUFFER_SIZE);\n"
+            + "    printf(\"Message from client: %s\\n\", buffer);\n"
+            + "    send(new_socket, buffer, strlen(buffer), 0);\n"
+            + "    printf(\"Echo message sent\\n\");\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <dirent.h>\n"
+            + "\n"
+            + "int main(int argc, char **argv) {\n"
+            + "    DIR *dir;\n"
+            + "    struct dirent *entry;\n"
+            + "    char *path = argc > 1 ? argv[1] : \".\";\n"
+            + "    \n"
+            + "    if ((dir = opendir(path)) == NULL) {\n"
+            + "        perror(\"opendir\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    while ((entry = readdir(dir)) != NULL) {\n"
+            + "        printf(\"%s\\n\", entry->d_name);\n"
+            + "    }\n"
+            + "    \n"
+            + "    closedir(dir);\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <unistd.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    if (geteuid() != 0) {\n"
+            + "        fprintf(stderr, \"This program requires root privileges\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    printf(\"Running with root privileges\\n\");\n"
+            + "    // Thực hiện các thao tác yêu cầu quyền root ở đây\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <sys/stat.h>\n"
+            + "#include <time.h>\n"
+            + "\n"
+            + "int main(int argc, char *argv[]) {\n"
+            + "    if (argc != 2) {\n"
+            + "        fprintf(stderr, \"Usage: %s <filename>\\n\", argv[0]);\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    struct stat file_info;\n"
+            + "    \n"
+            + "    if (stat(argv[1], &file_info) == -1) {\n"
+            + "        perror(\"stat\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    printf(\"File: %s\\n\", argv[1]);\n"
+            + "    printf(\"Size: %ld bytes\\n\", file_info.st_size);\n"
+            + "    printf(\"Inode: %ld\\n\", file_info.st_ino);\n"
+            + "    printf(\"Last access: %s\", ctime(&file_info.st_atime));\n"
+            + "    printf(\"Last modification: %s\", ctime(&file_info.st_mtime));\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "void check_virtualization() {\n"
+            + "    unsigned int hypervisor_bit;\n"
+            + "    \n"
+            + "    asm volatile (\n"
+            + "        \"mov $1, %%eax\\n\"\n"
+            + "        \"cpuid\\n\"\n"
+            + "        \"bt $31, %%ecx\\n\"\n"
+            + "        \"setc %0\\n\"\n"
+            + "        : \"=r\" (hypervisor_bit)\n"
+            + "        :\n"
+            + "        : \"%eax\", \"%ebx\", \"%ecx\", \"%edx\"\n"
+            + "    );\n"
+            + "    \n"
+            + "    if (hypervisor_bit) {\n"
+            + "        printf(\"Running in a virtualized environment\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"Not running in a virtualized environment\\n\");\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    check_virtualization();\n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("C trong phát triển phần mềm nhúng", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    printf(\"Hello Embedded World!\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdint.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    uint8_t small = 255;      // 1 byte (0-255)\n"
+            + "    uint16_t medium = 65535;  // 2 bytes (0-65535)\n"
+            + "    uint32_t large = 4294967295; // 4 bytes\n"
+            + "    float fp_number = 3.14159;\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#define LED_ON (1 << 5)  // Bit 5\n"
+            + "\n"
+            + "int main() {\n"
+            + "    uint8_t port = 0x00;\n"
+            + "    \n"
+            + "    // Bật LED\n"
+            + "    port |= LED_ON;\n"
+            + "    \n"
+            + "    // Tắt LED\n"
+            + "    port &= ~LED_ON;\n"
+            + "    \n"
+            + "    // Đảo trạng thái LED\n"
+            + "    port ^= LED_ON;\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "// Giả sử địa chỉ thanh ghi GPIO là 0x40021000\n"
+            + "#define GPIO_BASE ((volatile uint32_t*)0x40021000)\n"
+            + "\n"
+            + "typedef struct {\n"
+            + "    volatile uint32_t MODER;   // GPIO port mode register\n"
+            + "    volatile uint32_t OTYPER;  // GPIO port output type register\n"
+            + "    volatile uint32_t OSPEEDR; // GPIO port output speed register\n"
+            + "    volatile uint32_t PUPDR;   // GPIO port pull-up/pull-down register\n"
+            + "    volatile uint32_t IDR;     // GPIO port input data register\n"
+            + "    volatile uint32_t ODR;     // GPIO port output data register\n"
+            + "} GPIO_TypeDef;\n"
+            + "\n"
+            + "#define GPIOA ((GPIO_TypeDef*)GPIO_BASE)\n"
+            + "\n"
+            + "void configure_led() {\n"
+            + "    // Cấu hình chân PA5 là output\n"
+            + "    GPIOA->MODER &= ~(0x3 << (5 * 2));  // Clear bits\n"
+            + "    GPIOA->MODER |= (0x1 << (5 * 2));   // Set output mode\n"
+            + "}\n"
+            + "\n"
+            + "void toggle_led() {\n"
+            + "    GPIOA->ODR ^= (1 << 5);  // Đảo trạng thái LED\n"
+            + "}",
+            "#include <stdint.h>\n"
+            + "\n"
+            + "// Prototype hàm xử lý ngắt\n"
+            + "void EXTI0_IRQHandler(void) __attribute__((interrupt));\n"
+            + "\n"
+            + "void EXTI0_IRQHandler(void) {\n"
+            + "    // Xử lý ngắt\n"
+            + "    if (EXTI->PR & (1 << 0)) {\n"
+            + "        // Xóa cờ ngắt\n"
+            + "        EXTI->PR = (1 << 0);\n"
+            + "        \n"
+            + "        // Thực hiện hành động khi ngắt xảy ra\n"
+            + "        toggle_led();\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "void configure_interrupt() {\n"
+            + "    // Cấu hình ngắt ngoài cho chân PA0\n"
+            + "    RCC->APB2ENR |= RCC_APB2ENR_AFIOEN;  // Bật clock cho AFIO\n"
+            + "    AFIO->EXTICR[0] |= AFIO_EXTICR1_EXTI0_PA;  // PA0 cho EXTI0\n"
+            + "    \n"
+            + "    EXTI->IMR |= EXTI_IMR_MR0;  // Bật mask ngắt cho EXTI0\n"
+            + "    EXTI->RTSR |= EXTI_RTSR_TR0; // Bật ngắt cạnh lên\n"
+            + "    \n"
+            + "    NVIC_EnableIRQ(EXTI0_IRQn);  // Bật ngắt trong NVIC\n"
+            + "    NVIC_SetPriority(EXTI0_IRQn, 0);  // Đặt độ ưu tiên\n"
+            + "}",
+            "#define BUFFER_SIZE 128\n"
+            + "\n"
+            + "// Biến toàn cục - lưu trong data/bss segment\n"
+            + "static uint8_t global_buffer[BUFFER_SIZE];\n"
+            + "\n"
+            + "void process_data() {\n"
+            + "    // Biến cục bộ - lưu trên stack\n"
+            + "    uint8_t local_buffer[BUFFER_SIZE];\n"
+            + "    \n"
+            + "    // Sử dụng bộ nhớ tĩnh\n"
+            + "    static uint8_t persistent_var = 0;\n"
+            + "    persistent_var++;\n"
+            + "}",
+            "#include <stdlib.h>\n"
+            + "\n"
+            + "void use_heap_memory() {\n"
+            + "    // Cấp phát động - tránh dùng trong hệ thống nhúng thời gian thực\n"
+            + "    uint8_t *dynamic_buffer = malloc(BUFFER_SIZE);\n"
+            + "    \n"
+            + "    if (dynamic_buffer != NULL) {\n"
+            + "        // Sử dụng bộ nhớ\n"
+            + "        dynamic_buffer[0] = 0xAB;\n"
+            + "        \n"
+            + "        // Giải phóng bộ nhớ\n"
+            + "        free(dynamic_buffer);\n"
+            + "    }\n"
+            + "}",
+            "typedef struct {\n"
+            + "    volatile uint32_t SR;   // Status register\n"
+            + "    volatile uint32_t DR;   // Data register\n"
+            + "    volatile uint32_t BRR;  // Baud rate register\n"
+            + "    volatile uint32_t CR1;  // Control register 1\n"
+            + "} USART_TypeDef;\n"
+            + "\n"
+            + "#define USART1 ((USART_TypeDef*)0x40013800)\n"
+            + "\n"
+            + "void uart_init(uint32_t baudrate) {\n"
+            + "    // Bật clock cho USART1 và GPIO\n"
+            + "    RCC->APB2ENR |= RCC_APB2ENR_USART1EN | RCC_APB2ENR_IOPAEN;\n"
+            + "    \n"
+            + "    // Cấu hình chân PA9 (TX) và PA10 (RX)\n"
+            + "    GPIOA->CRH &= ~(GPIO_CRH_CNF9 | GPIO_CRH_MODE9);\n"
+            + "    GPIOA->CRH |= GPIO_CRH_CNF9_1 | GPIO_CRH_MODE9;\n"
+            + "    \n"
+            + "    // Cấu hình baud rate\n"
+            + "    USART1->BRR = SystemCoreClock / baudrate;\n"
+            + "    \n"
+            + "    // Bật USART, TX, RX\n"
+            + "    USART1->CR1 = USART_CR1_UE | USART_CR1_TE | USART_CR1_RE;\n"
+            + "}\n"
+            + "\n"
+            + "void uart_send_char(char c) {\n"
+            + "    while (!(USART1->SR & USART_SR_TXE));  // Chờ đến khi bộ đệm trống\n"
+            + "    USART1->DR = c;\n"
+            + "}\n"
+            + "\n"
+            + "char uart_receive_char() {\n"
+            + "    while (!(USART1->SR & USART_SR_RXNE));  // Chờ đến khi có dữ liệu\n"
+            + "    return USART1->DR;\n"
+            + "}",
+            "typedef struct {\n"
+            + "    volatile uint32_t CR1;     // Control register 1\n"
+            + "    volatile uint32_t CR2;     // Control register 2\n"
+            + "    volatile uint32_t SR;      // Status register\n"
+            + "    volatile uint32_t DR;      // Data register\n"
+            + "    volatile uint32_t CRCPR;   // CRC polynomial register\n"
+            + "    volatile uint32_t RXCRCR;  // RX CRC register\n"
+            + "    volatile uint32_t TXCRCR;  // TX CRC register\n"
+            + "} SPI_TypeDef;\n"
+            + "\n"
+            + "#define SPI1 ((SPI_TypeDef*)0x40013000)\n"
+            + "\n"
+            + "void spi_init() {\n"
+            + "    // Bật clock SPI và GPIO\n"
+            + "    RCC->APB2ENR |= RCC_APB2ENR_SPI1EN | RCC_APB2ENR_IOPAEN;\n"
+            + "    \n"
+            + "    // Cấu hình chân SPI (PA5-SCK, PA6-MISO, PA7-MOSI)\n"
+            + "    GPIOA->CRL &= ~(GPIO_CRL_CNF5 | GPIO_CRL_MODE5 | \n"
+            + "                    GPIO_CRL_CNF6 | GPIO_CRL_MODE6 | \n"
+            + "                    GPIO_CRL_CNF7 | GPIO_CRL_MODE7);\n"
+            + "    GPIOA->CRL |= GPIO_CRL_CNF5_1 | GPIO_CRL_MODE5 |\n"
+            + "                  GPIO_CRL_CNF6_1 | GPIO_CRL_MODE6 |\n"
+            + "                  GPIO_CRL_CNF7_1 | GPIO_CRL_MODE7;\n"
+            + "    \n"
+            + "    // Cấu hình SPI: Master, clock polarity/phase, prescaler\n"
+            + "    SPI1->CR1 = SPI_CR1_MSTR | SPI_CR1_BR_0 | SPI_CR1_SPE;\n"
+            + "}\n"
+            + "\n"
+            + "uint8_t spi_transfer(uint8_t data) {\n"
+            + "    while (!(SPI1->SR & SPI_SR_TXE));  // Chờ bộ đệm truyền trống\n"
+            + "    SPI1->DR = data;\n"
+            + "    \n"
+            + "    while (!(SPI1->SR & SPI_SR_RXNE)); // Chờ nhận dữ liệu\n"
+            + "    return SPI1->DR;\n"
+            + "}",
+            "#include \"FreeRTOS.h\"\n"
+            + "#include \"task.h\"\n"
+            + "\n"
+            + "void vTask1(void *pvParameters) {\n"
+            + "    while (1) {\n"
+            + "        // Thực hiện công việc của task 1\n"
+            + "        toggle_led();\n"
+            + "        vTaskDelay(pdMS_TO_TICKS(500));  // Delay 500ms\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "void vTask2(void *pvParameters) {\n"
+            + "    while (1) {\n"
+            + "        // Thực hiện công việc của task 2\n"
+            + "        process_sensor_data();\n"
+            + "        vTaskDelay(pdMS_TO_TICKS(1000)); // Delay 1s\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Tạo các task\n"
+            + "    xTaskCreate(vTask1, \"Task1\", configMINIMAL_STACK_SIZE, NULL, 1, NULL);\n"
+            + "    xTaskCreate(vTask2, \"Task2\", configMINIMAL_STACK_SIZE, NULL, 2, NULL);\n"
+            + "    \n"
+            + "    // Khởi động scheduler\n"
+            + "    vTaskStartScheduler();\n"
+            + "    \n"
+            + "    // Không bao giờ đến đây\n"
+            + "    while (1);\n"
+            + "}",
+            "#include \"FreeRTOS.h\"\n"
+            + "#include \"queue.h\"\n"
+            + "#include \"semphr.h\"\n"
+            + "\n"
+            + "// Tạo queue và semaphore\n"
+            + "QueueHandle_t xQueue = NULL;\n"
+            + "SemaphoreHandle_t xSemaphore = NULL;\n"
+            + "\n"
+            + "void producer_task(void *pvParameters) {\n"
+            + "    uint8_t data = 0;\n"
+            + "    while (1) {\n"
+            + "        data = read_sensor();\n"
+            + "        \n"
+            + "        // Gửi dữ liệu qua queue\n"
+            + "        xQueueSend(xQueue, &data, portMAX_DELAY);\n"
+            + "        \n"
+            + "        // Cho semaphore\n"
+            + "        xSemaphoreGive(xSemaphore);\n"
+            + "        \n"
+            + "        vTaskDelay(pdMS_TO_TICKS(200));\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "void consumer_task(void *pvParameters) {\n"
+            + "    uint8_t received_data;\n"
+            + "    while (1) {\n"
+            + "        // Chờ semaphore\n"
+            + "        xSemaphoreTake(xSemaphore, portMAX_DELAY);\n"
+            + "        \n"
+            + "        // Nhận dữ liệu từ queue\n"
+            + "        xQueueReceive(xQueue, &received_data, portMAX_DELAY);\n"
+            + "        \n"
+            + "        process_data(received_data);\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Tạo queue và semaphore\n"
+            + "    xQueue = xQueueCreate(10, sizeof(uint8_t));\n"
+            + "    xSemaphore = xSemaphoreCreateBinary();\n"
+            + "    \n"
+            + "    // Tạo các task\n"
+            + "    xTaskCreate(producer_task, \"Producer\", configMINIMAL_STACK_SIZE, NULL, 2, NULL);\n"
+            + "    xTaskCreate(consumer_task, \"Consumer\", configMINIMAL_STACK_SIZE, NULL, 1, NULL);\n"
+            + "    \n"
+            + "    vTaskStartScheduler();\n"
+            + "    \n"
+            + "    while (1);\n"
+            + "}",
+            "// Macro để đọc thanh ghi nhanh\n"
+            + "#define READ_REG(addr) (*(volatile uint32_t*)(addr))\n"
+            + "\n"
+            + "// Hàm inline để tối ưu hiệu suất\n"
+            + "static inline void delay_us(uint32_t us) {\n"
+            + "    uint32_t count = us * (SystemCoreClock / 1000000) / 5;\n"
+            + "    while (count--);\n"
+            + "}\n"
+            + "\n"
+            + "// Sử dụng\n"
+            + "void example_optimization() {\n"
+            + "    uint32_t reg_value = READ_REG(0x40021000);\n"
+            + "    delay_us(100);  // Delay 100 micro giây\n"
+            + "}",
+            "// Không tối ưu\n"
+            + "void slow_loop() {\n"
+            + "    for (int i = 0; i < 100; i++) {\n"
+            + "        do_something(i);\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "// Tối ưu hơn\n"
+            + "void fast_loop() {\n"
+            + "    int i = 100;\n"
+            + "    while (i--) {\n"
+            + "        do_something(100 - i - 1);\n"
+            + "    }\n"
+            + "}",
+            "#include <assert.h>\n"
+            + "\n"
+            + "#define ASSERT_PORT(port) assert((port) >= GPIOA && (port) <= GPIOC)\n"
+            + "\n"
+            + "void set_pin(GPIO_TypeDef *port, uint8_t pin) {\n"
+            + "    ASSERT_PORT(port);\n"
+            + "    assert(pin < 16);\n"
+            + "    \n"
+            + "    port->BSRR = (1 << pin);  // Set pin\n"
+            + "}",
+            "// Log levels\n"
+            + "typedef enum {\n"
+            + "    LOG_ERROR,\n"
+            + "    LOG_WARNING,\n"
+            + "    LOG_INFO,\n"
+            + "    LOG_DEBUG\n"
+            + "} log_level_t;\n"
+            + "\n"
+            + "void log_message(log_level_t level, const char *message) {\n"
+            + "    const char *level_str[] = {\"ERROR\", \"WARNING\", \"INFO\", \"DEBUG\"};\n"
+            + "    \n"
+            + "    if (level <= CURRENT_LOG_LEVEL) {\n"
+            + "        uart_send_string(\"[\");\n"
+            + "        uart_send_string(level_str[level]);\n"
+            + "        uart_send_string(\"] \");\n"
+            + "        uart_send_string(message);\n"
+            + "        uart_send_string(\"\\r\\n\");\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "// Sử dụng\n"
+            + "log_message(LOG_ERROR, \"System initialization failed\");\n"
+            + "log_message(LOG_INFO, \"Starting main loop\");",
+            "// Đặt tên có ý nghĩa\n"
+            + "#define MAX_SENSOR_READINGS  32\n"
+            + "typedef enum {\n"
+            + "    SENSOR_STATE_IDLE,\n"
+            + "    SENSOR_STATE_READING,\n"
+            + "    SENSOR_STATE_ERROR\n"
+            + "} sensor_state_t;\n"
+            + "\n"
+            + "// Sử dụng static cho hàm cục bộ\n"
+            + "static uint32_t calculate_checksum(const uint8_t *data, size_t length) {\n"
+            + "    uint32_t sum = 0;\n"
+            + "    for (size_t i = 0; i < length; i++) {\n"
+            + "        sum += data[i];\n"
+            + "    }\n"
+            + "    return sum;\n"
+            + "}\n"
+            + "\n"
+            + "// Cấu trúc code rõ ràng\n"
+            + "typedef struct {\n"
+            + "    uint8_t id;\n"
+            + "    uint16_t value;\n"
+            + "    uint32_t timestamp;\n"
+            + "} sensor_data_t;\n"
+            + "\n"
+            + "void process_sensor_data(const sensor_data_t *data) {\n"
+            + "    if (data == NULL) return;\n"
+            + "    \n"
+            + "    // Xử lý dữ liệu\n"
+            + "}",
+            "typedef enum {\n"
+            + "    ERROR_NONE = 0,\n"
+            + "    ERROR_INVALID_PARAM,\n"
+            + "    ERROR_TIMEOUT,\n"
+            + "    ERROR_HARDWARE\n"
+            + "} error_code_t;\n"
+            + "\n"
+            + "error_code_t initialize_peripheral(void) {\n"
+            + "    if (!check_hardware()) {\n"
+            + "        return ERROR_HARDWARE;\n"
+            + "    }\n"
+            + "    \n"
+            + "    if (configure() != 0) {\n"
+            + "        return ERROR_INVALID_PARAM;\n"
+            + "    }\n"
+            + "    \n"
+            + "    return ERROR_NONE;\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    error_code_t err = initialize_peripheral();\n"
+            + "    if (err != ERROR_NONE) {\n"
+            + "        handle_error(err);\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Ứng dụng chính\n"
+            + "    while (1) {\n"
+            + "        run_application();\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Cấu trúc tổng quát", new String[]{
+            "#include <stdio.h>   // Thư viện nhập xuất chuẩn\n"
+            + "#include <stdlib.h>  // Thư viện các hàm tiện ích\n"
+            + "#include <math.h>    // Thư viện toán học\n"
+            + "#include <string.h>  // Thư viện xử lý chuỗi",
+            "#define PI 3.14159265359\n"
+            + "#define MAX_SIZE 100\n"
+            + "#define GREETING \"Xin chao ban!\"",
+            "// Nguyên mẫu hàm tính tổng hai số\n"
+            + "int sum(int a, int b);\n"
+            + "\n"
+            + "// Nguyên mẫu hàm kiểm tra số nguyên tố\n"
+            + "int isPrime(int n);\n"
+            + "\n"
+            + "// Nguyên mẫu hàm in mảng\n"
+            + "void printArray(int arr[], int size);",
+            "int globalCounter = 0;       // Biến đếm toàn cục\n"
+            + "const float TAX_RATE = 0.1;  // Hằng số thuế",
+            "int main() {\n"
+            + "    // Khai báo biến cục bộ\n"
+            + "    int a = 5, b = 10;\n"
+            + "    int result;\n"
+            + "    \n"
+            + "    // Gọi hàm tính tổng\n"
+            + "    result = sum(a, b);\n"
+            + "    printf(\"Tong cua %d va %d la %d\\n\", a, b, result);\n"
+            + "    \n"
+            + "    // Kiểm tra số nguyên tố\n"
+            + "    if (isPrime(7)) {\n"
+            + "        printf(\"7 la so nguyen to\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Sử dụng biến toàn cục\n"
+            + "    globalCounter++;\n"
+            + "    printf(\"Gia tri counter: %d\\n\", globalCounter);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "// Hàm tính tổng hai số\n"
+            + "int sum(int a, int b) {\n"
+            + "    return a + b;\n"
+            + "}\n"
+            + "\n"
+            + "// Hàm kiểm tra số nguyên tố\n"
+            + "int isPrime(int n) {\n"
+            + "    if (n <= 1) return 0;\n"
+            + "    for (int i = 2; i <= sqrt(n); i++) {\n"
+            + "        if (n % i == 0) return 0;\n"
+            + "    }\n"
+            + "    return 1;\n"
+            + "}\n"
+            + "\n"
+            + "// Hàm in mảng\n"
+            + "void printArray(int arr[], int size) {\n"
+            + "    for (int i = 0; i < size; i++) {\n"
+            + "        printf(\"%d \", arr[i]);\n"
+            + "    }\n"
+            + "    printf(\"\\n\");\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "#include <math.h>\n"
+            + "\n"
+            + "#define PI 3.14159265359\n"
+            + "#define MAX_SIZE 100\n"
+            + "\n"
+            + "// Function prototypes\n"
+            + "double calculateCircleArea(double radius);\n"
+            + "void printFibonacci(int n);\n"
+            + "int factorial(int n);\n"
+            + "\n"
+            + "// Global variables\n"
+            + "int globalCounter = 0;\n"
+            + "\n"
+            + "int main() {\n"
+            + "    double radius = 5.0;\n"
+            + "    printf(\"Dien tich hinh tron ban kinh %.2f la: %.2f\\n\", \n"
+            + "           radius, calculateCircleArea(radius));\n"
+            + "    \n"
+            + "    printf(\"Day Fibonacci 10 so dau: \");\n"
+            + "    printFibonacci(10);\n"
+            + "    \n"
+            + "    printf(\"Giai thua cua 5 la: %d\\n\", factorial(5));\n"
+            + "    \n"
+            + "    globalCounter = 10;\n"
+            + "    printf(\"Gia tri counter: %d\\n\", globalCounter);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}\n"
+            + "\n"
+            + "// Calculate area of a circle\n"
+            + "double calculateCircleArea(double radius) {\n"
+            + "    return PI * radius * radius;\n"
+            + "}\n"
+            + "\n"
+            + "// Print Fibonacci sequence\n"
+            + "void printFibonacci(int n) {\n"
+            + "    int a = 0, b = 1, c;\n"
+            + "    for (int i = 1; i <= n; i++) {\n"
+            + "        printf(\"%d \", a);\n"
+            + "        c = a + b;\n"
+            + "        a = b;\n"
+            + "        b = c;\n"
+            + "    }\n"
+            + "    printf(\"\\n\");\n"
+            + "}\n"
+            + "\n"
+            + "// Calculate factorial\n"
+            + "int factorial(int n) {\n"
+            + "    if (n == 0) return 1;\n"
+            + "    return n * factorial(n - 1);\n"
+            + "}"
+        });
+
+        Code_MAP.put("Khai báo biến", new String[]{
+            "kiểu_dữ_liệu tên_biến [= giá_trị_khởi_tạo];",
+            "int a = 10;          // Số nguyên (thường 4 byte)\n"
+            + "short b = 20;        // Số nguyên ngắn (2 byte)\n"
+            + "long c = 100000L;    // Số nguyên dài (4 hoặc 8 byte)\n"
+            + "long long d = 123456789LL; // Số nguyên rất dài (8 byte)\n"
+            + "unsigned int e = 50;  // Số nguyên không dấu",
+            "float f = 3.14f;      // Số thực độ chính xác đơn (4 byte)\n"
+            + "double g = 3.141592;  // Số thực độ chính xác kép (8 byte)\n"
+            + "long double h = 3.1415926535L; // Số thực độ chính xác mở rộng",
+            "char ch1 = 'A';       // Ký tự đơn (1 byte)\n"
+            + "char ch2 = 65;        // Cũng là 'A' (theo bảng ASCII)",
+            "#include <stdbool.h>\n"
+            + "bool isActive = true; // Kiểu logic (true/false)",
+            "int x = 1, y = 2, z = 3;\n"
+            + "float f1 = 1.1, f2 = 2.2;\n"
+            + "char c1 = 'a', c2 = 'b', c3 = 'c';",
+            "void counter() {\n"
+            + "    static int count = 0; // Chỉ khởi tạo một lần\n"
+            + "    count++;\n"
+            + "    printf(\"Count: %d\\n\", count);\n"
+            + "}",
+            "register int fastVar = 0;",
+            "volatile int hardwareRegister;",
+            "const float PI = 3.14159;\n"
+            + "const int MAX_SIZE = 100;",
+            "int globalVar = 42;",
+            "extern int globalVar; // Sử dụng biến globalVar từ File1.c",
+            "#include <stdio.h>\n"
+            + "#include <stdbool.h>\n"
+            + "\n"
+            + "// Biến toàn cục\n"
+            + "int globalCount = 0;\n"
+            + "\n"
+            + "// Hằng số\n"
+            + "const double TAX_RATE = 0.1;\n"
+            + "\n"
+            + "void exampleFunction() {\n"
+            + "    // Biến cục bộ\n"
+            + "    int localVar = 10;\n"
+            + "    \n"
+            + "    // Biến static\n"
+            + "    static int staticVar = 5;\n"
+            + "    \n"
+            + "    printf(\"Local: %d, Static: %d\\n\", localVar, staticVar);\n"
+            + "    localVar++;\n"
+            + "    staticVar++;\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Khai báo các kiểu biến khác nhau\n"
+            + "    int age = 25;\n"
+            + "    float weight = 68.5f;\n"
+            + "    char grade = 'A';\n"
+            + "    bool isStudent = true;\n"
+            + "    \n"
+            + "    // Khai báo nhiều biến cùng kiểu\n"
+            + "    double x = 1.1, y = 2.2, z = 3.3;\n"
+            + "    \n"
+            + "    // Biến register\n"
+            + "    register int counter;\n"
+            + "    \n"
+            + "    // Biến volatile\n"
+            + "    volatile int hardwareData;\n"
+            + "    \n"
+            + "    // Biến const\n"
+            + "    const int MAX_USERS = 100;\n"
+            + "    \n"
+            + "    printf(\"Age: %d, Weight: %.1f, Grade: %c\\n\", age, weight, grade);\n"
+            + "    printf(\"Is student: %s\\n\", isStudent ? \"true\" : \"false\");\n"
+            + "    \n"
+            + "    // Gọi hàm nhiều lần để thấy sự khác biệt giữa biến cục bộ và static\n"
+            + "    exampleFunction(); // Local: 10, Static: 5\n"
+            + "    exampleFunction(); // Local: 10, Static: 6\n"
+            + "    exampleFunction(); // Local: 10, Static: 7\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "int _count;\n"
+            + "float averageScore;\n"
+            + "double taxRate2023;",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int globalVar = 10; // Biến toàn cục\n"
+            + "\n"
+            + "void testFunction(int param) { // param là biến tham số\n"
+            + "    int localVar = 20; // Biến cục bộ\n"
+            + "    printf(\"Global: %d, Param: %d, Local: %d\\n\", globalVar, param, localVar);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    testFunction(15);\n"
+            + "    // printf(\"%d\", localVar); // Lỗi: localVar không tồn tại ở đây\n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Hàm main", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main(void) {\n"
+            + "    printf(\"Hello, World!\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main(int argc, char *argv[]) {\n"
+            + "    printf(\"Chương trình: %s\\n\", argv[0]);\n"
+            + "    printf(\"Số tham số: %d\\n\", argc - 1);\n"
+            + "    \n"
+            + "    for (int i = 1; i < argc; i++) {\n"
+            + "        printf(\"Tham số %d: %s\\n\", i, argv[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main(int argc, char *argv[], char *envp[]) {\n"
+            + "    printf(\"Tham số môi trường:\\n\");\n"
+            + "    \n"
+            + "    for (int i = 0; envp[i] != NULL; i++) {\n"
+            + "        printf(\"%s\\n\", envp[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h> // cho hàm atoi()\n"
+            + "\n"
+            + "// Hàm tính giai thừa\n"
+            + "int factorial(int n) {\n"
+            + "    if (n <= 1) return 1;\n"
+            + "    return n * factorial(n - 1);\n"
+            + "}\n"
+            + "\n"
+            + "int main(int argc, char *argv[]) {\n"
+            + "    // Kiểm tra số lượng tham số\n"
+            + "    if (argc != 2) {\n"
+            + "        printf(\"Usage: %s <number>\\n\", argv[0]);\n"
+            + "        return 1; // Trả về mã lỗi\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Chuyển tham số thành số\n"
+            + "    int num = atoi(argv[1]);\n"
+            + "    \n"
+            + "    // Kiểm tra số hợp lệ\n"
+            + "    if (num < 0) {\n"
+            + "        printf(\"Error: Number must be non-negative.\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Tính và in kết quả\n"
+            + "    printf(\"Factorial of %d is %d\\n\", num, factorial(num));\n"
+            + "    \n"
+            + "    return 0; // Thành công\n"
+            + "}"
+        });
+
+        Code_MAP.put("Các bước biên dịch", new String[]{
+            "// sample.c\n"
+            + "#include <stdio.h>\n"
+            + "#define PI 3.14159\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Tính diện tích hình tròn\n"
+            + "    float radius = 5.0;\n"
+            + "    float area = PI * radius * radius;\n"
+            + "    printf(\"Diện tích hình tròn: %.2f\\n\", area);\n"
+            + "    return 0;\n"
+            + "}",
+            "// Nội dung từ stdio.h được chèn vào đây\n"
+            + "// Macro PI được thay thế bằng 3.14159\n"
+            + "// Comment đã bị xóa\n"
+            + "\n"
+            + "int main() {\n"
+            + "    float radius = 5.0;\n"
+            + "    float area = 3.14159 * radius * radius;\n"
+            + "    printf(\"Diện tích hình tròn: %.2f\\n\", area);\n"
+            + "    return 0;\n"
+            + "}",
+            "	.file	\"sample.c\"\n"
+            + "	.text\n"
+            + "	.section	.rodata\n"
+            + ".LC1:\n"
+            + "	.string	\"Di\\341\\273\\207n t\\303\\255ch h\\303\\254nh tr\\303\\262n: %.2f\\n\"\n"
+            + "	.text\n"
+            + "	.globl	main\n"
+            + "	.type	main, @function\n"
+            + "main:\n"
+            + ".LFB0:\n"
+            + "	.cfi_startproc\n"
+            + "	pushq	%rbp\n"
+            + "	.cfi_def_cfa_offset 16\n"
+            + "	.cfi_offset 6, -16\n"
+            + "	movq	%rsp, %rbp\n"
+            + "	.cfi_def_cfa_register 6\n"
+            + "	subq	$16, %rsp\n"
+            + "	movss	.LC0(%rip), %xmm0\n"
+            + "	movss	%xmm0, -8(%rbp)\n"
+            + "	...",
+            "// circle.h\n"
+            + "#ifndef CIRCLE_H\n"
+            + "#define CIRCLE_H\n"
+            + "\n"
+            + "#define PI 3.14159\n"
+            + "\n"
+            + "float calculate_area(float radius);\n"
+            + "\n"
+            + "#endif",
+            "// circle.c\n"
+            + "#include \"circle.h\"\n"
+            + "\n"
+            + "float calculate_area(float radius) {\n"
+            + "    return PI * radius * radius;\n"
+            + "}",
+            "// main.c\n"
+            + "#include <stdio.h>\n"
+            + "#include \"circle.h\"\n"
+            + "\n"
+            + "int main() {\n"
+            + "    float radius = 5.0;\n"
+            + "    float area = calculate_area(radius);\n"
+            + "    printf(\"Diện tích hình tròn: %.2f\\n\", area);\n"
+            + "    return 0;\n"
+            + "}",
+            "gcc -E circle.c -o circle.i\n"
+            + "gcc -E main.c -o main.i",
+            "gcc -S circle.i -o circle.s\n"
+            + "gcc -S main.i -o main.s",
+            "gcc -c circle.s -o circle.o\n"
+            + "gcc -c main.s -o main.o",
+            "gcc circle.o main.o -o circle_program",
+            "./circle_program",
+            "Diện tích hình tròn: 78.54"
+        });
+
+        Code_MAP.put("Trình biên dịch và trình liên kết", new String[]{
+            "// File: hello.c\n"
+            + "#include <stdio.h>\n"
+            + "\n"
+            + "#define GREETING \"Hello, World!\"\n"
+            + "\n"
+            + "int main() {\n"
+            + "    printf(\"%s\\n\", GREETING);\n"
+            + "    return 0;\n"
+            + "}",
+            "gcc hello.c -o hello",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Khai báo hàm được định nghĩa ở file khác\n"
+            + "extern int add(int a, int b);\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int result = add(5, 3);\n"
+            + "    printf(\"Result: %d\\n\", result);\n"
+            + "    return 0;\n"
+            + "}",
+            "int add(int a, int b) {\n"
+            + "    return a + b;\n"
+            + "}",
+            "gcc -c main.c        # Tạo main.o\n"
+            + "gcc -c math.c        # Tạo math.o\n"
+            + "gcc main.o math.o -o calculator  # Liên kết thành file thực thi",
+            "#ifndef UTILS_H\n"
+            + "#define UTILS_H\n"
+            + "\n"
+            + "int multiply(int a, int b);\n"
+            + "void print_message(const char* msg);\n"
+            + "\n"
+            + "#endif",
+            "#include <stdio.h>\n"
+            + "#include \"utils.h\"\n"
+            + "\n"
+            + "int multiply(int a, int b) {\n"
+            + "    return a * b;\n"
+            + "}\n"
+            + "\n"
+            + "void print_message(const char* msg) {\n"
+            + "    printf(\"Message: %s\\n\", msg);\n"
+            + "}",
+            "#include \"utils.h\"\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int product = multiply(4, 5);\n"
+            + "    print_message(\"Product calculated\");\n"
+            + "    printf(\"Product: %d\\n\", product);\n"
+            + "    return 0;\n"
+            + "}",
+            "gcc -c utils.c       # Tạo utils.o\n"
+            + "gcc -c app.c         # Tạo app.o\n"
+            + "gcc utils.o app.o -o myapp  # Liên kết thành myapp",
+            "gcc input.c -o output",
+            "gcc -c file.c",
+            "gcc -Iinclude/ source.c",
+            "gcc main.c -Llib -lmylib",
+            "gcc -g program.c -o program",
+            "gcc -O2 program.c -o program",
+            "gcc -Wall program.c -o program"
+        });
+
+        Code_MAP.put("Quá trình thực thi", new String[]{
+            "// hello.c - Chương trình C đơn giản\n"
+            + "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    printf(\"Xin chào thế giới!\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "// Nội dung từ stdio.h được chèn vào đây\n"
+            + "...\n"
+            + "\n"
+            + "int main() {\n"
+            + "    printf(\"Xin chào thế giới!\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "gcc -S hello.c  # Tạo file hello.s",
+            ".section	__TEXT,__text,regular,pure_instructions\n"
+            + "	.build_version macos, 10, 15	sdk_version 10, 15\n"
+            + "	.globl	_main                   ## -- Begin function main\n"
+            + "_main:\n"
+            + "	pushq	%rbp\n"
+            + "	movq	%rsp, %rbp\n"
+            + "	subq	$16, %rsp\n"
+            + "	leaq	L_.str(%rip), %rdi\n"
+            + "	movb	$0, %al\n"
+            + "	callq	_printf\n"
+            + "	xorl	%eax, %eax\n"
+            + "	addq	$16, %rsp\n"
+            + "	popq	%rbp\n"
+            + "	retq\n"
+            + "	.section	__TEXT,__cstring,cstring_literals\n"
+            + "L_.str:                                 ## @.str\n"
+            + "	.asciz	\"Xin chào thế giới!\\n\"",
+            "gcc -c hello.c  # Tạo file hello.o",
+            "gcc hello.o -o hello  # Tạo file thực thi hello",
+            "// sample.c - Chương trình mẫu minh họa quá trình biên dịch\n"
+            + "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "// Macro định nghĩa\n"
+            + "#define GREETING \"Xin chào\"\n"
+            + "\n"
+            + "// Hàm tính giai thừa\n"
+            + "int factorial(int n) {\n"
+            + "    if (n <= 1) return 1;\n"
+            + "    return n * factorial(n - 1);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Biến cục bộ\n"
+            + "    int number = 5;\n"
+            + "    \n"
+            + "    // Gọi hàm và sử dụng macro\n"
+            + "    printf(\"%s! Giai thừa của %d là %d\\n\", GREETING, number, factorial(number));\n"
+            + "    \n"
+            + "    // Cấp phát động\n"
+            + "    int *arr = (int*)malloc(number * sizeof(int));\n"
+            + "    if (arr == NULL) {\n"
+            + "        perror(\"Lỗi cấp phát bộ nhớ\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Sử dụng bộ nhớ đã cấp phát\n"
+            + "    for (int i = 0; i < number; i++) {\n"
+            + "        arr[i] = i * 10;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Giải phóng bộ nhớ\n"
+            + "    free(arr);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "gcc -E sample.c -o sample.i",
+            "gcc -S sample.c -o sample.s",
+            "gcc -c sample.c -o sample.o",
+            "gcc sample.o -o sample",
+            "./sample",
+            "Xin chào! Giai thừa của 5 là 120"
+        });
+
+        Code_MAP.put("Câu lệnh if", new String[]{
+            "if (điều_kiện) {\n"
+            + "    // Khối lệnh được thực thi nếu điều kiện đúng (true)\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int age = 20;\n"
+            + "    \n"
+            + "    if (age >= 18) {\n"
+            + "        printf(\"Bạn đã đủ tuổi bầu cử.\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "if (điều_kiện) {\n"
+            + "    // Khối lệnh nếu điều kiện đúng\n"
+            + "} else {\n"
+            + "    // Khối lệnh nếu điều kiện sai\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int number = 10;\n"
+            + "    \n"
+            + "    if (number % 2 == 0) {\n"
+            + "        printf(\"%d là số chẵn.\\n\", number);\n"
+            + "    } else {\n"
+            + "        printf(\"%d là số lẻ.\\n\", number);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "if (điều_kiện_1) {\n"
+            + "    // Khối lệnh nếu điều_kiện_1 đúng\n"
+            + "} else if (điều_kiện_2) {\n"
+            + "    // Khối lệnh nếu điều_kiện_2 đúng\n"
+            + "} else if (điều_kiện_3) {\n"
+            + "    // Khối lệnh nếu điều_kiện_3 đúng\n"
+            + "} else {\n"
+            + "    // Khối lệnh nếu tất cả điều kiện trên sai\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int score = 85;\n"
+            + "    \n"
+            + "    if (score >= 90) {\n"
+            + "        printf(\"Xếp loại A\\n\");\n"
+            + "    } else if (score >= 80) {\n"
+            + "        printf(\"Xếp loại B\\n\");\n"
+            + "    } else if (score >= 70) {\n"
+            + "        printf(\"Xếp loại C\\n\");\n"
+            + "    } else if (score >= 60) {\n"
+            + "        printf(\"Xếp loại D\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"Xếp loại F\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "if (điều_kiện_1) {\n"
+            + "    if (điều_kiện_2) {\n"
+            + "        // Khối lệnh nếu cả 2 điều kiện đều đúng\n"
+            + "    }\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int num = 15;\n"
+            + "    \n"
+            + "    if (num > 0) {\n"
+            + "        printf(\"Số dương\\n\");\n"
+            + "        \n"
+            + "        if (num % 2 == 0) {\n"
+            + "            printf(\"và là số chẵn\\n\");\n"
+            + "        } else {\n"
+            + "            printf(\"và là số lẻ\\n\");\n"
+            + "        }\n"
+            + "    } else if (num < 0) {\n"
+            + "        printf(\"Số âm\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"Số 0\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "if (điều_kiện_1 && điều_kiện_2) {\n"
+            + "    // Khối lệnh nếu cả 2 điều kiện đều đúng\n"
+            + "}\n"
+            + "\n"
+            + "if (điều_kiện_1 || điều_kiện_2) {\n"
+            + "    // Khối lệnh nếu 1 trong 2 điều kiện đúng\n"
+            + "}\n"
+            + "\n"
+            + "if (!điều_kiện) {\n"
+            + "    // Khối lệnh nếu điều kiện sai\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int age = 25;\n"
+            + "    int hasLicense = 1; // 1 = true, 0 = false\n"
+            + "    \n"
+            + "    if (age >= 18 && hasLicense) {\n"
+            + "        printf(\"Bạn được phép lái xe.\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"Bạn không được phép lái xe.\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "if ((biến = giá_trị) == giá_trị_so_sánh) {\n"
+            + "    // Khối lệnh\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int x;\n"
+            + "    \n"
+            + "    if ((x = 10) == 10) {\n"
+            + "        printf(\"x được gán giá trị 10 và kiểm tra thành công\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Câu lệnh if-else", new String[]{
+            "if (điều_kiện) {\n"
+            + "    // Khối lệnh thực hiện nếu điều kiện đúng (true)\n"
+            + "}",
+            "if (điều_kiện) {\n"
+            + "    // Khối lệnh thực hiện nếu điều kiện đúng (true)\n"
+            + "} else {\n"
+            + "    // Khối lệnh thực hiện nếu điều kiện sai (false)\n"
+            + "}",
+            "if (điều_kiện_1) {\n"
+            + "    // Khối lệnh thực hiện nếu điều_kiện_1 đúng\n"
+            + "} else if (điều_kiện_2) {\n"
+            + "    // Khối lệnh thực hiện nếu điều_kiện_2 đúng\n"
+            + "} else if (điều_kiện_3) {\n"
+            + "    // Khối lệnh thực hiện nếu điều_kiện_3 đúng\n"
+            + "} else {\n"
+            + "    // Khối lệnh thực hiện nếu tất cả điều kiện trên sai\n"
+            + "}",
+            "if (điều_kiện_1) {\n"
+            + "    // Khối lệnh thực hiện nếu điều_kiện_1 đúng\n"
+            + "    \n"
+            + "    if (điều_kiện_2) {\n"
+            + "        // Khối lệnh thực hiện nếu cả điều_kiện_1 và điều_kiện_2 đều đúng\n"
+            + "    }\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int age = 20;\n"
+            + "    \n"
+            + "    if (age >= 18) {\n"
+            + "        printf(\"Bạn đã đủ tuổi bầu cử.\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int number = 10;\n"
+            + "    \n"
+            + "    if (number % 2 == 0) {\n"
+            + "        printf(\"%d là số chẵn.\\n\", number);\n"
+            + "    } else {\n"
+            + "        printf(\"%d là số lẻ.\\n\", number);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int score = 85;\n"
+            + "    \n"
+            + "    if (score >= 90) {\n"
+            + "        printf(\"Xếp loại A\\n\");\n"
+            + "    } else if (score >= 80) {\n"
+            + "        printf(\"Xếp loại B\\n\");\n"
+            + "    } else if (score >= 70) {\n"
+            + "        printf(\"Xếp loại C\\n\");\n"
+            + "    } else if (score >= 60) {\n"
+            + "        printf(\"Xếp loại D\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"Xếp loại F\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int a = 100, b = 20, c = 30;\n"
+            + "    \n"
+            + "    if (a > b) {\n"
+            + "        if (a > c) {\n"
+            + "            printf(\"a là số lớn nhất.\\n\");\n"
+            + "        } else {\n"
+            + "            printf(\"c là số lớn nhất.\\n\");\n"
+            + "        }\n"
+            + "    } else {\n"
+            + "        if (b > c) {\n"
+            + "            printf(\"b là số lớn nhất.\\n\");\n"
+            + "        } else {\n"
+            + "            printf(\"c là số lớn nhất.\\n\");\n"
+            + "        }\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int age = 25;\n"
+            + "    char gender = 'M';\n"
+            + "    \n"
+            + "    if (age >= 18 && gender == 'M') {\n"
+            + "        printf(\"Nam đã đủ tuổi nghĩa vụ quân sự.\\n\");\n"
+            + "    } else if (age >= 18 || gender == 'F') {\n"
+            + "        printf(\"Đã đủ tuổi bầu cử hoặc là nữ.\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"Chưa đủ tuổi bầu cử.\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Câu lệnh switch-case", new String[]{
+            "switch (biểu_thức) {\n"
+            + "    case giá_trị_1:\n"
+            + "        // Khối lệnh thực thi nếu biểu_thức == giá_trị_1\n"
+            + "        break;\n"
+            + "    case giá_trị_2:\n"
+            + "        // Khối lệnh thực thi nếu biểu_thức == giá_trị_2\n"
+            + "        break;\n"
+            + "    ...\n"
+            + "    case giá_trị_n:\n"
+            + "        // Khối lệnh thực thi nếu biểu_thức == giá_trị_n\n"
+            + "        break;\n"
+            + "    default:\n"
+            + "        // Khối lệnh thực thi nếu không có case nào khớp\n"
+            + "        break;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char grade;\n"
+            + "    printf(\"Nhập điểm (A-F): \");\n"
+            + "    scanf(\"%c\", &grade);\n"
+            + "    \n"
+            + "    switch (grade) {\n"
+            + "        case 'A':\n"
+            + "            printf(\"Xuất sắc!\\n\");\n"
+            + "            break;\n"
+            + "        case 'B':\n"
+            + "            printf(\"Tốt!\\n\");\n"
+            + "            break;\n"
+            + "        case 'C':\n"
+            + "            printf(\"Trung bình.\\n\");\n"
+            + "            break;\n"
+            + "        case 'D':\n"
+            + "            printf(\"Yếu, cần cố gắng.\\n\");\n"
+            + "            break;\n"
+            + "        case 'F':\n"
+            + "            printf(\"Trượt!\\n\");\n"
+            + "            break;\n"
+            + "        default:\n"
+            + "            printf(\"Điểm không hợp lệ.\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int a = 10, b = 5, result;\n"
+            + "    char op;\n"
+            + "    printf(\"Nhập phép tính (+, -, *, /): \");\n"
+            + "    scanf(\"%c\", &op);\n"
+            + "    \n"
+            + "    switch (op) {\n"
+            + "        case '+':\n"
+            + "            result = a + b;\n"
+            + "            printf(\"Kết quả: %d\\n\", result);\n"
+            + "            break;\n"
+            + "        case '-':\n"
+            + "            result = a - b;\n"
+            + "            printf(\"Kết quả: %d\\n\", result);\n"
+            + "            break;\n"
+            + "        case '*':\n"
+            + "            result = a * b;\n"
+            + "            printf(\"Kết quả: %d\\n\", result);\n"
+            + "            break;\n"
+            + "        case '/':\n"
+            + "            if (b != 0) {\n"
+            + "                result = a / b;\n"
+            + "                printf(\"Kết quả: %d\\n\", result);\n"
+            + "            } else {\n"
+            + "                printf(\"Lỗi: chia cho 0!\\n\");\n"
+            + "            }\n"
+            + "            break;\n"
+            + "        default:\n"
+            + "            printf(\"Phép tính không hợp lệ!\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int month;\n"
+            + "    printf(\"Nhập tháng (1-12): \");\n"
+            + "    scanf(\"%d\", &month);\n"
+            + "    \n"
+            + "    switch (month) {\n"
+            + "        case 1: case 3: case 5: case 7: case 8: case 10: case 12:\n"
+            + "            printf(\"Tháng %d có 31 ngày.\\n\", month);\n"
+            + "            break;\n"
+            + "        case 4: case 6: case 9: case 11:\n"
+            + "            printf(\"Tháng %d có 30 ngày.\\n\", month);\n"
+            + "            break;\n"
+            + "        case 2:\n"
+            + "            printf(\"Tháng 2 có 28 hoặc 29 ngày.\\n\");\n"
+            + "            break;\n"
+            + "        default:\n"
+            + "            printf(\"Tháng không hợp lệ!\\n\");\n"
+            + "    }\n"
             + "    \n"
             + "    return 0;\n"
             + "}"

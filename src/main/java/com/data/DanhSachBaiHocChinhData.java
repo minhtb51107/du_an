@@ -51,8 +51,7 @@ public class DanhSachBaiHocChinhData {
         TITLE_MAP.put("C", new String[]{
             "C cơ bản",
             "C trung bình",
-            "C nâng cao",
-            "C chuyên nghiệp"
+            "C nâng cao"
         });
 
         TITLE_MAP.put("SQL", new String[]{
