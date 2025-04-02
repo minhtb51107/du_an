@@ -817,6 +817,26 @@ public class DanhSachBaiHoc extends JPanel {
 
             }
         }
+
+        //C
+        if (content.equals("Giới thiệu về ngôn ngữ C")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về ngôn ngữ C", "C là gì?");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về ngôn ngữ C", "Tại sao nên học C?");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về ngôn ngữ C", "Các đặc điểm nổi bật của C");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
     }
 
     private void addDragScrolling() {

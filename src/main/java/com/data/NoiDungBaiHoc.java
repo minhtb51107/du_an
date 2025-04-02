@@ -392,6 +392,20 @@ public class NoiDungBaiHoc {
             0, 1, 0, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 0, 1, 0, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2
         });
 
+        //C
+        Index_MAP.put("C là gì?", new int[]{
+            0, 1, 1, 0, 1, 2, 0, 1, 1, 1, 1, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 1, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Tại sao nên học C?", new int[]{
+            0, 1, 1, 1, 2, 2, 2, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1, 0, 1, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Các đặc điểm nổi bật của C", new int[]{
+            0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2
+        });
+
+        Index_MAP.put("", new int[]{});
     }
 
     // Phương thức lấy tiêu đề theo chỉ số dựa vào ngôn ngữ
@@ -1175,6 +1189,50 @@ public class NoiDungBaiHoc {
             "6. Ví dụ tích hợp kiểm thử trong dự án",
             "7. Chạy kiểm thử"
         });
+
+        //C
+        TITLE_MAP.put("C là gì?", new String[]{
+            "1. Giới thiệu về C",
+            "2. Cấu trúc cơ bản của chương trình C",
+            "3. Kiểu dữ liệu trong C",
+            "4. Biến và hằng số",
+            "5. Toán tử trong C",
+            "6. Cấu trúc điều khiển",
+            "7. Hàm trong C",
+            "8. Mảng và chuỗi",
+            "9. Con trỏ",
+            "10. Cấu trúc (struct)",
+            "11. File I/O",
+            "12. Ví dụ hoàn chỉnh",
+            "Kết luận"
+        });
+
+        TITLE_MAP.put("Tại sao nên học C?", new String[]{
+            "1. C là nền tảng của nhiều ngôn ngữ lập trình hiện đại",
+            "2. Hiệu suất cao và gần với phần cứng",
+            "3. Được sử dụng rộng rãi trong hệ thống nhúng và hệ điều hành",
+            "4. Giúp hiểu sâu về cấu trúc dữ liệu và thuật toán",
+            "5. Cộng đồng hỗ trợ lớn và tài nguyên phong phú",
+            "6. Cơ hội nghề nghiệp rộng mở",
+            "7. Rèn luyện tư duy lập trình chặt chẽ",
+            "8. Tiền đề cho lập trình hệ thống và bảo mật",
+            "Kết luận"
+        });
+
+        TITLE_MAP.put("Các đặc điểm nổi bật của C", new String[]{
+            "1. Ngôn ngữ lập trình cấp trung (Middle-level language)",
+            "2. Ngôn ngữ có cấu trúc (Structured programming language)",
+            "3. Ngôn ngữ đa nền tảng (Portable)",
+            "4. Hỗ trợ con trỏ (Pointers)",
+            "5. Quản lý bộ nhớ thủ công (Manual memory management)",
+            "6. Tốc độ thực thi nhanh",
+            "7. Thư viện phong phú",
+            "8. Ngôn ngữ đơn giản và nhỏ gọn",
+            "9. Hỗ trợ lập trình hệ thống",
+            "10. Khả năng mở rộng"
+        });
+
+        TITLE_MAP.put("", new String[]{});
 
     }
 
@@ -4373,6 +4431,124 @@ public class NoiDungBaiHoc {
             "Với pytest:",
             "Để xem báo cáo coverage:"
         });
+
+        //C
+        Content_MAP.put("C là gì?", new String[]{
+            "C là ngôn ngữ lập trình cấp cao được phát triển bởi Dennis Ritchie tại Bell Labs vào năm 1972. Nó được thiết kế để lập trình hệ thống, đặc biệt là để viết hệ điều hành UNIX. C là ngôn ngữ biên dịch, đa nền tảng và có cú pháp gần với ngôn ngữ máy.",
+            "Đặc điểm nổi bật:\n"
+            + "\n"
+            + "Ngôn ngữ cấu trúc\n"
+            + "\n"
+            + "Hiệu suất cao\n"
+            + "\n"
+            + "Tiếp cận mức thấp (low-level)\n"
+            + "\n"
+            + "Thư viện phong phú\n"
+            + "\n"
+            + "Ảnh hưởng đến nhiều ngôn ngữ khác (C++, Java, C#...)",
+            "Một chương trình C cơ bản gồm các phần:",
+            "C có các kiểu dữ liệu cơ bản:",
+            "Kiểu số nguyên:\n"
+            + "int: số nguyên (4 bytes)\n"
+            + "\n"
+            + "short: số nguyên ngắn (2 bytes)\n"
+            + "\n"
+            + "long: số nguyên dài (4 hoặc 8 bytes)\n"
+            + "\n"
+            + "char: ký tự (1 byte)",
+            "Kiểu số thực:\n"
+            + "float: số thực dấu phẩy động (4 bytes)\n"
+            + "\n"
+            + "double: số thực độ chính xác kép (8 bytes)",
+            "Kiểu void:\n"
+            + "void: kiểu không có giá trị",
+            "Ví dụ:",
+            "Biến:\n"
+            + "Là tên gọi của vùng nhớ\n"
+            + "\n"
+            + "Phải được khai báo trước khi sử dụng\n"
+            + "\n"
+            + "Cú pháp: kiểu_dữ_liệu tên_biến;",
+            "Hằng số:\n"
+            + "Giá trị không thay đổi\n"
+            + "\n"
+            + "Khai báo bằng #define hoặc const",
+            "Ví dụ:",
+            "Toán tử số học:\n"
+            + "+, -, *, /, % (chia lấy dư)",
+            "Toán tử quan hệ:\n"
+            + "==, !=, >, <, >=, <=",
+            "Toán tử logic:\n"
+            + "&& (AND), || (OR), ! (NOT)",
+            "Toán tử gán:\n"
+            + "=, +=, -=, *=, /=, %=",
+            "Ví dụ:",
+            "Câu lệnh if-else:",
+            "Vòng lặp for:",
+            "Vòng lặp while:",
+            "Vòng lặp do-while:",
+            "Câu lệnh switch:",
+            "Ví dụ:",
+            "Hàm là khối lệnh thực hiện một tác vụ cụ thể.\n"
+            + "\n"
+            + "Cú pháp:",
+            "Ví dụ:",
+            "Mảng:\n"
+            + "Tập hợp các phần tử cùng kiểu\n"
+            + "\n"
+            + "Kích thước cố định",
+            "Chuỗi:\n"
+            + "Mảng các ký tự kết thúc bằng '\\0'\n"
+            + "\n"
+            + "Thư viện string.h hỗ trợ các hàm xử lý chuỗi",
+            "Con trỏ là biến lưu địa chỉ của biến khác.",
+            "Struct cho phép gom nhóm các biến khác kiểu.",
+            "Xử lý file trong C sử dụng FILE pointer và các hàm trong stdio.h.",
+            "Chương trình quản lý sinh viên đơn giản:",
+            "C là ngôn ngữ mạnh mẽ, hiệu suất cao và là nền tảng cho nhiều ngôn ngữ lập trình hiện đại. Mặc dù cú pháp đơn giản nhưng C yêu cầu lập trình viên phải quản lý bộ nhớ và hiểu rõ cách hoạt động của hệ thống."
+        });
+
+        Content_MAP.put("Tại sao nên học C?", new String[]{
+            "C là một ngôn ngữ lập trình cổ điển nhưng vẫn cực kỳ quan trọng trong thế giới lập trình hiện đại. Dưới đây là những lý do tại sao bạn nên học C cùng với các nội dung chi tiết và code mẫu minh họa.",
+            "Nội dung: C (được phát triển năm 1972) là cơ sở cho nhiều ngôn ngữ phổ biến như C++, Java, Python, JavaScript. Hiểu C giúp bạn dễ dàng học các ngôn ngữ khác.",
+            "Code mẫu: So sánh cú pháp cơ bản giữa C và các ngôn ngữ khác",
+            "Nội dung: C là ngôn ngữ bậc thấp, cho phép kiểm soát trực tiếp bộ nhớ và tài nguyên hệ thống, mang lại hiệu suất vượt trội cho các ứng dụng đòi hỏi tốc độ.",
+            "Code mẫu: Quản lý bộ nhớ trực tiếp",
+            "Nội dung: Hầu hết hệ điều hành (Linux, Windows) và firmware đều được viết bằng C do khả năng tương tác trực tiếp với phần cứng.",
+            "Code mẫu: Tương tác với phần cứng cơ bản",
+            "Nội dung: C yêu cầu lập trình viên tự triển khai các cấu trúc dữ liệu từ đầu, giúp hiểu sâu cách chúng hoạt động.",
+            "Code mẫu: Triển khai Linked List",
+            "Nội dung: C có cộng đồng lập trình viên rộng lớn, nhiều tài liệu hướng dẫn, thư viện mã nguồn mở đa dạng.",
+            "Nội dung: C được sử dụng trong nhiều lĩnh vực: hệ điều hành, nhúng, game, IoT, tài chính. Các công ty lớn như Microsoft, Google, Intel đều cần kỹ sư giỏi C.",
+            "Nội dung: C yêu cầu quản lý bộ nhớ thủ công, kiểm soát lỗi cẩn thận, giúp hình thành thói quen lập trình kỷ luật.",
+            "Code mẫu: Xử lý lỗi trong C",
+            "Nội dung: Hiểu C là cần thiết để làm việc với hệ thống cấp thấp, phân tích mã độc, phát triển phần mềm bảo mật.",
+            "Code mẫu: Làm việc với con trỏ hàm",
+            "Học C cung cấp nền tảng vững chắc cho sự nghiệp lập trình, giúp bạn:\n"
+            + "\n"
+            + "Hiểu sâu cách máy tính hoạt động\n"
+            + "\n"
+            + "Phát triển kỹ năng lập trình hệ thống\n"
+            + "\n"
+            + "Dễ dàng chuyển sang ngôn ngữ khác\n"
+            + "\n"
+            + "Mở ra cơ hội trong nhiều lĩnh vực công nghệ"
+        });
+
+        Content_MAP.put("Các đặc điểm nổi bật của C", new String[]{
+            "C kết hợp các tính năng của ngôn ngữ cấp cao và cấp thấp, cho phép lập trình hệ thống (như driver, hệ điều hành) và ứng dụng.",
+            "C hỗ trợ các cấu trúc lập trình như hàm, vòng lặp, điều kiện giúp code dễ đọc và bảo trì.",
+            "Code C có thể chạy trên nhiều nền tảng khác nhau với ít hoặc không cần thay đổi.",
+            "Con trỏ cho phép truy cập và thao tác trực tiếp với bộ nhớ.",
+            "C cung cấp các hàm như malloc(), calloc(), free() để quản lý bộ nhớ động.",
+            "C được biên dịch trực tiếp thành mã máy nên có tốc độ thực thi nhanh.",
+            "C có nhiều thư viện chuẩn (standard library) cung cấp các hàm hữu ích.",
+            "C chỉ có khoảng 32 từ khóa và cú pháp đơn giản.",
+            "C thường được dùng để phát triển hệ điều hành, trình biên dịch, driver.",
+            "Có thể dễ dàng mở rộng chức năng bằng cách thêm các hàm mới."
+        });
+
+        Content_MAP.put("", new String[]{});
 
     }
 
@@ -11590,6 +11766,592 @@ public class NoiDungBaiHoc {
             "pytest tests/",
             "pytest --cov=src tests/"
         });
+
+        //C
+        Code_MAP.put("C là gì?", new String[]{
+            "#include <stdio.h> // Phần tiền xử lý (Preprocessor)\n"
+            + "\n"
+            + "// Khai báo hàm (Function declaration)\n"
+            + "int add(int a, int b);\n"
+            + "\n"
+            + "// Hàm main - điểm bắt đầu chương trình\n"
+            + "int main() {\n"
+            + "    // Khai báo biến\n"
+            + "    int x = 5, y = 10;\n"
+            + "    int result;\n"
+            + "    \n"
+            + "    // Gọi hàm\n"
+            + "    result = add(x, y);\n"
+            + "    \n"
+            + "    // In kết quả\n"
+            + "    printf(\"Tổng là: %d\\n\", result);\n"
+            + "    \n"
+            + "    return 0; // Kết thúc chương trình\n"
+            + "}\n"
+            + "\n"
+            + "// Định nghĩa hàm\n"
+            + "int add(int a, int b) {\n"
+            + "    return a + b;\n"
+            + "}",
+            "int age = 25;\n"
+            + "float salary = 2500.50;\n"
+            + "char grade = 'A';\n"
+            + "double pi = 3.1415926535;",
+            "#define PI 3.14159\n"
+            + "const int MAX = 100;\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int count = 0;          // Biến\n"
+            + "    float radius = 5.5;\n"
+            + "    float area = PI * radius * radius;\n"
+            + "    \n"
+            + "    printf(\"Diện tích: %.2f\\n\", area);\n"
+            + "    return 0;\n"
+            + "}",
+            "int a = 10, b = 20;\n"
+            + "int sum = a + b;\n"
+            + "int mod = a % 3;\n"
+            + "\n"
+            + "if (a > 5 && b < 30) {\n"
+            + "    a += 5;\n"
+            + "}",
+            "if (điều_kiện) {\n"
+            + "    // code\n"
+            + "} else if (điều_kiện) {\n"
+            + "    // code\n"
+            + "} else {\n"
+            + "    // code\n"
+            + "}",
+            "for (khởi_tạo; điều_kiện; tăng/giảm) {\n"
+            + "    // code\n"
+            + "}",
+            "while (điều_kiện) {\n"
+            + "    // code\n"
+            + "}",
+            "do {\n"
+            + "    // code\n"
+            + "} while (điều_kiện);",
+            "switch (biểu_thức) {\n"
+            + "    case giá_trị_1:\n"
+            + "        // code\n"
+            + "        break;\n"
+            + "    case giá_trị_2:\n"
+            + "        // code\n"
+            + "        break;\n"
+            + "    default:\n"
+            + "        // code\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // if-else\n"
+            + "    int age = 18;\n"
+            + "    if (age >= 18) {\n"
+            + "        printf(\"Bạn đã trưởng thành\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"Bạn chưa trưởng thành\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    // for loop\n"
+            + "    for (int i = 1; i <= 5; i++) {\n"
+            + "        printf(\"%d \", i);\n"
+            + "    }\n"
+            + "    printf(\"\\n\");\n"
+            + "    \n"
+            + "    // switch\n"
+            + "    char grade = 'B';\n"
+            + "    switch (grade) {\n"
+            + "        case 'A':\n"
+            + "            printf(\"Xuất sắc!\\n\");\n"
+            + "            break;\n"
+            + "        case 'B':\n"
+            + "            printf(\"Tốt\\n\");\n"
+            + "            break;\n"
+            + "        default:\n"
+            + "            printf(\"Cần cố gắng\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "kiểu_trả_về tên_hàm(tham_số) {\n"
+            + "    // thân hàm\n"
+            + "    return giá_trị; // nếu kiểu trả về khác void\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Khai báo hàm\n"
+            + "int max(int a, int b);\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int x = 10, y = 20;\n"
+            + "    int m = max(x, y);\n"
+            + "    printf(\"Số lớn nhất là: %d\\n\", m);\n"
+            + "    return 0;\n"
+            + "}\n"
+            + "\n"
+            + "// Định nghĩa hàm\n"
+            + "int max(int a, int b) {\n"
+            + "    if (a > b) {\n"
+            + "        return a;\n"
+            + "    } else {\n"
+            + "        return b;\n"
+            + "    }\n"
+            + "}",
+            "// Khai báo mảng\n"
+            + "int numbers[5] = {1, 2, 3, 4, 5};\n"
+            + "\n"
+            + "// Truy cập phần tử\n"
+            + "int first = numbers[0];\n"
+            + "numbers[2] = 10;",
+            "char name[20] = \"Nguyen Van A\";\n"
+            + "printf(\"Xin chào %s\\n\", name);\n"
+            + "\n"
+            + "// Nhập chuỗi từ bàn phím\n"
+            + "char input[50];\n"
+            + "printf(\"Nhập tên của bạn: \");\n"
+            + "scanf(\"%s\", input);\n"
+            + "printf(\"Tên bạn đã nhập: %s\\n\", input);",
+            "int var = 10;\n"
+            + "int *ptr = &var; // ptr trỏ đến var\n"
+            + "\n"
+            + "printf(\"Giá trị của var: %d\\n\", var);\n"
+            + "printf(\"Địa chỉ của var: %p\\n\", &var);\n"
+            + "printf(\"Giá trị qua con trỏ: %d\\n\", *ptr);",
+            "struct SinhVien {\n"
+            + "    char hoTen[50];\n"
+            + "    int tuoi;\n"
+            + "    float diemTB;\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    struct SinhVien sv1;\n"
+            + "    strcpy(sv1.hoTen, \"Nguyen Van A\");\n"
+            + "    sv1.tuoi = 20;\n"
+            + "    sv1.diemTB = 8.5;\n"
+            + "    \n"
+            + "    printf(\"Thông tin sinh viên:\\n\");\n"
+            + "    printf(\"Họ tên: %s\\n\", sv1.hoTen);\n"
+            + "    printf(\"Tuổi: %d\\n\", sv1.tuoi);\n"
+            + "    printf(\"Điểm TB: %.2f\\n\", sv1.diemTB);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file;\n"
+            + "    char data[100];\n"
+            + "    \n"
+            + "    // Ghi file\n"
+            + "    file = fopen(\"test.txt\", \"w\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Không thể mở file\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    fprintf(file, \"Xin chào thế giới!\\n\");\n"
+            + "    fclose(file);\n"
+            + "    \n"
+            + "    // Đọc file\n"
+            + "    file = fopen(\"test.txt\", \"r\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Không thể mở file\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    while (fgets(data, sizeof(data), file) != NULL) {\n"
+            + "        printf(\"%s\", data);\n"
+            + "    }\n"
+            + "    fclose(file);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "struct Student {\n"
+            + "    char name[50];\n"
+            + "    int id;\n"
+            + "    float gpa;\n"
+            + "};\n"
+            + "\n"
+            + "void printStudent(struct Student s) {\n"
+            + "    printf(\"ID: %d, Tên: %s, GPA: %.2f\\n\", s.id, s.name, s.gpa);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    struct Student students[3];\n"
+            + "    int i;\n"
+            + "    \n"
+            + "    // Nhập thông tin sinh viên\n"
+            + "    for (i = 0; i < 3; i++) {\n"
+            + "        printf(\"Nhập thông tin sinh viên %d:\\n\", i+1);\n"
+            + "        printf(\"Tên: \");\n"
+            + "        scanf(\"%s\", students[i].name);\n"
+            + "        printf(\"ID: \");\n"
+            + "        scanf(\"%d\", &students[i].id);\n"
+            + "        printf(\"GPA: \");\n"
+            + "        scanf(\"%f\", &students[i].gpa);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Hiển thị thông tin\n"
+            + "    printf(\"\\nDanh sách sinh viên:\\n\");\n"
+            + "    for (i = 0; i < 3; i++) {\n"
+            + "        printStudent(students[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Tìm sinh viên có GPA cao nhất\n"
+            + "    int maxIndex = 0;\n"
+            + "    for (i = 1; i < 3; i++) {\n"
+            + "        if (students[i].gpa > students[maxIndex].gpa) {\n"
+            + "            maxIndex = i;\n"
+            + "        }\n"
+            + "    }\n"
+            + "    \n"
+            + "    printf(\"\\nSinh viên có GPA cao nhất:\\n\");\n"
+            + "    printStudent(students[maxIndex]);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Tại sao nên học C?", new String[]{
+            "// C\n"
+            + "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    printf(\"Hello, World!\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "# Python\n"
+            + "print(\"Hello, World!\")",
+            "// Java\n"
+            + "public class Main {\n"
+            + "    public static void main(String[] args) {\n"
+            + "        System.out.println(\"Hello, World!\");\n"
+            + "    }\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int *ptr = (int*) malloc(5 * sizeof(int)); // Cấp phát bộ nhớ động\n"
+            + "    \n"
+            + "    if (ptr == NULL) {\n"
+            + "        printf(\"Memory allocation failed!\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    for (int i = 0; i < 5; i++) {\n"
+            + "        ptr[i] = i * 2;\n"
+            + "    }\n"
+            + "    \n"
+            + "    for (int i = 0; i < 5; i++) {\n"
+            + "        printf(\"%d \", ptr[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    free(ptr); // Giải phóng bộ nhớ\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <unistd.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    printf(\"Process ID: %d\\n\", getpid());\n"
+            + "    printf(\"Parent Process ID: %d\\n\", getppid());\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "struct Node {\n"
+            + "    int data;\n"
+            + "    struct Node* next;\n"
+            + "};\n"
+            + "\n"
+            + "void printList(struct Node* n) {\n"
+            + "    while (n != NULL) {\n"
+            + "        printf(\"%d \", n->data);\n"
+            + "        n = n->next;\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    struct Node* head = NULL;\n"
+            + "    struct Node* second = NULL;\n"
+            + "    struct Node* third = NULL;\n"
+            + "    \n"
+            + "    head = (struct Node*)malloc(sizeof(struct Node));\n"
+            + "    second = (struct Node*)malloc(sizeof(struct Node));\n"
+            + "    third = (struct Node*)malloc(sizeof(struct Node));\n"
+            + "    \n"
+            + "    head->data = 1;\n"
+            + "    head->next = second;\n"
+            + "    \n"
+            + "    second->data = 2;\n"
+            + "    second->next = third;\n"
+            + "    \n"
+            + "    third->data = 3;\n"
+            + "    third->next = NULL;\n"
+            + "    \n"
+            + "    printList(head);\n"
+            + "    \n"
+            + "    free(head);\n"
+            + "    free(second);\n"
+            + "    free(third);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <errno.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file;\n"
+            + "    \n"
+            + "    file = fopen(\"nonexistent.txt\", \"r\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Error opening file: %s\\n\", strerror(errno));\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Xử lý file\n"
+            + "    fclose(file);\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int add(int a, int b) {\n"
+            + "    return a + b;\n"
+            + "}\n"
+            + "\n"
+            + "int subtract(int a, int b) {\n"
+            + "    return a - b;\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int (*operation)(int, int);\n"
+            + "    \n"
+            + "    operation = add;\n"
+            + "    printf(\"5 + 3 = %d\\n\", operation(5, 3));\n"
+            + "    \n"
+            + "    operation = subtract;\n"
+            + "    printf(\"5 - 3 = %d\\n\", operation(5, 3));\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Các đặc điểm nổi bật của C", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Truy cập bộ nhớ cấp thấp bằng con trỏ\n"
+            + "    int x = 10;\n"
+            + "    int *ptr = &x;\n"
+            + "    printf(\"Giá trị của x: %d\\n\", *ptr);\n"
+            + "    \n"
+            + "    // Tính năng cấp cao như hàm\n"
+            + "    printf(\"Tổng của 5 và 3 là: %d\\n\", sum(5, 3));\n"
+            + "    return 0;\n"
+            + "}\n"
+            + "\n"
+            + "int sum(int a, int b) {\n"
+            + "    return a + b;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm kiểm tra số nguyên tố\n"
+            + "int isPrime(int num) {\n"
+            + "    if (num <= 1) return 0;\n"
+            + "    for (int i = 2; i*i <= num; i++) {\n"
+            + "        if (num % i == 0) return 0;\n"
+            + "    }\n"
+            + "    return 1;\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int n = 7;\n"
+            + "    \n"
+            + "    // Cấu trúc điều kiện\n"
+            + "    if (isPrime(n)) {\n"
+            + "        printf(\"%d là số nguyên tố\\n\", n);\n"
+            + "    } else {\n"
+            + "        printf(\"%d không là số nguyên tố\\n\", n);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Cấu trúc vòng lặp\n"
+            + "    printf(\"Các số nguyên tố từ 1 đến 20: \");\n"
+            + "    for (int i = 1; i <= 20; i++) {\n"
+            + "        if (isPrime(i)) {\n"
+            + "            printf(\"%d \", i);\n"
+            + "        }\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Code này có thể chạy trên Windows, Linux, Mac...\n"
+            + "    printf(\"Chương trình này chạy được trên nhiều nền tảng!\\n\");\n"
+            + "    \n"
+            + "    // Kiểm tra kích thước kiểu dữ liệu (có thể khác nhau giữa các nền tảng)\n"
+            + "    printf(\"Kích thước của int: %lu bytes\\n\", sizeof(int));\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int var = 20;\n"
+            + "    int *ptr = &var;\n"
+            + "    \n"
+            + "    printf(\"Giá trị của var: %d\\n\", var);\n"
+            + "    printf(\"Địa chỉ của var: %p\\n\", &var);\n"
+            + "    printf(\"Giá trị qua con trỏ ptr: %d\\n\", *ptr);\n"
+            + "    \n"
+            + "    // Thay đổi giá trị thông qua con trỏ\n"
+            + "    *ptr = 30;\n"
+            + "    printf(\"Giá trị mới của var: %d\\n\", var);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int *arr;\n"
+            + "    int n = 5;\n"
+            + "    \n"
+            + "    // Cấp phát bộ nhớ động\n"
+            + "    arr = (int*)malloc(n * sizeof(int));\n"
+            + "    \n"
+            + "    if (arr == NULL) {\n"
+            + "        printf(\"Không đủ bộ nhớ!\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Sử dụng bộ nhộ đã cấp phát\n"
+            + "    for (int i = 0; i < n; i++) {\n"
+            + "        arr[i] = i * 10;\n"
+            + "    }\n"
+            + "    \n"
+            + "    printf(\"Mảng động: \");\n"
+            + "    for (int i = 0; i < n; i++) {\n"
+            + "        printf(\"%d \", arr[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Giải phóng bộ nhớ\n"
+            + "    free(arr);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <time.h>\n"
+            + "\n"
+            + "// Hàm tính giai thừa\n"
+            + "unsigned long long factorial(int n) {\n"
+            + "    if (n == 0) return 1;\n"
+            + "    return n * factorial(n - 1);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    clock_t start, end;\n"
+            + "    double cpu_time_used;\n"
+            + "    \n"
+            + "    start = clock();\n"
+            + "    \n"
+            + "    // Thực hiện tính toán tốn nhiều CPU\n"
+            + "    unsigned long long result = factorial(20);\n"
+            + "    printf(\"20! = %llu\\n\", result);\n"
+            + "    \n"
+            + "    end = clock();\n"
+            + "    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;\n"
+            + "    \n"
+            + "    printf(\"Thời gian thực thi: %f giây\\n\", cpu_time_used);\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "#include <math.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Thư viện stdio.h\n"
+            + "    printf(\"Hello World!\\n\");\n"
+            + "    \n"
+            + "    // Thư viện string.h\n"
+            + "    char str1[20] = \"Hello\";\n"
+            + "    char str2[20] = \"World\";\n"
+            + "    strcat(str1, str2);\n"
+            + "    printf(\"Chuỗi sau khi nối: %s\\n\", str1);\n"
+            + "    \n"
+            + "    // Thư viện math.h\n"
+            + "    printf(\"Căn bậc hai của 16 là: %f\\n\", sqrt(16));\n"
+            + "    \n"
+            + "    // Thư viện stdlib.h\n"
+            + "    int random_num = rand() % 100;\n"
+            + "    printf(\"Số ngẫu nhiên: %d\\n\", random_num);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Chương trình đơn giản minh họa tính đơn giản của C\n"
+            + "int main() {\n"
+            + "    int a = 5, b = 10;\n"
+            + "    int sum = a + b;\n"
+            + "    \n"
+            + "    printf(\"Tổng của %d và %d là %d\\n\", a, b, sum);\n"
+            + "    \n"
+            + "    // Toán tử điều kiện đơn giản\n"
+            + "    int max = (a > b) ? a : b;\n"
+            + "    printf(\"Số lớn hơn là: %d\\n\", max);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <fcntl.h>\n"
+            + "#include <unistd.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Mở file ở mức hệ thống\n"
+            + "    int fd = open(\"test.txt\", O_WRONLY | O_CREAT, 0644);\n"
+            + "    \n"
+            + "    if (fd == -1) {\n"
+            + "        perror(\"Lỗi khi mở file\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Ghi dữ liệu vào file\n"
+            + "    char *text = \"Ví dụ lập trình hệ thống với C\\n\";\n"
+            + "    write(fd, text, strlen(text));\n"
+            + "    \n"
+            + "    // Đóng file\n"
+            + "    close(fd);\n"
+            + "    \n"
+            + "    printf(\"Đã ghi dữ liệu vào file thành công!\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm original\n"
+            + "void greet() {\n"
+            + "    printf(\"Xin chào!\\n\");\n"
+            + "}\n"
+            + "\n"
+            + "// Mở rộng chức năng bằng hàm mới\n"
+            + "void greetByName(char name[]) {\n"
+            + "    printf(\"Xin chào, %s!\\n\", name);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    greet(); // Gọi hàm gốc\n"
+            + "    greetByName(\"Nguyễn Văn A\"); // Gọi hàm mở rộng\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("", new String[]{});
 
     }
 
