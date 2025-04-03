@@ -525,6 +525,42 @@ public class NoiDungBaiHoc {
             0, 1, 1, 1, 1, 1, 0, 2, 0, 1
         });
 
+        Index_MAP.put("Truyền tham số theo giá trị", new int[]{
+            0, 1, 0, 1, 0, 2, 0, 2, 0, 1, 0, 1, 1
+        });
+
+        Index_MAP.put("Truyền tham số theo tham chiếu", new int[]{
+            0, 1, 0, 1, 0, 2, 0, 1, 0, 1, 2, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Sử dụng con trỏ để truyền tham số", new int[]{
+            0, 1, 1, 0, 1, 0, 2, 0, 1, 2, 1, 2, 1, 2, 0, 1, 0, 1, 2, 1
+        });
+
+        Index_MAP.put("Khái niệm hàm đệ quy", new int[]{
+            0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Cách hoạt động của hàm đệ quy", new int[]{
+            0, 1, 0, 1, 0, 1, 1, 0, 1, 2, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Ví dụ về hàm đệ quy", new int[]{
+            0, 1, 2, 0, 1, 1, 1, 0, 1, 1
+        });
+
+        Index_MAP.put("Cấu trúc dữ liệu cơ bản", new int[]{
+            0, 1, 1, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 2, 0, 1, 1, 1, 2
+        });
+
+        Index_MAP.put("File I/O trong C", new int[]{
+            0, 1, 0, 1, 2, 1, 1, 2, 1, 2, 1, 2, 0, 1, 1, 2, 1, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2, 0, 1, 2
+        });
+
+        Index_MAP.put("Các hàm file I/O", new int[]{
+            0, 1, 2, 1, 2, 1, 1, 2, 0, 1, 2, 2, 1, 2, 2, 1, 2, 2, 1, 2, 1, 2, 0, 1, 2, 2, 1, 2, 1, 2, 1, 2, 2, 0, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 2, 2, 1, 2, 2, 0, 1, 2, 2, 2, 2
+        });
+
         Index_MAP.put("", new int[]{});
     }
 
@@ -1623,6 +1659,84 @@ public class NoiDungBaiHoc {
             "Các phần chính của hàm trả về giá trị",
             "Code mẫu",
             "Giải thích code mẫu"
+        });
+
+        TITLE_MAP.put("Truyền tham số theo giá trị", new String[]{
+            "Khái niệm",
+            "Đặc điểm",
+            "Code mẫu minh họa",
+            "Kết quả chạy chương trình",
+            "Giải thích kết quả",
+            "Ưu điểm và nhược điểm"
+        });
+
+        TITLE_MAP.put("Truyền tham số theo tham chiếu", new String[]{
+            "1. Khái niệm",
+            "2. Đặc điểm",
+            "3. Cú pháp",
+            "4. So sánh với truyền tham trị",
+            "5. Code mẫu",
+            "6. Kết luận"
+        });
+
+        TITLE_MAP.put("Sử dụng con trỏ để truyền tham số", new String[]{
+            "1. Khái niệm cơ bản",
+            "2. Cách thức hoạt động",
+            "3. Cú pháp",
+            "4. Ví dụ minh họa",
+            "5. Lưu ý quan trọng",
+            "6. Truyền tham số con trỏ với const"
+        });
+
+        TITLE_MAP.put("Khái niệm hàm đệ quy", new String[]{
+            "1. Khái niệm hàm đệ quy",
+            "2. Các thành phần của hàm đệ quy",
+            "3. Ưu điểm và nhược điểm",
+            "4. Các loại đệ quy",
+            "5. Code mẫu",
+            "6. Lưu ý khi sử dụng hàm đệ quy"
+        });
+
+        TITLE_MAP.put("Cách hoạt động của hàm đệ quy", new String[]{
+            "1. Khái niệm đệ quy",
+            "2. Cơ chế hoạt động",
+            "3. Ưu điểm và nhược điểm",
+            "4. Ví dụ minh họa",
+            "5. Lưu ý khi sử dụng đệ quy"
+        });
+
+        TITLE_MAP.put("Ví dụ về hàm đệ quy", new String[]{
+            "Ví dụ về hàm đệ quy tính giai thừa",
+            "Giải thích chi tiết",
+            "Ưu điểm và nhược điểm"
+        });
+
+        TITLE_MAP.put("Cấu trúc dữ liệu cơ bản", new String[]{
+            "1. Mảng (Array)",
+            "2. Chuỗi (String)",
+            "3. Cấu trúc (Struct)",
+            "4. Union",
+            "5. Enum",
+            "6. Con trỏ (Pointer)",
+            "7. Danh sách liên kết (Linked List)"
+        });
+
+        TITLE_MAP.put("File I/O trong C", new String[]{
+            "1. Giới thiệu về File I/O trong C",
+            "2. Các thao tác cơ bản với file",
+            "3. Đọc và ghi file văn bản",
+            "4. Đọc và ghi file nhị phân",
+            "5. Các hàm điều khiển vị trí con trỏ file",
+            "6. Xử lý lỗi file I/O",
+            "7. Ví dụ tổng hợp"
+        });
+
+        TITLE_MAP.put("Các hàm file I/O", new String[]{
+            "1. Mở và đóng file",
+            "2. Ghi dữ liệu vào file",
+            "3. Đọc dữ liệu từ file",
+            "4. Các hàm kiểm tra và điều khiển",
+            "Ví dụ hoàn chỉnh"
         });
 
         TITLE_MAP.put("", new String[]{});
@@ -6225,6 +6339,423 @@ public class NoiDungBaiHoc {
             + "Thân hàm: tìm số lớn nhất bằng cách so sánh\n"
             + "\n"
             + "Return: trả về giá trị lớn nhất tìm được"
+        });
+
+        Content_MAP.put("Truyền tham số theo giá trị", new String[]{
+            "Truyền tham số theo giá trị (pass by value) là cách truyền tham số phổ biến trong ngôn ngữ C, trong đó giá trị của biến được sao chép vào tham số của hàm. Khi hàm được gọi, nó làm việc với bản sao của giá trị chứ không phải với biến gốc, do đó mọi thay đổi trên tham số trong hàm sẽ không ảnh hưởng đến biến gốc.",
+            "Tạo bản sao: Giá trị của biến được sao chép vào tham số hàm\n"
+            + "\n"
+            + "Độc lập bộ nhớ: Tham số hàm và biến gốc có vùng nhớ riêng biệt\n"
+            + "\n"
+            + "Không ảnh hưởng: Thay đổi tham số trong hàm không làm thay đổi biến gốc\n"
+            + "\n"
+            + "Hiệu quả với kiểu dữ liệu nhỏ: Phù hợp cho các kiểu dữ liệu đơn giản như int, float, char...",
+            "Giá trị của x và y được sao chép vào a và b trong hàm swapByValue\n"
+            + "\n"
+            + "Hàm swapByValue hoán đổi giá trị của a và b thành công (in ra 10 và 5)\n"
+            + "\n"
+            + "Tuy nhiên, giá trị gốc của x và y trong hàm main không bị thay đổi\n"
+            + "\n"
+            + "Điều này chứng tỏ hàm làm việc với bản sao của giá trị chứ không phải biến gốc",
+            "Ưu điểm:\n"
+            + "\n"
+            + "Đơn giản, dễ hiểu\n"
+            + "\n"
+            + "Đảm bảo giá trị biến gốc không bị thay đổi ngoài ý muốn\n"
+            + "\n"
+            + "Phù hợp khi chỉ cần sử dụng giá trị mà không cần thay đổi biến gốc",
+            "Nhược điểm:\n"
+            + "\n"
+            + "Tốn bộ nhớ khi làm việc với kiểu dữ liệu lớn do phải sao chép toàn bộ giá trị\n"
+            + "\n"
+            + "Không thể thay đổi giá trị biến gốc từ bên trong hàm\n"
+            + "\n"
+            + "Không phù hợp khi cần trả về nhiều giá trị sau khi xử lý"
+        });
+
+        Content_MAP.put("Truyền tham số theo tham chiếu", new String[]{
+            "Truyền tham số theo tham chiếu (pass by reference) là phương pháp truyền địa chỉ của biến vào hàm thay vì giá trị của biến. Khi đó, hàm có thể thay đổi trực tiếp giá trị của biến gốc thông qua địa chỉ này.\n"
+            + "\n"
+            + "Trong C, không có khái niệm tham chiếu như C++, nhưng chúng ta có thể mô phỏng bằng cách sử dụng con trỏ (pointer).",
+            "Truyền địa chỉ của biến vào hàm\n"
+            + "\n"
+            + "Hàm có thể thay đổi giá trị của biến gốc\n"
+            + "\n"
+            + "Tiết kiệm bộ nhớ khi làm việc với cấu trúc dữ liệu lớn\n"
+            + "\n"
+            + "Thường dùng khi cần thay đổi nhiều giá trị hoặc làm việc với mảng, chuỗi",
+            "Đặc điểm	Truyền tham trị	Truyền tham chiếu (dùng con trỏ)\n"
+            + "Truyền vào hàm	Giá trị của biến	Địa chỉ của biến\n"
+            + "Thay đổi giá trị	Không ảnh hưởng biến gốc	Ảnh hưởng trực tiếp biến gốc\n"
+            + "Bộ nhớ	Tạo bản sao	Chỉ truyền địa chỉ\n"
+            + "Hiệu suất	Kém hơn với dữ liệu lớn	Tốt hơn với dữ liệu lớn",
+            "Ví dụ 1: Hoán đổi 2 số",
+            "Ví dụ 2: Thay đổi giá trị biến",
+            "Ví dụ 3: Làm việc với mảng",
+            "Truyền tham số theo tham chiếu trong C được thực hiện thông qua con trỏ, cho phép hàm thay đổi giá trị của biến gốc. Phương pháp này đặc biệt hữu ích khi:\n"
+            + "\n"
+            + "Cần thay đổi nhiều giá trị trong hàm\n"
+            + "\n"
+            + "Làm việc với dữ liệu lớn để tránh sao chép\n"
+            + "\n"
+            + "Thao tác với mảng và chuỗi\n"
+            + "\n"
+            + "Cần trả về nhiều giá trị từ hàm"
+        });
+
+        Content_MAP.put("Sử dụng con trỏ để truyền tham số", new String[]{
+            "Truyền tham số bằng con trỏ trong C là phương pháp truyền địa chỉ của biến thay vì giá trị của biến vào hàm. Điều này cho phép hàm có thể thay đổi trực tiếp giá trị của biến gốc.",
+            "Ưu điểm:\n"
+            + "\n"
+            + "Cho phép hàm thay đổi giá trị của biến gốc\n"
+            + "\n"
+            + "Tiết kiệm bộ nhớ khi làm việc với cấu trúc dữ liệu lớn\n"
+            + "\n"
+            + "Cho phép trả về nhiều giá trị thông qua tham số",
+            "Khi truyền tham số bằng con trỏ:\n"
+            + "\n"
+            + "Hàm gọi truyền địa chỉ của biến (sử dụng toán tử &)\n"
+            + "\n"
+            + "Hàm nhận nhận tham số là con trỏ (khai báo với *)\n"
+            + "\n"
+            + "Hàm nhận có thể truy cập và thay đổi giá trị tại địa chỉ đó",
+            "Ví dụ 1: Hàm hoán đổi giá trị",
+            "Ví dụ 2: Thay đổi giá trị biến gốc",
+            "Ví dụ 3: Làm việc với mảng",
+            "Luôn kiểm tra con trỏ NULL trước khi sử dụng\n"
+            + "\n"
+            + "Cẩn thận với con trỏ \"dangling\" (trỏ đến vùng nhớ không hợp lệ)\n"
+            + "\n"
+            + "Sử dụng const với con trỏ khi không muốn thay đổi giá trị\n"
+            + "\n"
+            + "Phân biệt rõ giữa truyền giá trị và truyền tham chiếu (con trỏ)",
+            "Sử dụng const để đảm bảo hàm không thay đổi giá trị:",
+            "Truyền tham số bằng con trỏ là một kỹ thuật mạnh mẽ trong C, giúp tối ưu hiệu suất và linh hoạt trong việc thao tác với dữ liệu."
+        });
+
+        Content_MAP.put("Khái niệm hàm đệ quy", new String[]{
+            "Hàm đệ quy (recursive function) trong ngôn ngữ C là hàm có khả năng gọi lại chính nó trong thân hàm. Mỗi lần gọi đệ quy, hàm sẽ giải quyết một phần nhỏ của vấn đề, sau đó tiếp tục gọi chính nó để giải quyết phần còn lại cho đến khi đạt được điều kiện dừng.",
+            "Đặc điểm chính:\n"
+            + "\n"
+            + "Hàm tự gọi chính nó\n"
+            + "\n"
+            + "Phải có điều kiện dừng (base case)\n"
+            + "\n"
+            + "Mỗi lần gọi đệ quy phải tiến gần hơn đến điều kiện dừng",
+            "a. Điều kiện dừng (Base case)\n"
+            + "Là điều kiện để kết thúc quá trình đệ quy, ngăn chặn việc gọi hàm vô hạn. Nếu không có điều kiện dừng, chương trình sẽ bị tràn bộ nhớ stack (stack overflow).",
+            "b. Phần đệ quy (Recursive case)\n"
+            + "Là phần mà hàm gọi lại chính nó với tham số thay đổi, thường là tiến gần hơn đến điều kiện dừng.",
+            "Ưu điểm:\n"
+            + "Giúp code ngắn gọn, dễ đọc, dễ hiểu với các bài toán có tính chất đệ quy\n"
+            + "\n"
+            + "Phù hợp giải quyết các vấn đề như: duyệt cây, phân chia bài toán (divide and conquer), quay lui (backtracking)",
+            "Nhược điểm:\n"
+            + "Tốn bộ nhớ do phải lưu trữ các lần gọi hàm trong stack\n"
+            + "\n"
+            + "Có thể chậm hơn cách giải bằng vòng lặp do overhead của việc gọi hàm\n"
+            + "\n"
+            + "Dễ gây stack overflow nếu đệ quy quá sâu",
+            "a. Đệ quy trực tiếp (Direct recursion)\n"
+            + "Hàm gọi trực tiếp chính nó.",
+            "b. Đệ quy gián tiếp (Indirect recursion)\n"
+            + "Hàm A gọi hàm B, hàm B lại gọi hàm A, tạo thành vòng đệ quy.",
+            "c. Đệ quy đuôi (Tail recursion)\n"
+            + "Là trường hợp đặc biệt khi lời gọi đệ quy là thao tác cuối cùng của hàm. Có thể được tối ưu bởi trình biên dịch.",
+            "a. Tính giai thừa (đệ quy trực tiếp)",
+            "b. Dãy Fibonacci (đệ quy nhị phân)",
+            "c. Đệ quy đuôi (tính tổng các số từ 1 đến n)",
+            "d. Đệ quy gián tiếp (ví dụ kiểm tra số chẵn/lẻ)",
+            "Luôn đảm bảo có điều kiện dừng hợp lý\n"
+            + "\n"
+            + "Đảm bảo mỗi lần gọi đệ quy tiến gần đến điều kiện dừng\n"
+            + "\n"
+            + "Hạn chế sử dụng đệ quy với bài toán có độ phức tạp lớn\n"
+            + "\n"
+            + "Cân nhắc sử dụng vòng lặp thay thế nếu có thể\n"
+            + "\n"
+            + "Chú ý đến giới hạn stack của chương trình"
+        });
+
+        Content_MAP.put("Cách hoạt động của hàm đệ quy", new String[]{
+            "Đệ quy là một kỹ thuật lập trình trong đó một hàm gọi lại chính nó để giải quyết vấn đề. Một hàm đệ quy cần có:\n"
+            + "\n"
+            + "Điều kiện dừng (base case): Điểm dừng của đệ quy\n"
+            + "\n"
+            + "Phần đệ quy (recursive case): Phần gọi lại chính hàm đó với tham số thay đổi",
+            "Khi một hàm đệ quy được gọi:\n"
+            + "\n"
+            + "Hàm kiểm tra điều kiện dừng\n"
+            + "\n"
+            + "Nếu chưa thỏa điều kiện dừng, hàm gọi lại chính nó với tham số mới\n"
+            + "\n"
+            + "Quá trình này lặp lại cho đến khi đạt điều kiện dừng\n"
+            + "\n"
+            + "Các lời gọi hàm được giải quyết theo thứ tự ngược lại (từ cuối về đầu)",
+            "Ưu điểm:\n"
+            + "\n"
+            + "Code ngắn gọn, dễ hiểu cho các bài toán có tính chất đệ quy\n"
+            + "\n"
+            + "Dễ dàng biểu diễn các giải thuật chia để trị",
+            "Nhược điểm:\n"
+            + "\n"
+            + "Tốn bộ nhớ do phải lưu trữ nhiều ngăn xếp (stack frames)\n"
+            + "\n"
+            + "Có thể gây tràn bộ nhớ stack (stack overflow) nếu đệ quy quá sâu\n"
+            + "\n"
+            + "Hiệu suất thường kém hơn vòng lặp",
+            "a. Tính giai thừa",
+            "b. Dãy Fibonacci",
+            "c. Đệ quy đuôi (Tail recursion)",
+            "Luôn xác định rõ điều kiện dừng\n"
+            + "\n"
+            + "Đảm bảo các lời gọi đệ quy tiến dần về điều kiện dừng\n"
+            + "\n"
+            + "Hạn chế sử dụng đệ quy cho các bài toán có độ phức tạp lớn\n"
+            + "\n"
+            + "Cân nhắc sử dụng vòng lặp thay thế khi có thể\n"
+            + "\n"
+            + "Đối với đệ quy đuôi, một số trình biên dịch có thể tối ưu thành vòng lặp"
+        });
+
+        Content_MAP.put("Ví dụ về hàm đệ quy", new String[]{
+            "Dưới đây là ví dụ về hàm đệ quy tính giai thừa trong C:",
+            "Điều kiện dừng: Khi n = 0 hoặc n = 1, hàm trả về 1 vì 0! và 1! đều bằng 1",
+            "Phần đệ quy: Với n > 1, hàm trả về n * factorial(n-1), tức là nó gọi lại chính nó với giá trị nhỏ hơn",
+            "Quá trình thực thi:\n"
+            + "\n"
+            + "factorial(5) = 5 * factorial(4)\n"
+            + "\n"
+            + "factorial(4) = 4 * factorial(3)\n"
+            + "\n"
+            + "factorial(3) = 3 * factorial(2)\n"
+            + "\n"
+            + "factorial(2) = 2 * factorial(1)\n"
+            + "\n"
+            + "factorial(1) = 1 (điều kiện dừng)",
+            "Ưu điểm:\n"
+            + "\n"
+            + "Code ngắn gọn, dễ hiểu\n"
+            + "\n"
+            + "Phù hợp với các bài toán có tính chất đệ quy tự nhiên",
+            "Nhược điểm:\n"
+            + "\n"
+            + "Tốn bộ nhớ stack do mỗi lần gọi đệ quy cần lưu trữ thông tin\n"
+            + "\n"
+            + "Có thể gây tràn stack với đầu vào lớn\n"
+            + "\n"
+            + "Hiệu suất thường kém hơn vòng lặp"
+        });
+
+        Content_MAP.put("Cấu trúc dữ liệu cơ bản", new String[]{
+            "Mảng là tập hợp các phần tử có cùng kiểu dữ liệu, được lưu trữ liên tiếp trong bộ nhớ.",
+            "Đặc điểm:\n"
+            + "\n"
+            + "Kích thước cố định khi khai báo\n"
+            + "\n"
+            + "Truy cập phần tử qua chỉ số\n"
+            + "\n"
+            + "Hiệu quả khi cần truy cập ngẫu nhiên",
+            "Code mẫu:",
+            "Trong C, chuỗi là mảng các ký tự kết thúc bằng ký tự null ('\\0').",
+            "Đặc điểm:\n"
+            + "\n"
+            + "Là mảng một chiều của các ký tự\n"
+            + "\n"
+            + "Kết thúc bằng ký tự null\n"
+            + "\n"
+            + "Có thể khởi tạo bằng chuỗi ký tự trong dấu nháy kép",
+            "Code mẫu:",
+            "Struct cho phép nhóm các biến có kiểu dữ liệu khác nhau dưới một tên duy nhất.",
+            "Đặc điểm:\n"
+            + "\n"
+            + "Có thể chứa nhiều kiểu dữ liệu khác nhau\n"
+            + "\n"
+            + "Tương tự như class nhưng không có phương thức\n"
+            + "\n"
+            + "Kích thước bằng tổng kích thước các thành viên (có thể có padding)",
+            "Code mẫu:",
+            "Union cho phép lưu trữ nhiều kiểu dữ liệu khác nhau trong cùng một vùng nhớ.",
+            "Đặc điểm:\n"
+            + "\n"
+            + "Chỉ lưu trữ một thành viên tại một thời điểm\n"
+            + "\n"
+            + "Kích thước bằng kích thước của thành viên lớn nhất\n"
+            + "\n"
+            + "Tiết kiệm bộ nhớ khi chỉ cần một trong các kiểu dữ liệu",
+            "Code mẫu:",
+            "Enum là kiểu dữ liệu cho phép định nghĩa một tập hợp các hằng số có tên.",
+            "Đặc điểm:\n"
+            + "\n"
+            + "Giúp code dễ đọc và bảo trì hơn\n"
+            + "\n"
+            + "Mỗi phần tử enum có giá trị nguyên bắt đầu từ 0\n"
+            + "\n"
+            + "Có thể gán giá trị cụ thể cho các phần tử",
+            "Code mẫu:",
+            "Con trỏ là biến lưu trữ địa chỉ bộ nhớ của biến khác.",
+            "Đặc điểm:\n"
+            + "\n"
+            + "Cho phép truy cập và thao tác trực tiếp với bộ nhớ\n"
+            + "\n"
+            + "Dùng để cấp phát động, truyền tham chiếu, làm việc với mảng\n"
+            + "\n"
+            + "Có thể có con trỏ trỏ đến con trỏ",
+            "Code mẫu:",
+            "Danh sách liên kết là cấu trúc dữ liệu động gồm các node liên kết với nhau.",
+            "Đặc điểm:\n"
+            + "\n"
+            + "Kích thước có thể thay đổi trong khi chạy chương trình\n"
+            + "\n"
+            + "Mỗi node chứa dữ liệu và con trỏ đến node tiếp theo\n"
+            + "\n"
+            + "Có thể thêm/xóa node mà không cần dịch chuyển các phần tử khác",
+            "Code mẫu:"
+        });
+
+        Content_MAP.put("File I/O trong C", new String[]{
+            "File I/O trong C được thực hiện thông qua các hàm trong thư viện stdio.h. Có hai loại file chính:\n"
+            + "\n"
+            + "Text files: Chứa dữ liệu văn bản\n"
+            + "\n"
+            + "Binary files: Chứa dữ liệu nhị phân",
+            "a. Mở file - fopen()",
+            "Các chế độ mở file (mode):\n"
+            + "\n"
+            + "\"r\": Mở để đọc (file phải tồn tại)\n"
+            + "\n"
+            + "\"w\": Mở để ghi (tạo mới hoặc ghi đè)\n"
+            + "\n"
+            + "\"a\": Mở để ghi tiếp vào cuối file\n"
+            + "\n"
+            + "\"r+\": Mở để đọc và ghi\n"
+            + "\n"
+            + "\"w+\": Mở để đọc và ghi (tạo mới hoặc ghi đè)\n"
+            + "\n"
+            + "\"a+\": Mở để đọc và ghi tiếp vào cuối file\n"
+            + "\n"
+            + "Thêm \"b\" cho file nhị phân (ví dụ: \"rb\", \"wb\")",
+            "Ví dụ:",
+            "b. Đóng file - fclose()",
+            "Ví dụ:",
+            "a. Ghi file\n"
+            + "Các hàm ghi file phổ biến:\n"
+            + "\n"
+            + "fprintf(): Ghi định dạng\n"
+            + "\n"
+            + "fputs(): Ghi chuỗi\n"
+            + "\n"
+            + "fputc(): Ghi ký tự",
+            "Ví dụ:",
+            "b. Đọc file\n"
+            + "Các hàm đọc file phổ biến:\n"
+            + "\n"
+            + "fscanf(): Đọc định dạng\n"
+            + "\n"
+            + "fgets(): Đọc chuỗi\n"
+            + "\n"
+            + "fgetc(): Đọc ký tự",
+            "Ví dụ:",
+            "a. Ghi file nhị phân\n"
+            + "Sử dụng fwrite():",
+            "Ví dụ:",
+            "b. Đọc file nhị phân\n"
+            + "Sử dụng fread():",
+            "Ví dụ:",
+            "fseek(): Di chuyển con trỏ file\n"
+            + "\n"
+            + "ftell(): Trả về vị trí hiện tại\n"
+            + "\n"
+            + "rewind(): Đặt con trỏ về đầu file",
+            "Ví dụ:",
+            "feof(): Kiểm tra end-of-file\n"
+            + "\n"
+            + "ferror(): Kiểm tra lỗi",
+            "Ví dụ:",
+            "Chương trình quản lý sinh viên đơn giản:"
+        });
+
+        Content_MAP.put("Các hàm file I/O", new String[]{
+            "fopen()\n"
+            + "Mục đích: Mở một file",
+            "filename: Tên file cần mở\n"
+            + "\n"
+            + "mode: Chế độ mở file:\n"
+            + "\n"
+            + "\"r\": Đọc (file phải tồn tại)\n"
+            + "\n"
+            + "\"w\": Ghi (tạo file mới hoặc ghi đè)\n"
+            + "\n"
+            + "\"a\": Ghi tiếp vào cuối file\n"
+            + "\n"
+            + "\"r+\": Đọc và ghi (file phải tồn tại)\n"
+            + "\n"
+            + "\"w+\": Đọc và ghi (tạo file mới hoặc ghi đè)\n"
+            + "\n"
+            + "\"a+\": Đọc và ghi tiếp vào cuối file",
+            "Ví dụ:",
+            "fclose()\n"
+            + "Mục đích: Đóng file đã mở",
+            "Trả về 0 nếu thành công, EOF nếu thất bại",
+            "Ví dụ:",
+            "fprintf()\n"
+            + "Mục đích: Ghi dữ liệu có định dạng vào file (tương tự printf)",
+            "Ví dụ:",
+            "fputs()\n"
+            + "Mục đích: Ghi một chuỗi vào file",
+            "Ví dụ:",
+            "fputc()\n"
+            + "Mục đích: Ghi một ký tự vào file",
+            "Ví dụ:",
+            "fwrite()\n"
+            + "Mục đích: Ghi dữ liệu nhị phân vào file",
+            "ptr: Con trỏ tới dữ liệu cần ghi\n"
+            + "\n"
+            + "size: Kích thước mỗi phần tử\n"
+            + "\n"
+            + "nmemb: Số lượng phần tử",
+            "fscanf()\n"
+            + "Mục đích: Đọc dữ liệu có định dạng từ file (tương tự scanf)",
+            "Ví dụ:",
+            "fgets()\n"
+            + "Mục đích: Đọc một dòng từ file",
+            "str: Buffer để lưu dữ liệu đọc được\n"
+            + "\n"
+            + "n: Số ký tự tối đa đọc",
+            "Ví dụ:",
+            "fgetc()\n"
+            + "Mục đích: Đọc một ký tự từ file",
+            "Ví dụ:",
+            "fread()\n"
+            + "Mục đích: Đọc dữ liệu nhị phân từ file",
+            "Ví dụ:",
+            "feof()\n"
+            + "Mục đích: Kiểm tra đã đến cuối file chưa",
+            "Trả về giá trị khác 0 nếu đã đến cuối file",
+            "Ví dụ:",
+            "ferror()\n"
+            + "Mục đích: Kiểm tra lỗi khi thao tác với file",
+            "Trả về giá trị khác 0 nếu có lỗi",
+            "Ví dụ:",
+            "fseek()\n"
+            + "Mục đích: Di chuyển con trỏ file đến vị trí mong muốn",
+            "offset: Số byte di chuyển\n"
+            + "\n"
+            + "whence: Vị trí bắt đầu:\n"
+            + "\n"
+            + "SEEK_SET: Đầu file\n"
+            + "\n"
+            + "SEEK_CUR: Vị trí hiện tại\n"
+            + "\n"
+            + "SEEK_END: Cuối file",
+            "Ví dụ:",
+            "ftell()\n"
+            + "Mục đích: Lấy vị trí hiện tại của con trỏ file",
+            "Ví dụ:",
+            "rewind()\n"
+            + "Mục đích: Đặt con trỏ file về đầu file",
+            "Ví dụ:",
+            "Ví dụ hoàn chỉnh"
         });
 
         Content_MAP.put("", new String[]{});
@@ -17164,6 +17695,875 @@ public class NoiDungBaiHoc {
             + "    float max = timMax(3.2, 5.4, 4.1);\n"
             + "    printf(\"So lon nhat la: %.2f\\n\", max);\n"
             + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Truyền tham số theo giá trị", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm hoán đổi giá trị sử dụng truyền tham số theo giá trị\n"
+            + "void swapByValue(int a, int b) {\n"
+            + "    int temp = a;\n"
+            + "    a = b;\n"
+            + "    b = temp;\n"
+            + "    printf(\"Trong hàm swapByValue: a = %d, b = %d\\n\", a, b);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int x = 5, y = 10;\n"
+            + "    \n"
+            + "    printf(\"Trước khi gọi hàm swapByValue: x = %d, y = %d\\n\", x, y);\n"
+            + "    \n"
+            + "    // Gọi hàm và truyền giá trị của x và y\n"
+            + "    swapByValue(x, y);\n"
+            + "    \n"
+            + "    printf(\"Sau khi gọi hàm swapByValue: x = %d, y = %d\\n\", x, y);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "Trước khi gọi hàm swapByValue: x = 5, y = 10\n"
+            + "Trong hàm swapByValue: a = 10, b = 5\n"
+            + "Sau khi gọi hàm swapByValue: x = 5, y = 10"
+        });
+
+        Code_MAP.put("Truyền tham số theo tham chiếu", new String[]{
+            "void tenHam(kieuDuLieu *tenThamSo) {\n"
+            + "    // Thao tác với *tenThamSo để thay đổi giá trị gốc\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm hoán đổi sử dụng truyền tham chiếu (con trỏ)\n"
+            + "void swap(int *a, int *b) {\n"
+            + "    int temp = *a;\n"
+            + "    *a = *b;\n"
+            + "    *b = temp;\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int x = 5, y = 10;\n"
+            + "    \n"
+            + "    printf(\"Truoc khi swap: x = %d, y = %d\\n\", x, y);\n"
+            + "    swap(&x, &y); // Truyền địa chỉ của x và y\n"
+            + "    printf(\"Sau khi swap: x = %d, y = %d\\n\", x, y);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "void tangGiaTri(int *n) {\n"
+            + "    (*n)++; // Tăng giá trị tại địa chỉ n lên 1\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int a = 10;\n"
+            + "    \n"
+            + "    printf(\"Truoc khi goi ham: a = %d\\n\", a);\n"
+            + "    tangGiaTri(&a); // Truyền địa chỉ của a\n"
+            + "    printf(\"Sau khi goi ham: a = %d\\n\", a);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm nhân đôi các phần tử mảng (truyền mảng là truyền tham chiếu)\n"
+            + "void nhanDoiMang(int arr[], int size) {\n"
+            + "    for (int i = 0; i < size; i++) {\n"
+            + "        arr[i] *= 2; // Thay đổi trực tiếp mảng gốc\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int mang[] = {1, 2, 3, 4, 5};\n"
+            + "    int n = sizeof(mang) / sizeof(mang[0]);\n"
+            + "    \n"
+            + "    printf(\"Mang truoc khi thay doi: \");\n"
+            + "    for (int i = 0; i < n; i++) {\n"
+            + "        printf(\"%d \", mang[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    nhanDoiMang(mang, n); // Mảng luôn được truyền theo tham chiếu\n"
+            + "    \n"
+            + "    printf(\"\\nMang sau khi thay doi: \");\n"
+            + "    for (int i = 0; i < n; i++) {\n"
+            + "        printf(\"%d \", mang[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Sử dụng con trỏ để truyền tham số", new String[]{
+            "// Khai báo hàm với tham số con trỏ\n"
+            + "void tenHam(kieuDuLieu *tenConTro) {\n"
+            + "    // Thao tác với giá trị tại địa chỉ con trỏ\n"
+            + "    *tenConTro = giaTriMoi;\n"
+            + "}\n"
+            + "\n"
+            + "// Gọi hàm và truyền địa chỉ\n"
+            + "tenHam(&bienGoc);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm hoán đổi giá trị sử dụng con trỏ\n"
+            + "void swap(int *a, int *b) {\n"
+            + "    int temp = *a;\n"
+            + "    *a = *b;\n"
+            + "    *b = temp;\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int x = 5, y = 10;\n"
+            + "    \n"
+            + "    printf(\"Truoc khi swap: x = %d, y = %d\\n\", x, y);\n"
+            + "    swap(&x, &y); // Truyền địa chỉ của x và y\n"
+            + "    printf(\"Sau khi swap: x = %d, y = %d\\n\", x, y);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm tăng giá trị lên 1\n"
+            + "void increment(int *num) {\n"
+            + "    (*num)++; // Tăng giá trị tại địa chỉ num lên 1\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int value = 5;\n"
+            + "    \n"
+            + "    printf(\"Truoc khi increment: %d\\n\", value);\n"
+            + "    increment(&value);\n"
+            + "    printf(\"Sau khi increment: %d\\n\", value);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm nhân đôi các phần tử mảng\n"
+            + "void doubleArray(int *arr, int size) {\n"
+            + "    for(int i = 0; i < size; i++) {\n"
+            + "        *(arr + i) *= 2; // arr[i] *= 2;\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int numbers[] = {1, 2, 3, 4, 5};\n"
+            + "    int size = sizeof(numbers)/sizeof(numbers[0]);\n"
+            + "    \n"
+            + "    printf(\"Mang truoc khi doi:\\n\");\n"
+            + "    for(int i = 0; i < size; i++) {\n"
+            + "        printf(\"%d \", numbers[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    doubleArray(numbers, size); // numbers là con trỏ đến phần tử đầu tiên\n"
+            + "    \n"
+            + "    printf(\"\\nMang sau khi doi:\\n\");\n"
+            + "    for(int i = 0; i < size; i++) {\n"
+            + "        printf(\"%d \", numbers[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm chỉ đọc giá trị, không thay đổi\n"
+            + "void printValue(const int *ptr) {\n"
+            + "    printf(\"Gia tri: %d\\n\", *ptr);\n"
+            + "    // *ptr = 10; // Lỗi biên dịch vì ptr là const\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int num = 5;\n"
+            + "    printValue(&num);\n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Khái niệm hàm đệ quy", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm tính giai thừa sử dụng đệ quy\n"
+            + "unsigned long long factorial(int n) {\n"
+            + "    // Điều kiện dừng\n"
+            + "    if (n == 0 || n == 1)\n"
+            + "        return 1;\n"
+            + "    // Phần đệ quy\n"
+            + "    else\n"
+            + "        return n * factorial(n - 1);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int num = 5;\n"
+            + "    printf(\"Giai thừa của %d là %llu\\n\", num, factorial(num));\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm tính số Fibonacci sử dụng đệ quy\n"
+            + "int fibonacci(int n) {\n"
+            + "    // Điều kiện dừng\n"
+            + "    if (n == 0)\n"
+            + "        return 0;\n"
+            + "    else if (n == 1)\n"
+            + "        return 1;\n"
+            + "    // Phần đệ quy (gọi đệ quy 2 lần)\n"
+            + "    else\n"
+            + "        return fibonacci(n - 1) + fibonacci(n - 2);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int n = 6;\n"
+            + "    printf(\"Số Fibonacci thứ %d là %d\\n\", n, fibonacci(n));\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm tính tổng sử dụng đệ quy đuôi\n"
+            + "int sum(int n, int accumulator) {\n"
+            + "    // Điều kiện dừng\n"
+            + "    if (n == 0)\n"
+            + "        return accumulator;\n"
+            + "    // Phần đệ quy (đệ quy đuôi)\n"
+            + "    else\n"
+            + "        return sum(n - 1, accumulator + n);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int num = 100;\n"
+            + "    printf(\"Tổng các số từ 1 đến %d là %d\\n\", num, sum(num, 0));\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Khai báo nguyên mẫu hàm\n"
+            + "int isOdd(int n);\n"
+            + "\n"
+            + "// Hàm kiểm tra số chẵn\n"
+            + "int isEven(int n) {\n"
+            + "    if (n == 0)\n"
+            + "        return 1; // true\n"
+            + "    else\n"
+            + "        return isOdd(n - 1); // Gọi hàm khác\n"
+            + "}\n"
+            + "\n"
+            + "// Hàm kiểm tra số lẻ\n"
+            + "int isOdd(int n) {\n"
+            + "    if (n == 0)\n"
+            + "        return 0; // false\n"
+            + "    else\n"
+            + "        return isEven(n - 1); // Gọi hàm khác\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int num = 7;\n"
+            + "    if (isEven(num))\n"
+            + "        printf(\"%d là số chẵn\\n\", num);\n"
+            + "    else\n"
+            + "        printf(\"%d là số lẻ\\n\", num);\n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Cách hoạt động của hàm đệ quy", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm tính giai thừa bằng đệ quy\n"
+            + "int factorial(int n) {\n"
+            + "    // Điều kiện dừng\n"
+            + "    if (n == 0 || n == 1) {\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    // Phần đệ quy\n"
+            + "    return n * factorial(n - 1);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int num = 5;\n"
+            + "    printf(\"Giai thừa của %d là %d\\n\", num, factorial(num));\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm tính số Fibonacci bằng đệ quy\n"
+            + "int fibonacci(int n) {\n"
+            + "    // Điều kiện dừng\n"
+            + "    if (n == 0) return 0;\n"
+            + "    if (n == 1) return 1;\n"
+            + "    \n"
+            + "    // Phần đệ quy\n"
+            + "    return fibonacci(n - 1) + fibonacci(n - 2);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int n = 10;\n"
+            + "    printf(\"Số Fibonacci thứ %d là %d\\n\", n, fibonacci(n));\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm tính tổng từ 1 đến n bằng đệ quy đuôi\n"
+            + "int sum(int n, int accumulator) {\n"
+            + "    // Điều kiện dừng\n"
+            + "    if (n == 0) return accumulator;\n"
+            + "    \n"
+            + "    // Phần đệ quy đuôi\n"
+            + "    return sum(n - 1, accumulator + n);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int num = 100;\n"
+            + "    printf(\"Tổng từ 1 đến %d là %d\\n\", num, sum(num, 0));\n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Ví dụ về hàm đệ quy", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm đệ quy tính giai thừa\n"
+            + "unsigned long long factorial(int n) {\n"
+            + "    // 1. Điều kiện dừng\n"
+            + "    if (n == 0 || n == 1) {\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    // 2. Phần đệ quy\n"
+            + "    else {\n"
+            + "        return n * factorial(n - 1);\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int number;\n"
+            + "    printf(\"Nhập một số nguyên dương: \");\n"
+            + "    scanf(\"%d\", &number);\n"
+            + "    \n"
+            + "    // Kiểm tra số nhập vào có hợp lệ không\n"
+            + "    if (number < 0) {\n"
+            + "        printf(\"Lỗi: Giai thừa chỉ tính được cho số nguyên dương.\\n\");\n"
+            + "    } else {\n"
+            + "        unsigned long long result = factorial(number);\n"
+            + "        printf(\"Giai thừa của %d là %llu\\n\", number, result);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Cấu trúc dữ liệu cơ bản", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Khai báo mảng 5 phần tử kiểu int\n"
+            + "    int numbers[5] = {10, 20, 30, 40, 50};\n"
+            + "    \n"
+            + "    // Truy cập và in các phần tử\n"
+            + "    for(int i = 0; i < 5; i++) {\n"
+            + "        printf(\"numbers[%d] = %d\\n\", i, numbers[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Thay đổi giá trị phần tử\n"
+            + "    numbers[2] = 35;\n"
+            + "    printf(\"\\nAfter modification:\\n\");\n"
+            + "    printf(\"numbers[2] = %d\\n\", numbers[2]);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Khai báo chuỗi\n"
+            + "    char greeting1[] = \"Hello\"; // Tự động thêm '\\0'\n"
+            + "    char greeting2[6] = {'H', 'e', 'l', 'l', 'o', '\\0'};\n"
+            + "    \n"
+            + "    printf(\"greeting1: %s\\n\", greeting1);\n"
+            + "    printf(\"greeting2: %s\\n\", greeting2);\n"
+            + "    \n"
+            + "    // Sử dụng hàm thư viện string.h\n"
+            + "    printf(\"Length of greeting1: %lu\\n\", strlen(greeting1));\n"
+            + "    \n"
+            + "    // Nối chuỗi\n"
+            + "    strcat(greeting1, \" World!\");\n"
+            + "    printf(\"After concatenation: %s\\n\", greeting1);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "// Định nghĩa struct\n"
+            + "struct Student {\n"
+            + "    int id;\n"
+            + "    char name[50];\n"
+            + "    float gpa;\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Khai báo biến struct\n"
+            + "    struct Student student1;\n"
+            + "    \n"
+            + "    // Gán giá trị\n"
+            + "    student1.id = 101;\n"
+            + "    strcpy(student1.name, \"Nguyen Van A\");\n"
+            + "    student1.gpa = 3.75;\n"
+            + "    \n"
+            + "    // Khai báo và khởi tạo cùng lúc\n"
+            + "    struct Student student2 = {102, \"Tran Thi B\", 3.9};\n"
+            + "    \n"
+            + "    // Truy cập thành viên\n"
+            + "    printf(\"Student 1:\\n\");\n"
+            + "    printf(\"ID: %d\\nName: %s\\nGPA: %.2f\\n\", \n"
+            + "           student1.id, student1.name, student1.gpa);\n"
+            + "    \n"
+            + "    printf(\"\\nStudent 2:\\n\");\n"
+            + "    printf(\"ID: %d\\nName: %s\\nGPA: %.2f\\n\", \n"
+            + "           student2.id, student2.name, student2.gpa);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "union Data {\n"
+            + "    int i;\n"
+            + "    float f;\n"
+            + "    char str[20];\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    union Data data;\n"
+            + "    \n"
+            + "    data.i = 10;\n"
+            + "    printf(\"data.i: %d\\n\", data.i);\n"
+            + "    \n"
+            + "    data.f = 3.14;\n"
+            + "    printf(\"data.f: %.2f\\n\", data.f);\n"
+            + "    \n"
+            + "    strcpy(data.str, \"C Programming\");\n"
+            + "    printf(\"data.str: %s\\n\", data.str);\n"
+            + "    \n"
+            + "    // Kích thước union\n"
+            + "    printf(\"Size of union Data: %lu bytes\\n\", sizeof(union Data));\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Định nghĩa enum\n"
+            + "enum Days {\n"
+            + "    Sunday,    // 0\n"
+            + "    Monday,    // 1\n"
+            + "    Tuesday,   // 2\n"
+            + "    Wednesday, // 3\n"
+            + "    Thursday,  // 4\n"
+            + "    Friday,    // 5\n"
+            + "    Saturday   // 6\n"
+            + "};\n"
+            + "\n"
+            + "enum Status {\n"
+            + "    Active = 1,\n"
+            + "    Inactive = 0,\n"
+            + "    Pending = 2\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    enum Days today = Wednesday;\n"
+            + "    printf(\"Today is %d (Wednesday)\\n\", today);\n"
+            + "    \n"
+            + "    enum Status userStatus = Active;\n"
+            + "    printf(\"User status: %d\\n\", userStatus);\n"
+            + "    \n"
+            + "    // Duyệt qua các giá trị enum\n"
+            + "    for(int day = Sunday; day <= Saturday; day++) {\n"
+            + "        printf(\"Day %d\\n\", day);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int var = 20;\n"
+            + "    int *ptr;  // Khai báo con trỏ\n"
+            + "    \n"
+            + "    ptr = &var; // Lưu địa chỉ của var vào ptr\n"
+            + "    \n"
+            + "    printf(\"Address of var: %p\\n\", &var);\n"
+            + "    printf(\"Value stored in ptr: %p\\n\", ptr);\n"
+            + "    printf(\"Value pointed by ptr: %d\\n\", *ptr);\n"
+            + "    \n"
+            + "    // Thay đổi giá trị thông qua con trỏ\n"
+            + "    *ptr = 30;\n"
+            + "    printf(\"New value of var: %d\\n\", var);\n"
+            + "    \n"
+            + "    // Con trỏ và mảng\n"
+            + "    int arr[3] = {10, 20, 30};\n"
+            + "    int *arrPtr = arr; // arrPtr trỏ đến phần tử đầu tiên\n"
+            + "    \n"
+            + "    for(int i = 0; i < 3; i++) {\n"
+            + "        printf(\"arr[%d] = %d\\n\", i, *(arrPtr + i));\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "// Định nghĩa node\n"
+            + "struct Node {\n"
+            + "    int data;\n"
+            + "    struct Node* next;\n"
+            + "};\n"
+            + "\n"
+            + "// Hàm thêm node vào đầu danh sách\n"
+            + "void push(struct Node** head_ref, int new_data) {\n"
+            + "    struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));\n"
+            + "    new_node->data = new_data;\n"
+            + "    new_node->next = (*head_ref);\n"
+            + "    (*head_ref) = new_node;\n"
+            + "}\n"
+            + "\n"
+            + "// Hàm in danh sách\n"
+            + "void printList(struct Node* node) {\n"
+            + "    while (node != NULL) {\n"
+            + "        printf(\"%d \", node->data);\n"
+            + "        node = node->next;\n"
+            + "    }\n"
+            + "    printf(\"\\n\");\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    struct Node* head = NULL;\n"
+            + "    \n"
+            + "    push(&head, 3);\n"
+            + "    push(&head, 2);\n"
+            + "    push(&head, 1);\n"
+            + "    \n"
+            + "    printf(\"Linked list: \");\n"
+            + "    printList(head);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("File I/O trong C", new String[]{
+            "FILE *fopen(const char *filename, const char *mode);",
+            "FILE *fptr;\n"
+            + "fptr = fopen(\"file.txt\", \"w\");\n"
+            + "if (fptr == NULL) {\n"
+            + "    printf(\"Khong the mo file.\\n\");\n"
+            + "    exit(1);\n"
+            + "}",
+            "int fclose(FILE *stream);",
+            "fclose(fptr);",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *fptr;\n"
+            + "    fptr = fopen(\"example.txt\", \"w\");\n"
+            + "    \n"
+            + "    if (fptr == NULL) {\n"
+            + "        printf(\"Loi khi mo file!\");\n"
+            + "        exit(1);\n"
+            + "    }\n"
+            + "    \n"
+            + "    fprintf(fptr, \"Xin chao the gioi!\\n\");\n"
+            + "    fputs(\"Day la dong thu hai.\\n\", fptr);\n"
+            + "    fputc('A', fptr);\n"
+            + "    \n"
+            + "    fclose(fptr);\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *fptr;\n"
+            + "    char buffer[255];\n"
+            + "    \n"
+            + "    fptr = fopen(\"example.txt\", \"r\");\n"
+            + "    \n"
+            + "    if (fptr == NULL) {\n"
+            + "        printf(\"Loi khi mo file!\");\n"
+            + "        exit(1);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Đọc từng dòng\n"
+            + "    while (fgets(buffer, 255, fptr) != NULL) {\n"
+            + "        printf(\"%s\", buffer);\n"
+            + "    }\n"
+            + "    \n"
+            + "    fclose(fptr);\n"
+            + "    return 0;\n"
+            + "}",
+            "size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "struct Student {\n"
+            + "    char name[50];\n"
+            + "    int age;\n"
+            + "    float gpa;\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *fptr;\n"
+            + "    struct Student s1 = {\"Nguyen Van A\", 20, 3.5};\n"
+            + "    \n"
+            + "    fptr = fopen(\"student.dat\", \"wb\");\n"
+            + "    \n"
+            + "    if (fptr == NULL) {\n"
+            + "        printf(\"Loi khi mo file!\");\n"
+            + "        exit(1);\n"
+            + "    }\n"
+            + "    \n"
+            + "    fwrite(&s1, sizeof(struct Student), 1, fptr);\n"
+            + "    \n"
+            + "    fclose(fptr);\n"
+            + "    return 0;\n"
+            + "}",
+            "size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "struct Student {\n"
+            + "    char name[50];\n"
+            + "    int age;\n"
+            + "    float gpa;\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *fptr;\n"
+            + "    struct Student s;\n"
+            + "    \n"
+            + "    fptr = fopen(\"student.dat\", \"rb\");\n"
+            + "    \n"
+            + "    if (fptr == NULL) {\n"
+            + "        printf(\"Loi khi mo file!\");\n"
+            + "        exit(1);\n"
+            + "    }\n"
+            + "    \n"
+            + "    fread(&s, sizeof(struct Student), 1, fptr);\n"
+            + "    \n"
+            + "    printf(\"Ten: %s\\nTuoi: %d\\nGPA: %.2f\\n\", s.name, s.age, s.gpa);\n"
+            + "    \n"
+            + "    fclose(fptr);\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *fptr;\n"
+            + "    fptr = fopen(\"example.txt\", \"r+\");\n"
+            + "    \n"
+            + "    if (fptr == NULL) {\n"
+            + "        printf(\"Loi khi mo file!\");\n"
+            + "        exit(1);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Di chuyển đến byte thứ 10\n"
+            + "    fseek(fptr, 10, SEEK_SET);\n"
+            + "    \n"
+            + "    // Lấy vị trí hiện tại\n"
+            + "    long pos = ftell(fptr);\n"
+            + "    printf(\"Vi tri hien tai: %ld\\n\", pos);\n"
+            + "    \n"
+            + "    // Quay về đầu file\n"
+            + "    rewind(fptr);\n"
+            + "    \n"
+            + "    fclose(fptr);\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *fptr;\n"
+            + "    int c;\n"
+            + "    \n"
+            + "    fptr = fopen(\"example.txt\", \"r\");\n"
+            + "    \n"
+            + "    if (fptr == NULL) {\n"
+            + "        perror(\"Loi khi mo file\");\n"
+            + "        exit(EXIT_FAILURE);\n"
+            + "    }\n"
+            + "    \n"
+            + "    while ((c = fgetc(fptr)) != EOF) {\n"
+            + "        putchar(c);\n"
+            + "    }\n"
+            + "    \n"
+            + "    if (feof(fptr)) {\n"
+            + "        printf(\"\\nDa den cuoi file.\\n\");\n"
+            + "    } else if (ferror(fptr)) {\n"
+            + "        printf(\"\\nCo loi khi doc file.\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    fclose(fptr);\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "typedef struct {\n"
+            + "    char id[10];\n"
+            + "    char name[50];\n"
+            + "    float score;\n"
+            + "} Student;\n"
+            + "\n"
+            + "void addStudent() {\n"
+            + "    FILE *fptr = fopen(\"students.dat\", \"ab\");\n"
+            + "    if (fptr == NULL) {\n"
+            + "        perror(\"Loi mo file\");\n"
+            + "        return;\n"
+            + "    }\n"
+            + "    \n"
+            + "    Student s;\n"
+            + "    printf(\"Nhap ma SV: \"); scanf(\"%s\", s.id);\n"
+            + "    printf(\"Nhap ten SV: \"); scanf(\" %[^\\n]\", s.name);\n"
+            + "    printf(\"Nhap diem: \"); scanf(\"%f\", &s.score);\n"
+            + "    \n"
+            + "    fwrite(&s, sizeof(Student), 1, fptr);\n"
+            + "    fclose(fptr);\n"
+            + "}\n"
+            + "\n"
+            + "void displayStudents() {\n"
+            + "    FILE *fptr = fopen(\"students.dat\", \"rb\");\n"
+            + "    if (fptr == NULL) {\n"
+            + "        perror(\"Loi mo file\");\n"
+            + "        return;\n"
+            + "    }\n"
+            + "    \n"
+            + "    Student s;\n"
+            + "    printf(\"\\n%-10s %-20s %-10s\\n\", \"Ma SV\", \"Ten SV\", \"Diem\");\n"
+            + "    printf(\"----------------------------------------\\n\");\n"
+            + "    \n"
+            + "    while (fread(&s, sizeof(Student), 1, fptr) == 1) {\n"
+            + "        printf(\"%-10s %-20s %-10.2f\\n\", s.id, s.name, s.score);\n"
+            + "    }\n"
+            + "    \n"
+            + "    fclose(fptr);\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int choice;\n"
+            + "    \n"
+            + "    do {\n"
+            + "        printf(\"\\n1. Them sinh vien\");\n"
+            + "        printf(\"\\n2. Hien thi danh sach\");\n"
+            + "        printf(\"\\n0. Thoat\");\n"
+            + "        printf(\"\\nLua chon cua ban: \");\n"
+            + "        scanf(\"%d\", &choice);\n"
+            + "        \n"
+            + "        switch(choice) {\n"
+            + "            case 1:\n"
+            + "                addStudent();\n"
+            + "                break;\n"
+            + "            case 2:\n"
+            + "                displayStudents();\n"
+            + "                break;\n"
+            + "            case 0:\n"
+            + "                printf(\"Thoat chuong trinh.\\n\");\n"
+            + "                break;\n"
+            + "            default:\n"
+            + "                printf(\"Lua chon khong hop le.\\n\");\n"
+            + "        }\n"
+            + "    } while (choice != 0);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Các hàm file I/O", new String[]{
+            "FILE *fopen(const char *filename, const char *mode);",
+            "FILE *file = fopen(\"example.txt\", \"w\");\n"
+            + "if (file == NULL) {\n"
+            + "    printf(\"Không thể mở file\\n\");\n"
+            + "    return 1;\n"
+            + "}",
+            "int fclose(FILE *stream);",
+            "fclose(file);",
+            "int fprintf(FILE *stream, const char *format, ...);",
+            "fprintf(file, \"Hello, World!\\n\");\n"
+            + "fprintf(file, \"Giá trị: %d\\n\", 42);",
+            "int fputs(const char *str, FILE *stream);",
+            "fputs(\"This is a string.\\n\", file);",
+            "int fputc(int char, FILE *stream);",
+            "fputc('A', file);",
+            "size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);",
+            "int data[5] = {1, 2, 3, 4, 5};\n"
+            + "fwrite(data, sizeof(int), 5, file);",
+            "int fscanf(FILE *stream, const char *format, ...);",
+            "int num;\n"
+            + "fscanf(file, \"%d\", &num);",
+            "char *fgets(char *str, int n, FILE *stream);",
+            "char buffer[100];\n"
+            + "fgets(buffer, 100, file);",
+            "int fgetc(FILE *stream);",
+            "char c = fgetc(file);",
+            "size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);",
+            "int data[5];\n"
+            + "fread(data, sizeof(int), 5, file);",
+            "int feof(FILE *stream);",
+            "while (!feof(file)) {\n"
+            + "    // Đọc dữ liệu\n"
+            + "}",
+            "int ferror(FILE *stream);",
+            "if (ferror(file)) {\n"
+            + "    printf(\"Lỗi khi đọc file\\n\");\n"
+            + "}",
+            "int fseek(FILE *stream, long int offset, int whence);",
+            "fseek(file, 0, SEEK_SET); // Di chuyển về đầu file",
+            "long int ftell(FILE *stream);",
+            "long pos = ftell(file);",
+            "void rewind(FILE *stream);",
+            "rewind(file);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Ghi file\n"
+            + "    FILE *file = fopen(\"example.txt\", \"w\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Không thể mở file để ghi\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    fprintf(file, \"Đây là dòng đầu tiên\\n\");\n"
+            + "    fputs(\"Đây là dòng thứ hai\\n\", file);\n"
+            + "    fputc('A', file);\n"
+            + "    fputc('\\n', file);\n"
+            + "    \n"
+            + "    int data[5] = {1, 2, 3, 4, 5};\n"
+            + "    fwrite(data, sizeof(int), 5, file);\n"
+            + "    \n"
+            + "    fclose(file);\n"
+            + "    \n"
+            + "    // Đọc file\n"
+            + "    file = fopen(\"example.txt\", \"r\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Không thể mở file để đọc\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    char buffer[100];\n"
+            + "    printf(\"Nội dung file:\\n\");\n"
+            + "    \n"
+            + "    // Đọc từng dòng\n"
+            + "    while (fgets(buffer, 100, file) != NULL) {\n"
+            + "        printf(\"%s\", buffer);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Kiểm tra lỗi\n"
+            + "    if (ferror(file)) {\n"
+            + "        printf(\"Lỗi khi đọc file\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Kiểm tra cuối file\n"
+            + "    if (feof(file)) {\n"
+            + "        printf(\"\\nĐã đọc hết file\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    fclose(file);\n"
             + "    return 0;\n"
             + "}"
         });

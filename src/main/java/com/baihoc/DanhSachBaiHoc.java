@@ -1015,6 +1015,63 @@ public class DanhSachBaiHoc extends JPanel {
 
             }
         }
+
+        if (content.equals("Truyền tham số vào hàm")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Truyền tham số vào hàm", "Truyền tham số theo giá trị");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Truyền tham số vào hàm", "Truyền tham số theo tham chiếu");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Truyền tham số vào hàm", "Sử dụng con trỏ để truyền tham số");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Hàm đệ quy")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Hàm đệ quy", "Khái niệm hàm đệ quy");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Hàm đệ quy", "Cách hoạt động của hàm đệ quy");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Hàm đệ quy", "Ví dụ về hàm đệ quy");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Cấu trúc dữ liệu & file I/O")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc dữ liệu & file I/O", "Cấu trúc dữ liệu cơ bản");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc dữ liệu & file I/O", "File I/O trong C");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc dữ liệu & file I/O", "Các hàm file I/O");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
     }
 
     private void addDragScrolling() {
