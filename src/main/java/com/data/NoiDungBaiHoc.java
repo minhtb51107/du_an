@@ -461,6 +461,70 @@ public class NoiDungBaiHoc {
             0, 1, 0, 2, 0, 1, 1, 1, 1, 0, 1, 2, 1, 2, 1, 2, 0, 1
         });
 
+        Index_MAP.put("Vòng lặp for", new int[]{
+            0, 1, 2, 1, 1, 1, 0, 1, 2, 1, 1, 21, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Vòng lặp while", new int[]{
+            0, 1, 2, 0, 1, 1, 1, 0, 1, 2, 1, 1, 2, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Vòng lặp do-while", new int[]{
+            0, 1, 2, 1, 1, 1, 0, 1, 2, 1, 1, 2, 1, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Khai báo mảng một chiều", new int[]{
+            0, 1, 1, 2, 1, 0, 1, 1, 2, 1, 2, 0, 1, 2, 0, 1, 2, 0, 2, 0, 1
+        });
+
+        Index_MAP.put("Truy cập và thao tác với phần tử trong mảng", new int[]{
+            0, 1, 0, 2, 0, 1, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 1
+        });
+
+        Index_MAP.put("Khai báo mảng hai chiều", new int[]{
+            0, 1, 2, 1, 0, 1, 1, 2, 1, 2, 1, 2, 0, 2, 0, 1, 1, 1, 1, 1, 1, 0, 1
+        });
+
+        Index_MAP.put("Truy cập và thao tác với phần tử", new int[]{
+            0, 1, 1, 0, 1, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 0, 1, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Khai báo chuỗi", new int[]{
+            0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("Các hàm xử lý chuỗi", new int[]{
+            0, 1, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1
+        });
+
+        Index_MAP.put("So sánh và nối chuỗi", new int[]{
+            0, 1, 1, 2, 1, 1, 2, 0, 1, 2, 1, 1, 2, 0, 1, 1, 2, 1
+        });
+
+        Index_MAP.put("Khái niệm về con trỏ", new int[]{
+            0, 1, 1, 2, 0, 1, 2, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 1
+        });
+
+        Index_MAP.put("Khai báo con trỏ", new int[]{
+            0, 1, 1, 1, 1, 1, 0, 2, 0, 1
+        });
+
+        Index_MAP.put("Toán tử con trỏ", new int[]{
+            0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2
+        });
+
+        Index_MAP.put("Cú pháp định nghĩa hàm", new int[]{
+            0, 1, 0, 1, 0, 1, 0, 1, 0, 2, 0, 2, 1
+        });
+
+        Index_MAP.put("Gọi hàm", new int[]{
+            0, 1, 1, 1, 0, 2, 0, 1
+        });
+
+        Index_MAP.put("Hàm trả về giá trị", new int[]{
+            0, 1, 1, 1, 1, 1, 0, 2, 0, 1
+        });
+
         Index_MAP.put("", new int[]{});
     }
 
@@ -1427,6 +1491,138 @@ public class NoiDungBaiHoc {
             "3. Các thành phần chi tiết",
             "4. Code mẫu đầy đủ",
             "5. Lưu ý quan trọng"
+        });
+
+        TITLE_MAP.put("Vòng lặp for", new String[]{
+            "Cấu trúc của vòng lặp for",
+            "Ví dụ minh họa",
+            "Khi nào nên dùng vòng lặp for"
+        });
+
+        TITLE_MAP.put("Vòng lặp while", new String[]{
+            "Cấu trúc của vòng lặp while",
+            "Các phần chi tiết",
+            "Ví dụ minh họa",
+            "Lưu ý khi sử dụng vòng lặp while"
+        });
+
+        TITLE_MAP.put("Vòng lặp do-while", new String[]{
+            "Cấu trúc của vòng lặp do-while",
+            "Code mẫu",
+            "Lưu ý quan trọng"
+        });
+
+        TITLE_MAP.put("Khai báo mảng một chiều", new String[]{
+            "1. Cú pháp khai báo mảng",
+            "2. Khởi tạo mảng",
+            "3. Truy cập phần tử mảng",
+            "4. Kích thước mảng",
+            "5. Code mẫu đầy đủ",
+            "6. Lưu ý quan trọng"
+        });
+
+        TITLE_MAP.put("Truy cập và thao tác với phần tử trong mảng", new String[]{
+            "1. Giới thiệu về mảng trong C",
+            "2. Khai báo mảng",
+            "3. Truy cập phần tử mảng",
+            "4. Thay đổi giá trị phần tử",
+            "5. Duyệt mảng bằng vòng lặp",
+            "6. Nhập và xuất mảng",
+            "7. Mảng nhiều chiều",
+            "8. Mảng và con trỏ",
+            "9. Một số thao tác cơ bản với mảng",
+            "10. Truyền mảng vào hàm"
+        });
+
+        TITLE_MAP.put("Khai báo mảng hai chiều", new String[]{
+            "1. Cú pháp khai báo cơ bản",
+            "2. Khởi tạo mảng 2 chiều",
+            "3. Code mẫu đầy đủ",
+            "4. Giải thích từng phần trong code mẫu",
+            "5. Lưu ý quan trọng"
+        });
+
+        TITLE_MAP.put("Truy cập và thao tác với phần tử", new String[]{
+            "1. Giới thiệu về mảng 2 chiều",
+            "2. Khai báo mảng 2 chiều",
+            "3. Truy cập phần tử trong mảng 2 chiều",
+            "4. Các thao tác cơ bản với mảng 2 chiều",
+            "5. Các thao tác nâng cao",
+            "6. Truyền mảng 2 chiều vào hàm",
+            "7. Lưu ý khi làm việc với mảng 2 chiều"
+        });
+
+        TITLE_MAP.put("Khai báo chuỗi", new String[]{
+            "1. Các cách khai báo chuỗi cơ bản",
+            "2. Khai báo chuỗi không khởi tạo",
+            "3. Khai báo nhiều chuỗi cùng lúc",
+            "4. Code mẫu đầy đủ",
+            "5. Lưu ý quan trọng"
+        });
+
+        TITLE_MAP.put("Các hàm xử lý chuỗi", new String[]{
+            "1. Các hàm cơ bản",
+            "2. Các hàm so sánh",
+            "3. Các hàm tìm kiếm",
+            "4. Các hàm khác",
+            "5. Các hàm an toàn hơn (C11)",
+            "Kết luận"
+        });
+
+        TITLE_MAP.put("So sánh và nối chuỗi", new String[]{
+            "1. So sánh chuỗi trong C",
+            "2. Nối chuỗi trong C",
+            "3. Các hàm liên quan khác"
+        });
+
+        TITLE_MAP.put("Khái niệm về con trỏ", new String[]{
+            "1. Định nghĩa con trỏ",
+            "2. Cú pháp khai báo con trỏ",
+            "3. Toán tử địa chỉ (&) và toán tử dereference (*)",
+            "4. Con trỏ và mảng",
+            "5. Con trỏ và hàm (Pass by reference)",
+            "6. Con trỏ cấp 2 (Con trỏ đến con trỏ)",
+            "7. Con trỏ NULL",
+            "8. Con trỏ hàm",
+            "9. Cấp phát động với con trỏ",
+            "10. Con trỏ void (void pointer)"
+        });
+
+        TITLE_MAP.put("Khai báo con trỏ", new String[]{
+            "Các phần của khai báo con trỏ",
+            "Code mẫu",
+            "Giải thích code mẫu"
+        });
+
+        TITLE_MAP.put("Toán tử con trỏ", new String[]{
+            "1. Toán tử địa chỉ (&)",
+            "2. Toán tử dereference (*)",
+            "3. Toán tử gán con trỏ",
+            "4. Toán tử số học con trỏ",
+            "5. Toán tử so sánh con trỏ",
+            "6. Con trỏ trỏ tới con trỏ",
+            "7. Toán tử arrow (->) với cấu trúc"
+        });
+
+        TITLE_MAP.put("Cú pháp định nghĩa hàm", new String[]{
+            "Kiểu trả về (Return type):",
+            "Tên hàm (Function name):",
+            "Tham số (Parameters):",
+            "Thân hàm (Function body):",
+            "Cú pháp đầy đủ:",
+            "Ví dụ minh họa:"
+        });
+
+        TITLE_MAP.put("Gọi hàm", new String[]{
+            "Các phần của lời gọi hàm",
+            "Code mẫu minh họa",
+            "Giải thích chi tiết"
+        });
+
+        TITLE_MAP.put("Hàm trả về giá trị", new String[]{
+            "Các phần chính của hàm trả về giá trị",
+            "Code mẫu",
+            "Giải thích code mẫu"
         });
 
         TITLE_MAP.put("", new String[]{});
@@ -5417,6 +5613,618 @@ public class NoiDungBaiHoc {
             + "Nên sử dụng default case để xử lý các trường hợp không mong muốn\n"
             + "\n"
             + "Switch-case thường hiệu quả hơn chuỗi if-else dài khi so sánh cùng một biến"
+        });
+
+        Content_MAP.put("Vòng lặp for", new String[]{
+            "Vòng lặp for trong C gồm 3 phần chính:",
+            "1. Phần khởi tạo (Initialization)\n"
+            + "Được thực hiện một lần duy nhất khi bắt đầu vòng lặp\n"
+            + "\n"
+            + "Thường dùng để khởi tạo biến đếm\n"
+            + "\n"
+            + "Có thể khai báo nhiều biến cách nhau bằng dấu phẩy\n"
+            + "\n"
+            + "Phần này có thể để trống nếu biến đếm đã được khởi tạo trước đó",
+            "2. Phần điều kiện (Condition)\n"
+            + "Được kiểm tra trước mỗi lần lặp\n"
+            + "\n"
+            + "Nếu điều kiện trả về true (khác 0), khối lệnh sẽ được thực thi\n"
+            + "\n"
+            + "Nếu điều kiện trả về false (0), vòng lặp kết thúc\n"
+            + "\n"
+            + "Nếu để trống, điều kiện mặc định là true (lặp vô hạn)",
+            "3. Phần cập nhật (Update)\n"
+            + "Được thực hiện sau mỗi lần lặp\n"
+            + "\n"
+            + "Thường dùng để thay đổi giá trị biến đếm (tăng/giảm)\n"
+            + "\n"
+            + "Có thể thực hiện nhiều phép toán cách nhau bằng dấu phẩy\n"
+            + "\n"
+            + "Có thể để trống nếu việc cập nhật được thực hiện trong thân vòng lặp",
+            "Ví dụ 1: Vòng lặp for cơ bản",
+            "Kết quả: 1 2 3 4 5",
+            "Ví dụ 2: Vòng lặp for với nhiều biến",
+            "Kết quả:",
+            "Ví dụ 3: Vòng lặp for với phần khởi tạo để trống",
+            "Kết quả:",
+            "Ví dụ 4: Vòng lặp for vô hạn",
+            "Ví dụ 5: Vòng lặp for lồng nhau",
+            "Khi biết trước số lần lặp\n"
+            + "\n"
+            + "Khi cần truy cập các phần tử mảng/tập hợp theo chỉ số\n"
+            + "\n"
+            + "Khi cần thực hiện một công việc với biến đếm thay đổi theo quy luật"
+        });
+
+        Content_MAP.put("Vòng lặp while", new String[]{
+            "Vòng lặp while là một cấu trúc điều khiển trong ngôn ngữ C cho phép thực hiện lặp đi lặp lại một khối lệnh khi một điều kiện nhất định vẫn còn đúng.",
+            "1. Điều kiện (condition)\n"
+            + "Là biểu thức logic được đánh giá trước mỗi lần lặp\n"
+            + "\n"
+            + "Nếu điều kiện trả về giá trị true (khác 0), khối lệnh sẽ được thực thi\n"
+            + "\n"
+            + "Nếu điều kiện trả về false (0), vòng lặp kết thúc\n"
+            + "\n"
+            + "Điều kiện phải được đặt trong cặp ngoặc đơn ()",
+            "2. Khối lệnh (body)\n"
+            + "Là tập hợp các câu lệnh được thực thi khi điều kiện đúng\n"
+            + "\n"
+            + "Được bao bởi cặp ngoặc nhọn {}\n"
+            + "\n"
+            + "Nếu chỉ có 1 câu lệnh, có thể bỏ qua ngoặc nhọn nhưng không khuyến khích",
+            "3. Đặc điểm quan trọng\n"
+            + "Vòng lặp while kiểm tra điều kiện trước khi thực hiện khối lệnh\n"
+            + "\n"
+            + "Có thể không thực hiện lần nào nếu điều kiện sai ngay từ đầu\n"
+            + "\n"
+            + "Cần có cơ chế thay đổi điều kiện trong khối lệnh để tránh lặp vô hạn",
+            "Ví dụ 1: In các số từ 1 đến 5",
+            "Kết quả: 1 2 3 4 5",
+            "Ví dụ 2: Tính tổng các số từ 1 đến n",
+            "Ví dụ 3: Vòng lặp while vô hạn (cần phải tránh)",
+            "Ví dụ 4: Đọc dữ liệu đến khi gặp điều kiện dừng",
+            "Luôn đảm bảo điều kiện sẽ sai tại một thời điểm để tránh lặp vô hạn\n"
+            + "\n"
+            + "Khởi tạo biến điều kiện trước khi vào vòng lặp\n"
+            + "\n"
+            + "Có cơ chế thay đổi biến điều kiện trong thân vòng lặp\n"
+            + "\n"
+            + "Sử dụng break để thoát vòng lặp khi cần thiết\n"
+            + "\n"
+            + "Có thể sử dụng continue để bỏ qua phần còn lại của vòng lặp và kiểm tra điều kiện lại"
+        });
+
+        Content_MAP.put("Vòng lặp do-while", new String[]{
+            "Vòng lặp do-while là một cấu trúc điều khiển trong ngôn ngữ C cho phép thực hiện một khối lệnh lặp đi lặp lại cho đến khi một điều kiện nhất định không còn đúng nữa. Điểm khác biệt chính giữa do-while và while là do-while đảm bảo khối lệnh được thực hiện ít nhất một lần, ngay cả khi điều kiện ban đầu là sai.",
+            "1. Từ khóa do\n"
+            + "Đánh dấu điểm bắt đầu của vòng lặp\n"
+            + "\n"
+            + "Bắt buộc phải có để xác định đây là vòng lặp do-while\n"
+            + "\n"
+            + "Theo sau bởi một khối lệnh trong cặp dấu ngoặc nhọn {}",
+            "2. Khối lệnh\n"
+            + "Chứa các câu lệnh sẽ được thực thi trong mỗi lần lặp\n"
+            + "\n"
+            + "Có thể chứa một hoặc nhiều câu lệnh\n"
+            + "\n"
+            + "Được thực thi ít nhất một lần, ngay cả khi điều kiện là false",
+            "3. Từ khóa while và điều kiện\n"
+            + "Điều kiện được kiểm tra sau mỗi lần thực thi khối lệnh\n"
+            + "\n"
+            + "Nếu điều kiện trả về true (khác 0), vòng lặp tiếp tục\n"
+            + "\n"
+            + "Nếu điều kiện trả về false (0), vòng lặp kết thúc\n"
+            + "\n"
+            + "Điều kiện phải được đặt trong cặp dấu ngoặc đơn ()\n"
+            + "\n"
+            + "Kết thúc bằng dấu chấm phẩy ; (khác với vòng lặp while thông thường)",
+            "Ví dụ 1: In các số từ 1 đến 5",
+            "Kết quả: 1 2 3 4 5",
+            "Ví dụ 2: Nhập số dương từ người dùng",
+            "Giải thích: Chương trình yêu cầu người dùng nhập số cho đến khi nhập một số dương.",
+            "Ví dụ 3: Tính tổng các số từ 1 đến n",
+            "Vòng lặp do-while luôn thực hiện khối lệnh ít nhất một lần\n"
+            + "\n"
+            + "Đảm bảo có cơ chế thay đổi điều kiện trong khối lệnh để tránh lặp vô hạn\n"
+            + "\n"
+            + "Dấu chấm phẩy sau while(điều_kiện) là bắt buộc\n"
+            + "\n"
+            + "Thích hợp cho các tình huống cần thực hiện trước, kiểm tra sau như menu, nhập dữ liệu"
+        });
+
+        Content_MAP.put("Khai báo mảng một chiều", new String[]{
+            "Mảng một chiều (1D array) trong C là một cấu trúc dữ liệu lưu trữ một tập hợp các phần tử cùng kiểu dữ liệu theo một dãy liên tiếp trong bộ nhớ. Dưới đây là các phần chi tiết về khai báo mảng một chiều trong C:",
+            "Cú pháp cơ bản để khai báo mảng một chiều:",
+            "Trong đó:\n"
+            + "\n"
+            + "kiểu_dữ_liệu: Kiểu dữ liệu của các phần tử trong mảng (int, float, char,...)\n"
+            + "\n"
+            + "tên_mảng: Tên biến của mảng, tuân theo quy tắc đặt tên biến trong C\n"
+            + "\n"
+            + "kích_thước: Số lượng phần tử tối đa mảng có thể chứa (phải là hằng số nguyên)",
+            "Có 2 cách khởi tạo mảng:",
+            "a. Khai báo trước, khởi tạo sau",
+            "b. Khai báo và khởi tạo cùng lúc",
+            "Phần tử mảng được truy cập thông qua chỉ số (index) bắt đầu từ 0:",
+            "Có thể xác định kích thước mảng (số phần tử) bằng toán tử sizeof:",
+            "Chỉ số mảng bắt đầu từ 0 đến (kích_thước - 1)\n"
+            + "\n"
+            + "Truy cập ngoài phạm vi mảng sẽ gây lỗi không xác định\n"
+            + "\n"
+            + "Kích thước mảng phải là hằng số tại thời điểm biên dịch (trừ khi dùng malloc)\n"
+            + "\n"
+            + "Mảng không kiểm tra giới hạn tự động\n"
+            + "\n"
+            + "Tên mảng là con trỏ hằng trỏ đến phần tử đầu tiên"
+        });
+
+        Content_MAP.put("Truy cập và thao tác với phần tử trong mảng", new String[]{
+            "Mảng là một tập hợp các phần tử có cùng kiểu dữ liệu được lưu trữ liên tiếp trong bộ nhớ. Mỗi phần tử trong mảng được truy cập thông qua chỉ số (index).",
+            "Các phần tử mảng được truy cập thông qua chỉ số, bắt đầu từ 0.",
+            "Lưu ý: Trong C, khi truyền mảng vào hàm, thực chất là truyền địa chỉ của phần tử đầu tiên, do đó hàm có thể thay đổi giá trị của mảng gốc."
+        });
+
+        Content_MAP.put("Khai báo mảng hai chiều", new String[]{
+            "Mảng 2 chiều trong C là một cấu trúc dữ liệu cho phép lưu trữ dữ liệu dưới dạng bảng (hàng và cột). Dưới đây là giải thích chi tiết về từng phần khi khai báo mảng 2 chiều:",
+            "kiểu_dữ_liệu: Xác định kiểu của các phần tử trong mảng (int, float, char,...)\n"
+            + "\n"
+            + "tên_mảng: Tên biến đại diện cho mảng\n"
+            + "\n"
+            + "số_hàng: Số lượng hàng trong mảng\n"
+            + "\n"
+            + "số_cột: Số lượng cột trong mảng",
+            "Có 3 cách khởi tạo mảng 2 chiều:",
+            "a. Khởi tạo không chỉ định kích thước",
+            "b. Khởi tạo chỉ định kích thước",
+            "c. Khởi tạo dạng phẳng",
+            "Khai báo không khởi tạo:\n"
+            + "\n"
+            + "int matrix1[3][4]: Tạo mảng 3x4 chưa có giá trị khởi tạo\n"
+            + "\n"
+            + "Các phần tử sẽ chứa giá trị rác (không xác định)",
+            "Khai báo với khởi tạo đầy đủ:\n"
+            + "\n"
+            + "Mỗi hàng được bao bởi cặp ngoặc nhọn {}\n"
+            + "\n"
+            + "Dễ đọc và kiểm soát cấu trúc dữ liệu",
+            "Khai báo không chỉ định số hàng:\n"
+            + "\n"
+            + "Compiler tự động tính số hàng dựa trên số bộ giá trị khởi tạo\n"
+            + "\n"
+            + "Phải chỉ định số cột",
+            "Khởi tạo dạng phẳng:\n"
+            + "\n"
+            + "Các giá trị được liệt kê liên tiếp\n"
+            + "\n"
+            + "Được gán theo thứ tự từ trái sang phải, từ trên xuống dưới",
+            "Truy xuất phần tử:\n"
+            + "\n"
+            + "Sử dụng cú pháp tên_mảng[chỉ_số_hàng][chỉ_số_cột]\n"
+            + "\n"
+            + "Chỉ số bắt đầu từ 0",
+            "Duyệt mảng:\n"
+            + "\n"
+            + "Sử dụng 2 vòng lặp lồng nhau\n"
+            + "\n"
+            + "Vòng lặp ngoài duyệt hàng\n"
+            + "\n"
+            + "Vòng lặp trong duyệt cột",
+            "Tất cả mảng trong C có chỉ số bắt đầu từ 0\n"
+            + "\n"
+            + "Kích thước mảng tĩnh phải là hằng số tại thời điểm biên dịch\n"
+            + "\n"
+            + "Bộ nhớ của mảng 2 chiều được cấp phát liên tiếp trong bộ nhớ\n"
+            + "\n"
+            + "Có thể sử dụng con trỏ để truy cập mảng 2 chiều\n"
+            + "\n"
+            + "Khi truyền mảng 2 chiều vào hàm, phải chỉ định kích thước cột"
+        });
+
+        Content_MAP.put("Truy cập và thao tác với phần tử", new String[]{
+            "Mảng 2 chiều (ma trận) trong C là một cấu trúc dữ liệu chứa các phần tử được sắp xếp theo hàng và cột. Mỗi phần tử trong mảng được xác định bởi chỉ số hàng và chỉ số cột.",
+            "Đặc điểm:\n"
+            + "\n"
+            + "Có dạng hình chữ nhật (số phần tử các hàng bằng nhau)\n"
+            + "\n"
+            + "Kích thước được xác định bởi số hàng và số cột\n"
+            + "\n"
+            + "Phần tử đầu tiên có chỉ số [0][0]",
+            "Có 2 cách khai báo mảng 2 chiều:",
+            "a. Khai báo tĩnh",
+            "b. Khai báo động (sử dụng con trỏ)",
+            "Để truy cập phần tử tại hàng i cột j, sử dụng cú pháp:",
+            "Ví dụ:",
+            "a. Nhập và xuất mảng 2 chiều",
+            "b. Tính tổng các phần tử",
+            "c. Tìm phần tử lớn nhất/nhỏ nhất",
+            "a. Tổng đường chéo chính",
+            "b. Chuyển vị ma trận",
+            "c. Nhân hai ma trận",
+            "Có 2 cách chính để truyền mảng 2 chiều vào hàm:",
+            "a. Truyền với kích thước cố định",
+            "b. Truyền với kích thước động (sử dụng con trỏ)",
+            "Kiểm tra giới hạn mảng: Luôn đảm bảo không truy cập vượt quá kích thước mảng\n"
+            + "\n"
+            + "Quản lý bộ nhớ: Với mảng động, luôn giải phóng bộ nhớ khi không dùng nữa\n"
+            + "\n"
+            + "Hiệu suất: Truy cập theo hàng thường nhanh hơn theo cột do cách bố trí bộ nhớ\n"
+            + "\n"
+            + "Truyền vào hàm: Khi truyền mảng tĩnh vào hàm, cần chỉ rõ kích thước cột\n"
+            + "\n"
+            + "Khởi tạo giá trị: Luôn khởi tạo giá trị cho mảng trước khi sử dụng"
+        });
+
+        Content_MAP.put("Khai báo chuỗi", new String[]{
+            "Trong ngôn ngữ C, chuỗi (string) là một mảng các ký tự kết thúc bằng ký tự null ('\\0').",
+            "a. Khai báo mảng ký tự",
+            "Giải thích:\n"
+            + "\n"
+            + "char: Kiểu dữ liệu ký tự\n"
+            + "\n"
+            + "str1: Tên biến mảng\n"
+            + "\n"
+            + "[10]: Kích thước mảng (chứa tối đa 9 ký tự + 1 ký tự null)\n"
+            + "\n"
+            + "\"Hello\": Giá trị khởi tạo (tự động thêm '\\0' ở cuối)",
+            "b. Khai báo không chỉ định kích thước",
+            "Giải thích:\n"
+            + "\n"
+            + "[]: Kích thước mảng tự động xác định dựa trên chuỗi khởi tạo\n"
+            + "\n"
+            + "\"World\" có 5 ký tự + 1 ký tự null = 6 phần tử",
+            "c. Khai báo con trỏ ký tự",
+            "Giải thích:\n"
+            + "\n"
+            + "*str3: Con trỏ kiểu char\n"
+            + "\n"
+            + "\"Programming\" là chuỗi hằng được lưu trong segment văn bản (read-only)\n"
+            + "\n"
+            + "Con trỏ trỏ tới địa chỉ đầu của chuỗi",
+            "Giải thích:\n"
+            + "\n"
+            + "Mảng chưa được khởi tạo, chứa giá trị rác\n"
+            + "\n"
+            + "Cần gán giá trị trước khi sử dụng",
+            "Giải thích:\n"
+            + "\n"
+            + "Mảng 2 chiều gồm 7 chuỗi\n"
+            + "\n"
+            + "Mỗi chuỗi có tối đa 9 ký tự + 1 ký tự null",
+            "Kết quả chạy chương trình:",
+            "Ký tự null: Mọi chuỗi trong C phải kết thúc bằng '\\0'\n"
+            + "\n"
+            + "Phân biệt:\n"
+            + "\n"
+            + "char str[] = \"text\": Mảng có thể thay đổi nội dung\n"
+            + "\n"
+            + "char *str = \"text\": Chuỗi hằng, không thể thay đổi nội dung\n"
+            + "\n"
+            + "Kích thước: Luôn khai báo đủ lớn để chứa cả ký tự null\n"
+            + "\n"
+            + "Thư viện: Sử dụng #include <string.h> cho các hàm xử lý chuỗi"
+        });
+
+        Content_MAP.put("Các hàm xử lý chuỗi", new String[]{
+            "Ngôn ngữ C cung cấp nhiều hàm để xử lý chuỗi (mảng ký tự kết thúc bằng '\\0') thông qua thư viện <string.h>.",
+            "a. strlen() - Độ dài chuỗi\n"
+            + "Mô tả: Tính độ dài của chuỗi (không bao gồm ký tự kết thúc '\\0').",
+            "b. strcpy() - Sao chép chuỗi\n"
+            + "Mô tả: Sao chép nội dung từ chuỗi nguồn sang chuỗi đích.",
+            "c. strcat() - Nối chuỗi\n"
+            + "Mô tả: Nối chuỗi nguồn vào cuối chuỗi đích.",
+            "a. strcmp() - So sánh chuỗi\n"
+            + "Mô tả: So sánh hai chuỗi theo thứ tự từ điển.",
+            "b. strncmp() - So sánh n ký tự đầu\n"
+            + "Mô tả: So sánh n ký tự đầu tiên của hai chuỗi.",
+            "a. strchr() - Tìm ký tự trong chuỗi\n"
+            + "Mô tả: Tìm vị trí đầu tiên của ký tự trong chuỗi.",
+            "b. strstr() - Tìm chuỗi con\n"
+            + "Mô tả: Tìm vị trí đầu tiên của chuỗi con trong chuỗi.",
+            "a. strtok() - Tách chuỗi\n"
+            + "Mô tả: Tách chuỗi thành các token dựa trên delimiter.",
+            "b. strrev() - Đảo ngược chuỗi\n"
+            + "Lưu ý: Không phải là hàm chuẩn trong thư viện C, nhưng có trong một số trình biên dịch.",
+            "c. strlwr() và strupr() - Chuyển đổi chữ hoa/thường\n"
+            + "Lưu ý: Không phải là hàm chuẩn trong ANSI C, nhưng có trong nhiều trình biên dịch.",
+            "a. strcpy_s() - Sao chép chuỗi an toàn\n"
+            + "Mô tả: Phiên bản an toàn của strcpy với kiểm tra kích thước buffer.",
+            "b. strcat_s() - Nối chuỗi an toàn\n"
+            + "Mô tả: Phiên bản an toàn của strcat.",
+            "Các hàm xử lý chuỗi trong C cung cấp nhiều tiện ích cho việc thao tác với dữ liệu văn bản. Khi sử dụng cần lưu ý:\n"
+            + "\n"
+            + "Luôn đảm bảo chuỗi đích có đủ không gian\n"
+            + "\n"
+            + "Kiểm tra giá trị NULL khi làm việc với con trỏ\n"
+            + "\n"
+            + "Ưu tiên sử dụng các hàm an toàn (_s) khi có thể\n"
+            + "\n"
+            + "Nhớ include thư viện <string.h>"
+        });
+
+        Content_MAP.put("So sánh và nối chuỗi", new String[]{
+            "Trong ngôn ngữ C, không thể so sánh chuỗi trực tiếp bằng các toán tử so sánh (==, !=, >, <) vì chúng chỉ so sánh địa chỉ của chuỗi chứ không phải nội dung. Để so sánh nội dung chuỗi, ta sử dụng hàm strcmp() từ thư viện string.h.",
+            "Hàm strcmp() có nguyên mẫu:",
+            "Giá trị trả về:\n"
+            + "\n"
+            + "0 nếu hai chuỗi bằng nhau\n"
+            + "\n"
+            + "<0 nếu str1 nhỏ hơn str2 (theo thứ tự từ điển)\n"
+            + "\n"
+            + "0 nếu str1 lớn hơn str2 (theo thứ tự từ điển)",
+            "Code mẫu:",
+            "Nội dung:\n"
+            + "Để nối chuỗi trong C, ta sử dụng hàm strcat() từ thư viện string.h. Hàm này sẽ nối chuỗi nguồn vào cuối chuỗi đích.\n"
+            + "\n"
+            + "Hàm strcat() có nguyên mẫu:",
+            "Lưu ý:\n"
+            + "\n"
+            + "Chuỗi đích phải có đủ không gian để chứa cả nội dung ban đầu và chuỗi được nối thêm\n"
+            + "\n"
+            + "Chuỗi đích phải là mảng ký tự hoặc con trỏ trỏ tới vùng nhớ đủ lớn, không thể là chuỗi hằng",
+            "Code mẫu:",
+            "Nội dung:\n"
+            + "Ngoài strcmp() và strcat(), thư viện string.h còn cung cấp nhiều hàm hữu ích khác cho việc xử lý chuỗi:\n"
+            + "\n"
+            + "strncmp(): So sánh n ký tự đầu tiên của 2 chuỗi\n"
+            + "\n"
+            + "strncat(): Nối n ký tự đầu tiên của chuỗi nguồn vào chuỗi đích\n"
+            + "\n"
+            + "strcpy(): Sao chép chuỗi\n"
+            + "\n"
+            + "strlen(): Lấy độ dài chuỗi",
+            "Code mẫu:",
+            "Lưu ý khi làm việc với chuỗi trong C:\n"
+            + "\n"
+            + "Luôn đảm bảo đủ bộ nhớ cho các thao tác\n"
+            + "\n"
+            + "Các hàm xử lý chuỗi trong C không tự động kiểm tra giới hạn bộ nhớ\n"
+            + "\n"
+            + "Kết thúc chuỗi phải có ký tự '\\0'"
+        });
+
+        Content_MAP.put("Khái niệm về con trỏ", new String[]{
+            "Con trỏ là một trong những khái niệm quan trọng và mạnh mẽ nhất trong ngôn ngữ C. Nó cho phép bạn làm việc trực tiếp với bộ nhớ của máy tính.",
+            "Con trỏ là một biến đặc biệt dùng để lưu trữ địa chỉ của một biến khác trong bộ nhớ. Thay vì lưu trữ giá trị dữ liệu trực tiếp, con trỏ lưu trữ vị trí (địa chỉ) nơi dữ liệu được lưu trữ.",
+            "Cú pháp khai báo con trỏ:",
+            "Ví dụ:",
+            "Toán tử địa chỉ (&): Trả về địa chỉ bộ nhớ của một biến\n"
+            + "\n"
+            + "Toán tử dereference (*): Truy cập giá trị tại địa chỉ mà con trỏ đang trỏ đến",
+            "Con trỏ và mảng có mối quan hệ chặt chẽ trong C. Tên mảng thực chất là một con trỏ hằng trỏ đến phần tử đầu tiên của mảng.",
+            "Con trỏ cho phép truyền địa chỉ của biến vào hàm, cho phép hàm thay đổi giá trị của biến gốc.",
+            "Là con trỏ lưu địa chỉ của một con trỏ khác.",
+            "Con trỏ NULL là con trỏ không trỏ đến bất kỳ địa chỉ nào. Nó được sử dụng để kiểm tra và tránh truy cập vào vùng nhớ không hợp lệ.",
+            "Con trỏ có thể trỏ đến hàm, cho phép gọi hàm thông qua con trỏ.",
+            "Con trỏ thường được sử dụng với các hàm cấp phát động như malloc, calloc, realloc và free.",
+            "Con trỏ void có thể trỏ đến bất kỳ kiểu dữ liệu nào, nhưng cần ép kiểu trước khi sử dụng.",
+            "Con trỏ là công cụ mạnh mẽ nhưng cũng dễ gây lỗi nếu không sử dụng cẩn thận. Hiểu rõ cách hoạt động của con trỏ sẽ giúp bạn viết mã C hiệu quả và linh hoạt hơn."
+        });
+
+        Content_MAP.put("Khai báo con trỏ", new String[]{
+            "Con trỏ (pointer) là một biến đặc biệt trong C, nó lưu trữ địa chỉ bộ nhớ của một biến khác thay vì giá trị trực tiếp.",
+            "1. Kiểu dữ liệu của con trỏ\n"
+            + "Xác định kiểu dữ liệu của biến mà con trỏ sẽ trỏ tới\n"
+            + "\n"
+            + "Ví dụ: int* (con trỏ tới số nguyên), float* (con trỏ tới số thực), char* (con trỏ tới ký tự)",
+            "2. Toán tử con trỏ (*)\n"
+            + "Dấu hoa thị (*) được sử dụng để khai báo một biến là con trỏ\n"
+            + "\n"
+            + "Cũng được sử dụng để truy cập giá trị tại địa chỉ mà con trỏ trỏ tới (dereference)",
+            "3. Tên con trỏ\n"
+            + "Đặt theo quy tắc đặt tên biến trong C\n"
+            + "\n"
+            + "Thường có tiền tố p hoặc ptr để dễ nhận biết (ví dụ: pNumber, ptrName)",
+            "4. Toán tử địa chỉ (&)\n"
+            + "Dấu và (&) được sử dụng để lấy địa chỉ của một biến\n"
+            + "\n"
+            + "Thường dùng khi gán giá trị cho con trỏ",
+            "Khai báo biến thông thường: Tạo các biến với các kiểu dữ liệu khác nhau\n"
+            + "\n"
+            + "Khai báo con trỏ: Sử dụng dấu * để khai báo các con trỏ tương ứng\n"
+            + "\n"
+            + "Gán địa chỉ: Sử dụng toán tử & để lấy địa chỉ của biến và gán cho con trỏ\n"
+            + "\n"
+            + "In giá trị: Minh họa cách truy cập giá trị trực tiếp và thông qua con trỏ\n"
+            + "\n"
+            + "Thay đổi giá trị: Cho thấy có thể thay đổi giá trị biến gốc thông qua con trỏ\n"
+            + "\n"
+            + "Con trỏ NULL: Minh họa con trỏ không trỏ tới địa chỉ hợp lệ"
+        });
+
+        Content_MAP.put("Toán tử con trỏ", new String[]{
+            "Nội dung: Toán tử địa chỉ (&) trả về địa chỉ bộ nhớ của một biến.\n"
+            + "\n"
+            + "Được sử dụng để lấy địa chỉ của biến trong bộ nhớ\n"
+            + "\n"
+            + "Kết quả trả về là một con trỏ trỏ tới biến đó\n"
+            + "\n"
+            + "Không thể áp dụng cho hằng số hoặc biểu thức",
+            "Nội dung: Toán tử dereference (*) truy cập giá trị tại địa chỉ mà con trỏ đang trỏ tới.\n"
+            + "\n"
+            + "Còn được gọi là toán tử \"gián tiếp\"\n"
+            + "\n"
+            + "Cho phép đọc hoặc ghi giá trị tại vị trí con trỏ trỏ tới\n"
+            + "\n"
+            + "Nếu con trỏ chưa được khởi tạo, việc dereference có thể gây lỗi",
+            "Nội dung: Gán địa chỉ cho con trỏ.\n"
+            + "\n"
+            + "Con trỏ phải được khai báo cùng kiểu với biến mà nó trỏ tới\n"
+            + "\n"
+            + "Có thể gán giá trị NULL cho con trỏ để biểu thị nó không trỏ đến đâu\n"
+            + "\n"
+            + "Có thể gán giữa các con trỏ cùng kiểu",
+            "Nội dung: Các phép toán số học trên con trỏ bao gồm cộng, trừ, tăng, giảm.\n"
+            + "\n"
+            + "Khi thực hiện phép toán, kích thước kiểu dữ liệu được tự động tính toán\n"
+            + "\n"
+            + "Chỉ có ý nghĩa khi con trỏ trỏ tới phần tử của mảng\n"
+            + "\n"
+            + "Bao gồm: ++, --, +, -, +=, -=",
+            "Nội dung: So sánh giữa các con trỏ.\n"
+            + "\n"
+            + "Có thể so sánh bằng (==), không bằng (!=), lớn hơn (>), nhỏ hơn (<)\n"
+            + "\n"
+            + "Chỉ có ý nghĩa khi các con trỏ cùng trỏ tới các phần tử của cùng một mảng\n"
+            + "\n"
+            + "Con trỏ NULL có thể so sánh với bất kỳ con trỏ nào",
+            "Nội dung: Sử dụng toán tử * nhiều lần để truy cập các cấp con trỏ lồng nhau.\n"
+            + "\n"
+            + "Mỗi dấu * tương ứng với một cấp dereference\n"
+            + "\n"
+            + "Thường dùng cho mảng 2 chiều hoặc khi cần thay đổi con trỏ trong hàm",
+            "Nội dung: Toán tử -> dùng để truy cập thành phần của cấu trúc thông qua con trỏ.\n"
+            + "\n"
+            + "Là cách viết tắt của (*ptr).member\n"
+            + "\n"
+            + "Chỉ dùng với con trỏ trỏ tới cấu trúc\n"
+            + "\n"
+            + "Giúp code ngắn gọn và dễ đọc hơn"
+        });
+
+        Content_MAP.put("Cú pháp định nghĩa hàm", new String[]{
+            "Xác định kiểu dữ liệu mà hàm sẽ trả về sau khi thực thi\n"
+            + "\n"
+            + "Nếu hàm không trả về giá trị nào, sử dụng void",
+            "Định danh duy nhất cho hàm\n"
+            + "\n"
+            + "Theo quy tắc đặt tên trong C (bắt đầu bằng chữ hoặc _, không chứa khoảng trắng)",
+            "Danh sách các biến đầu vào, đặt trong cặp ngoặc đơn\n"
+            + "\n"
+            + "Mỗi tham số gồm kiểu dữ liệu và tên biến\n"
+            + "\n"
+            + "Có thể để trống nếu hàm không nhận tham số",
+            "Khối lệnh được đặt trong cặp ngoặc nhọn {}\n"
+            + "\n"
+            + "Chứa các câu lệnh thực thi\n"
+            + "\n"
+            + "Có thể có câu lệnh return để trả về giá trị (nếu hàm có kiểu trả về khác void)",
+            "Giải thích ví dụ:\n"
+            + "\n"
+            + "Hàm sum():\n"
+            + "\n"
+            + "Kiểu trả về: int\n"
+            + "\n"
+            + "Tên hàm: sum\n"
+            + "\n"
+            + "Tham số: 2 tham số kiểu int là a và b\n"
+            + "\n"
+            + "Thân hàm: tính tổng a + b và trả về kết quả\n"
+            + "\n"
+            + "Hàm printHello():\n"
+            + "\n"
+            + "Kiểu trả về: void (không trả về giá trị)\n"
+            + "\n"
+            + "Tên hàm: printHello\n"
+            + "\n"
+            + "Không có tham số\n"
+            + "\n"
+            + "Thân hàm: in ra chuỗi \"Hello World!\"\n"
+            + "\n"
+            + "Hàm main() là hàm đặc biệt, điểm bắt đầu chương trình"
+        });
+
+        Content_MAP.put("Gọi hàm", new String[]{
+            "1. Tên hàm\n"
+            + "Là định danh của hàm được gọi\n"
+            + "\n"
+            + "Phải khớp chính xác với tên hàm đã được định nghĩa\n"
+            + "\n"
+            + "Phân biệt chữ hoa chữ thường trong C",
+            "2. Danh sách đối số (arguments)\n"
+            + "Các giá trị được truyền vào hàm\n"
+            + "\n"
+            + "Được đặt trong cặp dấu ngoặc đơn ()\n"
+            + "\n"
+            + "Các đối số cách nhau bởi dấu phẩy\n"
+            + "\n"
+            + "Kiểu dữ liệu của đối số phải khớp với tham số trong khai báo hàm",
+            "3. Dấu chấm phẩy kết thúc\n"
+            + "Mọi lời gọi hàm trong C phải kết thúc bằng dấu chấm phẩy (;)",
+            "Khai báo hàm:\n"
+            + "\n"
+            + "int tinhTong(int a, int b) là khai báo hàm có kiểu trả về int, tên hàm tinhTong, nhận 2 tham số int\n"
+            + "\n"
+            + "Gọi hàm:\n"
+            + "\n"
+            + "tinhTong(5, 3) là lời gọi hàm với:\n"
+            + "\n"
+            + "Tên hàm: tinhTong\n"
+            + "\n"
+            + "Đối số: 5 và 3\n"
+            + "\n"
+            + "Kết quả được gán cho biến ketQua\n"
+            + "\n"
+            + "Hàm không có tham số:\n"
+            + "\n"
+            + "inThongBao() là lời gọi hàm không cần đối số\n"
+            + "\n"
+            + "Gọi hàm trong biểu thức:\n"
+            + "\n"
+            + "tinhTong(10, 20) được gọi trực tiếp trong lệnh printf\n"
+            + "\n"
+            + "Hàm thư viện:\n"
+            + "\n"
+            + "printf() là hàm từ thư viện chuẩn, được gọi với các đối số khác nhau"
+        });
+
+        Content_MAP.put("Hàm trả về giá trị", new String[]{
+            "1. Kiểu trả về (Return type)\n"
+            + "Là kiểu dữ liệu của giá trị mà hàm sẽ trả về\n"
+            + "\n"
+            + "Có thể là bất kỳ kiểu dữ liệu nào: int, float, char, double, con trỏ hoặc thậm chí kiểu void*\n"
+            + "\n"
+            + "Được khai báo ngay trước tên hàm",
+            "2. Tên hàm (Function name)\n"
+            + "Là định danh của hàm, tuân theo quy tắc đặt tên trong C\n"
+            + "\n"
+            + "Nên đặt tên có ý nghĩa, phản ánh chức năng của hàm",
+            "3. Tham số (Parameters)\n"
+            + "Danh sách các tham số đầu vào (nếu có) được đặt trong cặp ngoặc đơn\n"
+            + "\n"
+            + "Mỗi tham số gồm kiểu dữ liệu và tên tham số\n"
+            + "\n"
+            + "Các tham số cách nhau bằng dấu phẩy",
+            "4. Thân hàm (Function body)\n"
+            + "Chứa các câu lệnh thực hiện chức năng của hàm\n"
+            + "\n"
+            + "Được bao bọc bởi cặp ngoặc nhọn {}\n"
+            + "\n"
+            + "Phải có ít nhất một câu lệnh return để trả về giá trị",
+            "5. Câu lệnh return\n"
+            + "Dùng để trả về giá trị từ hàm\n"
+            + "\n"
+            + "Giá trị sau return phải cùng kiểu hoặc có thể chuyển đổi ngầm định về kiểu trả về của hàm\n"
+            + "\n"
+            + "Khi gặp return, hàm sẽ kết thúc ngay lập tức",
+            "Hàm tinhTong:\n"
+            + "\n"
+            + "Kiểu trả về: int\n"
+            + "\n"
+            + "Tham số: 2 số nguyên a và b\n"
+            + "\n"
+            + "Thân hàm: tính tổng 2 số và lưu vào biến tong\n"
+            + "\n"
+            + "Return: trả về giá trị tong\n"
+            + "\n"
+            + "Hàm laSoChan:\n"
+            + "\n"
+            + "Kiểu trả về: int (0 hoặc 1 như kiểu boolean)\n"
+            + "\n"
+            + "Tham số: 1 số nguyên num\n"
+            + "\n"
+            + "Thân hàm: kiểm tra số chẵn bằng phép chia dư\n"
+            + "\n"
+            + "Return: có 2 điểm return tùy điều kiện\n"
+            + "\n"
+            + "Hàm timMax:\n"
+            + "\n"
+            + "Kiểu trả về: float\n"
+            + "\n"
+            + "Tham số: 3 số thực x, y, z\n"
+            + "\n"
+            + "Thân hàm: tìm số lớn nhất bằng cách so sánh\n"
+            + "\n"
+            + "Return: trả về giá trị lớn nhất tìm được"
         });
 
         Content_MAP.put("", new String[]{});
@@ -15034,6 +15842,1327 @@ public class NoiDungBaiHoc {
             + "        default:\n"
             + "            printf(\"Tháng không hợp lệ!\\n\");\n"
             + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Vòng lặp for", new String[]{
+            "for (khởi_tạo; điều_kiện; cập_nhật) {\n"
+            + "    // Khối lệnh được thực thi\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // In ra các số từ 1 đến 5\n"
+            + "    for (int i = 1; i <= 5; i++) {\n"
+            + "        printf(\"%d \", i);\n"
+            + "    }\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    for (int i = 0, j = 10; i < j; i++, j--) {\n"
+            + "        printf(\"i = %d, j = %d\\n\", i, j);\n"
+            + "    }\n"
+            + "    return 0;\n"
+            + "}",
+            "i = 0, j = 10\n"
+            + "i = 1, j = 9\n"
+            + "i = 2, j = 8\n"
+            + "i = 3, j = 7\n"
+            + "i = 4, j = 6",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int i = 0;\n"
+            + "    for (; i < 3; i++) {\n"
+            + "        printf(\"Hello %d\\n\", i);\n"
+            + "    }\n"
+            + "    return 0;\n"
+            + "}",
+            "Hello 0\n"
+            + "Hello 1\n"
+            + "Hello 2",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    for (;;) {\n"
+            + "        printf(\"Vòng lặp vô hạn\\n\");\n"
+            + "        // Thêm điều kiện break để thoát\n"
+            + "        break; // Chỉ chạy 1 lần để demo\n"
+            + "    }\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // In bảng cửu chương\n"
+            + "    for (int i = 1; i <= 10; i++) {\n"
+            + "        for (int j = 1; j <= 10; j++) {\n"
+            + "            printf(\"%4d\", i * j);\n"
+            + "        }\n"
+            + "        printf(\"\\n\");\n"
+            + "    }\n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Vòng lặp while", new String[]{
+            "while (điều_kiện) {\n"
+            + "    // Khối lệnh được thực hiện khi điều kiện đúng\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int i = 1;\n"
+            + "    \n"
+            + "    while (i <= 5) {\n"
+            + "        printf(\"%d \", i);\n"
+            + "        i++; // Tăng giá trị i lên 1\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int n, sum = 0, i = 1;\n"
+            + "    \n"
+            + "    printf(\"Nhập số nguyên dương n: \");\n"
+            + "    scanf(\"%d\", &n);\n"
+            + "    \n"
+            + "    while (i <= n) {\n"
+            + "        sum += i;\n"
+            + "        i++;\n"
+            + "    }\n"
+            + "    \n"
+            + "    printf(\"Tổng từ 1 đến %d là: %d\\n\", n, sum);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    while (1) { // Điều kiện luôn đúng\n"
+            + "        printf(\"Vòng lặp vô hạn!\\n\");\n"
+            + "        // Nếu không có break, chương trình sẽ chạy mãi\n"
+            + "        break; // Thêm break để thoát khỏi vòng lặp\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int num;\n"
+            + "    \n"
+            + "    printf(\"Nhập các số (nhập 0 để dừng):\\n\");\n"
+            + "    scanf(\"%d\", &num);\n"
+            + "    \n"
+            + "    while (num != 0) {\n"
+            + "        printf(\"Bạn đã nhập: %d\\n\", num);\n"
+            + "        scanf(\"%d\", &num);\n"
+            + "    }\n"
+            + "    \n"
+            + "    printf(\"Kết thúc chương trình.\\n\");\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Vòng lặp do-while", new String[]{
+            "do {\n"
+            + "    // Khối lệnh được thực thi\n"
+            + "} while (điều_kiện);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int i = 1;\n"
+            + "    \n"
+            + "    do {\n"
+            + "        printf(\"%d \", i);\n"
+            + "        i++;\n"
+            + "    } while (i <= 5);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int number;\n"
+            + "    \n"
+            + "    do {\n"
+            + "        printf(\"Nhập một số dương: \");\n"
+            + "        scanf(\"%d\", &number);\n"
+            + "    } while (number <= 0);\n"
+            + "    \n"
+            + "    printf(\"Bạn đã nhập số dương: %d\\n\", number);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int n, sum = 0, i = 1;\n"
+            + "    \n"
+            + "    printf(\"Nhập n: \");\n"
+            + "    scanf(\"%d\", &n);\n"
+            + "    \n"
+            + "    do {\n"
+            + "        sum += i;\n"
+            + "        i++;\n"
+            + "    } while (i <= n);\n"
+            + "    \n"
+            + "    printf(\"Tổng từ 1 đến %d là: %d\\n\", n, sum);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Khai báo mảng một chiều", new String[]{
+            "kiểu_dữ_liệu tên_mảng[kích_thước];",
+            "int numbers[5]; // Khai báo mảng\n"
+            + "numbers[0] = 10; // Khởi tạo từng phần tử\n"
+            + "numbers[1] = 20;\n"
+            + "// ...",
+            "int numbers[5] = {10, 20, 30, 40, 50}; // Khởi tạo đầy đủ\n"
+            + "int numbers[] = {10, 20, 30}; // Kích thước tự động xác định\n"
+            + "int numbers[5] = {0}; // Tất cả phần tử = 0\n"
+            + "int numbers[5] = {10, 20}; // 2 phần tử đầu được khởi tạo, các phần tử còn lại = 0",
+            "int value = numbers[2]; // Truy cập phần tử thứ 3\n"
+            + "numbers[3] = 100; // Gán giá trị cho phần tử thứ 4",
+            "int size = sizeof(numbers) / sizeof(numbers[0]);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // 1. Khai báo và khởi tạo mảng\n"
+            + "    int numbers[5] = {10, 20, 30, 40, 50};\n"
+            + "    \n"
+            + "    // 2. Tính kích thước mảng\n"
+            + "    int size = sizeof(numbers) / sizeof(numbers[0]);\n"
+            + "    printf(\"Kich thuoc mang: %d\\n\", size);\n"
+            + "    \n"
+            + "    // 3. Truy cập và in các phần tử\n"
+            + "    printf(\"Cac phan tu cua mang:\\n\");\n"
+            + "    for(int i = 0; i < size; i++) {\n"
+            + "        printf(\"numbers[%d] = %d\\n\", i, numbers[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // 4. Thay đổi giá trị phần tử\n"
+            + "    numbers[2] = 100;\n"
+            + "    printf(\"\\nSau khi thay doi:\\n\");\n"
+            + "    printf(\"numbers[2] = %d\\n\", numbers[2]);\n"
+            + "    \n"
+            + "    // 5. Nhập giá trị từ bàn phím\n"
+            + "    printf(\"\\nNhap 5 so nguyen:\\n\");\n"
+            + "    for(int i = 0; i < size; i++) {\n"
+            + "        printf(\"numbers[%d] = \", i);\n"
+            + "        scanf(\"%d\", &numbers[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // In lại mảng sau khi nhập\n"
+            + "    printf(\"\\nMang sau khi nhap:\\n\");\n"
+            + "    for(int i = 0; i < size; i++) {\n"
+            + "        printf(\"%d \", numbers[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Truy cập và thao tác với phần tử trong mảng", new String[]{
+            "// Khai báo mảng kiểu int với 5 phần tử\n"
+            + "int numbers[5];\n"
+            + "\n"
+            + "// Khai báo và khởi tạo mảng\n"
+            + "float temperatures[] = {23.5, 24.0, 22.8, 25.2};",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int arr[5] = {10, 20, 30, 40, 50};\n"
+            + "    \n"
+            + "    // Truy cập phần tử đầu tiên (index 0)\n"
+            + "    printf(\"Phan tu thu nhat: %d\\n\", arr[0]);\n"
+            + "    \n"
+            + "    // Truy cập phần tử thứ ba (index 2)\n"
+            + "    printf(\"Phan tu thu ba: %d\\n\", arr[2]);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int numbers[3] = {5, 10, 15};\n"
+            + "    \n"
+            + "    printf(\"Truoc khi thay doi: %d\\n\", numbers[1]); // 10\n"
+            + "    \n"
+            + "    // Thay đổi giá trị phần tử thứ 2\n"
+            + "    numbers[1] = 100;\n"
+            + "    \n"
+            + "    printf(\"Sau khi thay doi: %d\\n\", numbers[1]); // 100\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int arr[] = {1, 2, 3, 4, 5};\n"
+            + "    int length = sizeof(arr) / sizeof(arr[0]);\n"
+            + "    \n"
+            + "    // Duyệt mảng bằng for\n"
+            + "    printf(\"Duyet mang bang for:\\n\");\n"
+            + "    for(int i = 0; i < length; i++) {\n"
+            + "        printf(\"arr[%d] = %d\\n\", i, arr[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Duyệt mảng bằng while\n"
+            + "    printf(\"\\nDuyet mang bang while:\\n\");\n"
+            + "    int j = 0;\n"
+            + "    while(j < length) {\n"
+            + "        printf(\"arr[%d] = %d\\n\", j, arr[j]);\n"
+            + "        j++;\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "#define SIZE 5\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int arr[SIZE];\n"
+            + "    \n"
+            + "    // Nhập mảng từ bàn phím\n"
+            + "    printf(\"Nhap %d phan tu:\\n\", SIZE);\n"
+            + "    for(int i = 0; i < SIZE; i++) {\n"
+            + "        printf(\"arr[%d] = \", i);\n"
+            + "        scanf(\"%d\", &arr[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Xuất mảng ra màn hình\n"
+            + "    printf(\"\\nMang vua nhap:\\n\");\n"
+            + "    for(int i = 0; i < SIZE; i++) {\n"
+            + "        printf(\"%d \", arr[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Khai báo mảng 2 chiều 3x3\n"
+            + "    int matrix[3][3] = {\n"
+            + "        {1, 2, 3},\n"
+            + "        {4, 5, 6},\n"
+            + "        {7, 8, 9}\n"
+            + "    };\n"
+            + "    \n"
+            + "    // Truy cập phần tử mảng 2 chiều\n"
+            + "    printf(\"Phan tu [1][2]: %d\\n\", matrix[1][2]); // 6\n"
+            + "    \n"
+            + "    // Duyệt mảng 2 chiều\n"
+            + "    printf(\"\\nToan bo mang:\\n\");\n"
+            + "    for(int i = 0; i < 3; i++) {\n"
+            + "        for(int j = 0; j < 3; j++) {\n"
+            + "            printf(\"%d \", matrix[i][j]);\n"
+            + "        }\n"
+            + "        printf(\"\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int arr[] = {10, 20, 30, 40, 50};\n"
+            + "    \n"
+            + "    // Truy cập mảng thông qua con trỏ\n"
+            + "    int *ptr = arr;\n"
+            + "    \n"
+            + "    printf(\"Phan tu thu 2: %d\\n\", *(ptr + 1)); // 20\n"
+            + "    \n"
+            + "    // Duyệt mảng bằng con trỏ\n"
+            + "    printf(\"\\nDuyet mang bang con tro:\\n\");\n"
+            + "    for(int i = 0; i < 5; i++) {\n"
+            + "        printf(\"arr[%d] = %d\\n\", i, *(ptr + i));\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "#define SIZE 5\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int arr[SIZE] = {5, 2, 8, 1, 9};\n"
+            + "    \n"
+            + "    // Tìm giá trị lớn nhất\n"
+            + "    int max = arr[0];\n"
+            + "    for(int i = 1; i < SIZE; i++) {\n"
+            + "        if(arr[i] > max) {\n"
+            + "            max = arr[i];\n"
+            + "        }\n"
+            + "    }\n"
+            + "    printf(\"Gia tri lon nhat: %d\\n\", max);\n"
+            + "    \n"
+            + "    // Tính tổng mảng\n"
+            + "    int sum = 0;\n"
+            + "    for(int i = 0; i < SIZE; i++) {\n"
+            + "        sum += arr[i];\n"
+            + "    }\n"
+            + "    printf(\"Tong cac phan tu: %d\\n\", sum);\n"
+            + "    \n"
+            + "    // Đảo ngược mảng\n"
+            + "    printf(\"Mang dao nguoc: \");\n"
+            + "    for(int i = SIZE - 1; i >= 0; i--) {\n"
+            + "        printf(\"%d \", arr[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm nhận mảng và kích thước làm tham số\n"
+            + "void printArray(int arr[], int size) {\n"
+            + "    for(int i = 0; i < size; i++) {\n"
+            + "        printf(\"%d \", arr[i]);\n"
+            + "    }\n"
+            + "    printf(\"\\n\");\n"
+            + "}\n"
+            + "\n"
+            + "// Hàm thay đổi giá trị mảng\n"
+            + "void modifyArray(int arr[], int size) {\n"
+            + "    for(int i = 0; i < size; i++) {\n"
+            + "        arr[i] *= 2; // Nhân đôi mỗi phần tử\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int numbers[] = {1, 2, 3, 4, 5};\n"
+            + "    int length = sizeof(numbers) / sizeof(numbers[0]);\n"
+            + "    \n"
+            + "    printf(\"Mang ban dau: \");\n"
+            + "    printArray(numbers, length);\n"
+            + "    \n"
+            + "    modifyArray(numbers, length);\n"
+            + "    \n"
+            + "    printf(\"Mang sau khi thay doi: \");\n"
+            + "    printArray(numbers, length);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Khai báo mảng hai chiều", new String[]{
+            "kiểu_dữ_liệu tên_mảng[số_hàng][số_cột];",
+            "kiểu_dữ_liệu tên_mảng[][số_cột] = {\n"
+            + "    {giá_trị11, giá_trị12, ...},\n"
+            + "    {giá_trị21, giá_trị22, ...},\n"
+            + "    ...\n"
+            + "};",
+            "kiểu_dữ_liệu tên_mảng[số_hàng][số_cột] = {\n"
+            + "    {giá_trị11, giá_trị12, ...},\n"
+            + "    {giá_trị21, giá_trị22, ...},\n"
+            + "    ...\n"
+            + "};",
+            "kiểu_dữ_liệu tên_mảng[số_hàng][số_cột] = {giá_trị1, giá_trị2, giá_trị3, ...};",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // 1. Khai báo mảng 2 chiều không khởi tạo\n"
+            + "    int matrix1[3][4]; // Mảng 3 hàng 4 cột chưa được khởi tạo giá trị\n"
+            + "    \n"
+            + "    // 2. Khai báo và khởi tạo mảng 2 chiều (chỉ định kích thước)\n"
+            + "    int matrix2[2][3] = {\n"
+            + "        {1, 2, 3},  // Hàng 0\n"
+            + "        {4, 5, 6}   // Hàng 1\n"
+            + "    };\n"
+            + "    \n"
+            + "    // 3. Khai báo và khởi tạo mảng 2 chiều (không chỉ định số hàng)\n"
+            + "    int matrix3[][4] = {\n"
+            + "        {1, 2, 3, 4},\n"
+            + "        {5, 6, 7, 8},\n"
+            + "        {9, 10, 11, 12}\n"
+            + "    }; // Compiler tự tính số hàng là 3\n"
+            + "    \n"
+            + "    // 4. Khai báo và khởi tạo dạng phẳng\n"
+            + "    float matrix4[2][2] = {1.1, 2.2, 3.3, 4.4};\n"
+            + "    \n"
+            + "    // Truy xuất và in các phần tử của mảng\n"
+            + "    printf(\"Phần tử matrix2[1][2]: %d\\n\", matrix2[1][2]); // Output: 6\n"
+            + "    \n"
+            + "    // Duyệt và in toàn bộ mảng\n"
+            + "    printf(\"Mảng matrix3:\\n\");\n"
+            + "    for(int i = 0; i < 3; i++) {\n"
+            + "        for(int j = 0; j < 4; j++) {\n"
+            + "            printf(\"%d \", matrix3[i][j]);\n"
+            + "        }\n"
+            + "        printf(\"\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Truy cập và thao tác với phần tử", new String[]{
+            "// Khai báo mảng 2 chiều 3 hàng 4 cột\n"
+            + "int matrix[3][4]; \n"
+            + "\n"
+            + "// Khai báo và khởi tạo giá trị\n"
+            + "int matrix2[2][3] = {\n"
+            + "    {1, 2, 3},\n"
+            + "    {4, 5, 6}\n"
+            + "};",
+            "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int rows = 3, cols = 4;\n"
+            + "    int **matrix = (int **)malloc(rows * sizeof(int *));\n"
+            + "    for (int i = 0; i < rows; i++) {\n"
+            + "        matrix[i] = (int *)malloc(cols * sizeof(int));\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Giải phóng bộ nhớ khi không dùng nữa\n"
+            + "    for (int i = 0; i < rows; i++) {\n"
+            + "        free(matrix[i]);\n"
+            + "    }\n"
+            + "    free(matrix);\n"
+            + "    return 0;\n"
+            + "}",
+            "matrix[i][j]",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};\n"
+            + "    \n"
+            + "    // Truy cập phần tử hàng 1 cột 2\n"
+            + "    printf(\"Phan tu [1][2]: %d\\n\", matrix[1][2]); // Output: 6\n"
+            + "    \n"
+            + "    // Thay đổi giá trị phần tử\n"
+            + "    matrix[0][1] = 10;\n"
+            + "    printf(\"Phan tu [0][1] sau khi thay doi: %d\\n\", matrix[0][1]); // Output: 10\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "#define ROWS 3\n"
+            + "#define COLS 3\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int matrix[ROWS][COLS];\n"
+            + "    \n"
+            + "    // Nhập mảng\n"
+            + "    printf(\"Nhap cac phan tu cua mang:\\n\");\n"
+            + "    for (int i = 0; i < ROWS; i++) {\n"
+            + "        for (int j = 0; j < COLS; j++) {\n"
+            + "            printf(\"matrix[%d][%d] = \", i, j);\n"
+            + "            scanf(\"%d\", &matrix[i][j]);\n"
+            + "        }\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Xuất mảng\n"
+            + "    printf(\"\\nMang vua nhap:\\n\");\n"
+            + "    for (int i = 0; i < ROWS; i++) {\n"
+            + "        for (int j = 0; j < COLS; j++) {\n"
+            + "            printf(\"%d\\t\", matrix[i][j]);\n"
+            + "        }\n"
+            + "        printf(\"\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "int sum = 0;\n"
+            + "for (int i = 0; i < ROWS; i++) {\n"
+            + "    for (int j = 0; j < COLS; j++) {\n"
+            + "        sum += matrix[i][j];\n"
+            + "    }\n"
+            + "}\n"
+            + "printf(\"Tong cac phan tu: %d\\n\", sum);",
+            "int max = matrix[0][0];\n"
+            + "int min = matrix[0][0];\n"
+            + "\n"
+            + "for (int i = 0; i < ROWS; i++) {\n"
+            + "    for (int j = 0; j < COLS; j++) {\n"
+            + "        if (matrix[i][j] > max) {\n"
+            + "            max = matrix[i][j];\n"
+            + "        }\n"
+            + "        if (matrix[i][j] < min) {\n"
+            + "            min = matrix[i][j];\n"
+            + "        }\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "printf(\"Phan tu lon nhat: %d\\n\", max);\n"
+            + "printf(\"Phan tu nho nhat: %d\\n\", min);",
+            "int diagonalSum = 0;\n"
+            + "for (int i = 0; i < ROWS; i++) {\n"
+            + "    diagonalSum += matrix[i][i];\n"
+            + "}\n"
+            + "printf(\"Tong duong cheo chinh: %d\\n\", diagonalSum);",
+            "int transpose[COLS][ROWS];\n"
+            + "for (int i = 0; i < ROWS; i++) {\n"
+            + "    for (int j = 0; j < COLS; j++) {\n"
+            + "        transpose[j][i] = matrix[i][j];\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "// In ma trận chuyển vị\n"
+            + "printf(\"Ma tran chuyen vi:\\n\");\n"
+            + "for (int i = 0; i < COLS; i++) {\n"
+            + "    for (int j = 0; j < ROWS; j++) {\n"
+            + "        printf(\"%d\\t\", transpose[i][j]);\n"
+            + "    }\n"
+            + "    printf(\"\\n\");\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "#define ROWS1 2\n"
+            + "#define COLS1 3\n"
+            + "#define ROWS2 3\n"
+            + "#define COLS2 2\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int mat1[ROWS1][COLS1] = {{1, 2, 3}, {4, 5, 6}};\n"
+            + "    int mat2[ROWS2][COLS2] = {{7, 8}, {9, 10}, {11, 12}};\n"
+            + "    int result[ROWS1][COLS2] = {0};\n"
+            + "    \n"
+            + "    // Kiểm tra điều kiện nhân ma trận\n"
+            + "    if (COLS1 != ROWS2) {\n"
+            + "        printf(\"Khong the nhan hai ma tran nay!\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Thực hiện phép nhân\n"
+            + "    for (int i = 0; i < ROWS1; i++) {\n"
+            + "        for (int j = 0; j < COLS2; j++) {\n"
+            + "            for (int k = 0; k < COLS1; k++) {\n"
+            + "                result[i][j] += mat1[i][k] * mat2[k][j];\n"
+            + "            }\n"
+            + "        }\n"
+            + "    }\n"
+            + "    \n"
+            + "    // In kết quả\n"
+            + "    printf(\"Ket qua nhan ma tran:\\n\");\n"
+            + "    for (int i = 0; i < ROWS1; i++) {\n"
+            + "        for (int j = 0; j < COLS2; j++) {\n"
+            + "            printf(\"%d\\t\", result[i][j]);\n"
+            + "        }\n"
+            + "        printf(\"\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "void printMatrix(int mat[][3], int rows) {\n"
+            + "    for (int i = 0; i < rows; i++) {\n"
+            + "        for (int j = 0; j < 3; j++) {\n"
+            + "            printf(\"%d\\t\", mat[i][j]);\n"
+            + "        }\n"
+            + "        printf(\"\\n\");\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};\n"
+            + "    printMatrix(matrix, 2);\n"
+            + "    return 0;\n"
+            + "}",
+            "void printDynamicMatrix(int **mat, int rows, int cols) {\n"
+            + "    for (int i = 0; i < rows; i++) {\n"
+            + "        for (int j = 0; j < cols; j++) {\n"
+            + "            printf(\"%d\\t\", mat[i][j]);\n"
+            + "        }\n"
+            + "        printf(\"\\n\");\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int rows = 2, cols = 3;\n"
+            + "    int **matrix = (int **)malloc(rows * sizeof(int *));\n"
+            + "    for (int i = 0; i < rows; i++) {\n"
+            + "        matrix[i] = (int *)malloc(cols * sizeof(int));\n"
+            + "        for (int j = 0; j < cols; j++) {\n"
+            + "            matrix[i][j] = i * cols + j + 1;\n"
+            + "        }\n"
+            + "    }\n"
+            + "    \n"
+            + "    printDynamicMatrix(matrix, rows, cols);\n"
+            + "    \n"
+            + "    // Giải phóng bộ nhớ\n"
+            + "    for (int i = 0; i < rows; i++) {\n"
+            + "        free(matrix[i]);\n"
+            + "    }\n"
+            + "    free(matrix);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Khai báo chuỗi", new String[]{
+            "char str1[10] = \"Hello\";  // Khai báo mảng 10 phần tử, khởi tạo với \"Hello\"",
+            "char str2[] = \"World\";  // Kích thước tự động xác định (6 phần tử)",
+            "char *str3 = \"Programming\";  // Con trỏ trỏ tới chuỗi hằng",
+            "char str4[20];  // Khai báo mảng 20 ký tự chưa khởi tạo",
+            "char days[7][10] = {\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\", \"Sunday\"};",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // 1. Khai báo mảng ký tự\n"
+            + "    char str1[10] = \"Hello\";\n"
+            + "    printf(\"str1: %s, Length: %lu\\n\", str1, strlen(str1));\n"
+            + "    \n"
+            + "    // 2. Khai báo không chỉ định kích thước\n"
+            + "    char str2[] = \"World\";\n"
+            + "    printf(\"str2: %s, Size of array: %lu\\n\", str2, sizeof(str2));\n"
+            + "    \n"
+            + "    // 3. Khai báo con trỏ ký tự\n"
+            + "    char *str3 = \"Programming\";\n"
+            + "    printf(\"str3: %s, First character: %c\\n\", str3, *str3);\n"
+            + "    \n"
+            + "    // 4. Khai báo không khởi tạo\n"
+            + "    char str4[20];\n"
+            + "    strcpy(str4, \"C Language\");\n"
+            + "    printf(\"str4: %s\\n\", str4);\n"
+            + "    \n"
+            + "    // 5. Khai báo nhiều chuỗi\n"
+            + "    char days[7][10] = {\n"
+            + "        \"Monday\", \"Tuesday\", \"Wednesday\", \n"
+            + "        \"Thursday\", \"Friday\", \"Saturday\", \"Sunday\"\n"
+            + "    };\n"
+            + "    \n"
+            + "    printf(\"\\nDays of week:\\n\");\n"
+            + "    for(int i = 0; i < 7; i++) {\n"
+            + "        printf(\"%d. %s\\n\", i+1, days[i]);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "str1: Hello, Length: 5\n"
+            + "str2: World, Size of array: 6\n"
+            + "str3: Programming, First character: P\n"
+            + "str4: C Language\n"
+            + "\n"
+            + "Days of week:\n"
+            + "1. Monday\n"
+            + "2. Tuesday\n"
+            + "3. Wednesday\n"
+            + "4. Thursday\n"
+            + "5. Friday\n"
+            + "6. Saturday\n"
+            + "7. Sunday"
+        });
+
+        Code_MAP.put("Các hàm xử lý chuỗi", new String[]{
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str[] = \"Hello World\";\n"
+            + "    printf(\"Độ dài chuỗi: %lu\\n\", strlen(str)); // 11\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char src[] = \"Hello\";\n"
+            + "    char dest[20];\n"
+            + "    \n"
+            + "    strcpy(dest, src);\n"
+            + "    printf(\"Chuỗi đích: %s\\n\", dest); // Hello\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str1[20] = \"Hello\";\n"
+            + "    char str2[] = \" World\";\n"
+            + "    \n"
+            + "    strcat(str1, str2);\n"
+            + "    printf(\"Chuỗi sau khi nối: %s\\n\", str1); // Hello World\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str1[] = \"apple\";\n"
+            + "    char str2[] = \"banana\";\n"
+            + "    \n"
+            + "    int result = strcmp(str1, str2);\n"
+            + "    if (result < 0) printf(\"'%s' nhỏ hơn '%s'\\n\", str1, str2);\n"
+            + "    else if (result > 0) printf(\"'%s' lớn hơn '%s'\\n\", str1, str2);\n"
+            + "    else printf(\"Hai chuỗi bằng nhau\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str1[] = \"apple\";\n"
+            + "    char str2[] = \"appetizer\";\n"
+            + "    \n"
+            + "    int result = strncmp(str1, str2, 3);\n"
+            + "    if (result == 0) printf(\"3 ký tự đầu giống nhau\\n\");\n"
+            + "    else printf(\"3 ký tự đầu khác nhau\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str[] = \"Hello World\";\n"
+            + "    char *ptr = strchr(str, 'o');\n"
+            + "    \n"
+            + "    if (ptr != NULL)\n"
+            + "        printf(\"Tìm thấy 'o' tại vị trí: %ld\\n\", ptr - str); // 4\n"
+            + "    else\n"
+            + "        printf(\"Không tìm thấy\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str[] = \"Hello World\";\n"
+            + "    char *ptr = strstr(str, \"World\");\n"
+            + "    \n"
+            + "    if (ptr != NULL)\n"
+            + "        printf(\"Tìm thấy 'World' tại vị trí: %ld\\n\", ptr - str); // 6\n"
+            + "    else\n"
+            + "        printf(\"Không tìm thấy\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str[] = \"Hello,World,C,Programming\";\n"
+            + "    char *token = strtok(str, \",\");\n"
+            + "    \n"
+            + "    while (token != NULL) {\n"
+            + "        printf(\"%s\\n\", token);\n"
+            + "        token = strtok(NULL, \",\");\n"
+            + "    }\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str[] = \"Hello\";\n"
+            + "    printf(\"Chuỗi đảo ngược: %s\\n\", strrev(str)); // olleH\n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str[] = \"Hello World\";\n"
+            + "    \n"
+            + "    printf(\"Chuỗi chữ thường: %s\\n\", strlwr(str)); // hello world\n"
+            + "    printf(\"Chuỗi chữ hoa: %s\\n\", strupr(str)); // HELLO WORLD\n"
+            + "    return 0;\n"
+            + "}",
+            "#define __STDC_WANT_LIB_EXT1__ 1\n"
+            + "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char src[] = \"Safe copy\";\n"
+            + "    char dest[20];\n"
+            + "    \n"
+            + "    if (strcpy_s(dest, sizeof(dest), src) == 0)\n"
+            + "        printf(\"Sao chép thành công: %s\\n\", dest);\n"
+            + "    else\n"
+            + "        printf(\"Lỗi sao chép\\n\");\n"
+            + "    return 0;\n"
+            + "}",
+            "#define __STDC_WANT_LIB_EXT1__ 1\n"
+            + "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str1[20] = \"Hello\";\n"
+            + "    char str2[] = \" World\";\n"
+            + "    \n"
+            + "    if (strcat_s(str1, sizeof(str1), str2) == 0)\n"
+            + "        printf(\"Nối thành công: %s\\n\", str1);\n"
+            + "    else\n"
+            + "        printf(\"Lỗi nối chuỗi\\n\");\n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("So sánh và nối chuỗi", new String[]{
+            "int strcmp(const char *str1, const char *str2);",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char str1[] = \"Hello\";\n"
+            + "    char str2[] = \"World\";\n"
+            + "    char str3[] = \"Hello\";\n"
+            + "    \n"
+            + "    // So sánh str1 và str2\n"
+            + "    int result = strcmp(str1, str2);\n"
+            + "    if (result == 0) {\n"
+            + "        printf(\"str1 và str2 giống nhau\\n\");\n"
+            + "    } else if (result < 0) {\n"
+            + "        printf(\"str1 nhỏ hơn str2\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"str1 lớn hơn str2\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    // So sánh str1 và str3\n"
+            + "    result = strcmp(str1, str3);\n"
+            + "    if (result == 0) {\n"
+            + "        printf(\"str1 và str3 giống nhau\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"str1 và str3 khác nhau\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "char *strcat(char *dest, const char *src);",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char dest[50] = \"Xin chào \";\n"
+            + "    char src[] = \"thế giới!\";\n"
+            + "    \n"
+            + "    // Nối chuỗi src vào dest\n"
+            + "    strcat(dest, src);\n"
+            + "    \n"
+            + "    printf(\"Chuỗi sau khi nối: %s\\n\", dest);\n"
+            + "    \n"
+            + "    // Nối thêm một chuỗi nữa\n"
+            + "    strcat(dest, \" Chào mừng bạn đến với C.\");\n"
+            + "    printf(\"Chuỗi sau khi nối lần 2: %s\\n\", dest);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    char s1[20] = \"Hello\";\n"
+            + "    char s2[] = \"Hello World\";\n"
+            + "    char s3[50];\n"
+            + "    \n"
+            + "    // So sánh 5 ký tự đầu\n"
+            + "    if (strncmp(s1, s2, 5) == 0) {\n"
+            + "        printf(\"5 ký tự đầu giống nhau\\n\");\n"
+            + "    } else {\n"
+            + "        printf(\"5 ký tự đầu khác nhau\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Nối 3 ký tự đầu của s2 vào s1\n"
+            + "    strncat(s1, s2, 3);\n"
+            + "    printf(\"s1 sau khi nối: %s\\n\", s1);\n"
+            + "    \n"
+            + "    // Sao chép chuỗi\n"
+            + "    strcpy(s3, s1);\n"
+            + "    printf(\"s3 sau khi sao chép: %s\\n\", s3);\n"
+            + "    \n"
+            + "    // Độ dài chuỗi\n"
+            + "    printf(\"Độ dài s3: %lu\\n\", strlen(s3));\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Khái niệm về con trỏ", new String[]{
+            "int var = 10;    // Biến bình thường\n"
+            + "int *ptr = &var; // Con trỏ ptr lưu địa chỉ của var",
+            "kiểu_dữ_liệu *tên_con_trỏ;",
+            "int *intPtr;    // Con trỏ đến kiểu int\n"
+            + "float *floatPtr; // Con trỏ đến kiểu float\n"
+            + "char *charPtr;  // Con trỏ đến kiểu char",
+            "int num = 5;\n"
+            + "int *ptr = &num; // ptr lưu địa chỉ của num\n"
+            + "\n"
+            + "printf(\"Địa chỉ của num: %p\\n\", &num);\n"
+            + "printf(\"Giá trị của ptr: %p\\n\", ptr);\n"
+            + "printf(\"Giá trị tại địa chỉ ptr trỏ đến: %d\\n\", *ptr);",
+            "int arr[5] = {1, 2, 3, 4, 5};\n"
+            + "int *ptr = arr; // ptr trỏ đến phần tử đầu tiên của mảng\n"
+            + "\n"
+            + "for(int i = 0; i < 5; i++) {\n"
+            + "    printf(\"arr[%d] = %d\\n\", i, *(ptr + i));\n"
+            + "}",
+            "void tangGiaTri(int *n) {\n"
+            + "    (*n)++;\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int a = 10;\n"
+            + "    printf(\"Trước: %d\\n\", a); // 10\n"
+            + "    tangGiaTri(&a);\n"
+            + "    printf(\"Sau: %d\\n\", a);   // 11\n"
+            + "    return 0;\n"
+            + "}",
+            "int value = 100;\n"
+            + "int *ptr = &value;\n"
+            + "int **ptrToPtr = &ptr;\n"
+            + "\n"
+            + "printf(\"Giá trị value: %d\\n\", value);\n"
+            + "printf(\"Giá trị qua ptr: %d\\n\", *ptr);\n"
+            + "printf(\"Giá trị qua ptrToPtr: %d\\n\", **ptrToPtr);",
+            "int *ptr = NULL;\n"
+            + "\n"
+            + "if (ptr == NULL) {\n"
+            + "    printf(\"Con trỏ không trỏ đến đâu cả\\n\");\n"
+            + "} else {\n"
+            + "    printf(\"Giá trị tại con trỏ: %d\\n\", *ptr);\n"
+            + "}",
+            "int cong(int a, int b) {\n"
+            + "    return a + b;\n"
+            + "}\n"
+            + "\n"
+            + "int tru(int a, int b) {\n"
+            + "    return a - b;\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int (*phepToan)(int, int); // Khai báo con trỏ hàm\n"
+            + "    \n"
+            + "    phepToan = cong;\n"
+            + "    printf(\"5 + 3 = %d\\n\", phepToan(5, 3));\n"
+            + "    \n"
+            + "    phepToan = tru;\n"
+            + "    printf(\"5 - 3 = %d\\n\", phepToan(5, 3));\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int *arr;\n"
+            + "    int n = 5;\n"
+            + "    \n"
+            + "    // Cấp phát bộ nhớ động\n"
+            + "    arr = (int*)malloc(n * sizeof(int));\n"
+            + "    \n"
+            + "    if (arr == NULL) {\n"
+            + "        printf(\"Không đủ bộ nhớ\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Sử dụng mảng\n"
+            + "    for(int i = 0; i < n; i++) {\n"
+            + "        arr[i] = i * 10;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Giải phóng bộ nhớ\n"
+            + "    free(arr);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "int num = 10;\n"
+            + "float f = 3.14;\n"
+            + "char c = 'A';\n"
+            + "\n"
+            + "void *ptr;\n"
+            + "\n"
+            + "ptr = &num;\n"
+            + "printf(\"Giá trị int: %d\\n\", *(int*)ptr);\n"
+            + "\n"
+            + "ptr = &f;\n"
+            + "printf(\"Giá trị float: %.2f\\n\", *(float*)ptr);\n"
+            + "\n"
+            + "ptr = &c;\n"
+            + "printf(\"Giá trị char: %c\\n\", *(char*)ptr);"
+        });
+
+        Code_MAP.put("Khai báo con trỏ", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // 1. Khai báo biến thông thường\n"
+            + "    int number = 10;\n"
+            + "    float price = 25.5;\n"
+            + "    char letter = 'A';\n"
+            + "    \n"
+            + "    // 2. Khai báo các con trỏ\n"
+            + "    int *pNumber;    // Con trỏ tới số nguyên\n"
+            + "    float *pPrice;   // Con trỏ tới số thực\n"
+            + "    char *pLetter;   // Con trỏ tới ký tự\n"
+            + "    \n"
+            + "    // 3. Gán địa chỉ của biến cho con trỏ\n"
+            + "    pNumber = &number;\n"
+            + "    pPrice = &price;\n"
+            + "    pLetter = &letter;\n"
+            + "    \n"
+            + "    // 4. In giá trị và địa chỉ\n"
+            + "    printf(\"Giá trị của number: %d\\n\", number);\n"
+            + "    printf(\"Địa chỉ của number: %p\\n\", (void*)&number);\n"
+            + "    printf(\"Giá trị pNumber trỏ tới: %d\\n\", *pNumber);\n"
+            + "    printf(\"Địa chỉ lưu trong pNumber: %p\\n\", (void*)pNumber);\n"
+            + "    \n"
+            + "    printf(\"\\nGiá trị của price: %.2f\\n\", price);\n"
+            + "    printf(\"Địa chỉ của price: %p\\n\", (void*)&price);\n"
+            + "    printf(\"Giá trị pPrice trỏ tới: %.2f\\n\", *pPrice);\n"
+            + "    printf(\"Địa chỉ lưu trong pPrice: %p\\n\", (void*)pPrice);\n"
+            + "    \n"
+            + "    printf(\"\\nGiá trị của letter: %c\\n\", letter);\n"
+            + "    printf(\"Địa chỉ của letter: %p\\n\", (void*)&letter);\n"
+            + "    printf(\"Giá trị pLetter trỏ tới: %c\\n\", *pLetter);\n"
+            + "    printf(\"Địa chỉ lưu trong pLetter: %p\\n\", (void*)pLetter);\n"
+            + "    \n"
+            + "    // 5. Thay đổi giá trị thông qua con trỏ\n"
+            + "    *pNumber = 20;\n"
+            + "    *pPrice = 30.75;\n"
+            + "    *pLetter = 'B';\n"
+            + "    \n"
+            + "    printf(\"\\nSau khi thay đổi qua con trỏ:\\n\");\n"
+            + "    printf(\"number = %d, price = %.2f, letter = %c\\n\", number, price, letter);\n"
+            + "    \n"
+            + "    // 6. Con trỏ NULL\n"
+            + "    int *pNull = NULL; // Con trỏ không trỏ tới đâu\n"
+            + "    if (pNull == NULL) {\n"
+            + "        printf(\"\\nCon trỏ pNull là NULL, không trỏ tới địa chỉ hợp lệ\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Toán tử con trỏ", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int var = 10;\n"
+            + "    printf(\"Giá trị của var: %d\\n\", var);\n"
+            + "    printf(\"Địa chỉ của var: %p\\n\", (void*)&var);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int var = 20;\n"
+            + "    int *ptr = &var;\n"
+            + "    \n"
+            + "    printf(\"Giá trị của var: %d\\n\", var);\n"
+            + "    printf(\"Địa chỉ lưu trong ptr: %p\\n\", (void*)ptr);\n"
+            + "    printf(\"Giá trị tại địa chỉ ptr trỏ tới: %d\\n\", *ptr);\n"
+            + "    \n"
+            + "    // Thay đổi giá trị thông qua con trỏ\n"
+            + "    *ptr = 30;\n"
+            + "    printf(\"Giá trị mới của var: %d\\n\", var);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int a = 5, b = 10;\n"
+            + "    int *ptr1, *ptr2;\n"
+            + "    \n"
+            + "    ptr1 = &a;  // ptr1 trỏ tới a\n"
+            + "    ptr2 = &b;  // ptr2 trỏ tới b\n"
+            + "    \n"
+            + "    printf(\"Giá trị tại ptr1: %d\\n\", *ptr1);\n"
+            + "    printf(\"Giá trị tại ptr2: %d\\n\", *ptr2);\n"
+            + "    \n"
+            + "    ptr2 = ptr1;  // ptr2 giờ cũng trỏ tới a\n"
+            + "    printf(\"Giá trị tại ptr2 sau khi gán: %d\\n\", *ptr2);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int arr[] = {10, 20, 30, 40, 50};\n"
+            + "    int *ptr = arr;  // ptr trỏ tới phần tử đầu tiên\n"
+            + "    \n"
+            + "    printf(\"Phần tử đầu tiên: %d\\n\", *ptr);\n"
+            + "    \n"
+            + "    ptr++;  // Di chuyển tới phần tử tiếp theo\n"
+            + "    printf(\"Phần tử thứ hai: %d\\n\", *ptr);\n"
+            + "    \n"
+            + "    ptr += 2;  // Nhảy qua 2 phần tử\n"
+            + "    printf(\"Phần tử thứ tư: %d\\n\", *ptr);\n"
+            + "    \n"
+            + "    ptr--;  // Lùi lại 1 phần tử\n"
+            + "    printf(\"Phần tử thứ ba: %d\\n\", *ptr);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int arr[] = {10, 20, 30, 40, 50};\n"
+            + "    int *ptr1 = &arr[1];\n"
+            + "    int *ptr2 = &arr[3];\n"
+            + "    \n"
+            + "    if (ptr1 < ptr2) {\n"
+            + "        printf(\"ptr1 trỏ tới phần tử đứng trước ptr2 trong mảng\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    if (ptr1 != NULL) {\n"
+            + "        printf(\"ptr1 không phải là con trỏ NULL\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    // So sánh sau khi thay đổi\n"
+            + "    ptr1 += 2;\n"
+            + "    if (ptr1 == ptr2) {\n"
+            + "        printf(\"ptr1 và ptr2 giờ trỏ tới cùng một phần tử\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int var = 100;\n"
+            + "    int *ptr = &var;\n"
+            + "    int **pptr = &ptr;\n"
+            + "    \n"
+            + "    printf(\"Giá trị của var: %d\\n\", var);\n"
+            + "    printf(\"Giá trị thông qua ptr: %d\\n\", *ptr);\n"
+            + "    printf(\"Giá trị thông qua pptr: %d\\n\", **pptr);\n"
+            + "    \n"
+            + "    // Thay đổi giá trị thông qua con trỏ cấp 2\n"
+            + "    **pptr = 200;\n"
+            + "    printf(\"Giá trị mới của var: %d\\n\", var);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "typedef struct {\n"
+            + "    int id;\n"
+            + "    char name[50];\n"
+            + "} Employee;\n"
+            + "\n"
+            + "int main() {\n"
+            + "    Employee emp = {1, \"Nguyen Van A\"};\n"
+            + "    Employee *ptr = &emp;\n"
+            + "    \n"
+            + "    // Truy cập bằng toán tử arrow\n"
+            + "    printf(\"ID: %d, Name: %s\\n\", ptr->id, ptr->name);\n"
+            + "    \n"
+            + "    // Tương đương với\n"
+            + "    printf(\"ID: %d, Name: %s\\n\", (*ptr).id, (*ptr).name);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Cú pháp định nghĩa hàm", new String[]{
+            "return_type function_name(parameter1_type parameter1_name, parameter2_type parameter2_name, ...) {\n"
+            + "    // Function body\n"
+            + "    // Các câu lệnh thực thi\n"
+            + "    [return value;] // Nếu có kiểu trả về khác void\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm tính tổng 2 số nguyên\n"
+            + "int sum(int a, int b) {          // int: kiểu trả về\n"
+            + "                                 // sum: tên hàm\n"
+            + "                                 // (int a, int b): tham số\n"
+            + "    int result = a + b;          // Thân hàm\n"
+            + "    return result;               // Trả về giá trị\n"
+            + "}\n"
+            + "\n"
+            + "// Hàm không trả về giá trị, không tham số\n"
+            + "void printHello() {              // void: không trả về giá trị\n"
+            + "                                // printHello: tên hàm\n"
+            + "                                // (): không có tham số\n"
+            + "    printf(\"Hello World!\\n\");   // Thân hàm\n"
+            + "                                // Không có return\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    int x = 5, y = 3;\n"
+            + "    int total = sum(x, y);      // Gọi hàm sum\n"
+            + "    printf(\"Sum: %d\\n\", total);\n"
+            + "    \n"
+            + "    printHello();               // Gọi hàm printHello\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Gọi hàm", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm tính tổng 2 số\n"
+            + "int tinhTong(int a, int b) {\n"
+            + "    return a + b;\n"
+            + "}\n"
+            + "\n"
+            + "// Hàm không có tham số\n"
+            + "void inThongBao() {\n"
+            + "    printf(\"Xin chao ban!\\n\");\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // 1. Gọi hàm có trả về giá trị\n"
+            + "    int ketQua = tinhTong(5, 3); // tinhTong là tên hàm, 5 và 3 là đối số\n"
+            + "    printf(\"Tong la: %d\\n\", ketQua);\n"
+            + "    \n"
+            + "    // 2. Gọi hàm không có tham số\n"
+            + "    inThongBao(); // inThongBao là tên hàm, không có đối số\n"
+            + "    \n"
+            + "    // 3. Gọi hàm và sử dụng kết quả trực tiếp\n"
+            + "    printf(\"Tong cua 10 va 20 la: %d\\n\", tinhTong(10, 20));\n"
+            + "    \n"
+            + "    // 4. Gọi hàm từ thư viện chuẩn\n"
+            + "    printf(\"Hien thi thong diep\\n\"); // printf là hàm từ thư viện stdio.h\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Hàm trả về giá trị", new String[]{
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Hàm tính tổng 2 số nguyên - trả về kiểu int\n"
+            + "int tinhTong(int a, int b) {\n"
+            + "    int tong = a + b;  // Thân hàm - tính toán giá trị\n"
+            + "    return tong;       // Trả về giá trị tổng\n"
+            + "}\n"
+            + "\n"
+            + "// Hàm kiểm tra số chẵn - trả về kiểu int (0 hoặc 1)\n"
+            + "int laSoChan(int num) {\n"
+            + "    if(num % 2 == 0) {\n"
+            + "        return 1;  // Là số chẵn - trả về 1\n"
+            + "    }\n"
+            + "    return 0;      // Không phải số chẵn - trả về 0\n"
+            + "}\n"
+            + "\n"
+            + "// Hàm tìm số lớn nhất trong 3 số - trả về kiểu float\n"
+            + "float timMax(float x, float y, float z) {\n"
+            + "    float max = x;\n"
+            + "    if(y > max) max = y;\n"
+            + "    if(z > max) max = z;\n"
+            + "    return max;  // Trả về giá trị lớn nhất\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Gọi hàm tinhTong\n"
+            + "    int ketQua = tinhTong(5, 7);\n"
+            + "    printf(\"Tong la: %d\\n\", ketQua);\n"
+            + "    \n"
+            + "    // Gọi hàm laSoChan\n"
+            + "    int so = 10;\n"
+            + "    if(laSoChan(so)) {\n"
+            + "        printf(\"%d la so chan\\n\", so);\n"
+            + "    } else {\n"
+            + "        printf(\"%d khong phai so chan\\n\", so);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Gọi hàm timMax\n"
+            + "    float max = timMax(3.2, 5.4, 4.1);\n"
+            + "    printf(\"So lon nhat la: %.2f\\n\", max);\n"
             + "    \n"
             + "    return 0;\n"
             + "}"

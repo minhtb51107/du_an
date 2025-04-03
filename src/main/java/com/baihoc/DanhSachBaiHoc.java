@@ -910,18 +910,105 @@ public class DanhSachBaiHoc extends JPanel {
             }
         }
 
-        if (content.equals("Quá trình biên dịch và thực thi chương trình C")) {
+        if (content.equals("Các vòng lặp (for, while, do-while)")) {
             switch (index) {
                 case 0:
-                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quá trình biên dịch và thực thi chương trình C", "Các bước biên dịch");
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các vòng lặp (for, while, do-while)", "Vòng lặp for");
                     mainFrame.updateDanhSachBai(example);
                     break;
                 case 1:
-                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quá trình biên dịch và thực thi chương trình C", "Trình biên dịch và trình liên kết");
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các vòng lặp (for, while, do-while)", "Vòng lặp while");
                     mainFrame.updateDanhSachBai(example);
                     break;
                 case 2:
-                    example = mainFrame.new TrangBaiHoc(mainFrame, "Quá trình biên dịch và thực thi chương trình C", "Quá trình thực thi");
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Các vòng lặp (for, while, do-while)", "Vòng lặp do-while");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử", "Khai báo mảng một chiều");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử", "Truy cập và thao tác với phần tử trong mảng");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Mảng hai chiều: Ứng dụng và thao tác")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Mảng hai chiều: Ứng dụng và thao tác", "Khai báo mảng hai chiều");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Mảng hai chiều: Ứng dụng và thao tác", "Truy cập và thao tác với phần tử");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Xử lý chuỗi trong C (thư viện string.h)")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý chuỗi trong C (thư viện string.h)", "Khai báo chuỗi");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý chuỗi trong C (thư viện string.h)", "Các hàm xử lý chuỗi");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý chuỗi trong C (thư viện string.h)", "So sánh và nối chuỗi");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Con trỏ: Khái niệm, khai báo, toán tử con trỏ")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Con trỏ: Khái niệm, khai báo, toán tử con trỏ", "Khái niệm về con trỏ");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Con trỏ: Khái niệm, khai báo, toán tử con trỏ", "Khai báo con trỏ");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Con trỏ: Khái niệm, khai báo, toán tử con trỏ", "Toán tử con trỏ");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Định nghĩa và sử dụng hàm")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Định nghĩa và sử dụng hàm", "Cú pháp định nghĩa hàm");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Định nghĩa và sử dụng hàm", "Gọi hàm");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Định nghĩa và sử dụng hàm", "Hàm trả về giá trị");
                     mainFrame.updateDanhSachBai(example);
                     break;
                 default:

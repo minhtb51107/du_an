@@ -59,13 +59,11 @@ public class DanhSachBaiHocData {
 
         TITLE_MAP.put("Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử", new String[]{
             "Khai báo mảng một chiều",
-            "Khởi tạo mảng một chiều",
             "Truy cập và thao tác với phần tử trong mảng"
         });
 
         TITLE_MAP.put("Mảng hai chiều: Ứng dụng và thao tác", new String[]{
             "Khai báo mảng hai chiều",
-            "Khởi tạo mảng hai chiều",
             "Truy cập và thao tác với phần tử"
         });
 
@@ -384,13 +382,11 @@ public class DanhSachBaiHocData {
 
         DESCRIPTION_MAP.put("Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử", new String[]{
             "Mảng một chiều là một tập hợp các phần tử cùng kiểu dữ liệu, được lưu trữ liên tiếp trong bộ nhớ.",
-            "Mảng một chiều có thể được khai báo bằng cách sử dụng cú pháp: `type arrayName[size];`, ví dụ: `int arr[10];`.",
             "Để khởi tạo mảng, bạn có thể sử dụng cú pháp: `type arrayName[size] = {value1, value2, ...};`, ví dụ: `int arr[5] = {1, 2, 3, 4, 5};`. Truy cập phần tử trong mảng được thực hiện bằng cách sử dụng chỉ số, ví dụ: `arr[0]` để truy cập phần tử đầu tiên."
         });
 
         DESCRIPTION_MAP.put("Mảng hai chiều: Ứng dụng và thao tác", new String[]{
             "Mảng hai chiều là một mảng có hai chỉ số, thường được sử dụng để lưu trữ dữ liệu dạng bảng.",
-            "Mảng hai chiều có thể được khởi tạo bằng cách sử dụng cú pháp giống như mảng một chiều, nhưng với hai chỉ số.",
             "Có thể truy cập và thao tác với các phần tử của mảng hai chiều bằng cách sử dụng chỉ số hàng và cột."
         });
 
@@ -706,12 +702,10 @@ public class DanhSachBaiHocData {
 
         ICON_MAP.put("Mảng một chiều: Khai báo, khởi tạo, truy cập phần tử", new String[]{
             "",
-            "",
             ""
         });
 
         ICON_MAP.put("Mảng hai chiều: Ứng dụng và thao tác", new String[]{
-            "",
             "",
             ""
         });
