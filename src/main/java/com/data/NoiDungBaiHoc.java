@@ -561,7 +561,41 @@ public class NoiDungBaiHoc {
             0, 1, 2, 1, 2, 1, 1, 2, 0, 1, 2, 2, 1, 2, 2, 1, 2, 2, 1, 2, 1, 2, 0, 1, 2, 2, 1, 2, 1, 2, 1, 2, 2, 0, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 2, 2, 1, 2, 2, 0, 1, 2, 2, 2, 2
         });
 
-        Index_MAP.put("", new int[]{});
+        Index_MAP.put("Khái niệm về struct", new int[]{
+            0, 1, 1, 0, 2, 0, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 0, 2, 0, 2, 1
+        });
+
+        Index_MAP.put("Khái niệm về union", new int[]{
+            0, 1, 0, 2, 0, 1, 0, 1, 0, 1, 0, 1, 2, 1, 2, 1, 2
+        });
+
+        Index_MAP.put("Sự khác biệt giữa struct và union", new int[]{
+            0, 1, 1, 0, 1, 2, 1, 2, 0, 1, 2, 1, 2, 0, 1, 1, 0, 2, 0, 1
+        });
+
+        Index_MAP.put("Danh sách liên kết", new int[]{
+            0, 1, 0, 1, 0, 1, 0, 1, 0, 2, 0, 1, 1, 0, 1
+        });
+
+        Index_MAP.put("Ngăn xếp", new int[]{
+            0, 1, 1, 0, 1, 1, 2, 1, 2, 0, 1, 0, 1, 1
+        });
+
+        Index_MAP.put("Hàng đợi", new int[]{
+            0, 1, 0, 1, 0, 1, 0, 2, 0, 1, 0, 1, 1
+        });
+
+        Index_MAP.put("Mở và đóng tệp tin", new int[]{
+            0, 1, 0, 1, 1, 2, 1, 1, 0, 1, 1, 2, 1, 0, 1, 0, 1, 2, 0, 1, 0, 1
+        });
+
+        Index_MAP.put("Đọc và ghi tệp tin", new int[]{
+            0, 1, 0, 1, 2, 1, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2, 0, 1, 2, 1, 2, 1, 2
+        });
+
+        Index_MAP.put("Các hàm xử lý tệp tin", new int[]{
+            0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 0, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 0, 1, 1, 2, 1, 1, 2, 1, 2, 0, 1, 1, 2, 1, 1, 2, 1, 2
+        });
     }
 
     // Phương thức lấy tiêu đề theo chỉ số dựa vào ngôn ngữ
@@ -1739,7 +1773,85 @@ public class NoiDungBaiHoc {
             "Ví dụ hoàn chỉnh"
         });
 
-        TITLE_MAP.put("", new String[]{});
+        TITLE_MAP.put("Khái niệm về struct", new String[]{
+            "1. Định nghĩa Struct",
+            "2. Cú pháp khai báo Struct",
+            "3. Các thành phần của Struct",
+            "4. Code mẫu đầy đủ",
+            "5. Kết quả chương trình mẫu"
+        });
+
+        TITLE_MAP.put("Khái niệm về union", new String[]{
+            "1. Đặc điểm chính của Union",
+            "2. Cú pháp khai báo Union",
+            "3. Truy cập thành viên Union",
+            "4. Ưu điểm của Union",
+            "5. Nhược điểm của Union",
+            "Code mẫu minh họa"
+        });
+
+        TITLE_MAP.put("Sự khác biệt giữa struct và union", new String[]{
+            "1. Định nghĩa cơ bản",
+            "2. Sự khác biệt về bộ nhớ",
+            "3. Truy cập thành viên",
+            "4. Ứng dụng thực tế",
+            "5. Code mẫu minh họa",
+            "6. Kết luận"
+        });
+
+        TITLE_MAP.put("Danh sách liên kết", new String[]{
+            "1. Khái niệm Danh Sách Liên Kết",
+            "2. Các loại Danh Sách Liên Kết",
+            "3. Cấu trúc Node",
+            "4. Các thao tác cơ bản",
+            "5. Code mẫu Danh Sách Liên Kết Đơn",
+            "6. Ưu điểm và Nhược điểm",
+            "7. Ứng dụng"
+        });
+
+        TITLE_MAP.put("Ngăn xếp", new String[]{
+            "1. Khái niệm ngăn xếp (Stack)",
+            "2. Cách triển khai ngăn xếp trong C",
+            "3. Ứng dụng của ngăn xếp",
+            "4. Ưu và nhược điểm"
+        });
+
+        TITLE_MAP.put("Hàng đợi", new String[]{
+            "Khái niệm",
+            "Đặc điểm",
+            "Các thao tác cơ bản",
+            "Code mẫu cài đặt hàng đợi bằng mảng",
+            "Giải thích code",
+            "Ưu nhược điểm"
+        });
+
+        TITLE_MAP.put("Mở và đóng tệp tin", new String[]{
+            "1. Khái niệm cơ bản về làm việc với tệp tin",
+            "2. Mở tệp tin (fopen)",
+            "3. Đóng tệp tin (fclose)",
+            "4. Kiểm tra lỗi khi mở tệp",
+            "5. Code mẫu",
+            "6. Giải thích code mẫu",
+            "7. Lưu ý quan trọng"
+        });
+
+        TITLE_MAP.put("Đọc và ghi tệp tin", new String[]{
+            "1. Khái niệm cơ bản về tệp tin trong C",
+            "2. Mở và đóng tệp tin",
+            "3. Ghi dữ liệu vào tệp tin",
+            "4. Đọc dữ liệu từ tệp tin",
+            "5. Xử lý tệp tin nhị phân",
+            "6. Các hàm điều khiển vị trí con trỏ file",
+            "7. Xử lý lỗi khi làm việc với tệp tin",
+            "8. Các hàm tiện ích khác"
+        });
+
+        TITLE_MAP.put("Các hàm xử lý tệp tin", new String[]{
+            "Kiểm tra và xử lý lỗi",
+            "Di chuyển con trỏ file",
+            "Các hàm nhị phân (Binary I/O)",
+            "Xóa và đổi tên tệp tin"
+        });
 
     }
 
@@ -6758,7 +6870,363 @@ public class NoiDungBaiHoc {
             "Ví dụ hoàn chỉnh"
         });
 
-        Content_MAP.put("", new String[]{});
+        Content_MAP.put("Khái niệm về struct", new String[]{
+            "Struct (cấu trúc) trong C là một kiểu dữ liệu do người dùng tự định nghĩa, cho phép nhóm các biến có kiểu dữ liệu khác nhau lại với nhau dưới một tên duy nhất. Mỗi biến trong struct được gọi là một thành viên (member) của struct.",
+            "Struct giúp tổ chức dữ liệu phức tạp một cách có cấu trúc, làm cho code dễ đọc và dễ quản lý hơn.",
+            "a. Khai báo Struct\n"
+            + "Khai báo một struct mới mà không tạo biến ngay lập tức.",
+            "b. Định nghĩa biến Struct\n"
+            + "Tạo biến từ struct đã khai báo.",
+            "c. Khởi tạo Struct\n"
+            + "Gán giá trị ban đầu cho các thành viên của struct.",
+            "d. Truy cập thành viên Struct\n"
+            + "Sử dụng toán tử dấu chấm (.) để truy cập các thành viên.",
+            "e. Struct lồng nhau\n"
+            + "Một struct có thể chứa struct khác như thành viên.",
+            "f. Con trỏ Struct\n"
+            + "Sử dụng con trỏ để truy cập struct, dùng toán tử \"->\" để truy cập thành viên.",
+            "Struct là một công cụ mạnh mẽ trong C để tổ chức dữ liệu phức tạp, đặc biệt hữu ích khi làm việc với các đối tượng có nhiều thuộc tính khác nhau."
+        });
+
+        Content_MAP.put("Khái niệm về union", new String[]{
+            "Tất cả các thành viên chia sẻ cùng một vùng nhớ\n"
+            + "\n"
+            + "Kích thước của union bằng kích thước của thành viên lớn nhất\n"
+            + "\n"
+            + "Chỉ một thành viên có thể chứa giá trị tại một thời điểm\n"
+            + "\n"
+            + "Thường được sử dụng khi cần tiết kiệm bộ nhớ hoặc xử lý dữ liệu theo nhiều cách khác nhau",
+            "Tương tự như struct, sử dụng toán tử dấu chấm (.) hoặc toán tử mũi tên (->) nếu làm việc với con trỏ",
+            "Tiết kiệm bộ nhớ\n"
+            + "\n"
+            + "Linh hoạt trong việc biểu diễn dữ liệu\n"
+            + "\n"
+            + "Hữu ích khi làm việc với phần cứng hoặc giao tiếp mạng",
+            "Không thể biết thành viên nào đang được sử dụng (cần thêm biến đánh dấu)\n"
+            + "\n"
+            + "Dễ gây nhầm lẫn nếu sử dụng không cẩn thận",
+            "Ví dụ 1: Union cơ bản",
+            "Ví dụ 2: Union trong hệ thống nhúng (đọc giá trị cảm biến)",
+            "Ví dụ 3: Union kết hợp với struct để theo dõi kiểu dữ liệu"
+        });
+
+        Content_MAP.put("Sự khác biệt giữa struct và union", new String[]{
+            "Struct (Structure):\n"
+            + "\n"
+            + "Là kiểu dữ liệu do người dùng định nghĩa, cho phép kết hợp các biến thuộc các kiểu dữ liệu khác nhau\n"
+            + "\n"
+            + "Mỗi thành viên trong struct có bộ nhớ riêng biệt\n"
+            + "\n"
+            + "Kích thước struct bằng tổng kích thước tất cả các thành viên (cộng thêm padding nếu có)",
+            "Union:\n"
+            + "\n"
+            + "Cũng là kiểu dữ liệu do người dùng định nghĩa, kết hợp các biến thuộc kiểu khác nhau\n"
+            + "\n"
+            + "Các thành viên dùng chung cùng một vùng nhớ\n"
+            + "\n"
+            + "Kích thước union bằng kích thước của thành viên lớn nhất",
+            "Struct:",
+            "Union:",
+            "Struct: Có thể truy cập đồng thời tất cả các thành viên vì chúng có bộ nhớ riêng",
+            "Union: Chỉ có thể sử dụng một thành viên tại một thời điểm vì dùng chung bộ nhớ",
+            "Struct dùng khi:\n"
+            + "\n"
+            + "Cần lưu trữ nhiều thuộc tính cùng lúc\n"
+            + "\n"
+            + "Các thuộc tính độc lập với nhau\n"
+            + "\n"
+            + "Ví dụ: Điểm trong hệ tọa độ, thông tin sinh viên...",
+            "Union dùng khi:\n"
+            + "\n"
+            + "Tiết kiệm bộ nhớ khi chỉ cần một thuộc tính tại một thời điểm\n"
+            + "\n"
+            + "Xử lý dữ liệu đa dạng nhưng không đồng thời\n"
+            + "\n"
+            + "Ví dụ: Biến có thể là int hoặc float tùy ngữ cảnh",
+            "Đặc điểm	Struct	Union\n"
+            + "Bộ nhớ	Cấp phát riêng cho mỗi thành viên	Dùng chung bộ nhớ\n"
+            + "Kích thước	Tổng kích thước các thành viên	Bằng thành viên lớn nhất\n"
+            + "Truy cập	Có thể truy cập đồng thời	Chỉ một thành viên tại một thời điểm\n"
+            + "Ứng dụng	Lưu trữ nhiều thuộc tính	Tiết kiệm bộ nhớ, kiểu đa năng"
+        });
+
+        Content_MAP.put("Danh sách liên kết", new String[]{
+            "Danh sách liên kết là một cấu trúc dữ liệu động bao gồm các node (nút) được liên kết với nhau thông qua các con trỏ. Mỗi node chứa dữ liệu và con trỏ trỏ đến node tiếp theo trong danh sách.",
+            "Danh sách liên kết đơn (Singly Linked List): Mỗi node chỉ có con trỏ trỏ đến node tiếp theo\n"
+            + "\n"
+            + "Danh sách liên kết đôi (Doubly Linked List): Mỗi node có 2 con trỏ, trỏ đến node trước và node sau\n"
+            + "\n"
+            + "Danh sách liên kết vòng (Circular Linked List): Node cuối cùng trỏ lại node đầu tiên",
+            "Mỗi node trong danh sách liên kết đơn gồm:\n"
+            + "\n"
+            + "Trường dữ liệu (data)\n"
+            + "\n"
+            + "Con trỏ next trỏ đến node tiếp theo",
+            "Thêm node (đầu, cuối, vị trí bất kỳ)\n"
+            + "\n"
+            + "Xóa node\n"
+            + "\n"
+            + "Duyệt danh sách\n"
+            + "\n"
+            + "Tìm kiếm\n"
+            + "\n"
+            + "Đếm số node\n"
+            + "\n"
+            + "Sắp xếp",
+            "Ưu điểm:\n"
+            + "\n"
+            + "Kích thước linh hoạt, có thể mở rộng hoặc thu nhỏ trong khi chương trình đang chạy\n"
+            + "\n"
+            + "Dễ dàng thêm/xóa node mà không cần dịch chuyển các phần tử như mảng",
+            "Nhược điểm:\n"
+            + "\n"
+            + "Truy cập ngẫu nhiên chậm hơn mảng\n"
+            + "\n"
+            + "Tốn bộ nhớ hơn do lưu thêm con trỏ\n"
+            + "\n"
+            + "Khó debug hơn do sử dụng con trỏ",
+            "Danh sách liên kết được sử dụng trong nhiều trường hợp:\n"
+            + "\n"
+            + "Cài đặt stack và queue\n"
+            + "\n"
+            + "Cài đặt bảng băm (hash table)\n"
+            + "\n"
+            + "Cài đặt đồ thị (adjacency list)\n"
+            + "\n"
+            + "Quản lý bộ nhớ trong hệ điều hành\n"
+            + "\n"
+            + "Lịch sử duyệt web trong trình duyệt"
+        });
+
+        Content_MAP.put("Ngăn xếp", new String[]{
+            "Ngăn xếp (Stack) là một cấu trúc dữ liệu tuyến tính hoạt động theo nguyên tắc \"Last In First Out\" (LIFO) - phần tử được thêm vào cuối cùng sẽ được lấy ra đầu tiên.",
+            "Các đặc điểm chính:\n"
+            + "\n"
+            + "Chỉ có thể thêm/xóa phần tử ở một đầu gọi là đỉnh (top) của stack\n"
+            + "\n"
+            + "Các thao tác cơ bản: push (thêm vào), pop (lấy ra), peek (xem phần tử trên cùng)",
+            "Có 2 cách triển khai stack phổ biến trong C:\n"
+            + "\n"
+            + "Sử dụng mảng (Array)\n"
+            + "\n"
+            + "Sử dụng danh sách liên kết (Linked List)",
+            "2.1. Triển khai bằng mảng",
+            "2.2. Triển khai bằng danh sách liên kết",
+            "Stack có nhiều ứng dụng trong lập trình và khoa học máy tính:\n"
+            + "\n"
+            + "Đảo ngược chuỗi\n"
+            + "\n"
+            + "Kiểm tra tính hợp lệ của biểu thức (dấu ngoặc)\n"
+            + "\n"
+            + "Chuyển đổi giữa các dạng biểu thức (trung tố, hậu tố)\n"
+            + "\n"
+            + "Thuật toán duyệt đồ thị (DFS)\n"
+            + "\n"
+            + "Quản lý các lời gọi hàm (call stack)\n"
+            + "\n"
+            + "Undo/Redo trong các ứng dụng",
+            "Ưu điểm:\n"
+            + "\n"
+            + "Dễ cài đặt\n"
+            + "\n"
+            + "Hiệu suất tốt (O(1) cho các thao tác cơ bản)\n"
+            + "\n"
+            + "Phù hợp cho các bài toán cần xử lý theo thứ tự ngược",
+            "Nhược điểm:\n"
+            + "\n"
+            + "Kích thước cố định nếu dùng mảng (có thể khắc phục bằng linked list)\n"
+            + "\n"
+            + "Chỉ truy cập được phần tử trên cùng"
+        });
+
+        Content_MAP.put("Hàng đợi", new String[]{
+            "Hàng đợi (Queue) là một cấu trúc dữ liệu tuyến tính hoạt động theo nguyên tắc FIFO (First In First Out - Vào trước ra trước). Phần tử được thêm vào đầu tiên sẽ được lấy ra đầu tiên.",
+            "Có 2 đầu: front (đầu) để lấy dữ liệu, rear (cuối) để thêm dữ liệu\n"
+            + "\n"
+            + "Thao tác thêm vào gọi là enqueue (hay push)\n"
+            + "\n"
+            + "Thao tác lấy ra gọi là dequeue (hay pop)\n"
+            + "\n"
+            + "Có thể cài đặt bằng mảng hoặc danh sách liên kết",
+            "Khởi tạo hàng đợi\n"
+            + "\n"
+            + "Kiểm tra hàng đợi rỗng\n"
+            + "\n"
+            + "Kiểm tra hàng đợi đầy (với cài đặt bằng mảng)\n"
+            + "\n"
+            + "Thêm phần tử vào hàng đợi (enqueue)\n"
+            + "\n"
+            + "Lấy phần tử khỏi hàng đợi (dequeue)\n"
+            + "\n"
+            + "Xem phần tử đầu hàng đợi (peek)",
+            "Cấu trúc Queue: Chứa mảng items để lưu dữ liệu, front và rear để theo dõi vị trí đầu và cuối.\n"
+            + "\n"
+            + "initQueue(): Khởi tạo front và rear = -1 (hàng đợi rỗng).\n"
+            + "\n"
+            + "isEmpty(): Kiểm tra nếu front và rear đều -1 thì hàng đợi rỗng.\n"
+            + "\n"
+            + "isFull(): Kiểm tra nếu rear ở vị trí cuối mảng thì hàng đợi đầy.\n"
+            + "\n"
+            + "enqueue(): Thêm phần tử vào cuối hàng đợi (rear), xử lý trường hợp hàng đợi rỗng.\n"
+            + "\n"
+            + "dequeue(): Lấy phần tử ở đầu hàng đợi (front), xử lý trường hợp chỉ còn 1 phần tử.\n"
+            + "\n"
+            + "peek(): Xem giá trị phần tử đầu hàng đợi mà không xóa nó.",
+            "Ưu điểm:\n"
+            + "\n"
+            + "Dễ cài đặt bằng mảng hoặc danh sách liên kết\n"
+            + "\n"
+            + "Hiệu quả cho các bài toán cần xử lý theo thứ tự FIFO",
+            "Nhược điểm:\n"
+            + "\n"
+            + "Khi cài bằng mảng có kích thước cố định, có thể bị đầy\n"
+            + "\n"
+            + "Cần quản lý front và rear cẩn thận để tránh sai sót"
+        });
+
+        Content_MAP.put("Mở và đóng tệp tin", new String[]{
+            "Trước khi làm việc với tệp tin, chúng ta cần hiểu một số khái niệm:\n"
+            + "\n"
+            + "File pointer: Con trỏ FILE được sử dụng để tham chiếu đến tệp tin\n"
+            + "\n"
+            + "Stream: Luồng dữ liệu giữa chương trình và tệp tin\n"
+            + "\n"
+            + "Modes: Các chế độ mở tệp khác nhau (đọc, ghi, thêm, ...)",
+            "Hàm fopen() được sử dụng để mở một tệp tin.",
+            "Cú pháp:",
+            "Tham số:\n"
+            + "filename: Tên tệp tin cần mở (bao gồm đường dẫn nếu cần)\n"
+            + "\n"
+            + "mode: Chế độ mở tệp tin",
+            "Các chế độ mở tệp phổ biến:\n"
+            + "Mode	Ý nghĩa\n"
+            + "\"r\"	Mở để đọc (file phải tồn tại)\n"
+            + "\"w\"	Mở để ghi (tạo mới hoặc ghi đè)\n"
+            + "\"a\"	Mở để ghi thêm vào cuối (tạo mới nếu chưa tồn tại)\n"
+            + "\"r+\"	Mở để đọc và ghi (file phải tồn tại)\n"
+            + "\"w+\"	Mở để đọc và ghi (tạo mới hoặc ghi đè)\n"
+            + "\"a+\"	Mở để đọc và ghi thêm vào cuối",
+            "Sau khi làm việc xong với tệp tin, cần đóng nó bằng hàm fclose().",
+            "Cú pháp:",
+            "Giá trị trả về:\n"
+            + "0 nếu thành công\n"
+            + "\n"
+            + "EOF nếu có lỗi",
+            "Luôn kiểm tra xem việc mở tệp có thành công không bằng cách kiểm tra giá trị trả về của fopen.",
+            "Dưới đây là một ví dụ đầy đủ về mở, ghi, đọc và đóng tệp tin:",
+            "Chương trình mở file \"example.txt\" ở chế độ ghi (\"w\")\n"
+            + "\n"
+            + "Nếu mở thành công, yêu cầu người dùng nhập dữ liệu\n"
+            + "\n"
+            + "Ghi dữ liệu vào file bằng fprintf\n"
+            + "\n"
+            + "Đóng file sau khi ghi xong\n"
+            + "\n"
+            + "Mở lại file ở chế độ đọc (\"r\")\n"
+            + "\n"
+            + "Đọc và hiển thị nội dung file từng dòng\n"
+            + "\n"
+            + "Đóng file sau khi đọc xong",
+            "Luôn kiểm tra giá trị trả về của fopen\n"
+            + "\n"
+            + "Luôn đóng file sau khi sử dụng xong\n"
+            + "\n"
+            + "Sử dụng chế độ mở file phù hợp với nhu cầu (đọc/ghi/thêm)\n"
+            + "\n"
+            + "Xử lý các trường hợp file không tồn tại hoặc không có quyền truy cập"
+        });
+
+        Content_MAP.put("Đọc và ghi tệp tin", new String[]{
+            "Trong C, tệp tin được xử lý thông qua con trỏ FILE. Có hai loại tệp tin chính:\n"
+            + "\n"
+            + "Tệp tin văn bản (text file): Chứa dữ liệu dạng text, có thể đọc bằng trình soạn thảo\n"
+            + "\n"
+            + "Tệp tin nhị phân (binary file): Chứa dữ liệu dạng nhị phân",
+            "Mở tệp tin",
+            "Các chế độ mở tệp (mode):\n"
+            + "\n"
+            + "\"r\": Mở để đọc (file phải tồn tại)\n"
+            + "\n"
+            + "\"w\": Mở để ghi (tạo mới hoặc ghi đè)\n"
+            + "\n"
+            + "\"a\": Mở để ghi tiếp vào cuối file\n"
+            + "\n"
+            + "\"r+\": Mở để đọc và ghi\n"
+            + "\n"
+            + "\"w+\": Mở để đọc và ghi (tạo mới hoặc ghi đè)\n"
+            + "\n"
+            + "\"a+\": Mở để đọc và ghi tiếp vào cuối file\n"
+            + "\n"
+            + "Thêm \"b\" cho file nhị phân (vd: \"rb\", \"wb\")",
+            "Đóng tệp tin",
+            "Code mẫu:",
+            "Ghi từng ký tự",
+            "Ghi chuỗi ký tự",
+            "Ghi dữ liệu có định dạng",
+            "Code mẫu:",
+            "Đọc từng ký tự",
+            "Đọc chuỗi ký tự",
+            "Đọc dữ liệu có định dạng",
+            "Kiểm tra kết thúc file",
+            "Code mẫu:",
+            "Ghi dữ liệu nhị phân",
+            "Đọc dữ liệu nhị phân",
+            "Code mẫu:",
+            "Di chuyển con trỏ file",
+            "Lấy vị trí hiện tại",
+            "Đưa con trỏ về đầu file",
+            "Code mẫu:",
+            "Kiểm tra lỗi",
+            "Xóa cờ lỗi",
+            "Code mẫu:",
+            "Đổi tên file",
+            "Xóa file",
+            "Code mẫu:"
+        });
+
+        Content_MAP.put("Các hàm xử lý tệp tin", new String[]{
+            "feof()\n"
+            + "Kiểm tra đã đến cuối file chưa.",
+            "Cú pháp:",
+            "ferror()\n"
+            + "Kiểm tra lỗi khi làm việc với file.",
+            "Cú pháp:",
+            "perror()\n"
+            + "Hiển thị thông báo lỗi.",
+            "Cú pháp:",
+            "Code mẫu:",
+            "fseek()\n"
+            + "Di chuyển con trỏ file đến vị trí chỉ định",
+            "Cú pháp:",
+            "Các giá trị whence:\n"
+            + "\n"
+            + "SEEK_SET: Đầu file\n"
+            + "\n"
+            + "SEEK_CUR: Vị trí hiện tại\n"
+            + "\n"
+            + "SEEK_END: Cuối file",
+            "ftell()\n"
+            + "Trả về vị trí hiện tại của con trỏ file.",
+            "Cú pháp:",
+            "rewind()\n"
+            + "Đặt con trỏ file về đầu file.",
+            "Cú pháp:",
+            "Code mẫu:",
+            "fwrite()\n"
+            + "Ghi dữ liệu nhị phân vào file.",
+            "Cú pháp:",
+            "fread()\n"
+            + "Đọc dữ liệu nhị phân từ file.",
+            "Cú pháp:",
+            "Code mẫu:",
+            "remove()\n"
+            + "Xóa một tệp tin.",
+            "Cú pháp:",
+            "rename()\n"
+            + "Đổi tên tệp tin.",
+            "Cú pháp:",
+            "Code mẫu:"
+        });
 
     }
 
@@ -18568,7 +19036,1059 @@ public class NoiDungBaiHoc {
             + "}"
         });
 
-        Code_MAP.put("", new String[]{});
+        Code_MAP.put("Khái niệm về struct", new String[]{
+            "struct ten_struct {\n"
+            + "    kieu_du_lieu member1;\n"
+            + "    kieu_du_lieu member2;\n"
+            + "    // ...\n"
+            + "};",
+            "struct SinhVien {\n"
+            + "    char hoTen[50];\n"
+            + "    int tuoi;\n"
+            + "    float diemTB;\n"
+            + "};",
+            "struct SinhVien sv1, sv2;",
+            "struct SinhVien sv1 = {\"Nguyen Van A\", 20, 8.5};",
+            "strcpy(sv1.hoTen, \"Tran Thi B\");\n"
+            + "sv1.tuoi = 21;\n"
+            + "sv1.diemTB = 7.8;",
+            "struct Diem {\n"
+            + "    float toan;\n"
+            + "    float van;\n"
+            + "};\n"
+            + "\n"
+            + "struct HocSinh {\n"
+            + "    char ten[50];\n"
+            + "    struct Diem diem;\n"
+            + "};",
+            "struct SinhVien *ptr = &sv1;\n"
+            + "printf(\"Ten: %s\\n\", ptr->hoTen);",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "// Khai báo struct\n"
+            + "struct SinhVien {\n"
+            + "    char hoTen[50];\n"
+            + "    int tuoi;\n"
+            + "    float diemTB;\n"
+            + "};\n"
+            + "\n"
+            + "// Struct lồng nhau\n"
+            + "struct Diem {\n"
+            + "    float toan;\n"
+            + "    float van;\n"
+            + "};\n"
+            + "\n"
+            + "struct HocSinh {\n"
+            + "    char ten[50];\n"
+            + "    struct Diem diem;\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Khởi tạo struct\n"
+            + "    struct SinhVien sv1 = {\"Nguyen Van A\", 20, 8.5};\n"
+            + "    \n"
+            + "    // Định nghĩa biến struct\n"
+            + "    struct SinhVien sv2;\n"
+            + "    strcpy(sv2.hoTen, \"Tran Thi B\");\n"
+            + "    sv2.tuoi = 21;\n"
+            + "    sv2.diemTB = 7.8;\n"
+            + "    \n"
+            + "    // Truy cập thành viên struct\n"
+            + "    printf(\"Thong tin sinh vien 1:\\n\");\n"
+            + "    printf(\"Ho ten: %s\\n\", sv1.hoTen);\n"
+            + "    printf(\"Tuoi: %d\\n\", sv1.tuoi);\n"
+            + "    printf(\"Diem TB: %.2f\\n\\n\", sv1.diemTB);\n"
+            + "    \n"
+            + "    // Sử dụng con trỏ struct\n"
+            + "    struct SinhVien *ptr = &sv2;\n"
+            + "    printf(\"Thong tin sinh vien 2:\\n\");\n"
+            + "    printf(\"Ho ten: %s\\n\", ptr->hoTen);\n"
+            + "    printf(\"Tuoi: %d\\n\", ptr->tuoi);\n"
+            + "    printf(\"Diem TB: %.2f\\n\\n\", ptr->diemTB);\n"
+            + "    \n"
+            + "    // Struct lồng nhau\n"
+            + "    struct HocSinh hs1 = {\"Le Van C\", {9.0, 8.5}};\n"
+            + "    printf(\"Thong tin hoc sinh:\\n\");\n"
+            + "    printf(\"Ten: %s\\n\", hs1.ten);\n"
+            + "    printf(\"Diem toan: %.2f\\n\", hs1.diem.toan);\n"
+            + "    printf(\"Diem van: %.2f\\n\", hs1.diem.van);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "Thong tin sinh vien 1:\n"
+            + "Ho ten: Nguyen Van A\n"
+            + "Tuoi: 20\n"
+            + "Diem TB: 8.50\n"
+            + "\n"
+            + "Thong tin sinh vien 2:\n"
+            + "Ho ten: Tran Thi B\n"
+            + "Tuoi: 21\n"
+            + "Diem TB: 7.80\n"
+            + "\n"
+            + "Thong tin hoc sinh:\n"
+            + "Ten: Le Van C\n"
+            + "Diem toan: 9.00\n"
+            + "Diem van: 8.50"
+        });
+
+        Code_MAP.put("Khái niệm về union", new String[]{
+            "union ten_union {\n"
+            + "    kieu_du_lieu thanh_vien1;\n"
+            + "    kieu_du_lieu thanh_vien2;\n"
+            + "    // ...\n"
+            + "};",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "union Data {\n"
+            + "    int i;\n"
+            + "    float f;\n"
+            + "    char str[20];\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    union Data data;\n"
+            + "    \n"
+            + "    printf(\"Kich thuoc cua union Data: %lu bytes\\n\", sizeof(data));\n"
+            + "    \n"
+            + "    data.i = 10;\n"
+            + "    printf(\"data.i = %d\\n\", data.i);\n"
+            + "    \n"
+            + "    data.f = 220.5;\n"
+            + "    printf(\"data.f = %.2f\\n\", data.f);\n"
+            + "    \n"
+            + "    strcpy(data.str, \"Hello Union\");\n"
+            + "    printf(\"data.str = %s\\n\", data.str);\n"
+            + "    \n"
+            + "    // Giá trị của các thành viên khác sau khi gán str\n"
+            + "    printf(\"Sau khi gan str:\\n\");\n"
+            + "    printf(\"data.i = %d (khong con dung)\\n\", data.i);\n"
+            + "    printf(\"data.f = %.2f (khong con dung)\\n\", data.f);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "// Giả lập dữ liệu cảm biến có thể là nhiệt độ hoặc độ ẩm\n"
+            + "union SensorData {\n"
+            + "    int raw_value;\n"
+            + "    float temperature;\n"
+            + "    float humidity;\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    union SensorData sensor;\n"
+            + "    int sensor_type = 0; // 0: nhiệt độ, 1: độ ẩm\n"
+            + "    \n"
+            + "    // Giả lập đọc dữ liệu từ cảm biến\n"
+            + "    sensor.raw_value = 0x42280000; // Giá trị hex tương ứng với 42.0f\n"
+            + "    \n"
+            + "    printf(\"Gia tri thô: %d (0x%08x)\\n\", sensor.raw_value, sensor.raw_value);\n"
+            + "    \n"
+            + "    // Xác định loại cảm biến\n"
+            + "    sensor_type = 0; // Giả sử đây là cảm biến nhiệt độ\n"
+            + "    \n"
+            + "    if (sensor_type == 0) {\n"
+            + "        printf(\"Nhiet do: %.1f°C\\n\", sensor.temperature);\n"
+            + "    } else {\n"
+            + "        printf(\"Do am: %.1f%%\\n\", sensor.humidity);\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "typedef enum {\n"
+            + "    INT,\n"
+            + "    FLOAT,\n"
+            + "    STRING\n"
+            + "} DataType;\n"
+            + "\n"
+            + "struct Variant {\n"
+            + "    DataType type;\n"
+            + "    union {\n"
+            + "        int i;\n"
+            + "        float f;\n"
+            + "        char str[20];\n"
+            + "    } value;\n"
+            + "};\n"
+            + "\n"
+            + "void printVariant(struct Variant var) {\n"
+            + "    switch(var.type) {\n"
+            + "        case INT:\n"
+            + "            printf(\"Integer: %d\\n\", var.value.i);\n"
+            + "            break;\n"
+            + "        case FLOAT:\n"
+            + "            printf(\"Float: %.2f\\n\", var.value.f);\n"
+            + "            break;\n"
+            + "        case STRING:\n"
+            + "            printf(\"String: %s\\n\", var.value.str);\n"
+            + "            break;\n"
+            + "        default:\n"
+            + "            printf(\"Unknown type\\n\");\n"
+            + "    }\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    struct Variant v1, v2, v3;\n"
+            + "    \n"
+            + "    v1.type = INT;\n"
+            + "    v1.value.i = 42;\n"
+            + "    \n"
+            + "    v2.type = FLOAT;\n"
+            + "    v2.value.f = 3.14f;\n"
+            + "    \n"
+            + "    v3.type = STRING;\n"
+            + "    strcpy(v3.value.str, \"Hello\");\n"
+            + "    \n"
+            + "    printVariant(v1);\n"
+            + "    printVariant(v2);\n"
+            + "    printVariant(v3);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Sự khác biệt giữa struct và union", new String[]{
+            "struct ExampleStruct {\n"
+            + "    int a;      // 4 bytes\n"
+            + "    char b;     // 1 byte\n"
+            + "    float c;    // 4 bytes\n"
+            + "}; \n"
+            + "// Tổng kích thước: 4 + 1 + 4 = 9 bytes (thực tế có thể lớn hơn do padding)",
+            "union ExampleUnion {\n"
+            + "    int a;      // 4 bytes\n"
+            + "    char b;     // 1 byte\n"
+            + "    float c;    // 4 bytes\n"
+            + "};\n"
+            + "// Kích thước: 4 bytes (bằng thành viên lớn nhất)",
+            "struct Point {\n"
+            + "    int x;\n"
+            + "    int y;\n"
+            + "};\n"
+            + "\n"
+            + "struct Point p;\n"
+            + "p.x = 10;\n"
+            + "p.y = 20;  // Cả x và y đều giữ giá trị",
+            "union Data {\n"
+            + "    int i;\n"
+            + "    float f;\n"
+            + "    char str[20];\n"
+            + "};\n"
+            + "\n"
+            + "union Data data;\n"
+            + "data.i = 10;        // Gán giá trị cho i\n"
+            + "printf(\"%d\", data.i); // OK\n"
+            + "\n"
+            + "data.f = 220.5;     // Gán giá trị cho f\n"
+            + "printf(\"%f\", data.f); // OK, nhưng data.i bây giờ không hợp lệ",
+            "#include <stdio.h>\n"
+            + "#include <string.h>\n"
+            + "\n"
+            + "// Định nghĩa struct\n"
+            + "struct Employee {\n"
+            + "    int id;\n"
+            + "    char name[50];\n"
+            + "    float salary;\n"
+            + "};\n"
+            + "\n"
+            + "// Định nghĩa union\n"
+            + "union Value {\n"
+            + "    int intValue;\n"
+            + "    float floatValue;\n"
+            + "    char stringValue[20];\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    printf(\"Ví dụ về struct:\\n\");\n"
+            + "    struct Employee emp1;\n"
+            + "    emp1.id = 101;\n"
+            + "    strcpy(emp1.name, \"John Doe\");\n"
+            + "    emp1.salary = 55000.50;\n"
+            + "    \n"
+            + "    printf(\"ID: %d\\n\", emp1.id);\n"
+            + "    printf(\"Name: %s\\n\", emp1.name);\n"
+            + "    printf(\"Salary: %.2f\\n\", emp1.salary);\n"
+            + "    printf(\"Size of struct Employee: %lu bytes\\n\\n\", sizeof(emp1));\n"
+            + "    \n"
+            + "    printf(\"Ví dụ về union:\\n\");\n"
+            + "    union Value val;\n"
+            + "    \n"
+            + "    val.intValue = 100;\n"
+            + "    printf(\"Integer value: %d\\n\", val.intValue);\n"
+            + "    \n"
+            + "    val.floatValue = 3.14;\n"
+            + "    printf(\"Float value: %.2f\\n\", val.floatValue);\n"
+            + "    // Giá trị intValue bây giờ không hợp lệ\n"
+            + "    \n"
+            + "    strcpy(val.stringValue, \"Hello\");\n"
+            + "    printf(\"String value: %s\\n\", val.stringValue);\n"
+            + "    // Cả intValue và floatValue bây giờ đều không hợp lệ\n"
+            + "    \n"
+            + "    printf(\"Size of union Value: %lu bytes\\n\", sizeof(val));\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Danh sách liên kết", new String[]{
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "// Cấu trúc Node\n"
+            + "struct Node {\n"
+            + "    int data;\n"
+            + "    struct Node* next;\n"
+            + "};\n"
+            + "\n"
+            + "// Tạo node mới\n"
+            + "struct Node* createNode(int data) {\n"
+            + "    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));\n"
+            + "    newNode->data = data;\n"
+            + "    newNode->next = NULL;\n"
+            + "    return newNode;\n"
+            + "}\n"
+            + "\n"
+            + "// Thêm node vào đầu danh sách\n"
+            + "void insertAtBeginning(struct Node** head, int data) {\n"
+            + "    struct Node* newNode = createNode(data);\n"
+            + "    newNode->next = *head;\n"
+            + "    *head = newNode;\n"
+            + "}\n"
+            + "\n"
+            + "// Thêm node vào cuối danh sách\n"
+            + "void insertAtEnd(struct Node** head, int data) {\n"
+            + "    struct Node* newNode = createNode(data);\n"
+            + "    \n"
+            + "    if (*head == NULL) {\n"
+            + "        *head = newNode;\n"
+            + "        return;\n"
+            + "    }\n"
+            + "    \n"
+            + "    struct Node* last = *head;\n"
+            + "    while (last->next != NULL) {\n"
+            + "        last = last->next;\n"
+            + "    }\n"
+            + "    \n"
+            + "    last->next = newNode;\n"
+            + "}\n"
+            + "\n"
+            + "// Xóa node có giá trị xác định\n"
+            + "void deleteNode(struct Node** head, int key) {\n"
+            + "    struct Node *temp = *head, *prev;\n"
+            + "    \n"
+            + "    // Nếu node cần xóa là node đầu tiên\n"
+            + "    if (temp != NULL && temp->data == key) {\n"
+            + "        *head = temp->next;\n"
+            + "        free(temp);\n"
+            + "        return;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Tìm node cần xóa\n"
+            + "    while (temp != NULL && temp->data != key) {\n"
+            + "        prev = temp;\n"
+            + "        temp = temp->next;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Nếu không tìm thấy\n"
+            + "    if (temp == NULL) return;\n"
+            + "    \n"
+            + "    // Bỏ liên kết node khỏi danh sách\n"
+            + "    prev->next = temp->next;\n"
+            + "    free(temp);\n"
+            + "}\n"
+            + "\n"
+            + "// Duyệt và in danh sách\n"
+            + "void printList(struct Node* node) {\n"
+            + "    while (node != NULL) {\n"
+            + "        printf(\"%d \", node->data);\n"
+            + "        node = node->next;\n"
+            + "    }\n"
+            + "    printf(\"\\n\");\n"
+            + "}\n"
+            + "\n"
+            + "// Đếm số node trong danh sách\n"
+            + "int countNodes(struct Node* head) {\n"
+            + "    int count = 0;\n"
+            + "    struct Node* current = head;\n"
+            + "    while (current != NULL) {\n"
+            + "        count++;\n"
+            + "        current = current->next;\n"
+            + "    }\n"
+            + "    return count;\n"
+            + "}\n"
+            + "\n"
+            + "// Hàm main để test\n"
+            + "int main() {\n"
+            + "    struct Node* head = NULL;\n"
+            + "    \n"
+            + "    // Thêm các node\n"
+            + "    insertAtEnd(&head, 1);\n"
+            + "    insertAtBeginning(&head, 2);\n"
+            + "    insertAtEnd(&head, 3);\n"
+            + "    insertAtBeginning(&head, 4);\n"
+            + "    \n"
+            + "    printf(\"Danh sách liên kết: \");\n"
+            + "    printList(head);\n"
+            + "    \n"
+            + "    printf(\"Số node: %d\\n\", countNodes(head));\n"
+            + "    \n"
+            + "    // Xóa node\n"
+            + "    deleteNode(&head, 2);\n"
+            + "    printf(\"Danh sách sau khi xóa 2: \");\n"
+            + "    printList(head);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Ngăn xếp", new String[]{
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "#include <stdbool.h>\n"
+            + "\n"
+            + "#define MAX_SIZE 100\n"
+            + "\n"
+            + "// Cấu trúc Stack\n"
+            + "typedef struct {\n"
+            + "    int data[MAX_SIZE];\n"
+            + "    int top;\n"
+            + "} Stack;\n"
+            + "\n"
+            + "// Khởi tạo stack rỗng\n"
+            + "void initialize(Stack *s) {\n"
+            + "    s->top = -1;\n"
+            + "}\n"
+            + "\n"
+            + "// Kiểm tra stack rỗng\n"
+            + "bool isEmpty(Stack *s) {\n"
+            + "    return s->top == -1;\n"
+            + "}\n"
+            + "\n"
+            + "// Kiểm tra stack đầy\n"
+            + "bool isFull(Stack *s) {\n"
+            + "    return s->top == MAX_SIZE - 1;\n"
+            + "}\n"
+            + "\n"
+            + "// Thêm phần tử vào stack (push)\n"
+            + "void push(Stack *s, int value) {\n"
+            + "    if (isFull(s)) {\n"
+            + "        printf(\"Stack day, khong the them phan tu.\\n\");\n"
+            + "        return;\n"
+            + "    }\n"
+            + "    s->data[++s->top] = value;\n"
+            + "}\n"
+            + "\n"
+            + "// Lấy phần tử ra khỏi stack (pop)\n"
+            + "int pop(Stack *s) {\n"
+            + "    if (isEmpty(s)) {\n"
+            + "        printf(\"Stack rong, khong the lay phan tu.\\n\");\n"
+            + "        return -1;\n"
+            + "    }\n"
+            + "    return s->data[s->top--];\n"
+            + "}\n"
+            + "\n"
+            + "// Xem phần tử trên cùng (peek)\n"
+            + "int peek(Stack *s) {\n"
+            + "    if (isEmpty(s)) {\n"
+            + "        printf(\"Stack rong.\\n\");\n"
+            + "        return -1;\n"
+            + "    }\n"
+            + "    return s->data[s->top];\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    Stack s;\n"
+            + "    initialize(&s);\n"
+            + "    \n"
+            + "    push(&s, 10);\n"
+            + "    push(&s, 20);\n"
+            + "    push(&s, 30);\n"
+            + "    \n"
+            + "    printf(\"Phan tu tren cung: %d\\n\", peek(&s));\n"
+            + "    \n"
+            + "    printf(\"Cac phan tu lay ra tu stack: \");\n"
+            + "    while (!isEmpty(&s)) {\n"
+            + "        printf(\"%d \", pop(&s));\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "#include <stdbool.h>\n"
+            + "\n"
+            + "// Cấu trúc Node\n"
+            + "typedef struct Node {\n"
+            + "    int data;\n"
+            + "    struct Node *next;\n"
+            + "} Node;\n"
+            + "\n"
+            + "// Cấu trúc Stack\n"
+            + "typedef struct {\n"
+            + "    Node *top;\n"
+            + "} Stack;\n"
+            + "\n"
+            + "// Khởi tạo stack rỗng\n"
+            + "void initialize(Stack *s) {\n"
+            + "    s->top = NULL;\n"
+            + "}\n"
+            + "\n"
+            + "// Kiểm tra stack rỗng\n"
+            + "bool isEmpty(Stack *s) {\n"
+            + "    return s->top == NULL;\n"
+            + "}\n"
+            + "\n"
+            + "// Thêm phần tử vào stack (push)\n"
+            + "void push(Stack *s, int value) {\n"
+            + "    Node *newNode = (Node*)malloc(sizeof(Node));\n"
+            + "    if (newNode == NULL) {\n"
+            + "        printf(\"Khong du bo nho.\\n\");\n"
+            + "        return;\n"
+            + "    }\n"
+            + "    newNode->data = value;\n"
+            + "    newNode->next = s->top;\n"
+            + "    s->top = newNode;\n"
+            + "}\n"
+            + "\n"
+            + "// Lấy phần tử ra khỏi stack (pop)\n"
+            + "int pop(Stack *s) {\n"
+            + "    if (isEmpty(s)) {\n"
+            + "        printf(\"Stack rong, khong the lay phan tu.\\n\");\n"
+            + "        return -1;\n"
+            + "    }\n"
+            + "    Node *temp = s->top;\n"
+            + "    int value = temp->data;\n"
+            + "    s->top = s->top->next;\n"
+            + "    free(temp);\n"
+            + "    return value;\n"
+            + "}\n"
+            + "\n"
+            + "// Xem phần tử trên cùng (peek)\n"
+            + "int peek(Stack *s) {\n"
+            + "    if (isEmpty(s)) {\n"
+            + "        printf(\"Stack rong.\\n\");\n"
+            + "        return -1;\n"
+            + "    }\n"
+            + "    return s->top->data;\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    Stack s;\n"
+            + "    initialize(&s);\n"
+            + "    \n"
+            + "    push(&s, 100);\n"
+            + "    push(&s, 200);\n"
+            + "    push(&s, 300);\n"
+            + "    \n"
+            + "    printf(\"Phan tu tren cung: %d\\n\", peek(&s));\n"
+            + "    \n"
+            + "    printf(\"Cac phan tu lay ra tu stack: \");\n"
+            + "    while (!isEmpty(&s)) {\n"
+            + "        printf(\"%d \", pop(&s));\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Hàng đợi", new String[]{
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "#include <stdbool.h>\n"
+            + "\n"
+            + "#define MAX_SIZE 5\n"
+            + "\n"
+            + "typedef struct {\n"
+            + "    int items[MAX_SIZE];\n"
+            + "    int front;\n"
+            + "    int rear;\n"
+            + "} Queue;\n"
+            + "\n"
+            + "// 1. Khởi tạo hàng đợi\n"
+            + "void initQueue(Queue *q) {\n"
+            + "    q->front = -1;\n"
+            + "    q->rear = -1;\n"
+            + "}\n"
+            + "\n"
+            + "// 2. Kiểm tra hàng đợi rỗng\n"
+            + "bool isEmpty(Queue *q) {\n"
+            + "    return (q->front == -1 && q->rear == -1);\n"
+            + "}\n"
+            + "\n"
+            + "// 3. Kiểm tra hàng đợi đầy\n"
+            + "bool isFull(Queue *q) {\n"
+            + "    return (q->rear == MAX_SIZE - 1);\n"
+            + "}\n"
+            + "\n"
+            + "// 4. Thêm phần tử vào hàng đợi\n"
+            + "void enqueue(Queue *q, int value) {\n"
+            + "    if (isFull(q)) {\n"
+            + "        printf(\"Hang doi day, khong the them %d\\n\", value);\n"
+            + "        return;\n"
+            + "    }\n"
+            + "    \n"
+            + "    if (isEmpty(q)) {\n"
+            + "        q->front = q->rear = 0;\n"
+            + "    } else {\n"
+            + "        q->rear++;\n"
+            + "    }\n"
+            + "    \n"
+            + "    q->items[q->rear] = value;\n"
+            + "    printf(\"Da them %d vao hang doi\\n\", value);\n"
+            + "}\n"
+            + "\n"
+            + "// 5. Lấy phần tử khỏi hàng đợi\n"
+            + "int dequeue(Queue *q) {\n"
+            + "    if (isEmpty(q)) {\n"
+            + "        printf(\"Hang doi rong, khong the lay phan tu\\n\");\n"
+            + "        return -1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    int removedItem = q->items[q->front];\n"
+            + "    \n"
+            + "    if (q->front == q->rear) {\n"
+            + "        // Nếu chỉ còn 1 phần tử\n"
+            + "        q->front = q->rear = -1;\n"
+            + "    } else {\n"
+            + "        q->front++;\n"
+            + "    }\n"
+            + "    \n"
+            + "    return removedItem;\n"
+            + "}\n"
+            + "\n"
+            + "// 6. Xem phần tử đầu hàng đợi\n"
+            + "int peek(Queue *q) {\n"
+            + "    if (isEmpty(q)) {\n"
+            + "        printf(\"Hang doi rong\\n\");\n"
+            + "        return -1;\n"
+            + "    }\n"
+            + "    return q->items[q->front];\n"
+            + "}\n"
+            + "\n"
+            + "// Hiển thị hàng đợi\n"
+            + "void display(Queue *q) {\n"
+            + "    if (isEmpty(q)) {\n"
+            + "        printf(\"Hang doi rong\\n\");\n"
+            + "        return;\n"
+            + "    }\n"
+            + "    \n"
+            + "    printf(\"Cac phan tu trong hang doi: \");\n"
+            + "    for (int i = q->front; i <= q->rear; i++) {\n"
+            + "        printf(\"%d \", q->items[i]);\n"
+            + "    }\n"
+            + "    printf(\"\\n\");\n"
+            + "}\n"
+            + "\n"
+            + "int main() {\n"
+            + "    Queue q;\n"
+            + "    initQueue(&q);\n"
+            + "    \n"
+            + "    enqueue(&q, 10);\n"
+            + "    enqueue(&q, 20);\n"
+            + "    enqueue(&q, 30);\n"
+            + "    enqueue(&q, 40);\n"
+            + "    enqueue(&q, 50);\n"
+            + "    enqueue(&q, 60); // Thêm vào khi đầy\n"
+            + "    \n"
+            + "    display(&q);\n"
+            + "    \n"
+            + "    printf(\"Phan tu dau hang doi: %d\\n\", peek(&q));\n"
+            + "    \n"
+            + "    printf(\"Da lay ra %d\\n\", dequeue(&q));\n"
+            + "    printf(\"Da lay ra %d\\n\", dequeue(&q));\n"
+            + "    \n"
+            + "    display(&q);\n"
+            + "    \n"
+            + "    enqueue(&q, 70);\n"
+            + "    enqueue(&q, 80);\n"
+            + "    \n"
+            + "    display(&q);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Mở và đóng tệp tin", new String[]{
+            "FILE *fopen(const char *filename, const char *mode);",
+            "int fclose(FILE *stream);",
+            "#include <stdio.h>\n"
+            + "#include <stdlib.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file;\n"
+            + "    char data[100];\n"
+            + "    \n"
+            + "    // 1. Mở file để ghi\n"
+            + "    file = fopen(\"example.txt\", \"w\");\n"
+            + "    \n"
+            + "    // Kiểm tra lỗi khi mở file\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Không thể mở file để ghi!\\n\");\n"
+            + "        exit(1);\n"
+            + "    }\n"
+            + "    \n"
+            + "    printf(\"Nhập dữ liệu để ghi vào file: \");\n"
+            + "    fgets(data, sizeof(data), stdin);\n"
+            + "    \n"
+            + "    // Ghi dữ liệu vào file\n"
+            + "    fprintf(file, \"%s\", data);\n"
+            + "    \n"
+            + "    // Đóng file sau khi ghi\n"
+            + "    fclose(file);\n"
+            + "    \n"
+            + "    // 2. Mở file để đọc\n"
+            + "    file = fopen(\"example.txt\", \"r\");\n"
+            + "    \n"
+            + "    // Kiểm tra lỗi khi mở file\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Không thể mở file để đọc!\\n\");\n"
+            + "        exit(1);\n"
+            + "    }\n"
+            + "    \n"
+            + "    printf(\"\\nNội dung file:\\n\");\n"
+            + "    \n"
+            + "    // Đọc và hiển thị nội dung file\n"
+            + "    while (fgets(data, sizeof(data), file) != NULL) {\n"
+            + "        printf(\"%s\", data);\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Đóng file sau khi đọc\n"
+            + "    fclose(file);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
+
+        Code_MAP.put("Đọc và ghi tệp tin", new String[]{
+            "FILE *fopen(const char *filename, const char *mode);",
+            "int fclose(FILE *stream);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file = fopen(\"example.txt\", \"w\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Không thể mở file\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Thao tác với file ở đây\n"
+            + "    \n"
+            + "    fclose(file);\n"
+            + "    return 0;\n"
+            + "}",
+            "int fputc(int char, FILE *stream);\n"
+            + "int putc(int char, FILE *stream);",
+            "int fputs(const char *str, FILE *stream);",
+            "int fprintf(FILE *stream, const char *format, ...);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file = fopen(\"output.txt\", \"w\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Lỗi mở file\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Ghi từng ký tự\n"
+            + "    fputc('A', file);\n"
+            + "    putc('\\n', file);\n"
+            + "    \n"
+            + "    // Ghi chuỗi\n"
+            + "    fputs(\"Hello, World!\\n\", file);\n"
+            + "    \n"
+            + "    // Ghi có định dạng\n"
+            + "    fprintf(file, \"Gia tri: %d, Pi: %.2f\\n\", 42, 3.14);\n"
+            + "    \n"
+            + "    fclose(file);\n"
+            + "    return 0;\n"
+            + "}",
+            "int fgetc(FILE *stream);\n"
+            + "int getc(FILE *stream);",
+            "char *fgets(char *str, int n, FILE *stream);",
+            "int fscanf(FILE *stream, const char *format, ...);",
+            "int feof(FILE *stream);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file = fopen(\"input.txt\", \"r\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Không thể mở file\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Đọc từng ký tự\n"
+            + "    int ch;\n"
+            + "    printf(\"Đọc từng ký tự:\\n\");\n"
+            + "    while ((ch = fgetc(file)) != EOF) {\n"
+            + "        putchar(ch);\n"
+            + "    }\n"
+            + "    rewind(file); // Đưa con trỏ về đầu file\n"
+            + "    \n"
+            + "    // Đọc từng dòng\n"
+            + "    char buffer[100];\n"
+            + "    printf(\"\\nĐọc từng dòng:\\n\");\n"
+            + "    while (fgets(buffer, sizeof(buffer), file) != NULL) {\n"
+            + "        printf(\"%s\", buffer);\n"
+            + "    }\n"
+            + "    rewind(file);\n"
+            + "    \n"
+            + "    // Đọc có định dạng\n"
+            + "    int num;\n"
+            + "    float fnum;\n"
+            + "    fscanf(file, \"%d %f\", &num, &fnum);\n"
+            + "    printf(\"\\nĐọc có định dạng: %d, %.2f\\n\", num, fnum);\n"
+            + "    \n"
+            + "    fclose(file);\n"
+            + "    return 0;\n"
+            + "}",
+            "size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);",
+            "size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "struct Student {\n"
+            + "    int id;\n"
+            + "    char name[50];\n"
+            + "    float gpa;\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Ghi file nhị phân\n"
+            + "    FILE *file = fopen(\"students.dat\", \"wb\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Lỗi mở file\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    struct Student s1 = {1, \"Nguyen Van A\", 3.5};\n"
+            + "    struct Student s2 = {2, \"Tran Thi B\", 3.8};\n"
+            + "    \n"
+            + "    fwrite(&s1, sizeof(struct Student), 1, file);\n"
+            + "    fwrite(&s2, sizeof(struct Student), 1, file);\n"
+            + "    \n"
+            + "    fclose(file);\n"
+            + "    \n"
+            + "    // Đọc file nhị phân\n"
+            + "    file = fopen(\"students.dat\", \"rb\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Lỗi mở file\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    struct Student s;\n"
+            + "    printf(\"Danh sách sinh viên:\\n\");\n"
+            + "    while (fread(&s, sizeof(struct Student), 1, file) == 1) {\n"
+            + "        printf(\"ID: %d, Ten: %s, GPA: %.2f\\n\", s.id, s.name, s.gpa);\n"
+            + "    }\n"
+            + "    \n"
+            + "    fclose(file);\n"
+            + "    return 0;\n"
+            + "}",
+            "int fseek(FILE *stream, long offset, int whence);",
+            "long ftell(FILE *stream);",
+            "void rewind(FILE *stream);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file = fopen(\"data.txt\", \"w+\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Lỗi mở file\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    fprintf(file, \"Hello World!\");\n"
+            + "    \n"
+            + "    // Di chuyển đến ký tự thứ 6\n"
+            + "    fseek(file, 6, SEEK_SET);\n"
+            + "    \n"
+            + "    char ch = fgetc(file);\n"
+            + "    printf(\"Ký tự tại vị trí 6: %c\\n\", ch); // Output: W\n"
+            + "    \n"
+            + "    // Lấy vị trí hiện tại\n"
+            + "    long pos = ftell(file);\n"
+            + "    printf(\"Vị trí hiện tại: %ld\\n\", pos); // Output: 7\n"
+            + "    \n"
+            + "    // Đưa con trỏ về đầu file\n"
+            + "    rewind(file);\n"
+            + "    pos = ftell(file);\n"
+            + "    printf(\"Vị trí sau rewind: %ld\\n\", pos); // Output: 0\n"
+            + "    \n"
+            + "    fclose(file);\n"
+            + "    return 0;\n"
+            + "}",
+            "int ferror(FILE *stream);",
+            "void clearerr(FILE *stream);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file = fopen(\"nonexistent.txt\", \"r\");\n"
+            + "    if (file == NULL) {\n"
+            + "        perror(\"Lỗi mở file\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Thử đọc từ file đã mở\n"
+            + "    int ch = fgetc(file);\n"
+            + "    if (ferror(file)) {\n"
+            + "        printf(\"Đã xảy ra lỗi khi đọc file\\n\");\n"
+            + "        clearerr(file); // Xóa cờ lỗi\n"
+            + "    }\n"
+            + "    \n"
+            + "    if (feof(file)) {\n"
+            + "        printf(\"Đã đến cuối file\\n\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    fclose(file);\n"
+            + "    return 0;\n"
+            + "}",
+            "int rename(const char *oldname, const char *newname);",
+            "int remove(const char *filename);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Tạo file tạm\n"
+            + "    FILE *file = fopen(\"temp.txt\", \"w\");\n"
+            + "    if (file == NULL) {\n"
+            + "        perror(\"Lỗi tạo file\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    fprintf(file, \"File tạm\");\n"
+            + "    fclose(file);\n"
+            + "    \n"
+            + "    // Đổi tên file\n"
+            + "    if (rename(\"temp.txt\", \"new.txt\") != 0) {\n"
+            + "        perror(\"Lỗi đổi tên\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Xóa file\n"
+            + "    if (remove(\"new.txt\") != 0) {\n"
+            + "        perror(\"Lỗi xóa file\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    printf(\"Thao tác thành công\\n\");\n"
+            + "    return 0;\n"
+            + "}"
+
+        });
+
+        Code_MAP.put("Các hàm xử lý tệp tin", new String[]{
+            "int feof(FILE *stream);",
+            "int ferror(FILE *stream);",
+            "void perror(const char *str);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file = fopen(\"nonexistent.txt\", \"r\");\n"
+            + "    \n"
+            + "    if (file == NULL) {\n"
+            + "        perror(\"Lỗi khi mở file\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    while (!feof(file)) {\n"
+            + "        char c = fgetc(file);\n"
+            + "        if (ferror(file)) {\n"
+            + "            perror(\"Lỗi khi đọc file\");\n"
+            + "            break;\n"
+            + "        }\n"
+            + "        printf(\"%c\", c);\n"
+            + "    }\n"
+            + "    \n"
+            + "    fclose(file);\n"
+            + "    return 0;\n"
+            + "}",
+            "int fseek(FILE *stream, long int offset, int whence);",
+            "long int ftell(FILE *stream);",
+            "void rewind(FILE *stream);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file = fopen(\"example.txt\", \"r+\");\n"
+            + "    \n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Lỗi mở file\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Di chuyển đến cuối file\n"
+            + "    fseek(file, 0, SEEK_END);\n"
+            + "    long size = ftell(file);\n"
+            + "    printf(\"Kích thước file: %ld bytes\\n\", size);\n"
+            + "    \n"
+            + "    // Quay lại đầu file\n"
+            + "    rewind(file);\n"
+            + "    \n"
+            + "    // Di chuyển đến vị trí 10 bytes từ đầu\n"
+            + "    fseek(file, 10, SEEK_SET);\n"
+            + "    \n"
+            + "    fclose(file);\n"
+            + "    return 0;\n"
+            + "}",
+            "size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);",
+            "size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "struct Student {\n"
+            + "    char name[50];\n"
+            + "    int age;\n"
+            + "    float grade;\n"
+            + "};\n"
+            + "\n"
+            + "int main() {\n"
+            + "    FILE *file;\n"
+            + "    struct Student s1 = {\"Nguyen Van A\", 20, 8.5};\n"
+            + "    struct Student s2;\n"
+            + "    \n"
+            + "    // Ghi dữ liệu nhị phân\n"
+            + "    file = fopen(\"student.dat\", \"wb\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Lỗi mở file để ghi\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    fwrite(&s1, sizeof(struct Student), 1, file);\n"
+            + "    fclose(file);\n"
+            + "    \n"
+            + "    // Đọc dữ liệu nhị phân\n"
+            + "    file = fopen(\"student.dat\", \"rb\");\n"
+            + "    if (file == NULL) {\n"
+            + "        printf(\"Lỗi mở file để đọc\\n\");\n"
+            + "        return 1;\n"
+            + "    }\n"
+            + "    fread(&s2, sizeof(struct Student), 1, file);\n"
+            + "    printf(\"Thông tin sinh viên: %s, %d, %.2f\\n\", s2.name, s2.age, s2.grade);\n"
+            + "    fclose(file);\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}",
+            "int remove(const char *filename);",
+            "int rename(const char *old_filename, const char *new_filename);",
+            "#include <stdio.h>\n"
+            + "\n"
+            + "int main() {\n"
+            + "    // Tạo file tạm\n"
+            + "    FILE *file = fopen(\"temp.txt\", \"w\");\n"
+            + "    fclose(file);\n"
+            + "    \n"
+            + "    // Đổi tên file\n"
+            + "    if (rename(\"temp.txt\", \"new.txt\") == 0) {\n"
+            + "        printf(\"Đổi tên file thành công\\n\");\n"
+            + "    } else {\n"
+            + "        perror(\"Lỗi khi đổi tên file\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    // Xóa file\n"
+            + "    if (remove(\"new.txt\") == 0) {\n"
+            + "        printf(\"Xóa file thành công\\n\");\n"
+            + "    } else {\n"
+            + "        perror(\"Lỗi khi xóa file\");\n"
+            + "    }\n"
+            + "    \n"
+            + "    return 0;\n"
+            + "}"
+        });
 
     }
 

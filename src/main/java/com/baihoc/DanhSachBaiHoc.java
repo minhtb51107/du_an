@@ -1072,6 +1072,63 @@ public class DanhSachBaiHoc extends JPanel {
 
             }
         }
+
+        if (content.equals("Kiểu dữ liệu struct và union")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Kiểu dữ liệu struct và union", "Khái niệm về struct");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Kiểu dữ liệu struct và union", "Khái niệm về union");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Kiểu dữ liệu struct và union", "Sự khác biệt giữa struct và union");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Danh sách liên kết, ngăn xếp, hàng đợi")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Danh sách liên kết, ngăn xếp, hàng đợi", "Danh sách liên kết");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Danh sách liên kết, ngăn xếp, hàng đợi", "Ngăn xếp");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Danh sách liên kết, ngăn xếp, hàng đợi", "Hàng đợi");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+
+        if (content.equals("Xử lý tệp tin (File I/O): fopen, fclose, fread, fwrite, fprintf, fscanf")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý tệp tin (File I/O): fopen, fclose, fread, fwrite, fprintf, fscanf", "Mở và đóng tệp tin");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý tệp tin (File I/O): fopen, fclose, fread, fwrite, fprintf, fscanf", "Đọc và ghi tệp tin");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý tệp tin (File I/O): fopen, fclose, fread, fwrite, fprintf, fscanf", "Các hàm xử lý tệp tin");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
     }
 
     private void addDragScrolling() {
