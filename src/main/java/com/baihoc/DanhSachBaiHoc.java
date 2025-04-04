@@ -1129,6 +1129,324 @@ public class DanhSachBaiHoc extends JPanel {
 
             }
         }
+
+        //Java
+        if (content.equals("Giới thiệu về Java, lịch sử phát triển, lý do chọn Java")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", "Java là gì?");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", "Lịch sử phát triển của Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", "Lý do chọn Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", "Ứng dụng của Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Cấu trúc chương trình Java, cài đặt JDK, IDE")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc chương trình Java, cài đặt JDK, IDE", "Cấu trúc cơ bản của một chương trình Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc chương trình Java, cài đặt JDK, IDE", "Cài đặt JDK");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc chương trình Java, cài đặt JDK, IDE", "IDE phổ biến để lập trình Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc chương trình Java, cài đặt JDK, IDE", "Viết và chạy chương trình Java đầu tiên");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu", "Biến và kiểu dữ liệu");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu", "Toán tử trong Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu", "Xuất dữ liệu ra màn hình");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu", "Nhập dữ liệu từ bàn phím");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi", "Cấu trúc điều kiện");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi", "Vòng lặp trong Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi", "Mảng trong Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi", "Xử lý chuỗi trong Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Lập trình đa luồng, xử lý sự kiện")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình đa luồng, xử lý sự kiện", "Lập trình đa luồng là gì?");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình đa luồng, xử lý sự kiện", "Tạo luồng trong Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình đa luồng, xử lý sự kiện", "Đồng bộ hóa luồng");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình đa luồng, xử lý sự kiện", "Xử lý sự kiện trong Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Lập trình mạng (Socket, TCP/IP, UDP)")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình mạng (Socket, TCP/IP, UDP)", "Giới thiệu về lập trình mạng trong Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình mạng (Socket, TCP/IP, UDP)", "Lập trình Socket với TCP/IP");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình mạng (Socket, TCP/IP, UDP)", "Lập trình UDP trong Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("JDBC: Kết nối cơ sở dữ liệu, CRUD")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "JDBC: Kết nối cơ sở dữ liệu, CRUD", "JDBC là gì?");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "JDBC: Kết nối cơ sở dữ liệu, CRUD", "Kết nối MySQL với Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "JDBC: Kết nối cơ sở dữ liệu, CRUD", "Thực hiện CRUD");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Lập trình Web: Servlet, JSP, MVC")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình Web: Servlet, JSP, MVC", "Servlet là gì?");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình Web: Servlet, JSP, MVC", "Tạo Servlet cơ bản");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình Web: Servlet, JSP, MVC", "JSP là gì?");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình Web: Servlet, JSP, MVC", "Mô hình MVC trong Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức", "Lập trình hướng đối tượng là gì?");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức", "Lớp và đối tượng");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức", "Constructor");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức", "Phương thức (Method)");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Đóng gói, kế thừa, đa hình, interface, abstract class")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Đóng gói, kế thừa, đa hình, interface, abstract class", "Đóng gói (Encapsulation)");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Đóng gói, kế thừa, đa hình, interface, abstract class", "Kế thừa (Inheritance)");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Đóng gói, kế thừa, đa hình, interface, abstract class", "Đa hình (Polymorphism)");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Đóng gói, kế thừa, đa hình, interface, abstract class", "Interface và Abstract Class");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Xử lý ngoại lệ, làm việc với tập tin")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý ngoại lệ, làm việc với tập tin", "Xử lý ngoại lệ (Exception Handling)");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý ngoại lệ, làm việc với tập tin", "Đọc và ghi file trong Java");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Collection Framework: ArrayList, LinkedList, HashMap")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Collection Framework: ArrayList, LinkedList, HashMap", "Giới thiệu Collection Framework");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Collection Framework: ArrayList, LinkedList, HashMap", "ArrayList");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Collection Framework: ArrayList, LinkedList, HashMap", "LinkedList");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 3:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Collection Framework: ArrayList, LinkedList, HashMap", "HashMap");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("JavaFX: Xây dựng giao diện đồ họa")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "JavaFX: Xây dựng giao diện đồ họa", "Giới thiệu JavaFX");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "JavaFX: Xây dựng giao diện đồ họa", "Cấu trúc ứng dụng JavaFX");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Spring Boot: REST API, kết nối cơ sở dữ liệu")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Spring Boot: REST API, kết nối cơ sở dữ liệu", "Giới thiệu Spring Boot");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Spring Boot: REST API, kết nối cơ sở dữ liệu", "Tạo REST API với Spring Boot");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Spring Boot: REST API, kết nối cơ sở dữ liệu", "Kết nối cơ sở dữ liệu MySQL với Spring Boot");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Microservices với Spring Cloud")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Microservices với Spring Cloud", "Giới thiệu về Microservices");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Microservices với Spring Cloud", "Xây dựng Microservice với Spring Boot");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Microservices với Spring Cloud", "Kết nối cơ sở dữ liệu MySQL với Spring Boot");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
+        if (content.equals("Bảo mật (Spring Security, OAuth2, JWT), Hiệu năng & Kiểm thử")) {
+            switch (index) {
+                case 0:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Bảo mật (Spring Security, OAuth2, JWT), Hiệu năng & Kiểm thử", "Bảo mật với Spring Security");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 1:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Bảo mật (Spring Security, OAuth2, JWT), Hiệu năng & Kiểm thử", "Xác thực bằng JWT");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                case 2:
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Bảo mật (Spring Security, OAuth2, JWT), Hiệu năng & Kiểm thử", "Kiểm thử với JUnit và Mockito");
+                    mainFrame.updateDanhSachBai(example);
+                    break;
+                default:
+
+            }
+        }
     }
 
     private void addDragScrolling() {

@@ -206,17 +206,20 @@ public class DanhSachBaiHocCon extends JPanel {
         if (content.equals("Java Cơ Bản")) {
             switch (index) {
                 case 0:
-                    example = mainFrame.new TrangBaiHoc(mainFrame, "Java", "");
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", "");
                     mainFrame.updateDanhSachBai(example);
                     break;
                 case 1:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc chương trình Java, cài đặt JDK, IDE", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 2:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 3:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 default:
 
@@ -225,16 +228,20 @@ public class DanhSachBaiHocCon extends JPanel {
         if (content.equals("Java Nâng Cao")) {
             switch (index) {
                 case 0:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình đa luồng, xử lý sự kiện", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 1:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình mạng (Socket, TCP/IP, UDP)", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 2:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "JDBC: Kết nối cơ sở dữ liệu, CRUD", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 3:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình Web: Servlet, JSP, MVC", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 default:
 
@@ -243,16 +250,20 @@ public class DanhSachBaiHocCon extends JPanel {
         if (content.equals("Java Chuyên Nghiệp")) {
             switch (index) {
                 case 0:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 1:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Đóng gói, kế thừa, đa hình, interface, abstract class", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 2:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Xử lý ngoại lệ, làm việc với tập tin", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 3:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Collection Framework: ArrayList, LinkedList, HashMap", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 default:
 
@@ -261,21 +272,25 @@ public class DanhSachBaiHocCon extends JPanel {
         if (content.equals("Java Ứng Dụng Thực Tế")) {
             switch (index) {
                 case 0:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "JavaFX: Xây dựng giao diện đồ họa", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 1:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Spring Boot: REST API, kết nối cơ sở dữ liệu", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 2:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Microservices với Spring Cloud", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 case 3:
-
+                    example = mainFrame.new TrangBaiHoc(mainFrame, "Bảo mật (Spring Security, OAuth2, JWT), Hiệu năng & Kiểm thử", "");
+                    mainFrame.updateDanhSachBai(example);
                     break;
                 default:
-
             }
         }
+        
         if (content.equals("JavaScript Cơ Bản")) {
             switch (index) {
                 case 0:

@@ -318,6 +318,119 @@ public class DanhSachBaiHocData {
             "Bảo mật, tối ưu hiệu năng",
             "kiểm thử với pytest, unittest"
         });
+
+        //Java
+        TITLE_MAP.put("Java", new String[]{
+            "Java là gì?",
+            "Lịch sử phát triển của Java",
+            "Lý do chọn Java",
+            "Ứng dụng của Java"
+        });
+
+        TITLE_MAP.put("Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", new String[]{
+            "Java là gì?",
+            "Lịch sử phát triển của Java",
+            "Lý do chọn Java",
+            "Ứng dụng của Java"
+        });
+
+        TITLE_MAP.put("Cấu trúc chương trình Java, cài đặt JDK, IDE", new String[]{
+            "Cấu trúc cơ bản của một chương trình Java",
+            "Cài đặt JDK",
+            "IDE phổ biến để lập trình Java",
+            "Viết và chạy chương trình Java đầu tiên"
+        });
+
+        TITLE_MAP.put("Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu", new String[]{
+            "Biến và kiểu dữ liệu",
+            "Toán tử trong Java",
+            "Xuất dữ liệu ra màn hình",
+            "Nhập dữ liệu từ bàn phím"
+        });
+
+        TITLE_MAP.put("Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi", new String[]{
+            "Cấu trúc điều kiện",
+            "Vòng lặp trong Java",
+            "Mảng trong Java",
+            "Xử lý chuỗi trong Java"
+        });
+        //nang cao
+        TITLE_MAP.put("Lập trình đa luồng, xử lý sự kiện", new String[]{
+            "Lập trình đa luồng là gì?",
+            "Tạo luồng trong Java",
+            "Đồng bộ hóa luồng",
+            "Xử lý sự kiện trong Java"
+        });
+
+        TITLE_MAP.put("Lập trình mạng (Socket, TCP/IP, UDP)", new String[]{
+            "Giới thiệu về lập trình mạng trong Java",
+            "Lập trình Socket với TCP/IP",
+            "Lập trình UDP trong Java"
+        });
+
+        TITLE_MAP.put("JDBC: Kết nối cơ sở dữ liệu, CRUD", new String[]{
+            "JDBC là gì?",
+            "Kết nối MySQL với Java",
+            "Thực hiện CRUD"
+        });
+
+        TITLE_MAP.put("Lập trình Web: Servlet, JSP, MVC", new String[]{
+            "Servlet là gì?",
+            "Tạo Servlet cơ bản",
+            "JSP là gì?",
+            "Mô hình MVC trong Java"
+        });
+
+        //javachuyennghiep
+        TITLE_MAP.put("Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức", new String[]{
+            "Lập trình hướng đối tượng là gì?",
+            "Lớp và đối tượng",
+            "Constructor",
+            "Phương thức (Method)"
+        });
+
+        TITLE_MAP.put("Đóng gói, kế thừa, đa hình, interface, abstract class", new String[]{
+            "Đóng gói (Encapsulation)",
+            "Kế thừa (Inheritance)",
+            "Đa hình (Polymorphism)",
+            "Interface và Abstract Class"
+        });
+
+        TITLE_MAP.put("Xử lý ngoại lệ, làm việc với tập tin", new String[]{
+            "Xử lý ngoại lệ (Exception Handling)",
+            "Đọc và ghi file trong Java"
+        });
+
+        TITLE_MAP.put("Collection Framework: ArrayList, LinkedList, HashMap", new String[]{
+            "Giới thiệu Collection Framework",
+            "ArrayList",
+            "LinkedList",
+            "HashMap"
+        });
+
+        //java ung dung thuc te
+        TITLE_MAP.put("JavaFX: Xây dựng giao diện đồ họa", new String[]{
+            "Giới thiệu JavaFX",
+            "Cấu trúc ứng dụng JavaFX"
+        });
+
+        TITLE_MAP.put("Spring Boot: REST API, kết nối cơ sở dữ liệu", new String[]{
+            "Giới thiệu Spring Boot",
+            "Tạo REST API với Spring Boot",
+            "Kết nối cơ sở dữ liệu MySQL với Spring Boot"
+        });
+
+        TITLE_MAP.put("Microservices với Spring Cloud", new String[]{
+            "Giới thiệu về Microservices",
+            "Xây dựng Microservice với Spring Boot",
+            "Kết nối cơ sở dữ liệu MySQL với Spring Boot"
+        });
+
+        TITLE_MAP.put("Bảo mật (Spring Security, OAuth2, JWT), Hiệu năng & Kiểm thử", new String[]{
+            "Bảo mật với Spring Security",
+            "Xác thực bằng JWT",
+            "Kiểm thử với JUnit và Mockito"
+        });
     }
 
     // Phương thức lấy tiêu đề theo chỉ số dựa vào ngôn ngữ
@@ -638,6 +751,114 @@ public class DanhSachBaiHocData {
             "Bảo mật, tối ưu hiệu năng trong Python",
             "Kiểm thử giúp đảm bảo chất lượng mã nguồn. Python có hai thư viện phổ biến là unittest (tích hợp sẵn) và pytest (mạnh mẽ hơn)."
         });
+
+        //Java
+        DESCRIPTION_MAP.put("Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", new String[]{
+            "Java là một ngôn ngữ lập trình hướng đối tượng, mạnh mẽ, bảo mật và đa nền tảng.",
+            "Ra đời năm 1995 bởi Sun Microsystems, Java nhanh chóng trở thành một trong những ngôn ngữ phổ biến nhất.",
+            "Java hoạt động trên mô hình 'Viết một lần, chạy mọi nơi' nhờ máy ảo Java (JVM).",
+            "Được sử dụng rộng rãi trong phát triển ứng dụng web, di động, doanh nghiệp và hệ thống nhúng."
+        });
+
+        DESCRIPTION_MAP.put("Cấu trúc chương trình Java, cài đặt JDK, IDE", new String[]{
+            "Chương trình Java bao gồm các thành phần chính như package, class, method và câu lệnh.",
+            "JDK (Java Development Kit) là bộ công cụ cần thiết để biên dịch và chạy mã Java.",
+            "IDE (Integrated Development Environment) như IntelliJ IDEA, Eclipse, NetBeans hỗ trợ lập trình Java hiệu quả.",
+            "Quá trình cài đặt JDK và IDE giúp thiết lập môi trường phát triển Java hoàn chỉnh."
+        });
+
+        DESCRIPTION_MAP.put("Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu", new String[]{
+            "Tìm hiểu về biến, phạm vi của biến và cách khai báo biến trong Java.",
+            "Các kiểu dữ liệu cơ bản (int, float, double, char, boolean) và kiểu dữ liệu tham chiếu.",
+            "Các toán tử số học, quan hệ, logic, gán, bitwise và toán tử điều kiện trong Java.",
+            "Cách nhập dữ liệu từ bàn phím bằng Scanner và xuất dữ liệu ra màn hình bằng System.out."
+        });
+
+        DESCRIPTION_MAP.put("Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi", new String[]{
+            "Sử dụng các cấu trúc điều kiện như if-else, switch-case để điều khiển luồng chương trình.",
+            "Các vòng lặp for, while, do-while để lặp qua dữ liệu và thực hiện các tác vụ lặp lại.",
+            "Làm việc với mảng một chiều, mảng hai chiều và cách duyệt mảng trong Java.",
+            "Xử lý chuỗi với lớp String, các phương thức thao tác chuỗi như nối chuỗi, cắt chuỗi, tìm kiếm ký tự."
+        });
+
+        //java nang cao
+        DESCRIPTION_MAP.put("Lập trình đa luồng, xử lý sự kiện", new String[]{
+            "Lập trình đa luồng (Multithreading) giúp chương trình thực thi nhiều tác vụ đồng thời, nâng cao hiệu suất.",
+            "Java cung cấp Thread và Runnable để tạo và quản lý luồng.",
+            "Đồng bộ hóa (Synchronization) giúp tránh xung đột dữ liệu giữa các luồng.",
+            "Xử lý sự kiện trong Java sử dụng các Listener và Event để tương tác với người dùng."
+        });
+
+        DESCRIPTION_MAP.put("Lập trình mạng (Socket, TCP/IP, UDP)", new String[]{
+            "Lập trình mạng trong Java giúp giao tiếp giữa các thiết bị thông qua các giao thức mạng.",
+            "Socket TCP/IP hỗ trợ kết nối đáng tin cậy giữa client và server.",
+            "Giao thức UDP cung cấp cách truyền dữ liệu nhanh nhưng không đảm bảo độ tin cậy."
+        });
+
+        DESCRIPTION_MAP.put("JDBC: Kết nối cơ sở dữ liệu, CRUD", new String[]{
+            "JDBC (Java Database Connectivity) là API để kết nối và thao tác với cơ sở dữ liệu.",
+            "Java hỗ trợ kết nối với MySQL, PostgreSQL, SQL Server thông qua JDBC Driver.",
+            "CRUD (Create, Read, Update, Delete) là các thao tác chính với dữ liệu trong Java."
+        });
+
+        DESCRIPTION_MAP.put("Lập trình Web: Servlet, JSP, MVC", new String[]{
+            "Servlet là một thành phần trong Java EE giúp xử lý yêu cầu từ client và tạo phản hồi động.",
+            "JSP (JavaServer Pages) cho phép nhúng mã Java vào HTML để tạo trang web linh hoạt.",
+            "Mô hình MVC (Model-View-Controller) giúp tổ chức mã nguồn rõ ràng, dễ bảo trì và mở rộng.",
+            "Servlet và JSP kết hợp giúp xây dựng ứng dụng web mạnh mẽ, tối ưu hiệu suất và bảo mật."
+        });
+
+        //java chuyen nghiep
+        DESCRIPTION_MAP.put("Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức", new String[]{
+            "Lập trình hướng đối tượng (OOP) là mô hình lập trình dựa trên đối tượng và lớp.",
+            "Lớp (Class) là khuôn mẫu để tạo ra các đối tượng, chứa thuộc tính và phương thức.",
+            "Constructor là phương thức đặc biệt được gọi khi tạo đối tượng.",
+            "Phương thức (Method) giúp thao tác và xử lý dữ liệu trong đối tượng."
+        });
+
+        DESCRIPTION_MAP.put("Đóng gói, kế thừa, đa hình, interface, abstract class", new String[]{
+            "Đóng gói (Encapsulation) bảo vệ dữ liệu bằng cách sử dụng phạm vi truy cập.",
+            "Kế thừa (Inheritance) cho phép một lớp kế thừa đặc điểm của lớp khác.",
+            "Đa hình (Polymorphism) giúp một phương thức có thể hoạt động theo nhiều cách khác nhau.",
+            "Interface và Abstract Class giúp xây dựng kiến trúc linh hoạt và mở rộng trong Java."
+        });
+
+        DESCRIPTION_MAP.put("Xử lý ngoại lệ, làm việc với tập tin", new String[]{
+            "Xử lý ngoại lệ (Exception Handling) giúp quản lý lỗi và tránh sự cố khi chạy chương trình.",
+            "Java hỗ trợ xử lý ngoại lệ với try-catch-finally và throw-throws.",
+            "Làm việc với tập tin (File Handling) trong Java sử dụng các lớp như File, FileReader, FileWriter để đọc và ghi dữ liệu."
+        });
+
+        DESCRIPTION_MAP.put("Collection Framework: ArrayList, LinkedList, HashMap", new String[]{
+            "Collection Framework trong Java cung cấp các cấu trúc dữ liệu mạnh mẽ để quản lý dữ liệu.",
+            "ArrayList là danh sách động cho phép truy cập nhanh các phần tử.",
+            "LinkedList cung cấp danh sách liên kết hỗ trợ chèn và xóa phần tử hiệu quả.",
+            "HashMap lưu trữ dữ liệu dưới dạng cặp key-value, giúp tra cứu nhanh chóng."
+        });
+
+        //java ung dung thuc te
+        DESCRIPTION_MAP.put("JavaFX: Xây dựng giao diện đồ họa", new String[]{
+            "JavaFX là framework để phát triển giao diện đồ họa trong Java.",
+            "Cấu trúc ứng dụng JavaFX bao gồm Scene, Stage, Node."
+        });
+
+        DESCRIPTION_MAP.put("Spring Boot: REST API, kết nối cơ sở dữ liệu", new String[]{
+            "Spring Boot giúp phát triển ứng dụng nhanh chóng với cấu hình tối thiểu.",
+            "REST API cho phép giao tiếp giữa các hệ thống.",
+            "Spring Boot hỗ trợ kết nối cơ sở dữ liệu với JPA/Hibernate."
+        });
+
+        DESCRIPTION_MAP.put("Microservices với Spring Cloud", new String[]{
+            "Microservices là kiến trúc chia nhỏ ứng dụng thành nhiều dịch vụ độc lập.",
+            "Spring Boot giúp xây dựng Microservices nhanh chóng.",
+            "CRUD (Create, Read, Update, Delete) trong Microservices."
+        });
+
+        DESCRIPTION_MAP.put("Bảo mật (Spring Security, OAuth2, JWT), Hiệu năng & Kiểm thử", new String[]{
+            "Spring Security cung cấp giải pháp bảo mật cho ứng dụng Java.",
+            "JWT giúp xác thực và phân quyền người dùng.",
+            "JUnit và Mockito hỗ trợ kiểm thử phần mềm."
+        });
     }
 
     // Lấy mô tả của bài học dựa vào ngôn ngữ và chỉ số tiêu đề
@@ -955,6 +1176,111 @@ public class DanhSachBaiHocData {
         });
 
         ICON_MAP.put("Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest.", new String[]{
+            "",
+            ""
+        });
+
+        //Java
+        //co ban
+        ICON_MAP.put("Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", new String[]{
+            "/com/img/java.png",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Cấu trúc chương trình Java, cài đặt JDK, IDE", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        //nang cao
+        ICON_MAP.put("Lập trình đa luồng, xử lý sự kiện", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Lập trình mạng (Socket, TCP/IP, UDP)", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("JDBC: Kết nối cơ sở dữ liệu, CRUD", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Lập trình Web: Servlet, JSP, MVC", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        //chuyennghiep
+        ICON_MAP.put("Lập trình hướng đối tượng: lớp, đối tượng, constructor, phương thức", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Đóng gói, kế thừa, đa hình, interface, abstract class", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Xử lý ngoại lệ, làm việc với tập tin", new String[]{
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Collection Framework: ArrayList, LinkedList, HashMap", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        //ungdung thuc te
+        ICON_MAP.put("JavaFX: Xây dựng giao diện đồ họa", new String[]{
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Spring Boot: REST API, kết nối cơ sở dữ liệu", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Microservices với Spring Cloud", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        ICON_MAP.put("Bảo mật (Spring Security, OAuth2, JWT), Hiệu năng & Kiểm thử", new String[]{
+            "",
             "",
             ""
         });
