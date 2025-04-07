@@ -1,15 +1,18 @@
 package com.service;
 
+import com.dao.KhoaBieuDAO;
 import com.dao.UserDAO;
+import com.entity.NguoiDung;
 import com.ui.MainFrame;
-import static com.text.GoogleOAuthUtil.getAccessToken;
+//import static com.text.GoogleOAuthUtil.getAccessToken;
 import com.text.OAuthCallbackServer;
-import com.utils.GoogleOAuthUtil;
+import static com.utils.GoogleOAuthUtil.getAccessToken;
 import java.awt.Desktop;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 import org.json.JSONObject;
@@ -25,16 +28,16 @@ public class GoogleAuthService {
         Desktop.getDesktop().browse(new URI(authUrl));
 
         // Bước 3: Đợi nhận mã xác thực từ server
-        System.out.println("Đang đợi mã xác thực...");
+        //System.out.println("Đang đợi mã xác thực...");
         while (OAuthCallbackServer.getAuthorizationCode() == null) {
             Thread.sleep(1000);
         }
         String authorizationCode = OAuthCallbackServer.getAuthorizationCode();
-        System.out.println("Mã xác thực tự động nhận: " + authorizationCode);
+        //System.out.println("Mã xác thực tự động nhận: " + authorizationCode);
 
         // Bước 4: Sử dụng mã xác thực để lấy Access Token
         String accessToken = getAccessToken(authorizationCode);
-        System.out.println("Access Token: " + accessToken);
+        //System.out.println("Access Token: " + accessToken);
 
         // Bước 5: Lấy thông tin tài khoản từ Google API và lưu vào CSDL
         getUserInfoAndSaveToDatabase(accessToken);
@@ -45,11 +48,11 @@ public class GoogleAuthService {
 
         // Bước 6: Đóng server OAuth sau khi hoàn tất
         OAuthCallbackServer.stopServer();
-        System.out.println("Server OAuth (cổng 3000) đã được đóng.");
+        //System.out.println("Server OAuth (cổng 3000) đã được đóng.");
     }
 
     // Phương thức lấy thông tin người dùng từ Google và lưu vào cơ sở dữ liệu
-    private static void getUserInfoAndSaveToDatabase(String accessToken) {
+    private static void getUserInfoAndSaveToDatabase(String accessToken) throws SQLException {
         try {
             String urlString = "https://www.googleapis.com/oauth2/v2/userinfo";
             URL url = new URL(urlString);
@@ -73,12 +76,14 @@ public class GoogleAuthService {
                 String email = userInfo.getString("email");
                 String name = userInfo.getString("name");
                 String picture = userInfo.getString("picture");
+                
+                NguoiDung nguoiDung = new NguoiDung();
 
-                System.out.println("Thông tin tài khoản Google:");
-                System.out.println("ID: " + googleId);
-                System.out.println("Email: " + email);
-                System.out.println("Tên: " + name);
-                System.out.println("Ảnh đại diện: " + picture);
+//                System.out.println("Thông tin tài khoản Google:");
+//                System.out.println("ID: " + googleId);
+//                System.out.println("Email: " + email);
+//                System.out.println("Tên: " + name);
+//                System.out.println("Ảnh đại diện: " + picture);
 
                 // Lưu thông tin vào cơ sở dữ liệu
                 UserDAO us = new UserDAO();

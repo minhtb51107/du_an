@@ -1,5 +1,6 @@
 package com.ui;
 
+import com.dao.KhoaBieuDAO;
 import com.dao.UserDAO;
 import com.entity.NguoiDung;
 import com.ui.RegisterFrom;
@@ -27,6 +28,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 import java.util.Properties;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -84,6 +86,8 @@ mainPanel.add(registerPanel, "registerPanel");
             Auth.user = nguoiDung;
             MainFrame lg = new MainFrame("");
             lg.setVisible(true);
+            
+            System.out.println(nguoiDung.getMaNguoiDung());
 
             // Có thể thêm logic chuyển đến màn hình chính hoặc phân quyền ở đây
             if ("Admin".equalsIgnoreCase(nguoiDung.getQuyen())) {
@@ -366,6 +370,7 @@ mainPanel.add(registerPanel, "registerPanel");
         GoogleAuthService authService = new GoogleAuthService();
         try {
             authService.main();
+
             //System.exit(0);
             this.dispose();
         } catch (Exception e) {

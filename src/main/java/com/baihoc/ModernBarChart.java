@@ -88,5 +88,5 @@ public class ModernBarChart extends JPanel {
             dataset.addValue(100 + (int) (Math.random() * 100), "", "Bài: " + i);
         }
         return dataset;
-    }
+    } 
 }

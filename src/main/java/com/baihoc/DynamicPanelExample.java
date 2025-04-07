@@ -1,6 +1,7 @@
 package com.baihoc;
 
 import com.data.NoiDungBaiHoc;
+import com.ui.MainFrame;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
@@ -15,7 +16,16 @@ public class DynamicPanelExample extends JPanel {
     private JPanel parentPanel;
     JPanel panel;
 
+    private java.util.List<JTextArea> textAreasA = new java.util.ArrayList<>();
+    private java.util.List<JTextArea> textAreasB = new java.util.ArrayList<>();
+    private java.util.List<JTextArea> textAreasC = new java.util.ArrayList<>();
+
     public DynamicPanelExample(String content) {
+
+        textAreasA.clear();
+        textAreasB.clear();
+        textAreasC.clear();
+
         setLayout(new BorderLayout());
         setOpaque(false);
         setBackground(null);
@@ -50,7 +60,7 @@ public class DynamicPanelExample extends JPanel {
                 }
             }
         }
-        
+
 //        System.out.println("indexTitle: " + indexTitle);
 //        System.out.println("indexContent: " + indexContent);
 //        System.out.println("indexCode: " + indexCode);
@@ -58,7 +68,6 @@ public class DynamicPanelExample extends JPanel {
 //        System.out.println("dataArrayTitle.length: " + dataArrayTitle.length);
 //        System.out.println("dataArrayContent.length: " + dataArrayContent.length);
 //        System.out.println("dataArrayCode.length: " + dataArrayCode.length);
-
         JScrollPane scrollPane = new JScrollPane(parentPanel);
         scrollPane.setBorder(BorderFactory.createEmptyBorder());
         scrollPane.setOpaque(false);
@@ -87,7 +96,10 @@ public class DynamicPanelExample extends JPanel {
         textArea.setFocusable(false);
         textArea.setText(dataArrayContent[a]);
 
-        panel.add(textArea, BorderLayout.CENTER);
+        panel.add(textArea, BorderLayout.NORTH);
+
+        textAreasA.add(textArea);
+
         return panel;
     }
 
@@ -138,6 +150,8 @@ public class DynamicPanelExample extends JPanel {
 
         newPanel.add(panel, BorderLayout.CENTER);
 
+        textAreasB.add(textArea); // B
+
         return newPanel;
     }
 
@@ -158,7 +172,7 @@ public class DynamicPanelExample extends JPanel {
         textArea.setText(dataArrayTitle[a]);
         textArea.setFont(new Font("Arial", Font.BOLD, 20));
 
-        panel.add(textArea, BorderLayout.CENTER);
+        panel.add(textArea, BorderLayout.NORTH);
         return panel;
     }
 
@@ -171,6 +185,9 @@ public class DynamicPanelExample extends JPanel {
         textArea.setBackground(null);
         textArea.setFont(new Font("Arial", Font.PLAIN, 14));
         textArea.setForeground(Color.BLACK);
+
+        textAreasC.add(textArea); // C
+
         return textArea;
     }
 
@@ -183,7 +200,6 @@ public class DynamicPanelExample extends JPanel {
 //        textArea.setForeground(Color.BLACK);
 //        return textArea;
 //    }
-    
     private JTextArea createAutoResizeTextArea(Color backgroundColor) {
         JTextArea textArea = new JTextArea(1, 0);
         textArea.setLineWrap(true);
@@ -222,6 +238,35 @@ public class DynamicPanelExample extends JPanel {
         textArea.revalidate();
         parentPanel.revalidate();
     }
+
+    public void setFontSizes(int sizeA, int sizeB, int sizeC) {
+        for (JTextArea textArea : textAreasA) {
+            textArea.setFont(textArea.getFont().deriveFont((float) sizeA));
+        }
+        for (JTextArea textArea : textAreasB) {
+            textArea.setFont(textArea.getFont().deriveFont((float) sizeB));
+        }
+        for (JTextArea textArea : textAreasC) {
+            textArea.setFont(textArea.getFont().deriveFont((float) sizeC));
+        }
+    }
+    
+    public void setFontSizes(int size) {
+    Font newFont = new Font("Arial", Font.PLAIN, size);
+    for (JTextArea textArea : textAreasA) {
+        textArea.setFont(newFont);
+    }
+    for (JTextArea textArea : textAreasB) {
+        textArea.setFont(newFont);
+    }
+    for (JTextArea textArea : textAreasC) {
+        textArea.setFont(newFont);
+    }
+    // Đừng quên cập nhật lại giao diện
+    revalidate();
+    repaint();
+}
+
 
 //    public static void main(String[] args) {
 //        SwingUtilities.invokeLater(() -> {

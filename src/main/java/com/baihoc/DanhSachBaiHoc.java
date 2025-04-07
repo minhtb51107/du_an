@@ -101,7 +101,7 @@ public class DanhSachBaiHoc extends JPanel {
 
         RoundedPanel panel = new RoundedPanel(30);
         panel.setLayout(new GridBagLayout());
-        panel.setBackground(new Color(119, 200, 191, 255));
+        panel.setBackground(new Color(255, 255, 255, 255));
         panel.setPreferredSize(new Dimension(350, 70));
         panel.setBorder(null);
 

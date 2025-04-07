@@ -103,7 +103,7 @@ public class DanhSachBaiHocCon extends JPanel {
         String[] titles = DanhSachBaiHocConData.getTitles(content);
 
         JPanel panel = new JPanel(new GridBagLayout());
-        panel.setBackground(new Color(255, 99, 132));
+        panel.setBackground(new Color(255, 255, 255));
         panel.setPreferredSize(new Dimension(350, 70));
         panel.setBorder(null);
 

@@ -24224,7 +24224,6 @@ public class NoiDungBaiHoc {
             + "        assertEquals(\"Không tìm thấy\", userService.getUserNameById(2L));\n"
             + "    }\n"
             + "}",});
-
     }
 
     // Lấy mô tả của bài học dựa vào ngôn ngữ và chỉ số tiêu đề

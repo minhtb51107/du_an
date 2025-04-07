@@ -81,7 +81,7 @@ public class DanhSachBaiHocChinh extends JPanel {
             childPanel.setBorder(null);
             childPanel.setPreferredSize(new Dimension(300, 200));
             childPanel.setMaximumSize(new Dimension(300, 200));
-            childPanel.setBackground(new Color(169, 228, 232, 255));
+            childPanel.setBackground(new Color(162,166,253,255));
             childPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
             JPanel panel1 = new JPanel(new GridBagLayout());

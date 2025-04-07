@@ -6,6 +6,7 @@ package com.lesson.content.java;
 
 import com.data.DanhSachBaiHocChinhData;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
@@ -33,6 +34,8 @@ class MucConCuaBieuDo extends JPanel {
         setLayout(new GridBagLayout());
         setOpaque(false);
         setBorder(null);
+        setPreferredSize(new Dimension(300, 150));
+        setMinimumSize(new Dimension(300, 150));
 
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.BOTH;

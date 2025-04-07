@@ -63,7 +63,7 @@ public class KhungGioiThieuNgonNgu extends JPanel {
         gbc3.weighty = 0.2;
 
         JLabel tieude = new JLabel(DataPanelA1.getTitle(index));
-        tieude.setForeground(Color.WHITE); // Màu chữ
+        tieude.setForeground(Color.BLACK); // Màu chữ
         tieude.setFont(new Font("Arial", Font.BOLD, 30)); // Cài đặt font chữ
         tieude.setBorder(BorderFactory.createEmptyBorder(0, 20, 0, 20));
         panel3.add(tieude, gbc3);
@@ -71,9 +71,9 @@ public class KhungGioiThieuNgonNgu extends JPanel {
         // Tạo JTextArea với nền trong suốt
         JTextArea textArea1 = new JTextArea(DataPanelA1.getDescription(index));
         textArea1.setBackground(new Color(0, 0, 0, 0)); // Loại bỏ nền JTextArea
-        textArea1.setPreferredSize(new Dimension(200, 100)); // Chiều rộng 200px, chiều cao 100px
+        textArea1.setPreferredSize(new Dimension(200, 300)); // Chiều rộng 200px, chiều cao 100px
         textArea1.setBorder(null); // Loại bỏ viền
-        textArea1.setForeground(Color.WHITE); // Màu chữ
+        textArea1.setForeground(Color.BLACK); // Màu chữ
         textArea1.setFont(new Font("Arial", Font.PLAIN, 14)); // Cài đặt font chữ
         textArea1.setEditable(false); // Không cho chỉnh sửa
         textArea1.setFocusable(false); // Loại bỏ focus border
@@ -102,7 +102,7 @@ public class KhungGioiThieuNgonNgu extends JPanel {
         RoundedPanel panel4 = new RoundedPanel(30);
         panel4.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
         panel2.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        panel4.setBackground(new Color(222, 211, 96, 255));
+        panel4.setBackground(new Color(251,214,138,255));
         panel4.setLayout(new BorderLayout());
         panel4.add(new HopDangKyKhoaHoc(index), BorderLayout.CENTER);
 
@@ -111,7 +111,7 @@ public class KhungGioiThieuNgonNgu extends JPanel {
         JTextArea textArea2 = new JTextArea(DataPanelA1.getIntroduce(index));
         textArea2.setBackground(new Color(0, 0, 0, 0)); // Loại bỏ nền JTextArea
         textArea2.setBorder(null); // Loại bỏ viền
-        textArea2.setForeground(Color.WHITE); // Màu chữ
+        textArea2.setForeground(Color.BLACK); // Màu chữ
         textArea2.setFont(new Font("Arial", Font.PLAIN, 16)); // Cài đặt font chữ
         textArea2.setEditable(false); // Không cho chỉnh sửa
         textArea2.setFocusable(false); // Loại bỏ focus border
@@ -122,6 +122,13 @@ public class KhungGioiThieuNgonNgu extends JPanel {
         textArea2.setRequestFocusEnabled(false);
         textArea2.setOpaque(false);
         textArea2.setHighlighter(null); // Ngăn chặn bôi xanh
+        
+        JPanel Panel = new JPanel(new BorderLayout());
+        Panel.add(textArea2, BorderLayout.NORTH);
+        Panel.setOpaque(false);
+        Panel.setPreferredSize(new Dimension(200, 0));
+        Panel.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        
 
         // Thêm panel 2 vào hàng 1 của panel 1
         gbc1.gridx = 0;
@@ -133,7 +140,7 @@ public class KhungGioiThieuNgonNgu extends JPanel {
         // Thêm một component vào hàng 2 của panel 1
         gbc1.gridy = 1;
         gbc1.weighty = 0.3;
-        panel1.add(textArea2, gbc1);
+        panel1.add(Panel, gbc1);
 
         // Thêm panel 1 vào NestedPanelExample
         add(panel1, BorderLayout.CENTER);

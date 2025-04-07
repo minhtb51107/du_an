@@ -31,6 +31,8 @@ public class TrangChinh extends JPanel {
     JPanel bottomSubPanel = new JPanel();
 
     MainFrame mainFrame;
+    
+    private JLabel title;
 
     public TrangChinh(int index, String selectedLanguage, String content, MainFrame mainFrame) {
         this.mainFrame = mainFrame;
@@ -55,11 +57,11 @@ public class TrangChinh extends JPanel {
         outerGbc.weighty = 0.02; // Chiều cao nhỏ
         outerPanel.add(topPanel, outerGbc);
 
-        JLabel title = new JLabel("Lessons");
+        title = new JLabel("Lessons");
         title.setForeground(new Color(37, 36, 41)); // Màu chữ trắng
         title.setFont(new Font("Arial", Font.BOLD, 45)); // Font chữ Arial đậm, kích thước 20
         title.setAlignmentX(Component.CENTER_ALIGNMENT); // Căn giữa logo trong sidebar
-        title.setBorder(BorderFactory.createEmptyBorder(0, 20, 0, 0)); // Tạo khoảng cách dưới logo
+        title.setBorder(BorderFactory.createEmptyBorder(10, 20, 0, 10)); // Tạo khoảng cách dưới logo
 
         topPanel.add(title, BorderLayout.WEST);
 
@@ -79,7 +81,7 @@ public class TrangChinh extends JPanel {
 
         // Tạo panel A1 với màu cam
         RoundedPanel panelA1 = new RoundedPanel(50);
-        panelA1.setBackground(new Color(36, 37, 41, 255)); // Màu nền sidebar
+        panelA1.setBackground(new Color(241,239,227,255)); // Màu nền sidebar
         panelA1.setLayout(new BorderLayout()); // Đặt layout cho panelA1 để chứa NestedPanelExample
 
         // Thêm NestedPanelExample vào trong RoundedPanel
@@ -90,7 +92,7 @@ public class TrangChinh extends JPanel {
 
         // Tạo panel A2 với màu hồng
         RoundedPanel panelA2 = new RoundedPanel(50);
-        panelA2.setBackground(new Color(36, 37, 41, 255));
+        panelA2.setBackground(new Color(0, 0, 0, 0));
         panelA2.setLayout(new BorderLayout());
         panelA2.setPreferredSize(new Dimension(200, 20)); // Kích thước cố định của panelA2
 
@@ -135,7 +137,7 @@ public class TrangChinh extends JPanel {
 
         // Tạo panel B với màu xám nhạt
         RoundedPanel panelB = new RoundedPanel(50);
-        panelB.setBackground(new Color(36, 37, 41, 255)); // Màu nền sidebar
+        panelB.setBackground(new Color(43, 43, 41, 255)); // Màu nền sidebar
         panelB.setLayout(new BorderLayout());
         panelB.add(innerPanel, BorderLayout.CENTER);
 
@@ -174,6 +176,10 @@ public class TrangChinh extends JPanel {
 
     }
 
+    public void setTitleColor(Color color) {
+            title.setForeground(color);
+    }
+
     public class PanelAA1 extends JPanel {
 
         public PanelAA1(String selectedLanguage) {
@@ -186,8 +192,8 @@ public class TrangChinh extends JPanel {
             gbc.gridy = 0;
             gbc.fill = GridBagConstraints.BOTH;
             gbc.weightx = 1;
-            gbc.weighty = 1;
-            gbc.insets = new Insets(10, 10, 10, 10); // Thêm padding giữa tiêu đề và panelA2
+            gbc.weighty = 0.9;
+            gbc.insets = new Insets(0, 10, 0, 10); // Thêm padding giữa tiêu đề và panelA2
             add(new BieuDoDonut(), gbc);
 
             gbc.gridy = 1;

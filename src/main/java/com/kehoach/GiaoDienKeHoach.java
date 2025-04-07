@@ -72,7 +72,7 @@ public class GiaoDienKeHoach extends JPanel {
 
     public GiaoDienKeHoach(JScrollPane scrollPane) {
 //        System.out.println("getMaNguoiDung " + nguoiDung.getMaNguoiDung());
-        System.out.println("v1 " + v);
+//        System.out.println("v1 " + v);
 
         this.scrollPane = scrollPane;
         setLayout(null);

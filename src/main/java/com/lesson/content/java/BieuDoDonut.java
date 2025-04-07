@@ -16,6 +16,7 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PiePlot;
+
 import org.jfree.data.general.DefaultPieDataset;
 
 /**
@@ -29,8 +30,9 @@ public class BieuDoDonut extends JPanel {
         setBorder(null);
         setOpaque(false);
         setBackground(null);
-        setPreferredSize(new Dimension(500, 500));
-        setMinimumSize(new Dimension(300, 300));
+//        setPreferredSize(new Dimension(600, 600));
+//        setMinimumSize(new Dimension(600, 600));
+        setBorder(BorderFactory.createEmptyBorder(0,0,10,0));
 
         add(createDonutChartPanel(), BorderLayout.CENTER);
     }
@@ -63,7 +65,7 @@ public class BieuDoDonut extends JPanel {
         plot.setSectionPaint(4, new Color(75, 192, 192));
         plot.setSectionPaint(5, new Color(153, 102, 255));
         plot.setSectionPaint(6, new Color(255, 159, 64));
-        plot.setInteriorGap(0);
+        plot.setInteriorGap(0.1); // Giảm khoảng trống, biểu đồ to hơn
         plot.setShadowPaint(null);
 
         if (dataset.getKeys().contains("Chưa hoàn thành")) {
@@ -82,8 +84,8 @@ public class BieuDoDonut extends JPanel {
         chartPanel.setBorder(BorderFactory.createEmptyBorder());
         chartPanel.setBackground(null);
         chartPanel.setBorder(null);
-        chartPanel.setPreferredSize(new Dimension(600, 600)); // Kích thước lớn hơn
-        chartPanel.setMinimumSize(new Dimension(600, 600));
+        chartPanel.setPreferredSize(new Dimension(700, 700)); // Kích thước lớn hơn
+        chartPanel.setMinimumSize(new Dimension(700, 700));
 
         JLabel lblCenter = new JLabel(String.format("%.2f%%", totalCompleted), SwingConstants.CENTER);
         lblCenter.setFont(new Font("Arial", Font.BOLD, 20));
