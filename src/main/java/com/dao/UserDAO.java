@@ -70,7 +70,7 @@ public class UserDAO /*extends DAO<NguoiDung, String>*/ {
                             KhoaBieuDAO kb = new KhoaBieuDAO();
                             //System.out.println("a " + a);
                             if (a != null) {
-                                kb.insertKeHoach(a);
+                                //kb.insertKeHoach(a);
                             }
                             nguoiDung.setMaNguoiDung(a);
                             //System.out.println("getMaNguoiDung " + nguoiDung.getMaNguoiDung());

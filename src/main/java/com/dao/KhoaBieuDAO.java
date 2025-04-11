@@ -145,6 +145,53 @@ public class KhoaBieuDAO extends DAO<KhoaBieu, Integer> {
         XJdbc.update(sql, ghiChu, ngay, id_kehoach);
     }
 
+     /**
+     * Xóa tất cả bản ghi trong bảng NGAY theo ID_KEHOACH
+     */
+    public void deleteNgayByKeHoach(int idKeHoach) {
+        String sql = "DELETE FROM NGAY WHERE ID_KEHOACH = ?";
+        XJdbc.update(sql, idKeHoach);
+    }
+
+    /**
+     * Xóa tất cả bản ghi trong bảng TUAN theo ID_KEHOACH
+     */
+    public void deleteTuanByKeHoach(int idKeHoach) {
+        String sql = "DELETE FROM TUAN WHERE ID_KEHOACH = ?";
+        XJdbc.update(sql, idKeHoach);
+    }
+
+    /**
+     * Xóa tất cả bản ghi trong bảng KHOABIEU theo ID_KEHOACH
+     */
+    public void deleteKhoaBieuByKeHoach(int idKeHoach) {
+        String sql = "DELETE FROM KHOABIEU WHERE ID_KEHOACH = ?";
+        XJdbc.update(sql, idKeHoach);
+    }
+
+    /**
+     * Xóa toàn bộ dữ liệu liên quan đến một kế hoạch (kehoach)
+     */
+    public void deleteAllByKeHoach(int idKeHoach) {
+        // Nếu XJdbc hỗ trợ transaction, bạn nên bật transaction ở đây
+        // ví dụ: Connection conn = XJdbc.getConnection();
+        // conn.setAutoCommit(false);
+        try {
+            // 1. Xóa bảng con trước
+            deleteNgayByKeHoach(idKeHoach);
+            deleteTuanByKeHoach(idKeHoach);
+            // 2. Xóa bảng cha cuối cùng
+            deleteKhoaBieuByKeHoach(idKeHoach);
+            // nếu dùng transaction: conn.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            // nếu dùng transaction: conn.rollback();
+            throw new RuntimeException(e);
+        } finally {
+            // nếu dùng transaction: conn.setAutoCommit(true);
+        }
+    }
+    
     public int getMaxThang() {
         String sql = "SELECT MAX(THANG) FROM KHOABIEU";
         try {

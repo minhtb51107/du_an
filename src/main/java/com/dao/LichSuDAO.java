@@ -51,7 +51,7 @@ public class LichSuDAO {
         return null;
     }
         
-                    // Phương thức để xóa lịch sử đăng nhập từ bảng LICHSUDANGNHAP
+            // Phương thức để xóa lịch sử đăng nhập từ bảng LICHSUDANGNHAP
     public void deleteLoginHistory(String maNguoiDung) {
         // Câu lệnh SQL để xóa dữ liệu
         String sql = "DELETE FROM LICHSUDANGNHAP WHERE MaNguoiDung = ?";

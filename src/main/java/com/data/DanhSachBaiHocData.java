@@ -1,3 +1,4 @@
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -16,6 +17,480 @@ public class DanhSachBaiHocData {
     private static final Map<String, String[]> TITLE_MAP = new HashMap<>();
 
     static {
+        //HTML Cơ Bản
+        TITLE_MAP.put("HTML là gì?", new String[]{
+            "Giới Thiệu HTML",
+            "Lịch Sử Phát Triển Của HTML",
+            "Cách HTML Hoạt Động"
+        });
+        TITLE_MAP.put("CẤU TRÚC CƠ BẢN CỦA HTML", new String[]{
+            "Các Phần Của Tài Liệu HTML",
+            "Mô Tả Chi Tiết Các Thẻ Quan Trọng"
+        });
+        TITLE_MAP.put("Cách viết file HTML và hiển thị trên trình duyệt", new String[]{
+            "Tạo File HTML",
+            "Chạy File HTML Trên Trình Duyệt",
+            "Kiểm Tra Và Chỉnh Sửa HTML Bằng Developer Tools"
+        });
+        TITLE_MAP.put("Tiêu đề (<h1> đến <h6>)", new String[]{
+            "Ý Nghĩa Của Các Mức Tiêu Đề",
+            "Lỗi Thường Gặp"
+        });
+        TITLE_MAP.put("Đoạn văn (<p>), Xuống dòng (<br>), Đường ngang (<hr>)", new String[]{
+            "Đoạn Văn (<p>)",
+            "Xuống Dòng (<br>)",
+            "Đường Ngang (<hr>)"
+        });
+        TITLE_MAP.put("Định dạng văn bản (<b>, <i>, <u>, <strong>, <em>, <mark>, <small>)", new String[]{
+            "Các Thẻ Định Dạng Phổ Biến",
+            "Ví Dụ Về Định Dạng Văn Bản"
+        });
+        TITLE_MAP.put("Danh sách: có thứ tự (<ol>), không thứ tự (<ul>), mô tả (<dl>)", new String[]{
+            "Danh sách là gì?",
+            "Danh Sách Có Thứ Tự (<ol>)",
+            "Danh Sách Không Thứ Tự (<ul>)",
+            "Danh Sách Mô Tả (<dl>)"
+        });
+        TITLE_MAP.put("Chèn ảnh (<img>), video (<video>), âm thanh (<audio>)", new String[]{
+            "Chèn Ảnh (<img>)",
+            "Chèn Video (<video>)",
+            "Chèn Âm Thanh (<audio>)"
+        });
+        TITLE_MAP.put("Tạo liên kết (<a>) và điều hướng trang web", new String[]{
+            "Cấu Trúc Cơ Bản Của Liên Kết",
+            "Liên Kết Tới Các Đoạn Văn Trong Cùng Một Trang",
+            "Các Thuộc Tính Thường Dùng Của Thẻ <a>",
+            "Liên Kết Hình Ảnh"
+        });
+        TITLE_MAP.put("Nhúng iframe (<iframe>)", new String[]{
+            "Cấu Trúc Thẻ <iframe>",
+            "Tại Sao Sử Dụng Iframe?",
+            "Lưu Ý Khi Sử Dụng Iframe"
+        });
+        TITLE_MAP.put("Bảng (<table>, <tr>, <td>, <th>)", new String[]{
+            "Cấu Trúc Cơ Bản Của Bảng",
+            "Các Thuộc Tính Của Bảng",
+            "Bảng Nâng Cao"
+        });
+        TITLE_MAP.put("Biểu mẫu (<form>, <input>, <textarea>, <select>)", new String[]{
+            "Cấu Trúc Cơ Bản Của Biểu Mẫu",
+            "Các Loại Trường Nhập",
+            "Các Thuộc Tính Khác Của Thẻ <form>"
+        });
+
+        //HTML Nâng Cao
+        TITLE_MAP.put("Các thẻ Semantic (<header>, <footer>, <nav>, <article>, <section>)", new String[]{
+            "HTML semantic là gì?",
+            "<header>",
+            "<footer>",
+            "<nav>",
+            "<article>",
+            "<section>"
+        });
+        TITLE_MAP.put("Ứng dụng Semantic HTML để tối ưu SEO", new String[]{
+            "Semantic HTML là gì",
+            "Giúp công cụ tìm kiếm hiểu rõ cấu trúc và nội dung trang",
+            "Tăng khả năng lập chỉ mục chính xác và thân thiện với người dùng",
+            "Hỗ trợ tối ưu hóa cho tìm kiếm bằng giọng nói và thiết bị di động"
+        });
+        TITLE_MAP.put("Sử dụng <meta> để tối ưu công cụ tìm kiếm", new String[]{
+            "Các thẻ <meta> quan trọng trong HTML",
+            "Meta Title và Meta Description",
+            "Meta Robots và Meta Viewport",
+            "Meta Charset"
+        });
+        TITLE_MAP.put("Open Graph, Twitter Card", new String[]{
+            "Giới thiệu Open Graph và Twitter Card",
+            "Open Graph",
+            "Twitter Card"
+        });
+        TITLE_MAP.put("Favicon, Sitemap, robots.txt", new String[]{
+            "Favicon",
+            "Sitemap",
+            "robots.txt"
+        });
+        TITLE_MAP.put("Local Storage & Session Storage", new String[]{
+            "Local Storage",
+            "Session Storage"
+        });
+        TITLE_MAP.put("Geolocation API (Xác định vị trí người dùng)", new String[]{
+            "Geolocation API là",
+            "Tính năng của Geolocation API",
+            "Lợi ích SEO gián tiếp"
+        });
+        TITLE_MAP.put("Drag & Drop API", new String[]{
+            "Drag & Drop API là gì",
+            "Tính năng của Drag & Drop API",
+            "Lợi ích đối với SEO"
+        });
+
+        //CSS Cơ Bản
+        TITLE_MAP.put("Inline CSS, Internal CSS, External CSS", new String[]{
+            "Inline CSS",
+            "Internal CSS",
+            "External CSS"
+        });
+        TITLE_MAP.put("Cú pháp CSS cơ bản", new String[]{
+            "CSS sử dụng cú pháp gì?",
+            "Cấu trúc cơ bản của một quy tắc CSS",
+            "Các kiểu Selector trong CSS"
+        });
+        TITLE_MAP.put("Selectors cơ bản: class, id, tag, attribute", new String[]{
+            "Tag Selector",
+            "Class Selector",
+            "ID Selector",
+            "Attribute Selector"
+        });
+        TITLE_MAP.put("Đơn vị đo lường trong CSS: px, %, em, rem, vw, vh", new String[]{
+            "Đơn vị tuyệt đối",
+            "Đơn vị tương đối"
+        });
+        TITLE_MAP.put("Margin, Border, Padding, Content – CSS Box Model", new String[]{
+            "Cấu trúc Box Model"
+        });
+        TITLE_MAP.put("Các thuộc tính width, height, max-width, min-height", new String[]{
+            "Width và Height",
+            "max-width và min-width"
+        });
+        TITLE_MAP.put("Positioning (static, relative, absolute, fixed, sticky)", new String[]{
+            "Các loại position chính",
+            "Sự khác biệt giữa các kiểu positioning",
+            "Ứng dụng thực tế của từng loại"
+        });
+        TITLE_MAP.put("Màu HEX, RGB, HSL", new String[]{
+            "Hệ màu HEX",
+            "Hệ màu RGB",
+            "Hệ màu HSL"
+        });
+        TITLE_MAP.put("Font-family, font-size, font-weight", new String[]{
+            "Font-family",
+            "Font-size",
+            "Font-weight"
+        });
+        TITLE_MAP.put("Line-height, Letter-spacing", new String[]{
+            "Line-height",
+            "Letter-spacing",
+            "Ứng dụng thực tế"
+        });
+        TITLE_MAP.put("display: block, inline, inline-block, flex, grid", new String[]{
+            "Display: block",
+            "Display: inline",
+            "Display: inline-block",
+            "Display: flex",
+            "Display: grid"
+        });
+        TITLE_MAP.put("Viewport meta tag", new String[]{
+            "Viewport là gì",
+            "Cú pháp chuẩn của thẻ Viewport",
+            "Các thuộc tính quan trọng",
+            "Vai trò của Viewport meta tag"
+        });
+
+        //CSS Nâng Cao
+        TITLE_MAP.put("display: flex", new String[]{
+            "display: flex là gì?",
+            "Các thuộc tính chính của Flexbox"
+        });
+        TITLE_MAP.put("Căn chỉnh bằng justify-content, align-items, align-self", new String[]{
+            "justify-content",
+            "align-items",
+            "align-self"
+        });
+        TITLE_MAP.put("flex-wrap, flex-direction", new String[]{
+            "flex-wrap",
+            "flex-direction"
+        });
+        TITLE_MAP.put("display: grid", new String[]{
+            "display: grid là gì?",
+            "Các thuộc tính chính của CSS Grid"
+        });
+        TITLE_MAP.put("grid-template-columns, grid-template-rows, gap, align-items, justify-content", new String[]{
+            "Khái Niệm về CSS Grid Layout",
+            "Các Thuộc Tính Chính trong CSS Grid",
+            "Chi Tiết về Các Thuộc Tính"
+        });
+        TITLE_MAP.put("Media Queries (@media)", new String[]{
+            "Khái Niệm",
+            "Cách Sử Dụng Media Queries",
+            "Tại Sao Media Queries Quan Trọng?"
+        });
+        TITLE_MAP.put("Mobile-first vs. Desktop-first", new String[]{
+            "Mobile-first",
+            "Desktop-first",
+            "So Sánh Mobile-first và Desktop-first"
+        });
+        TITLE_MAP.put("CSS Container Queries", new String[]{
+            "CSS Container Queries"
+        });
+        TITLE_MAP.put("transition, animation, keyframes", new String[]{
+            "Transition",
+            "Animation",
+            "Keyframes"
+        });
+        TITLE_MAP.put("Hover effect nâng cao", new String[]{
+            "Hover effect nâng cao"
+        });
+        TITLE_MAP.put(":nth-child(), :not(), :focus-within", new String[]{
+            ":nth-child(n) - Chọn Phần Tử Theo Thứ Tự",
+            ":not() - Loại Trừ Một Phần Tử",
+            ":focus-within - Chọn Phần Tử Khi Có Focus Bên Trong"
+        });
+        TITLE_MAP.put("Pseudo-elements (::before, ::after)", new String[]{
+            "Pseudo-elements (::before, ::after)"
+        });
+
+        //CSS Chuyên Nghiệp
+        TITLE_MAP.put("BEM (Block Element Modifier)", new String[]{
+            "BEM (Block Element Modifier)"
+        });
+        TITLE_MAP.put("OOCSS (Object-Oriented CSS)", new String[]{
+            "OOCSS (Object-Oriented CSS)"
+        });
+        TITLE_MAP.put("SMACSS (Scalable and Modular Architecture for CSS)", new String[]{
+            "SMACSS"
+        });
+        TITLE_MAP.put("Biến trong CSS (--main-color)", new String[]{
+            "Biến trong CSS (--main-color)"
+        });
+        TITLE_MAP.put("Nested Rules, Mixins, Functions", new String[]{
+            "Nested Rules",
+            "Mixins – Định nghĩa một nhóm CSS tái sử dụng",
+            "Functions – Xử lý logic trong SCSS"
+        });
+        TITLE_MAP.put("Tối ưu hóa mã CSS với SCSS", new String[]{
+            "Tối ưu hóa mã CSS với SCSS"
+        });
+        TITLE_MAP.put("Minify CSS", new String[]{
+            "Minify CSS"
+        });
+        TITLE_MAP.put("Load Font Tối ưu", new String[]{
+            "Load Font Tối ưu"
+        });
+        TITLE_MAP.put("Critical CSS & Lazy Loading", new String[]{
+            "Critical CSS – Tải trước những phần CSS quan trọng",
+            "Lazy Loading – Tải tài nguyên khi cần thiết"
+        });
+        TITLE_MAP.put("Bootstrap", new String[]{
+            "Bootstrap"
+        });
+        TITLE_MAP.put("Tailwind CSS", new String[]{
+            "Tailwind CSS"
+        });
+        TITLE_MAP.put("ARIA Roles", new String[]{
+            "ARIA Roles"
+        });
+        TITLE_MAP.put("Keyboard Navigation", new String[]{
+            "Keyboard Navigation"
+        });
+        TITLE_MAP.put("Dark Mode hỗ trợ người dùng khiếm thị", new String[]{
+            "Dark Mode hỗ trợ người dùng khiếm thị"
+        });
+        TITLE_MAP.put("Tạo hình ảnh, animations phức tạp bằng CSS", new String[]{
+            "Tạo hình ảnh bằng CSS",
+            "Tạo Animations (Hoạt ảnh) Phức Tạp"
+        });
+        TITLE_MAP.put("CSS Art & Pure CSS Illustrations", new String[]{
+            "CSS Art",
+            "Pure CSS Illustrations"
+        });
+
+        //Ứng Dụng & Dự Án Thực Tế
+        TITLE_MAP.put("Blog cá nhân", new String[]{
+            "Một Blog cá nhân là gì?",
+            "Các yếu tố quan trọng của blog cá nhân"
+        });
+        TITLE_MAP.put("Landing Page sản phẩm", new String[]{
+            "Landing page sản phẩm là gì?",
+            "Các yếu tố quan trọng của landing page sản phẩm"
+        });
+        TITLE_MAP.put("Web bán hàng cơ bản", new String[]{
+            "Web bán hàng cơ bản là gì?",
+            "Các yếu tố quan trọng của web bán hàng cơ bản"
+        });
+        TITLE_MAP.put("Hiệu ứng scroll, parallax", new String[]{
+            "Hiệu ứng scroll",
+            "Parallax",
+            "Ứng dụng trong thiết kế"
+        });
+        TITLE_MAP.put("Dark Mode", new String[]{
+            "Dark Mode (chế độ tối) là gì?",
+            "Các yếu tố quan trọng của Dark Mode",
+            "Cách thức triển khai Dark Mode"
+        });
+        TITLE_MAP.put("Animation nâng cao", new String[]{
+            "Animation nâng cao là gì?",
+            "Các yếu tố quan trọng của animation nâng cao",
+            "Lợi ích của animation nâng cao"
+        });
+        TITLE_MAP.put("Tạo manifest.json", new String[]{
+            "Manifest.json là gì?",
+            "Các yếu tố quan trọng của manifest.json"
+        });
+        TITLE_MAP.put("Service Worker & Caching", new String[]{
+            "Service Worker là gì?",
+            "Các yếu tố quan trọng về Service Worker",
+            "Caching trong Service Worker",
+            "Các lợi ích của Service Worker & Caching",
+        });
+        TITLE_MAP.put("Offline Mode & Push Notifications", new String[]{
+            "Offline Mode (Chế độ ngoại tuyến) là gì?",
+            "Các yếu tố quan trọng của Offline Mode",
+            "Push Notifications (Thông báo đẩy) là gì?",
+            "Các yếu tố quan trọng của Push Notifications"
+        });
+        
+        // JavaScript Cơ bản 
+        TITLE_MAP.put("Giới thiệu Javascript", new String[]{
+            "JavaScript là gì?",
+            "Lý do nên học JavaScript",
+            "Cách nhúng JavaScript vào trang web",
+            "Các công cụ hỗ trợ",
+            "Bài tập"
+        });
+        TITLE_MAP.put("Cách nhúng JavaScript vào HTML", new String[]{
+            "Giới thiệu cách nhúng",
+            "Viết trực tiếp trong thẻ <script>",
+            "Nhúng JavaScript vào thuộc tính của thẻ HTML",
+            "Nhúng JavaScript từ tệp bên ngoài",
+            "Bài tập thực hành"
+        });
+        TITLE_MAP.put("Biến và Kiểu dữ liệu trong JavaScript", new String[]{
+            "Biến trong JavaScript",
+            "Các kiểu dữ liệu trong JavaScript",
+            "Ép kiểu dữ liệu",
+            "Kiểm tra kiểu dữ liệu",
+            "Bài tập thực hành"
+        });
+        TITLE_MAP.put("Toán tử và Cấu trúc điều kiện trong JavaScript", new String[]{
+            "Giới thiệu toán tử và cấu trúc điều kiện",
+            "Toán tử trong JavaScript",
+            "Cấu trúc điều kiện",
+            "Bài tập thực hành"
+        });
+        TITLE_MAP.put("Vòng lặp và Mảng trong JavaScript", new String[]{
+            "Giới thiệu vòng lặp và mảng",
+            "Vòng lặp trong JavaScript",
+            "Mảng trong JavaScript",
+            "Bài tập thực hành"
+        });
+        TITLE_MAP.put("Hàm và Phạm vi biến trong JavaScript", new String[]{
+            "Giới thiệu hàm và phạm vi hàm",
+            "Định nghĩa hàm",
+            "Phạm vi biến",
+            "Bài tập thực hành"
+        });
+        TITLE_MAP.put("Thực hành: Xây dựng trò chơi nhỏ", new String[]{
+            "Giới thiệu trò chơi",
+            "Lập kế hoạch và chuẩn bị",
+            "Viết mã JavaScript cho trò chơi",
+            "Bài tập thực hành"
+        });
+
+        // JavaScript Nâng Cao 
+        TITLE_MAP.put("Vòng lặp và Hàm", new String[]{
+            "Vòng Lặp và hàm trong JavaScript",
+            "Hàm trong JavaScript"
+        });
+        TITLE_MAP.put("Lập trình hướng đối tượng (OOP)", new String[]{
+            "Giới thiệu về OOP trong JavaScript",
+            "Đối tượng và Lớp (Object & Class)",
+            "Tính kế thừa (Inheritance)",
+            "Đóng gói (Encapsulation)",
+            "Đa hình (Polymorphism)",
+            "Tính trừu tượng (Abstraction)",});
+        TITLE_MAP.put("Closure và Hoisting", new String[]{
+            "Closure trong JavaScript",
+            "Hoisting trong JavaScript"
+        });
+        TITLE_MAP.put("ES6+ và Các tính năng mới", new String[]{
+            "Giới thiệu về ES6+",
+            "Các Tính Năng Mới Trong ES6+",});
+        TITLE_MAP.put("Xử lý lỗi và Debugging", new String[]{
+            "Giới thiệu về Xử Lý Lỗi",
+            "Cách Bắt Lỗi với try...catch",
+            "Sử Dụng throw Để Tạo Lỗi Tùy Chỉnh",
+            "Debugging Với console.log() và console.error()",
+            "Debugging Bằng Developer Tools"
+        });
+        TITLE_MAP.put("Thực hành: Xây dựng ứng dụng To-Do List", new String[]{
+            "Giới thiệu Xây dựng ứng dụng To-Do List",
+            "Xây dựng giao diện HTML",
+            "Viết mã JavaScript",
+            "Cải tiến - Lưu công việc vào LocalStorage"
+        });
+        // JavaScript Chuyên Nghiệp 
+        TITLE_MAP.put("Lập trình bất đồng bộ (Asynchronous)", new String[]{
+            "Giới thiệu Lập trình bất đồng bộ",
+            "setTimeout và setInterval",
+            "Callback Function",
+            "Promise – Giải pháp thay thế Callback",
+            "Async/Await – Cách Viết Promise Dễ Hiểu Hơn"
+        });
+        TITLE_MAP.put("Làm việc với API", new String[]{
+            "Giới thiệu Làm việc với API",
+            "Sử dụng fetch() để gọi API",
+            "Gửi Dữ Liệu Lên API với fetch()",
+            "Xử Lý Lỗi Khi Gọi API",});
+        TITLE_MAP.put("DOM và Xử lý sự kiện", new String[]{
+            "Giới Thiệu DOM và Xử lý sự kiện",
+            "Truy Xuất Phần Tử DOM",
+            "Thay Đổi Nội Dung và Kiểu Dáng",
+            "Lắng Nghe và Xử Lý Sự Kiện",});
+        TITLE_MAP.put("LocalStorage và SessionStorage", new String[]{
+            "Giới Thiệu LocalStorage và SessionStorage",
+            "Sự Khác Biệt Giữa Local Storage và SessionStorage",
+            "Cách Sử Dụng Local Storage",
+            "Cách Sử Dụng SessionStorage",
+            "Ứng Dụng Thực Tế"
+        });
+        TITLE_MAP.put("Web Workers và Hiệu suất JavaScript", new String[]{
+            "Giới Thiệu Web Workers và Hiệu suất JavaScript",
+            "Web Workers là gì?",
+            "Cách Tạo Web Worker",
+            "Kết Thúc Web Worker",
+            "Truyền Dữ Liệu Giữa Main Thread và Worker",
+            "Ứng Dụng Thực Tế"
+        });
+        TITLE_MAP.put("Thực hành: Xây dựng ứng dụng thời tiết", new String[]{
+            "Giới Thiệu Xây dựng ứng dụng thời tiết",
+            "Yêu Cầu Công Nghệ",
+            "Xây Dựng Giao Diện",
+            "Xử lý dữ liệu với JavaScript",
+            "Cải Tiến Giao Diện"
+        });
+        // JavaScript - Ứng dung thực tế
+        TITLE_MAP.put("JavaScript trong dự án Web", new String[]{
+            "Giới thiệu JavaScript trong dự án Web",
+            "Cấu trúc một dự án Web sử dụng JavaScript",
+            "Thêm JavaScript vào trang Web",
+            "Tương tác với HTML và CSS bằng JavaScript"
+        });
+        TITLE_MAP.put("Framework JavaScript (React, Vue, Node.js)", new String[]{
+            "Giới thiệu Framework JavaScript (React, Vue, Node.js",
+            "React.js - Xây dựng giao diện động",
+            "Vue.js - Framework dễ học và mạnh mẽ",
+            "Node.js - Xây dựng Backend với Express.js"
+        });
+        TITLE_MAP.put("Webpack và tối ưu hiệu suất", new String[]{
+            "Giới thiệu về Webpack",
+            "Cài đặt Webpack",
+            "Loaders và Plugins",
+            "Tối ưu hóa hiệu suất với Webpack"
+        });
+        TITLE_MAP.put("Viết Unit Test với Jest", new String[]{
+            "Giới thiệu về Jest",
+            "Cài đặt Jest",
+            "Viết bài kiểm thử đơn giản",
+            "Kiểm thử bất đồng bộ với Jest",
+            "Kiểm thử với Mock Functions"
+        });
+        TITLE_MAP.put("Thực hành: Xây dựng ứng dụng Chat thời gian thực", new String[]{
+            "Giới thiệu Xây dựng ứng dụng Chat thời gian thực",
+            "Cài đặt môi trường",
+            "Xây dựng Backend",
+            "Xây dựng Frontend",
+            "Chạy ứng dụng"
+        });
         TITLE_MAP.put("Giới thiệu về ngôn ngữ C", new String[]{
             "C là gì?",
             "Tại sao nên học C?",
@@ -452,6 +927,540 @@ public class DanhSachBaiHocData {
     private static final Map<String, String[]> DESCRIPTION_MAP = new HashMap<>();
 
     static {
+        //Html Cơ Bản
+        DESCRIPTION_MAP.put("HTML là gì?", new String[]{
+            "HTML (HyperText Markup Language) là ngôn ngữ đánh dấu siêu văn bản, được sử dụng để xây dựng các trang web và ứng dụng web",
+            "HTML lần đầu tiên được giới thiệu vào năm 1993, và kể từ đó, ngôn ngữ này đã trải qua nhiều lần cập nhật để trở nên mạnh mẽ và linh hoạt hơn",
+            "HTML hoạt động như một bộ khung cơ bản mà trình duyệt sử dụng để hiển thị trang web"
+        });
+        DESCRIPTION_MAP.put("CẤU TRÚC CƠ BẢN CỦA HTML", new String[]{
+            "Một tài liệu HTML cơ bản có cấu trúc đơn giản gồm ba phần chính: <!DOCTYPE>, <html>, và <head> cùng với <body>",
+            "<title>, <meta charset=\"UTF-8\">, <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">, <body>"
+        });
+        DESCRIPTION_MAP.put("Cách viết file HTML và hiển thị trên trình duyệt", new String[]{
+            "Để viết một tệp HTML, bạn cần làm theo các bước cơ bản sau:",
+            "Sau khi bạn đã tạo file HTML, bạn có thể hiển thị nó trên trình duyệt bằng một trong các cách sau",
+            "Khi phát triển web, bạn sẽ cần phải kiểm tra mã HTML và kiểm tra cách nó hiển thị trên trình duyệt"
+        });
+        DESCRIPTION_MAP.put("Tiêu đề (<h1> đến <h6>)", new String[]{
+            "Trong HTML, các thẻ tiêu đề từ <h1> đến <h6> được sử dụng để xác định mức độ quan trọng của các tiêu đề trên trang web",
+            "Sử dụng quá nhiều <h1>, Bỏ qua thứ tự tiêu đề"
+        });
+        DESCRIPTION_MAP.put("Đoạn văn (<p>), Xuống dòng (<br>), Đường ngang (<hr>)", new String[]{
+            "Thẻ <p> là một trong những thẻ cơ bản và quan trọng nhất trong HTML",
+            "Thẻ <br> là viết tắt của từ \"break\", được sử dụng để ngắt dòng trong văn bản mà không cần phải tạo một đoạn văn mới",
+            "Thẻ <hr> dùng để tạo một đường ngang phân cách giữa các phần nội dung trên trang web"
+        });
+        DESCRIPTION_MAP.put("Định dạng văn bản (<b>, <i>, <u>, <strong>, <em>, <mark>, <small>)", new String[]{
+            "HTML cung cấp nhiều thẻ để định dạng văn bản giúp nội dung dễ đọc và sinh động hơn",
+            "<p><b>Chữ đậm</b>, <i>Chữ nghiêng</i>, <u>Chữ gạch chân</u>, <mark>Chữ đánh dấu</mark></p>"
+        });
+        DESCRIPTION_MAP.put("Danh sách: có thứ tự (<ol>), không thứ tự (<ul>), mô tả (<dl>)", new String[]{
+            "Danh sách là một trong những công cụ hữu ích để tổ chức nội dung trang web theo dạng có thứ tự hoặc không thứ tự",
+            "Danh sách có thứ tự được sử dụng khi bạn cần sắp xếp các mục theo một trình tự nhất định, như một danh sách các bước trong hướng dẫn",
+            "Danh sách không thứ tự được sử dụng khi bạn chỉ cần liệt kê các mục mà không cần sắp xếp chúng theo một trình tự cụ thể",
+            "Danh sách mô tả khác biệt so với các loại danh sách thông thường ở chỗ nó dùng để mô tả các thuật ngữ và định nghĩa"
+        });
+        DESCRIPTION_MAP.put("Chèn ảnh (<img>), video (<video>), âm thanh (<audio>)", new String[]{
+            "Thẻ <img> trong HTML được sử dụng để nhúng hình ảnh vào trang web",
+            "HTML5 cung cấp thẻ <video> để nhúng video vào trang web",
+            "Thẻ <audio> trong HTML5 cho phép bạn nhúng các tệp âm thanh vào trang web"
+        });
+        DESCRIPTION_MAP.put("Tạo liên kết (<a>) và điều hướng trang web", new String[]{
+            "Để tạo một liên kết, bạn sử dụng thẻ <a> với thuộc tính href",
+            "Bạn có thể tạo liên kết đến một phần cụ thể trong cùng một trang web",
+            "title: Cung cấp thông tin bổ sung về liên kết khi người dùng di chuột lên đó.",
+            "Thẻ <a> cũng có thể bao quanh hình ảnh để tạo ra liên kết hình ảnh"
+        });
+        DESCRIPTION_MAP.put("Nhúng iframe (<iframe>)", new String[]{
+            "Thẻ <iframe> dùng để nhúng một tài liệu hoặc trang web bên ngoài vào trang HTML hiện tại",
+            "Nhúng video: Ví dụ, bạn có thể nhúng video từ YouTube hoặc",
+            "Bảo mật: Khi nhúng iframe từ các trang web bên ngoài, bạn cần cẩn trọng với các vấn đề bảo mật"
+        });
+        DESCRIPTION_MAP.put("Bảng (<table>, <tr>, <td>, <th>)", new String[]{
+            "Một bảng cơ bản bao gồm ba phần chính: các tiêu đề cột, các hàng dữ liệu, và cột dữ liệu",
+            "border: Thuộc tính này xác định độ dày của viền bảng",
+            "Bảng có thể được sử dụng với các thuộc tính và kỹ thuật CSS để tạo kiểu đẹp mắt và dễ sử dụng"
+        });
+        DESCRIPTION_MAP.put("Biểu mẫu (<form>, <input>, <textarea>, <select>)", new String[]{
+            "Biểu mẫu thường bao gồm các thẻ như <input>, <textarea>, <button>, và <select>",
+            "<input>: Thẻ này có nhiều kiểu dữ liệu khác nhau như text, password, email, number, v.v",
+            "enctype: Thuộc tính này xác định cách mã hóa dữ liệu khi gửi"
+        });
+
+        //Html Nâng Cao
+        DESCRIPTION_MAP.put("Các thẻ Semantic (<header>, <footer>, <nav>, <article>, <section>)", new String[]{
+            "HTML semantic là cách viết mã HTML để tăng tính dễ hiểu và dễ truy cập của trang web",
+            "Thẻ <header> không chỉ chứa thông tin tiêu đề, mà còn là một phần quan trọng của trang web",
+            "Thẻ <footer> là phần cuối cùng của trang, chứa các thông tin quan trọng nhưng không phải là phần nội dung chính",
+            "Thẻ <nav> đóng vai trò là khu vực nhóm các liên kết điều hướng chính của trang web",
+            "Thẻ <article> thường được dùng để nhóm các phần nội dung có thể tái sử dụng và độc lập",
+            "Thẻ <section> được sử dụng để chia nhỏ nội dung thành các phần có liên quan"
+        });
+        DESCRIPTION_MAP.put("Ứng dụng Semantic HTML để tối ưu SEO", new String[]{
+            "Semantic HTML là việc sử dụng các thẻ HTML có ý nghĩa rõ ràng, giúp công cụ tìm kiếm và trình duyệt hiểu rõ hơn",
+            "Hỗ trợ công cụ tìm kiếm hiểu rõ cấu trúc và nội dung của trang web",
+            "Nâng cao độ chính xác trong lập chỉ mục và cải thiện trải nghiệm người dùng",
+            "Tối ưu hóa cho tìm kiếm bằng giọng nói và trải nghiệm trên thiết bị di động"
+        });
+        DESCRIPTION_MAP.put("Sử dụng <meta> để tối ưu công cụ tìm kiếm", new String[]{
+            "Khai báo bảng mã ký tự (charset)",
+            "Meta Title chính là tiêu đề xuất hiện trên tab trình duyệt và trong kết quả tìm kiếm Google.",
+            "Thẻ Meta Robots chỉ dẫn cho công cụ tìm kiếm (Google, Bing...) cách xử lý trang web của bạn",
+            "Thẻ Meta Charset dùng để xác định bộ mã ký tự của trang web."
+        });
+        DESCRIPTION_MAP.put("Open Graph, Twitter Card", new String[]{
+            "Open Graph và Twitter Card là các thẻ <meta> đặc biệt giúp cải thiện cách thức chia sẻ nội dung của trang web",
+            "Open Graph là giao thức được Facebook phát triển để giúp các trang web hiển thị nội dung",
+            "Twitter Card hoạt động tương tự như Open Graph nhưng dành riêng cho Twitter"
+        });
+        DESCRIPTION_MAP.put("Favicon, Sitemap, robots.txt", new String[]{
+            "Favicon là biểu tượng nhỏ hiển thị trên thanh tiêu đề của trình duyệt, trong tab của cửa sổ trình duyệt",
+            "Sitemap (sơ đồ trang web) là một tệp XML chứa danh sách tất cả các trang quan trọng trên website của bạn",
+            "Tệp robots.txt giúp bạn kiểm soát các bot của công cụ tìm kiếm về những trang nào có thể"
+        });
+        DESCRIPTION_MAP.put("Local Storage & Session Storage", new String[]{
+            "Local Storage cung cấp không gian lưu trữ không giới hạn (tùy thuộc vào trình duyệt)",
+            "Session Storage là một loại lưu trữ tạm thời, chỉ lưu trữ dữ liệu trong suốt phiên duyệt web"
+        });
+        DESCRIPTION_MAP.put("Geolocation API (Xác định vị trí người dùng)", new String[]{
+            "Geolocation API là một công nghệ mạnh mẽ trong HTML5 cho phép các trang web xác định vị trí của người dùng thông qua GPS",
+            "Geolocation API cho phép truy xuất thông tin về vị trí của người dùng, bao gồm vĩ độ, kinh độ và đôi khi là độ cao và độ chính xác của vị trí",
+            "SEO gián tiếp là những tác động hoặc hoạt động không trực tiếp liên quan đến việc tối ưu hóa nội dung hay từ khóa"
+        });
+        DESCRIPTION_MAP.put("Drag & Drop API", new String[]{
+            "Drag & Drop API là một tính năng mạnh mẽ trong JavaScript cho phép người dùng kéo và thả các phần tử trực tiếp trên trang web",
+            "Drag & Drop API cung cấp các sự kiện và phương thức để người dùng có thể kéo các phần tử",
+            "Mặc dù Drag & Drop API không ảnh hưởng trực tiếp đến SEO, nhưng việc cung cấp trải nghiệm người dùng mượt mà và dễ dàng sẽ gián tiếp cải thiện SEO"
+        });
+
+        //CSS Cơ Bản
+        DESCRIPTION_MAP.put("Inline CSS, Internal CSS, External CSS", new String[]{
+            "Là cách thêm CSS trực tiếp vào thẻ HTML bằng thuộc tính style.",
+            "CSS được viết bên trong file HTML, trong thẻ <style> trong phần <head>",
+            "CSS được viết trong một file .css riêng biệt, sau đó liên kết với HTML bằng thẻ "
+        });
+        DESCRIPTION_MAP.put("Cú pháp CSS cơ bản", new String[]{
+            "CSS sử dụng cú pháp dạng selector { property: value; } để áp dụng kiểu dáng cho các phần tử HTML",
+            "Một quy tắc CSS bao gồm ba phần chính:",
+            "CSS cung cấp nhiều cách để chọn phần tử:"
+        });
+        DESCRIPTION_MAP.put("Selectors cơ bản: class, id, tag, attribute", new String[]{
+            "Chọn tất cả các phần tử có cùng loại thẻ.",
+            "Chọn phần tử theo class.",
+            "Chọn phần tử theo id.",
+            "Chọn phần tử theo thuộc tính"
+        });
+        DESCRIPTION_MAP.put("Đơn vị đo lường trong CSS: px, %, em, rem, vw, vh", new String[]{
+            "Các đơn vị này có giá trị cố định, không phụ thuộc vào phần tử cha hoặc viewport",
+            "Các đơn vị này phụ thuộc vào phần tử cha hoặc kích thước viewport."
+        });
+        DESCRIPTION_MAP.put("Margin, Border, Padding, Content – CSS Box Model", new String[]{
+            "Mỗi phần tử HTML có thể được coi như một hộp gồm 4 thành phần chính"
+        });
+        DESCRIPTION_MAP.put("Các thuộc tính width, height, max-width, min-height", new String[]{
+            "width → Chiều rộng phần tử",
+            "max-width → Giới hạn chiều rộng tối đa."
+        });
+        DESCRIPTION_MAP.put("Positioning (static, relative, absolute, fixed, sticky)", new String[]{
+            "static (mặc định): Phần tử xuất hiện theo thứ tự tự nhiên trong tài liệu",
+            "Mô tả: Đây là giá trị mặc định của thuộc tính position trong CSS. Khi phần tử có position: static",
+            "Hiển thị trên kết quả tìm kiếm: Meta Title là tiêu đề chính của trang web bạn. Nó xuất hiện trong kết quả tìm kiếm Google và trong tab trình duyệt."
+        });
+        DESCRIPTION_MAP.put("Màu HEX, RGB, HSL", new String[]{
+            "HEX là hệ màu cơ bản nhất, được sử dụng rộng rãi vì ngắn gọn và dễ sử dụng",
+            "RGB hoạt động dựa trên ánh sáng, thích hợp cho thiết kế màn hình điện tử.",
+            "HSL được dHệ màu HSLùng nhiều trong thiết kế vì trực quan hơn HEX và RGB."
+        });
+        DESCRIPTION_MAP.put("Font-family, font-size, font-weight", new String[]{
+            "CSS hỗ trợ 2 loại font chính:",
+            "Đơn vị phổ biến: px, em, rem, %",
+            "100 = Mỏng nhất"
+        });
+        DESCRIPTION_MAP.put("Line-height, letter-spacing", new String[]{
+            "Mặc định là 1.2 hoặc 1.4, có thể tùy chỉnh theo nhu cầu.",
+            "Giá trị dương làm giãn chữ, tạo khoảng cách rộng giữa các ký tự.",
+            "Line-height có thể được sử dụng để cải thiện khả năng đọc của đoạn văn bản, đặc biệt là khi văn bản dài."
+        });
+        DESCRIPTION_MAP.put("display: block, inline, inline-block, flex, grid", new String[]{
+            "Một phần tử block luôn chiếm toàn bộ chiều ngang của vùng chứa nó.",
+            "Phần tử inline chỉ chiếm không gian đúng bằng nội dung bên trong nó.",
+            "Kết hợp đặc tính của block và inline.",
+            "Flexbox giúp căn chỉnh nội dung linh hoạt theo hàng hoặc cột",
+            "Grid giúp tạo layout phức tạp dễ dàng hơn so với flexbox."
+        });
+        DESCRIPTION_MAP.put("Viewport meta tag", new String[]{
+            "Viewport là vùng hiển thị của trang web trên trình duyệt. Trên máy tính, thường rộng hơn 1000px, nhưng trên điện thoại có thể nhỏ hơn 400px.",
+            "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+            "width=device-width: Đảm bảo trang web vừa với mọi kích thước màn hình",
+            "Viewport meta tag là một thẻ quan trọng trong việc tối ưu hóa trang web cho thiết bị di động, giúp trang web của bạn hiển thị tốt trên các màn hình có kích thước khác nhau."
+        });
+
+        //CSS Nâng Cao
+        DESCRIPTION_MAP.put("display: flex", new String[]{
+            "display: flex là thuộc tính trong CSS giúp tạo ra một mô hình bố cục linh hoạt cho các phần tử con của một thẻ cha",
+            "flex-direction: Xác định hướng của các phần tử con, có thể là row (ngang), column (dọc), row-reverse hoặc column-reverse."
+        });
+        DESCRIPTION_MAP.put("Căn chỉnh bằng justify-content, align-items, align-self", new String[]{
+            "justify-content điều chỉnh sự phân bổ không gian theo chiều ngang (trục chính) của các phần tử con trong một container flex.",
+            "align-items điều chỉnh cách các phần tử con được căn chỉnh theo chiều dọc (trục phụ) trong một container flex",
+            "align-self là một thuộc tính của các phần tử con trong một container flex, cho phép bạn ghi đè giá trị của align-items cho từng phần tử con riêng biệt."
+        });
+        DESCRIPTION_MAP.put("flex-wrap, flex-direction", new String[]{
+            "Trong Flexbox, thuộc tính flex-wrap quyết định liệu các phần tử trong container có nên gói lại (wrap) khi không đủ không gian trong một dòng hay không.",
+            "flex-direction xác định chiều của trục chính trong container Flexbox. Trục chính là hướng mà các phần tử sẽ được sắp xếp, có thể là chiều ngang hoặc chiều dọc."
+        });
+        DESCRIPTION_MAP.put("display: grid", new String[]{
+            "display: grid là một kỹ thuật CSS tiên tiến giúp tạo ra các bố cục 2 chiều (2D). Khác với Flexbox, vốn chủ yếu xử lý bố cục theo chiều một chiều (hàng hoặc cột)",
+            "grid-template-columns: Thuộc tính này cho phép bạn xác định số lượng và kích thước của các cột trong lưới. Bạn có thể sử dụng các đơn vị như px, fr, %, v.v."
+        });
+        DESCRIPTION_MAP.put("grid-template-columns, grid-template-rows, gap, align-items, justify-content", new String[]{
+            "CSS Grid Layout là một hệ thống bố cục mạnh mẽ trong CSS, cho phép bạn dễ dàng tạo ra các bố cục phức tạp và linh hoạt trên trang web",
+            "grid-template-columns: Xác định số lượng và kích thước của các cột trong lưới",
+            "Thuộc tính này giúp bạn định nghĩa chiều rộng của từng cột trong lưới."
+        });
+        DESCRIPTION_MAP.put("Media Queries (@media)", new String[]{
+            "Media Queries là một kỹ thuật trong CSS cho phép bạn áp dụng các kiểu dáng khác nhau dựa trên các đặc điểm của thiết bị hoặc cửa sổ trình duyệt",
+            "Một media query được viết dưới dạng @media với điều kiện xác định trong dấu ngoặc đơn, và các kiểu CSS được áp dụng khi điều kiện đó thỏa mãn.",
+            "Responsive Web Design (RWD): Media queries là yếu tố quan trọng trong thiết kế web đáp ứng, giúp trang web tự động điều chỉnh giao diện phù hợp với từng loại thiết bị"
+        });
+        DESCRIPTION_MAP.put("Mobile-first vs. Desktop-first", new String[]{
+            "Mobile-first là một cách tiếp cận trong thiết kế web, nơi mà bạn bắt đầu xây dựng giao diện cho các thiết bị di động trước (nhỏ nhất)",
+            "Desktop-first là một phương pháp thiết kế ngược lại với mobile-first, nơi bạn bắt đầu thiết kế cho màn hình lớn trước",
+            "Mobile-first ưu tiên khả năng sử dụng trên thiết bị di động và giúp tối ưu hóa cho thiết bị di động từ đầu"
+        });
+        DESCRIPTION_MAP.put("CSS Container Queries", new String[]{
+            "CSS Container Queries là một tính năng mới trong CSS cho phép bạn áp dụng các quy tắc CSS dựa trên kích thước của phần tử cha (container) thay vì toàn bộ viewport (như Media Queries)"
+        });
+        DESCRIPTION_MAP.put("transition, animation, keyframes", new String[]{
+            "Trong HTML/CSS, transition là một thuộc tính trong CSS giúp tạo hiệu ứng chuyển đổi mượt mà giữa các trạng thái khác nhau của một phần tử khi một thuộc tính CSS thay đổi.",
+            "animation là một thuộc tính CSS dùng để tạo ra chuỗi chuyển động có nhiều bước, được kiểm soát qua keyframes (khung hình chính).",
+            "@keyframes dùng để định nghĩa từng bước chuyển động trong một animation."
+        });
+        DESCRIPTION_MAP.put("Hover effect nâng cao", new String[]{
+            "Hover Effect (hiệu ứng di chuột) là kỹ thuật thay đổi giao diện của một phần tử khi người dùng di chuột vào nó."
+        });
+        DESCRIPTION_MAP.put(":nth-child(), :not(), :focus-within", new String[]{
+            ":nth-child(n) giúp chọn một phần tử con dựa trên vị trí của nó.",
+            ":not() giúp bạn loại trừ một phần tử khỏi CSS rule.",
+            ":focus-within giúp bạn chọn một phần tử cha nếu có một phần tử con bên trong được focus."
+        });
+        DESCRIPTION_MAP.put("Pseudo-elements (::before, ::after)", new String[]{
+            "Pseudo-elements trong CSS cho phép bạn chèn nội dung vào trước hoặc sau một phần tử mà không cần thay đổi HTML"
+        });
+
+        //CSS Chuyên Nghiệp
+        DESCRIPTION_MAP.put("BEM (Block Element Modifier)", new String[]{
+            "Đây là một phương pháp đặt tên class CSS để chia nhỏ giao diện thành các khối độc lập, giúp dễ tái sử dụng, dễ đọc và tránh trùng lặp class."
+        });
+        DESCRIPTION_MAP.put("OOCSS (Object-Oriented CSS)", new String[]{
+            "OOCSS (Object-Oriented CSS) là một phương pháp giúp tổ chức CSS theo cách hướng đối tượng, giúp tăng khả năng tái sử dụng code."
+        });
+        DESCRIPTION_MAP.put("SMACSS (Scalable and Modular Architecture for CSS)", new String[]{
+            "Nếu không có hệ thống quản lý CSS rõ ràng, bạn sẽ gặp phải"
+        });
+        DESCRIPTION_MAP.put("Biến trong CSS (--main-color)", new String[]{
+            "Dễ thay đổi: Chỉ cần thay đổi giá trị một lần là toàn bộ trang web cập nhật theo"
+        });
+        DESCRIPTION_MAP.put("Nested Rules, Mixins, Functions", new String[]{
+            "Khi viết CSS thuần, bạn phải lặp lại nhiều class giống nhau",
+            "Một số thuộc tính CSS thường xuyên được sử dụng, như border-radius, box-shadow, flexbox",
+            "Function trong SCSS giúp xử lý các phép toán hoặc tạo giá trị CSS động"
+        });
+        DESCRIPTION_MAP.put("Tối ưu hóa mã CSS với SCSS", new String[]{
+            "Nếu trang web của bạn có nhiều màu sắc giống nhau, việc sử dụng biến giúp bạn thay đổi dễ dàng hơn"
+        });
+        DESCRIPTION_MAP.put("Minify CSS", new String[]{
+            "Minify CSS là quá trình loại bỏ tất cả các ký tự không cần thiết trong mã CSS mà không làm thay đổi cách mà mã đó hoạt động."
+        });
+        DESCRIPTION_MAP.put("Load Font Tối ưu", new String[]{
+            "Tải font không cần thiết: Tải tất cả các font gia đình và các kiểu chữ mà bạn không sử dụng sẽ làm trang web nặng hơn"
+        });
+        DESCRIPTION_MAP.put("Critical CSS & Lazy Loading", new String[]{
+            "Critical CSS là kỹ thuật giúp tải trước các phần CSS quan trọng để đảm bảo rằng nội dung hiển thị một cách nhanh chóng",
+            "Lazy loading là một kỹ thuật tối ưu hóa giúp trì hoãn việc tải các tài nguyên không cần thiết (như hình ảnh, video, và các file CSS hoặc JavaScript không phải quan trọng ngay lập tức)"
+        });
+        DESCRIPTION_MAP.put("Bootstrap", new String[]{
+            "Bootstrap là một thư viện mã nguồn mở phổ biến được sử dụng để phát triển giao diện người dùng (UI) cho web"
+        });
+        DESCRIPTION_MAP.put("Tailwind CSS", new String[]{
+            "Tailwind CSS là một framework CSS tiện lợi và mạnh mẽ, nhưng khác biệt với các framework truyền thống như Bootstrap"
+        });
+        DESCRIPTION_MAP.put("ARIA Roles", new String[]{
+            "ARIA (Accessible Rich Internet Applications) là gì?  là một bộ tiêu chuẩn giúp cải thiện truy cập và hỗ trợ người khuyết tật trên các ứng dụng web và các trang web động"
+        });
+        DESCRIPTION_MAP.put("Keyboard Navigation", new String[]{
+            "Keyboard Navigation là một kỹ thuật quan trọng trong việc thiết kế web để đảm bảo tính khả dụng và truy cập cho tất cả người dùng"
+        });
+        DESCRIPTION_MAP.put("Dark Mode hỗ trợ người dùng khiếm thị", new String[]{
+            "Dark Mode (chế độ tối) là một tính năng giao diện người dùng phổ biến hiện nay, cho phép người dùng chuyển từ giao diện sáng sang giao diện tối",
+            "Giảm mỏi mắt và căng thẳng thị giác",
+            "Cho phép người dùng lựa chọn chế độ tối"
+        });
+        DESCRIPTION_MAP.put("Tạo hình ảnh, animations phức tạp bằng CSS", new String[]{
+            "Sử dụng Shapes (Hình học)",
+            "CSS cung cấp transitions và animations giúp tạo ra các hiệu ứng chuyển động mượt mà và động cho các phần tử khi thay đổi trạng thái."});
+        DESCRIPTION_MAP.put("CSS Art & Pure CSS Illustrations", new String[]{
+            "CSS Art là một kỹ thuật thú vị mà các nhà phát triển sử dụng CSS để tạo ra các hình ảnh và minh họa mà không cần sử dụng hình ảnh tĩnh",
+            "Pure CSS Illustrations"
+        });
+
+        //Ứng Dụng & Dự Án Thực Tế
+        DESCRIPTION_MAP.put("Blog cá nhân", new String[]{
+            "Blog cá nhân là một dạng website hoặc nền tảng trực tuyến mà người viết có thể chia sẻ các bài viết, suy nghĩ, kinh nghiệm cá nhân",
+            "Chủ đề và nội dung: Một blog cá nhân thường xoay quanh một hoặc nhiều chủ đề mà người viết cảm thấy đam mê."
+        });
+        DESCRIPTION_MAP.put("Landing Page sản phẩm", new String[]{
+            "Landing page sản phẩm là một loại trang web thiết kế để khuyến khích người dùng thực hiện một hành động cụ thể",
+            "Tiêu đề hấp dẫn: Tiêu đề là phần đầu tiên mà người truy cập nhìn thấy, và nó cần phải gây ấn tượng ngay lập tức"
+        });
+        DESCRIPTION_MAP.put("Web bán hàng cơ bản", new String[]{
+            "Web bán hàng cơ bản là một trang web được thiết kế với mục đích chính là bán sản phẩm hoặc dịch vụ trực tuyến.",
+            "Danh mục sản phẩm: Website bán hàng cần có danh mục sản phẩm rõ ràng, giúp khách hàng dễ dàng tìm kiếm và lựa chọn sản phẩm mình muốn mua"
+        });
+        DESCRIPTION_MAP.put("Hiệu ứng scroll, parallax", new String[]{
+            "Hiệu ứng scroll là khi một yếu tố trên trang web thay đổi hoặc di chuyển khi người dùng cuộn trang xuống.",
+            "Parallax là một kỹ thuật thiết kế web trong đó các phần tử trên trang di chuyển với tốc độ khác nhau khi người dùng cuộn trang xuống",
+            "Trang chủ của các website giới thiệu: Parallax và hiệu ứng scroll có thể được sử dụng để tạo ra một trang chủ ấn tượng cho các website của công ty"
+        });
+        DESCRIPTION_MAP.put("Dark Mode", new String[]{
+            "Dark Mode (chế độ tối) là một tính năng giao diện người dùng giúp thay đổi màu sắc nền của các ứng dụng hoặc trang web từ màu sáng sang màu tối",
+            "Giảm căng thẳng mắt: Một trong những lý do chính mà người dùng yêu thích Dark Mode là nó giúp giảm bớt ánh sáng xanh và độ chói của màn hình",
+            "CSS (Cascading Style Sheets): Trong phát triển web, chế độ tối có thể được triển khai thông qua CSS bằng cách sử dụng các thuộc tính như @media"
+        });
+        DESCRIPTION_MAP.put("Animation nâng cao", new String[]{
+            "Animation nâng cao là trong phát triển web là việc sử dụng các kỹ thuật động (animation) phức tạp để tạo ra hiệu ứng trực quan thú vị và tương tác mượt mà.",
+            "CSS Animations: Các animation cơ bản có thể được tạo ra chỉ bằng CSS. Bạn có thể sử dụng thuộc tính @keyframes",
+            "Thu hút sự chú ý: Các animation có thể giúp làm nổi bật các phần tử quan trọng trên trang web, chẳng hạn như nút CTA (Call-to-Action), các sản phẩm hoặc dịch vụ nổi bật"
+        });
+        DESCRIPTION_MAP.put("Tạo manifest.json", new String[]{
+            "Manifest.json là một tệp cấu hình quan trọng trong phát triển web, đặc biệt là trong việc xây dựng PWA (Progressive Web App)",
+            "Tên ứng dụng (name): Đây là tên chính của ứng dụng hoặc trang web khi được hiển thị trên màn hình chính của người dùng hoặc trong danh sách ứng dụng"
+        });
+        DESCRIPTION_MAP.put("Service Worker & Caching", new String[]{
+            "Service Worker là một kỹ thuật trong Progressive Web Apps (PWA), cho phép ứng dụng web của bạn hoạt động offline hoặc trên các mạng không ổn định.",
+            "Service Worker là gì?",
+            "Caching giúp ứng dụng hoạt động offline: Service Worker có thể lưu trữ các tệp tĩnh (HTML, CSS, JavaScript, hình ảnh) trong cache",
+            "Hoạt động offline: Khi mạng không có sẵn, ứng dụng vẫn có thể phục vụ các tài nguyên đã được cache trước đó"
+        });
+        DESCRIPTION_MAP.put("Offline Mode & Push Notifications", new String[]{
+            "Offline Mode là tính năng giúp người dùng tiếp tục sử dụng ứng dụng web ngay cả khi không có kết nối internet.",
+            "Cung cấp trải nghiệm offline: Khi mạng không có sẵn hoặc không ổn định, Service Worker và Caching (được đề cập ở mục trước) giúp lưu trữ các tài nguyên tĩnh ",
+            "Push Notifications là một phương thức truyền thông mà qua đó ứng dụng web hoặc di động có thể gửi thông báo cho người dùng ngay cả khi họ không mở ứng dụng.",
+            "Gửi thông báo ngay cả khi ứng dụng không mở: Push notifications giúp gửi thông báo trực tiếp đến thiết bị của người dùng"
+        });
+        
+        // JavaScript Cơ Bản
+        DESCRIPTION_MAP.put("Giới thiệu Javascript", new String[]{
+            "JavaScript là một ngôn ngữ lập trình phổ biến dùng để tạo hiệu ứng động cho trang web. Đây là một trong ba công nghệ cốt lõi của lập trình web cùng với HTML và CSS.",
+            "JavaScript là một trong những ngôn ngữ lập trình phổ biến nhất thế giới, được hỗ trợ rộng rãi bởi các trình duyệt web. Việc học JavaScript giúp bạn phát triển các trang web tương tác, ứng dụng web và thậm chí cả ứng dụng di động.",
+            "Có nhiều cách để nhúng JavaScript vào trang web, bao gồm viết trực tiếp trong thẻ `<script>` trong HTML hoặc sử dụng file `.js` bên ngoài để giúp mã nguồn gọn gàng hơn.",
+            "Một số công cụ phổ biến giúp lập trình JavaScript dễ dàng hơn bao gồm trình duyệt với DevTools, các trình soạn thảo code như VS Code, và các thư viện hỗ trợ như jQuery, React, hoặc Vue.js.",
+            "Luyện tập với các bài tập đơn giản như hiển thị thông báo bằng `alert()`, thay đổi nội dung HTML bằng JavaScript, và xử lý sự kiện click chuột để làm quen với ngôn ngữ này."
+        });
+        DESCRIPTION_MAP.put("Cách nhúng JavaScript vào HTML", new String[]{
+            "Có nhiều cách để nhúng JavaScript vào trang HTML, mỗi cách có ưu điểm riêng và phù hợp với từng tình huống cụ thể.",
+            "Bạn có thể viết JavaScript trực tiếp trong thẻ `<script>` trong HTML để thực hiện các đoạn mã nhỏ.",
+            "Sử dụng JavaScript trong các thuộc tính HTML như `onclick` giúp tạo ra các tương tác đơn giản mà không cần viết nhiều mã.",
+            "Cách nhúng tốt nhất là sử dụng file `.js` bên ngoài để giúp mã nguồn HTML sạch hơn, dễ bảo trì và tái sử dụng.",
+            "Bạn sẽ thực hành với các ví dụ cụ thể để hiểu rõ hơn về cách nhúng JavaScript vào HTML."
+        });
+
+        DESCRIPTION_MAP.put("Biến và Kiểu dữ liệu trong JavaScript", new String[]{
+            "Biến là một phần quan trọng trong lập trình JavaScript, giúp lưu trữ dữ liệu để sử dụng trong chương trình.",
+            "JavaScript hỗ trợ nhiều kiểu dữ liệu như `number`, `string`, `boolean`, `object`, `array` và `null`.",
+            "Ép kiểu dữ liệu giúp chuyển đổi giữa các loại dữ liệu khác nhau để đảm bảo chương trình hoạt động chính xác.",
+            "Có nhiều cách kiểm tra kiểu dữ liệu trong JavaScript như `typeof`, `instanceof`, giúp lập trình viên xử lý dữ liệu linh hoạt hơn.",
+            "Bạn sẽ thực hành khai báo biến, sử dụng các kiểu dữ liệu khác nhau và kiểm tra kiểu dữ liệu trong JavaScript."
+        });
+
+        DESCRIPTION_MAP.put("Toán tử và Cấu trúc điều kiện trong JavaScript", new String[]{
+            "Toán tử giúp thực hiện các phép toán trên dữ liệu, bao gồm toán tử số học, so sánh, logic, gán, và toán tử đặc biệt như `typeof`, `instanceof`.",
+            "Cấu trúc điều kiện như `if`, `else if`, `else`, `switch-case` giúp kiểm soát luồng chương trình dựa trên các điều kiện cụ thể.",
+            "Toán tử logic như `&&`, `||`, `!` thường được kết hợp với câu lệnh điều kiện để xử lý nhiều trường hợp khác nhau.",
+            "Bạn sẽ thực hành sử dụng toán tử và cấu trúc điều kiện để tạo ra các chương trình linh hoạt, có khả năng xử lý nhiều tình huống thực tế."
+        });
+
+        DESCRIPTION_MAP.put("Vòng lặp và Mảng trong JavaScript", new String[]{
+            "Vòng lặp giúp thực hiện một đoạn mã nhiều lần, giúp tiết kiệm thời gian và làm cho mã ngắn gọn hơn.",
+            "JavaScript có các vòng lặp phổ biến như `for`, `while`, `do...while`, `for...of`, và `forEach` để duyệt qua danh sách dữ liệu.",
+            "Mảng là một kiểu dữ liệu quan trọng, giúp lưu trữ nhiều giá trị trong một biến duy nhất.",
+            "Bạn sẽ tìm hiểu cách khai báo, truy cập phần tử, thêm, sửa, xóa phần tử trong mảng.",
+            "Bài tập thực hành sẽ giúp bạn làm quen với vòng lặp và cách làm việc với mảng trong JavaScript."
+        });
+
+        DESCRIPTION_MAP.put("Hàm và Phạm vi biến trong JavaScript", new String[]{
+            "Hàm giúp tổ chức mã nguồn một cách khoa học, giúp tái sử dụng và quản lý chương trình dễ dàng hơn.",
+            "Có nhiều cách khai báo hàm trong JavaScript như `function declaration`, `function expression`, và `arrow function`.",
+            "Phạm vi biến xác định nơi biến có thể được truy cập, gồm `global scope`, `function scope`, và `block scope`.",
+            "Hiểu về `hoisting` và `closure` sẽ giúp bạn viết mã JavaScript hiệu quả hơn.",
+            "Bạn sẽ thực hành định nghĩa hàm, truyền tham số, trả về giá trị và làm việc với phạm vi biến."
+        });
+
+        DESCRIPTION_MAP.put("Thực hành: Xây dựng trò chơi nhỏ", new String[]{
+            "Dự án thực hành giúp bạn áp dụng các kiến thức đã học để tạo ra một trò chơi nhỏ bằng JavaScript.",
+            "Bạn sẽ sử dụng các biến, kiểu dữ liệu, toán tử, vòng lặp, mảng và hàm để xây dựng trò chơi đơn giản.",
+            "Trò chơi sẽ có các yếu tố tương tác như xử lý sự kiện bàn phím, chuột, cập nhật nội dung trang web theo thời gian thực.",
+            "Việc làm dự án giúp bạn hiểu rõ cách JavaScript hoạt động trong môi trường thực tế.",
+            "Sau bài này, bạn sẽ có một sản phẩm hoàn chỉnh, có thể cải tiến thêm để nâng cao kỹ năng lập trình."
+        });
+
+// JavaScript Nâng Cao
+        DESCRIPTION_MAP.put("Vòng lặp và Hàm", new String[]{
+            "Vòng lặp là một công cụ quan trọng giúp thực hiện các thao tác lặp đi lặp lại trên tập hợp dữ liệu. JavaScript hỗ trợ các vòng lặp như `for`, `while`, `do...while` và `forEach`.",
+            "Hàm trong JavaScript giúp chia chương trình thành các phần nhỏ, dễ quản lý hơn. Có hai cách khai báo hàm: Function Declaration và Function Expression. Ngoài ra, ES6 giới thiệu Arrow Function giúp viết hàm ngắn gọn hơn."
+        });
+
+        DESCRIPTION_MAP.put("Lập trình hướng đối tượng (OOP)", new String[]{
+            "OOP là một mô hình lập trình dựa trên các đối tượng, giúp tổ chức code tốt hơn, dễ bảo trì và mở rộng.",
+            "Đối tượng và Lớp (Object & Class): JavaScript sử dụng prototype để tạo đối tượng, ES6 bổ sung từ khóa class giúp định nghĩa lớp dễ dàng hơn.",
+            "Tính kế thừa (Inheritance): Cho phép một lớp kế thừa các thuộc tính và phương thức của lớp khác.",
+            "Đóng gói (Encapsulation): Bảo vệ dữ liệu của đối tượng bằng cách giới hạn quyền truy cập.",
+            "Đa hình (Polymorphism): Cho phép ghi đè phương thức của lớp cha trong lớp con.",
+            "Tính trừu tượng (Abstraction): Giúp ẩn bớt chi tiết không cần thiết và chỉ hiển thị các phần quan trọng."
+        });
+
+        DESCRIPTION_MAP.put("Closure và Hoisting", new String[]{
+            "Closure là một hàm có thể truy cập các biến trong phạm vi của nó ngay cả khi phạm vi đó đã kết thúc. Điều này giúp tạo ra các hàm có trạng thái riêng.",
+            "Hoisting là cơ chế giúp JavaScript di chuyển khai báo biến (`var`, `let`, `const`) và hàm (`function`) lên đầu phạm vi trước khi thực thi code, tránh lỗi khi sử dụng biến hoặc hàm trước khi khai báo."
+        });
+
+        DESCRIPTION_MAP.put("ES6+ và Các tính năng mới", new String[]{
+            "ES6+ (ECMAScript 2015 trở lên) mang đến nhiều cải tiến giúp JavaScript hiện đại và dễ đọc hơn.",
+            "Một số tính năng mới bao gồm: `let` và `const` thay thế `var`, template literals giúp nối chuỗi dễ dàng hơn, destructuring assignment giúp trích xuất giá trị từ mảng và đối tượng nhanh hơn."
+        });
+
+        DESCRIPTION_MAP.put("Xử lý lỗi và Debugging", new String[]{
+            "Xử lý lỗi là một phần quan trọng trong lập trình giúp ứng dụng hoạt động ổn định và dễ bảo trì.",
+            "Cách bắt lỗi với `try...catch`: Cho phép xử lý lỗi một cách an toàn mà không làm gián đoạn chương trình.",
+            "Sử dụng `throw` để tạo lỗi tùy chỉnh giúp kiểm soát lỗi theo cách riêng.",
+            "Debugging với `console.log()` và `console.error()` giúp kiểm tra dữ liệu trong quá trình chạy chương trình.",
+            "Debugging bằng Developer Tools trong trình duyệt giúp kiểm tra code trực tiếp, đặt breakpoint, xem biến và theo dõi luồng thực thi của chương trình."
+        });
+
+        DESCRIPTION_MAP.put("Thực hành: Xây dựng ứng dụng To-Do List", new String[]{
+            "Giới thiệu: To-Do List là một ứng dụng giúp người dùng quản lý danh sách công việc cần làm. Bài thực hành này sẽ giúp bạn rèn luyện các kỹ năng JavaScript cơ bản và nâng cao.",
+            "Xây dựng giao diện HTML: Tạo một trang web đơn giản với danh sách công việc, ô nhập liệu và các nút chức năng.",
+            "Viết mã JavaScript: Thêm chức năng cho ứng dụng, bao gồm thêm, xóa, đánh dấu hoàn thành công việc.",
+            "Cải tiến - Lưu công việc vào LocalStorage: Giúp danh sách công việc không bị mất khi tải lại trang bằng cách lưu trữ dữ liệu trên trình duyệt."
+        });
+
+// JavaScript Chuyên Nghiệp
+        DESCRIPTION_MAP.put("Lập trình bất đồng bộ (Asynchronous)", new String[]{
+            "Lập trình bất đồng bộ giúp JavaScript thực thi các tác vụ không đồng bộ như gọi API, đọc tệp, hoặc xử lý dữ liệu mà không chặn chương trình.",
+            "`setTimeout` và `setInterval` là hai hàm giúp trì hoãn và lặp lại một tác vụ sau một khoảng thời gian nhất định.",
+            "Callback Function là một kỹ thuật phổ biến để xử lý bất đồng bộ, tuy nhiên có thể dẫn đến Callback Hell khi lồng nhiều hàm.",
+            "`Promise` là một giải pháp thay thế cho Callback giúp xử lý bất đồng bộ dễ dàng hơn bằng cách cung cấp trạng thái Pending, Fulfilled, và Rejected.",
+            "`Async/Await` giúp viết Promise dễ hiểu hơn bằng cách sử dụng cú pháp đồng bộ, làm cho mã sạch hơn và dễ bảo trì hơn."
+        });
+
+        DESCRIPTION_MAP.put("Làm việc với API", new String[]{
+            "API (Application Programming Interface) giúp ứng dụng giao tiếp với các dịch vụ bên ngoài, chẳng hạn như lấy dữ liệu từ máy chủ.",
+            "`fetch()` là phương thức hiện đại giúp gửi yêu cầu HTTP đến API và nhận dữ liệu về dưới dạng JSON hoặc text.",
+            "Gửi dữ liệu lên API bằng `fetch()` với phương thức POST, PUT hoặc DELETE để thêm, sửa, hoặc xóa dữ liệu từ máy chủ.",
+            "Xử lý lỗi khi gọi API bằng cách sử dụng `try...catch`, kiểm tra mã trạng thái HTTP, và hiển thị thông báo lỗi cho người dùng."
+        });
+
+        DESCRIPTION_MAP.put("DOM và Xử lý sự kiện", new String[]{
+            "DOM (Document Object Model) là mô hình cây của trang web, giúp JavaScript truy cập và thay đổi nội dung HTML.",
+            "Truy xuất phần tử DOM bằng các phương thức như `getElementById`, `querySelector`, và `getElementsByClassName`.",
+            "Thay đổi nội dung và kiểu dáng của phần tử bằng cách chỉnh sửa thuộc tính `innerHTML`, `textContent`, và `style`.",
+            "Lắng nghe và xử lý sự kiện như click, nhập liệu bằng `addEventListener`, giúp trang web phản hồi theo hành động của người dùng."
+        });
+
+        DESCRIPTION_MAP.put("LocalStorage và SessionStorage", new String[]{
+            "LocalStorage và SessionStorage là các API giúp lưu trữ dữ liệu trên trình duyệt mà không cần máy chủ.",
+            "Sự khác biệt giữa LocalStorage và SessionStorage: LocalStorage lưu trữ dữ liệu vĩnh viễn, còn SessionStorage chỉ tồn tại trong một phiên làm việc.",
+            "Cách sử dụng LocalStorage để lưu trữ dữ liệu lâu dài với `setItem`, `getItem`, và `removeItem`.",
+            "Cách sử dụng SessionStorage tương tự LocalStorage nhưng dữ liệu sẽ bị xóa khi đóng trình duyệt.",
+            "Ứng dụng thực tế: Lưu thông tin đăng nhập, giỏ hàng, hoặc trạng thái giao diện của trang web."
+        });
+
+        DESCRIPTION_MAP.put("Web Workers và Hiệu suất JavaScript", new String[]{
+            "Web Workers giúp JavaScript chạy các tác vụ nặng trong nền mà không làm chậm giao diện người dùng.",
+            "Web Workers là gì? Đây là các luồng độc lập có thể thực thi mã mà không ảnh hưởng đến luồng chính (main thread).",
+            "Cách tạo Web Worker bằng cách sử dụng đối tượng `Worker` và truyền file JavaScript xử lý công việc.",
+            "Kết thúc Web Worker bằng phương thức `terminate()` để giải phóng tài nguyên khi không còn cần thiết.",
+            "Truyền dữ liệu giữa Main Thread và Worker bằng `postMessage()` và lắng nghe sự kiện `onmessage`.",
+            "Ứng dụng thực tế: Xử lý dữ liệu lớn, tải tài nguyên nền, và các tác vụ đòi hỏi nhiều tài nguyên."
+        });
+
+        DESCRIPTION_MAP.put("Thực hành: Xây dựng ứng dụng thời tiết", new String[]{
+            "Giới thiệu: Ứng dụng thời tiết sẽ hiển thị thông tin thời tiết theo vị trí của người dùng bằng cách gọi API.",
+            "Yêu cầu công nghệ: Sử dụng HTML, CSS và JavaScript để xây dựng giao diện và xử lý dữ liệu.",
+            "Sử dụng API thời tiết (như OpenWeather API) để lấy dữ liệu thời tiết theo vị trí của người dùng.",
+            "Xây dựng giao diện: Thiết kế khung giao diện đẹp mắt với các thành phần như ô tìm kiếm, hiển thị nhiệt độ, độ ẩm, và điều kiện thời tiết.",
+            "Xử lý dữ liệu với JavaScript: Gọi API, lấy dữ liệu JSON, xử lý thông tin và hiển thị trên giao diện.",
+            "Cải tiến giao diện: Thêm hiệu ứng động, đổi giao diện theo thời gian thực, và tối ưu trải nghiệm người dùng."
+        });
+
+// JavaScript - Ứng dụng thực tế
+        DESCRIPTION_MAP.put("JavaScript trong dự án Web", new String[]{
+            "Giới thiệu về cách JavaScript được sử dụng trong các dự án web hiện đại để tạo ra trải nghiệm tương tác và động.",
+            "Cấu trúc một dự án web chuẩn, cách tổ chức file HTML, CSS, JavaScript, và thư mục để tối ưu bảo trì.",
+            "Cách nhúng JavaScript vào trang web bằng các phương pháp khác nhau: inline, internal và external script.",
+            "Tương tác với HTML và CSS bằng JavaScript để thay đổi nội dung, cập nhật giao diện động mà không cần tải lại trang."
+        });
+
+        DESCRIPTION_MAP.put("Framework JavaScript (React, Vue, Node.js)", new String[]{
+            "Giới thiệu về các framework phổ biến như React.js, Vue.js và Node.js, giúp tăng hiệu suất và khả năng mở rộng của ứng dụng web.",
+            "React.js là thư viện front-end mạnh mẽ do Facebook phát triển, giúp xây dựng giao diện người dùng bằng cách sử dụng component-based architecture.",
+            "Vue.js là một framework linh hoạt, dễ học và có cú pháp trực quan, giúp phát triển nhanh các ứng dụng web hiện đại.",
+            "Node.js cho phép chạy JavaScript trên server, kết hợp với Express.js để xây dựng API mạnh mẽ và xử lý backend."
+        });
+
+        DESCRIPTION_MAP.put("Webpack và tối ưu hiệu suất", new String[]{
+            "Webpack là một module bundler giúp gộp các tệp JavaScript, CSS, hình ảnh vào một file duy nhất để tối ưu hiệu suất tải trang.",
+            "Cách cài đặt Webpack từ đầu, thiết lập cấu hình cơ bản và tạo file `webpack.config.js`.",
+            "Loaders giúp xử lý các tệp như CSS, SCSS, hình ảnh, TypeScript, trong khi Plugins mở rộng chức năng của Webpack.",
+            "Tối ưu hiệu suất bằng cách nén file, chia nhỏ bundle (code splitting) và lazy loading để cải thiện tốc độ tải trang."
+        });
+
+        DESCRIPTION_MAP.put("Viết Unit Test với Jest", new String[]{
+            "Jest là một framework kiểm thử JavaScript phổ biến do Facebook phát triển, giúp kiểm thử ứng dụng hiệu quả.",
+            "Cách cài đặt Jest trong dự án bằng npm/yarn và thiết lập môi trường kiểm thử.",
+            "Viết bài kiểm thử đơn giản với Jest để đảm bảo các hàm JavaScript hoạt động chính xác.",
+            "Kiểm thử bất đồng bộ với Jest bằng cách sử dụng `async/await`, `done()` và `mock promises`.",
+            "Kiểm thử với Mock Functions để giả lập các hàm API hoặc các module phức tạp trong ứng dụng."
+        });
+
+        DESCRIPTION_MAP.put("Thực hành: Xây dựng ứng dụng Chat thời gian thực", new String[]{
+            "Giới thiệu về ứng dụng chat thời gian thực sử dụng WebSocket để trao đổi tin nhắn giữa các người dùng.",
+            "Cài đặt môi trường với Node.js, Express.js và WebSocket để xử lý truyền dữ liệu thời gian thực.",
+            "Xây dựng Backend sử dụng Express.js và Socket.io để quản lý kết nối người dùng và lưu trữ tin nhắn.",
+            "Xây dựng Frontend với HTML, CSS, JavaScript để hiển thị danh sách tin nhắn và hỗ trợ gửi tin nhắn.",
+            "Chạy ứng dụng và kiểm thử chức năng chat, đồng thời cải thiện giao diện bằng CSS hoặc framework UI."
+        });
+
+        //java co ban
+        DESCRIPTION_MAP.put("Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", new String[]{
+            "Java là một ngôn ngữ lập trình hướng đối tượng, mạnh mẽ, bảo mật và đa nền tảng.",
+            "Ra đời năm 1995 bởi Sun Microsystems, Java nhanh chóng trở thành một trong những ngôn ngữ phổ biến nhất.",
+            "Java hoạt động trên mô hình 'Viết một lần, chạy mọi nơi' nhờ máy ảo Java (JVM).",
+            "Được sử dụng rộng rãi trong phát triển ứng dụng web, di động, doanh nghiệp và hệ thống nhúng."
+        });
+
+        DESCRIPTION_MAP.put("Cấu trúc chương trình Java, cài đặt JDK, IDE", new String[]{
+            "Chương trình Java bao gồm các thành phần chính như package, class, method và câu lệnh.",
+            "JDK (Java Development Kit) là bộ công cụ cần thiết để biên dịch và chạy mã Java.",
+            "IDE (Integrated Development Environment) như IntelliJ IDEA, Eclipse, NetBeans hỗ trợ lập trình Java hiệu quả.",
+            "Quá trình cài đặt JDK và IDE giúp thiết lập môi trường phát triển Java hoàn chỉnh."
+        });
+
+        DESCRIPTION_MAP.put("Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu", new String[]{
+            "Tìm hiểu về biến, phạm vi của biến và cách khai báo biến trong Java.",
+            "Các kiểu dữ liệu cơ bản (int, float, double, char, boolean) và kiểu dữ liệu tham chiếu.",
+            "Các toán tử số học, quan hệ, logic, gán, bitwise và toán tử điều kiện trong Java.",
+            "Cách nhập dữ liệu từ bàn phím bằng Scanner và xuất dữ liệu ra màn hình bằng System.out."
+        });
+
+        DESCRIPTION_MAP.put("Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi", new String[]{
+            "Sử dụng các cấu trúc điều kiện như if-else, switch-case để điều khiển luồng chương trình.",
+            "Các vòng lặp for, while, do-while để lặp qua dữ liệu và thực hiện các tác vụ lặp lại.",
+            "Làm việc với mảng một chiều, mảng hai chiều và cách duyệt mảng trong Java.",
+            "Xử lý chuỗi với lớp String, các phương thức thao tác chuỗi như nối chuỗi, cắt chuỗi, tìm kiếm ký tự."
+        });
+
         DESCRIPTION_MAP.put("Giới thiệu về ngôn ngữ C", new String[]{
             "Ngôn ngữ C là một ngôn ngữ lập trình bậc cao được phát triển vào những năm 1970.",
             "C là ngôn ngữ nền tảng cho nhiều ngôn ngữ lập trình hiện đại và được sử dụng rộng rãi trong phát triển phần mềm.",
@@ -880,6 +1889,166 @@ public class DanhSachBaiHocData {
     private static final Map<String, String[]> ICON_MAP = new HashMap<>();
 
     static {
+
+        // JavaScript Cơ Bản
+        ICON_MAP.put("Giới thiệu Javascript", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Cách nhúng JavaScript vào HTML", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Biến và Kiểu dữ liệu trong JavaScript", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Toán tử và Cấu trúc điều kiện trong JavaScript", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Vòng lặp và Mảng trong JavaScript", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Hàm và Phạm vi biến trong JavaScript", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Thực hành: Xây dựng trò chơi nhỏ", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        // JavaScript Nâng Cao
+        ICON_MAP.put("Vòng lặp và Hàm", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Lập trình hướng đối tượng (OOP)", new String[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Closure và Hoisting", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("ES6+ và Các tính năng mới", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Xử lý lỗi và Debugging", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Thực hành: Xây dựng ứng dụng To-Do List", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        //JavaScript Chuyên Nghiệp
+        ICON_MAP.put("Lập trình bất đồng bộ (Asynchronous)", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Làm việc với API", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("DOM và Xử lý sự kiện", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("LocalStorage và SessionStorage", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Web Workers và Hiệu suất JavaScript", new String[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Thực hành: Xây dựng ứng dụng thời tiết", new String[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        // JavaScript - Ứng dụng thực tế
+        ICON_MAP.put("JavaScript trong dự án Web", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Framework JavaScript (React, Vue, Node.js)", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Webpack và tối ưu hiệu suất", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Viết Unit Test với Jest", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Thực hành: Xây dựng ứng dụng Chat thời gian thực", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
         ICON_MAP.put("Giới thiệu về ngôn ngữ C", new String[]{
             "",
             "",
@@ -1280,6 +2449,329 @@ public class DanhSachBaiHocData {
         });
 
         ICON_MAP.put("Bảo mật (Spring Security, OAuth2, JWT), Hiệu năng & Kiểm thử", new String[]{
+            "",
+            "",
+            ""
+        });
+        
+        //HTML Cơ Bản
+        ICON_MAP.put("HTML là gì?", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("CẤU TRÚC CƠ BẢN CỦA HTML", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Cách viết file HTML và hiển thị trên trình duyệt", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Tiêu đề (<h1> đến <h6>)", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Đoạn văn (<p>), Xuống dòng (<br>), Đường ngang (<hr>)", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Định dạng văn bản (<b>, <i>, <u>, <strong>, <em>, <mark>, <small>)", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Danh sách: có thứ tự (<ol>), không thứ tự (<ul>), mô tả (<dl>)", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Chèn ảnh (<img>), video (<video>), âm thanh (<audio>)", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Tạo liên kết (<a>) và điều hướng trang web", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Nhúng iframe (<iframe>)", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Bảng (<table>, <tr>, <td>, <th>)", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Biểu mẫu (<form>, <input>, <textarea>, <select>)", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        //HTML Nâng Cao
+        ICON_MAP.put("Các thẻ Semantic (<header>, <footer>, <nav>, <article>, <section>)", new String[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Ứng dụng Semantic HTML để tối ưu SEO", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Sử dụng <meta> để tối ưu công cụ tìm kiếm", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Open Graph, Twitter Card", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Favicon, Sitemap, robots.txt", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Local Storage & Session Storage", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Geolocation API (Xác định vị trí người dùng)", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Drag & Drop API", new String[]{
+            "",
+            "",
+            ""
+        });
+
+        // CSS Cơ Bản
+        ICON_MAP.put("Inline CSS, Internal CSS, External CSS", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Cú pháp CSS cơ bản", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Selectors cơ bản: class, id, tag, attribute", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Đơn vị đo lường trong CSS: px, %, em, rem, vw, vh", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Margin, Border, Padding, Content – CSS Box Model", new String[]{
+            ""
+        });
+        ICON_MAP.put("Các thuộc tính width, height, max-width, min-height", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Positioning (static, relative, absolute, fixed, sticky)", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Màu HEX, RGB, HSL", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Font-family, font-size, font-weight", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Line-height, Letter-spacing", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("display: block, inline, inline-block, flex, grid", new String[]{
+            "",
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Viewport meta tag", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+
+        // CSS Nâng Cao
+        ICON_MAP.put("display: flex", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Căn chỉnh bằng justify-content, align-items, align-self", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("flex-wrap, flex-direction", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("display: grid", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("grid-template-columns, grid-template-rows, gap, align-items, justify-content", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Media Queries (@media)", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Mobile-first vs. Desktop-first", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("CSS Container Queries", new String[]{
+            ""
+        });
+        ICON_MAP.put("transition, animation, keyframes", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Hover effect nâng cao", new String[]{
+            ""
+        });
+        ICON_MAP.put(":nth-child(), :not(), :focus-within", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Pseudo-elements (::before, ::after)", new String[]{
+            ""
+        });
+
+        // CSS Chuyên Nghiệp
+        ICON_MAP.put("BEM (Block Element Modifier)", new String[]{
+            ""
+        });
+        ICON_MAP.put("OOCSS (Object-Oriented CSS)", new String[]{
+            ""
+        });
+        ICON_MAP.put("SMACSS (Scalable and Modular Architecture for CSS)", new String[]{
+            ""
+        });
+        ICON_MAP.put("Biến trong CSS (--main-color)", new String[]{
+            ""
+        });
+        ICON_MAP.put("Nested Rules, Mixins, Functions", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Tối ưu hóa mã CSS với SCSS", new String[]{
+            ""
+        });
+        ICON_MAP.put("Minify CSS", new String[]{
+            ""
+        });
+        ICON_MAP.put("Load Font Tối ưu", new String[]{
+            ""
+        });
+        ICON_MAP.put("Critical CSS & Lazy Loading", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Bootstrap", new String[]{
+            ""
+        });
+        ICON_MAP.put("Tailwind CSS", new String[]{
+            ""
+        });
+        ICON_MAP.put("ARIA Roles", new String[]{
+            ""
+        });
+        ICON_MAP.put("Keyboard Navigation", new String[]{
+            ""
+        });
+        ICON_MAP.put("Dark Mode hỗ trợ người dùng khiếm thị", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Tạo hình ảnh, animations phức tạp bằng CSS", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("CSS Art & Pure CSS Illustrations", new String[]{
+            "",
+            ""
+        });
+        // Ứng Dụng & Dự Án Thực Tế
+        ICON_MAP.put("Blog cá nhân", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Landing Page sản phẩm", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Web bán hàng cơ bản", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Hiệu ứng scroll, parallax", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Dark Mode", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Animation nâng cao", new String[]{
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Tạo manifest.json", new String[]{
+            "",
+            ""
+        });
+        ICON_MAP.put("Service Worker & Caching", new String[]{
+            "",
+            "",
+            "",
+            ""
+        });
+        ICON_MAP.put("Offline Mode & Push Notifications", new String[]{
+            "",
             "",
             "",
             ""

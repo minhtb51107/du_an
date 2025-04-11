@@ -130,7 +130,7 @@ public class DanhSachBaiHocCon extends JPanel {
         ImageIcon scaledIcon1 = new ImageIcon(scaledImage1);
         JLabel iconLabel = new JLabel(scaledIcon1);
 
-        panel.add(iconLabel, gbc);
+        //panel.add(iconLabel, gbc);
 
 // Cột 2 - Nội dung (Tiêu đề & Mô tả)
         gbc.gridx = 1;
@@ -143,6 +143,7 @@ public class DanhSachBaiHocCon extends JPanel {
 // Panel bọc nội dung
         JPanel textPanel = new JPanel(new GridBagLayout());
         textPanel.setOpaque(false);
+        textPanel.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 10));
 
 // GridBagConstraints cho textPanel
         GridBagConstraints gbcText = new GridBagConstraints();
@@ -200,7 +201,7 @@ public class DanhSachBaiHocCon extends JPanel {
             }
         });
 
-        panel.add(button, gbc);
+       // panel.add(button, gbc);
         return panel;
     }
 

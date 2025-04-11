@@ -5,6 +5,7 @@
 package com.kehoach;
 
 import com.swing.RoundedPanel;
+import com.todolist.app.TodoListApp;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -33,6 +34,7 @@ public class GridBagPanelDemo extends JPanel {
     private JPanel mainPanel; // Panel chứa nội dung sẽ thay đổi
     private CardLayout cardLayout; // Layout giúp chuyển đổi nội dung
     JLabel lblTitle;
+    JPanel panelKhoaBieu;
 
     public GridBagPanelDemo() {
         setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20)); // Xóa viền gốc
@@ -100,7 +102,7 @@ public class GridBagPanelDemo extends JPanel {
         // Thêm các RoundedPanel vào buttonPanel
         buttonPanel.add(KhoaBieu);
         buttonPanel.add(TodoList);
-        buttonPanel.add(NhatKy);
+        //buttonPanel.add(NhatKy);
         buttonPanel.setOpaque(false);
 
         // Thêm tiêu đề và các nút vào menuPanel
@@ -122,7 +124,7 @@ public class GridBagPanelDemo extends JPanel {
         mainPanel.setOpaque(false);
 
         // Các panel nội dung
-        JPanel panelKhoaBieu = createPanel(new Color(238, 239, 233, 255), "");
+        panelKhoaBieu = createPanel(new Color(238, 239, 233, 255), "");
         panelKhoaBieu.setLayout(new BorderLayout());
         panelKhoaBieu.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
         panelKhoaBieu.setPreferredSize(new Dimension(500, 400));  // Kích thước mong muốn
@@ -145,9 +147,9 @@ public class GridBagPanelDemo extends JPanel {
 
         panelKhoaBieu.add(scrollPane);
 
-        JPanel panelTodoList = createPanel(new Color(238, 239, 233, 255), "To-do List nội dung");
+        JPanel panelTodoList = createPanel(new Color(242,240,227,255), "To-do List nội dung");
         panelTodoList.setLayout(new BorderLayout());
-        TodoListApp app = new TodoListApp();
+        KanbanBoardApp app = new KanbanBoardApp();
         panelTodoList.add(app, BorderLayout.CENTER);
 
         JPanel panelNhatKy = createPanel(new Color(238, 239, 233, 255), "Nhật ký nội dung");
@@ -167,6 +169,29 @@ public class GridBagPanelDemo extends JPanel {
         btnKhoaBieu.addActionListener(e -> cardLayout.show(mainPanel, "KhoaBieu"));
         btnTodoList.addActionListener(e -> cardLayout.show(mainPanel, "TodoList"));
         btnNhatKy.addActionListener(e -> cardLayout.show(mainPanel, "NhatKy"));
+    }
+
+    public void updateKhoaBieu() {
+
+        panelKhoaBieu.removeAll();
+
+        JScrollPane scrollPane = new JScrollPane();
+        GiaoDienKeHoach panel = new GiaoDienKeHoach(scrollPane);
+
+        scrollPane.setViewportView(panel);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+
+        scrollPane.getViewport().setOpaque(false);
+        scrollPane.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+        scrollPane.setOpaque(false);
+        scrollPane.setViewportBorder(null);
+
+        panelKhoaBieu.add(scrollPane);
+
+        // Cập nhật lại giao diện
+        panelKhoaBieu.revalidate();
+        panelKhoaBieu.repaint();
     }
 
     private JPanel createPanel(Color color, String text) {

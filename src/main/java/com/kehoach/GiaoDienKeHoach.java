@@ -34,7 +34,7 @@ public class GiaoDienKeHoach extends JPanel {
 
     String o = nguoiDung.getMaNguoiDung();
     
-    int v = dao.getIdKeHoachByIdUser(o);;
+    int v;
 
     
     boolean isFakeClick = false; // Cờ xác định click giả lập
@@ -78,7 +78,13 @@ public class GiaoDienKeHoach extends JPanel {
         setLayout(null);
         setOpaque(false);
         setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        int a = dao.getIdKeHoachByIdUser(o);
+        
+        if(a == 0){
+         dao.insertKeHoach(o);
+        }
 
+        v = dao.getIdKeHoachByIdUser(o);
 //        setBackground(new Color(223,223,215,255));
 //        setPreferredSize(new Dimension(0, 0)); // Kích thước ban đầu
         // Thêm điểm đầu tiên của đường ngang
@@ -899,7 +905,8 @@ public class GiaoDienKeHoach extends JPanel {
                     addNewHorizontalSegment(clickCount);
                     clickCount++; // Tăng biến đếm sau mỗi lần nhấn
                     text++;
-                    dao.insertKhoaBieu(currentClicks1 + 1, v);
+                    //dao.insertKeHoach(o);
+                    dao.insertKhoaBieu(currentClicks1 + 1, v);                  
                     //insert();
                 }
             });

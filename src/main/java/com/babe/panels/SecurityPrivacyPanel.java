@@ -70,8 +70,8 @@ public class SecurityPrivacyPanel extends JPanel {
         addSection("Bảo mật", mainContentPanel);
         addPasswordChange(mainContentPanel);
         //addTwoFactorAuth(mainContentPanel);
-        addLoginHistory(mainContentPanel);
-        addLogoutAllDevices(mainContentPanel);
+        //addLoginHistory(mainContentPanel);
+        //addLogoutAllDevices(mainContentPanel);
 
         // Quyền riêng tư
 //        addSection("Quyền riêng tư", mainContentPanel);

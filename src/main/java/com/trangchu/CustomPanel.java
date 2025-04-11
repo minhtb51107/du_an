@@ -1,5 +1,8 @@
 package com.trangchu;
 
+import com.dao.HethongDAO;
+import com.entity.Data;
+import com.entity.NguoiDung;
 import com.swing.RoundedPanel;
 import com.ui.MainFrame;
 import javax.swing.*;
@@ -19,7 +22,12 @@ public class CustomPanel extends JPanel {
     HorizontalBarChart horizontalBarChart;
 
     List<JLabel> sectionLabels = new ArrayList<>();
+    
+    private DanhSachBaiHocCon danhSachBaiHocCon;
+    JPanel bottomPanel = new JPanel();
 
+            Data data = new Data();
+            
     public CustomPanel(MainFrame mainFrame) {
         this.mainFrame = mainFrame;
 
@@ -50,7 +58,7 @@ public class CustomPanel extends JPanel {
 
         // Thêm từng giao diện vào panelA
         panelAGbc.gridy = 0;
-        panelA.add(createSectionPanel("Danh sách khóa học", new DanhSachBaiHocChinh("java")), panelAGbc);
+        panelA.add(createSectionPanel("Danh sách công việc", new DanhSachBaiHocChinh()), panelAGbc);
 
         panelAGbc.gridy = 1;
         // Khởi tạo và lưu instance vào biến field
@@ -79,12 +87,19 @@ public class CustomPanel extends JPanel {
         panelB.add(createSectionPanel("Tiến độ hoàn thành khóa học", horizontalBarChart), panelBGbc);
 
         panelBGbc.gridy = 1;
-        JPanel bottomPanel = new JPanel();
+        bottomPanel = new JPanel();
         //bottomPanel.setBackground(new Color(242,240,228,0));
         bottomPanel.setOpaque(false);
         bottomPanel.setLayout(new BorderLayout());
         bottomPanel.setBorder(BorderFactory.createEmptyBorder(0, 20, 0, 20));
-        bottomPanel.add(createSectionPanel("Danh sách bài học đang học", new DanhSachBaiHocCon("HTML Cơ Bản", mainFrame)), BorderLayout.CENTER);
+        
+        NguoiDung nguoiDung = new NguoiDung();
+        String maND = nguoiDung.getMaNguoiDung();
+        HethongDAO dao = new HethongDAO();
+        String check = dao.getBaiHocHienTai(maND);
+        Data data = new Data();
+        data.setBaihoc(check);
+        bottomPanel.add(createSectionPanel("Danh sách bài học đang học", new DanhSachBaiHocCon(data.getBaihoc(), mainFrame)), BorderLayout.CENTER);
         panelB.add(bottomPanel, panelBGbc);
 
         // Thêm panelA và panelB vào mainPanel
@@ -151,5 +166,20 @@ public class CustomPanel extends JPanel {
         sectionPanel.add(component, gbc);
 
         return sectionPanel;
+    }
+
+    public void updateDanhSachBai(String content) {
+        if (danhSachBaiHocCon != null) {
+            bottomPanel.removeAll();
+        }
+
+        danhSachBaiHocCon = new DanhSachBaiHocCon(content, mainFrame);
+        Data data = new Data();
+        data.setBaihoc(content);
+        bottomPanel.add(createSectionPanel("Danh sách bài học đang học", danhSachBaiHocCon), BorderLayout.CENTER);
+
+        // Cập nhật lại giao diện
+        bottomPanel.revalidate();
+        bottomPanel.repaint();
     }
 }

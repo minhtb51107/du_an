@@ -1,6 +1,12 @@
 package com.baihoc;
 
 import com.data.NoiDungBaiHoc;
+import com.data.NoiDungBaiHocHTML_CSS;
+import com.data.NoiDungBaiHocJava;
+import com.data.NoiDungBaiHocJavascript;
+import com.data.NoiDungBaiHocPython;
+import com.data.NoiDungBaiHocSQL;
+import com.entity.Data;
 import com.ui.MainFrame;
 import javax.swing.*;
 import java.awt.*;
@@ -19,6 +25,13 @@ public class DynamicPanelExample extends JPanel {
     private java.util.List<JTextArea> textAreasA = new java.util.ArrayList<>();
     private java.util.List<JTextArea> textAreasB = new java.util.ArrayList<>();
     private java.util.List<JTextArea> textAreasC = new java.util.ArrayList<>();
+    
+    int[] dataArrayIndex;
+            String[] dataArrayTitle ;
+        String[] dataArrayContent ;
+        String[] dataArrayCode ;
+        
+        Data data = new Data();
 
     public DynamicPanelExample(String content) {
 
@@ -32,10 +45,47 @@ public class DynamicPanelExample extends JPanel {
         setBorder(BorderFactory.createEmptyBorder());
         setPreferredSize(new Dimension(350, 110));
 
-        int[] dataArrayIndex = NoiDungBaiHoc.getIndex(content);
-        String[] dataArrayTitle = NoiDungBaiHoc.getTitle(content);
-        String[] dataArrayContent = NoiDungBaiHoc.getContent(content);
-        String[] dataArrayCode = NoiDungBaiHoc.getCode(content);
+        if (data.getMonhoc().equals("Java")) {
+            dataArrayIndex = NoiDungBaiHocJava.getIndex(content);
+            dataArrayTitle = NoiDungBaiHocJava.getTitle(content);
+            dataArrayContent = NoiDungBaiHocJava.getContent(content);
+            dataArrayCode = NoiDungBaiHocJava.getCode(content);
+        }
+
+        if (data.getMonhoc().equals("HTML & CSS")) {
+            dataArrayIndex = NoiDungBaiHocHTML_CSS.getIndex(content);
+            dataArrayTitle = NoiDungBaiHocHTML_CSS.getTitle(content);
+            dataArrayContent = NoiDungBaiHocHTML_CSS.getContent(content);
+            dataArrayCode = NoiDungBaiHocHTML_CSS.getCode(content);
+        }
+
+        if (data.getMonhoc().equals("JAVASCRIPT")) {
+            dataArrayIndex = NoiDungBaiHocJavascript.getIndex(content);
+            dataArrayTitle = NoiDungBaiHocJavascript.getTitle(content);
+            dataArrayContent = NoiDungBaiHocJavascript.getContent(content);
+            dataArrayCode = NoiDungBaiHocJavascript.getCode(content);
+        }
+
+        if (data.getMonhoc().equals("PYTHON")) {
+            dataArrayIndex = NoiDungBaiHocPython.getIndex(content);
+            dataArrayTitle = NoiDungBaiHocPython.getTitle(content);
+            dataArrayContent = NoiDungBaiHocPython.getContent(content);
+            dataArrayCode = NoiDungBaiHocPython.getCode(content);
+        }
+
+        if (data.getMonhoc().equals("C")) {
+            dataArrayIndex = NoiDungBaiHocJava.getIndex(content);
+            dataArrayTitle = NoiDungBaiHocJava.getTitle(content);
+            dataArrayContent = NoiDungBaiHocJava.getContent(content);
+            dataArrayCode = NoiDungBaiHocJava.getCode(content);
+        }
+
+        if (data.getMonhoc().equals("SQL")) {
+            dataArrayIndex = NoiDungBaiHocSQL.getIndex(content);
+            dataArrayTitle = NoiDungBaiHocSQL.getTitle(content);
+            dataArrayContent = NoiDungBaiHocSQL.getContent(content);
+            dataArrayCode = NoiDungBaiHocSQL.getCode(content);
+        }
 
         parentPanel = new JPanel();
         parentPanel.setOpaque(false);
@@ -88,8 +138,6 @@ public class DynamicPanelExample extends JPanel {
         //panel.setMaximumSize(new Dimension(350, 300)); // Không lớn hơn 500x300
         //panel.setPreferredSize(new Dimension(350, 100));
 
-        String[] dataArrayContent = NoiDungBaiHoc.getContent(content);
-
         JTextArea textArea = createTransparentTextArea();
         textArea.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 10));
         textArea.setEditable(false);
@@ -126,8 +174,6 @@ public class DynamicPanelExample extends JPanel {
         gbc.anchor = GridBagConstraints.NORTHEAST;
         panel.add(copyLabel, gbc);
 
-        String[] dataArrayCode = NoiDungBaiHoc.getCode(content);
-
         JTextArea textArea = createAutoResizeTextArea(Color.WHITE);
         textArea.setEditable(false);
         textArea.setFocusable(false);
@@ -162,8 +208,6 @@ public class DynamicPanelExample extends JPanel {
         //panel.setMinimumSize(new Dimension(350, 100)); // Chiều rộng tối thiểu 200px, chiều cao tối thiểu 100px
         //panel.setMaximumSize(new Dimension(350, 300)); // Không lớn hơn 500x300
         //panel.setPreferredSize(new Dimension(350, 35));
-
-        String[] dataArrayTitle = NoiDungBaiHoc.getTitle(content);
 
         JTextArea textArea = createTransparentTextArea();
         textArea.setBorder(BorderFactory.createEmptyBorder(5, 0, 0, 0));

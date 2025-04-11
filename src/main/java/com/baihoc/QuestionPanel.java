@@ -8,7 +8,12 @@ package com.baihoc;
  *
  * @author PC
  */
+import com.dao.BaiHocDAO;
 import com.data.BaiTapData;
+import com.data.BaiTapHTML_CSS;
+import com.data.BaiTapJava;
+import com.entity.Data;
+import com.entity.NguoiDung;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -32,10 +37,32 @@ public class QuestionPanel extends JPanel {
     private JButton submitButton;
     private int questionCount;
     private final String API_KEY = "AIzaSyA7BaBxVKCqrHA-2cjGmcu7PuEgrGh3ui4";
+    String[] dataArrayContent;
+    int[] dataArrayIndex;
+    Data data = new Data();
+    BaiHocDAO dao = new BaiHocDAO();
+    int mabhct;
+    NguoiDung nguoiDung = new NguoiDung();
+    String maND = nguoiDung.getMaNguoiDung();
 
     public QuestionPanel(String content) {
-        int[] dataArrayIndex = BaiTapData.getIndex(content);
+        mabhct = dao.getMaBaiHocChiTietByTen(content);
+        
+//        dataArrayIndex = BaiTapData.getIndex(content);
+//        this.questionCount = dataArrayIndex[0];
+//        dataArrayContent = BaiTapData.getTitles(content);
+        
+        if (data.getMonhoc().equals("Java")) {
+        dataArrayIndex = BaiTapJava.getIndex(content);
         this.questionCount = dataArrayIndex[0];
+        dataArrayContent = BaiTapJava.getTitles(content);
+        }
+
+        if (data.getMonhoc().equals("HTML & CSS")) {
+        dataArrayIndex = BaiTapHTML_CSS.getIndex(content);
+        this.questionCount = dataArrayIndex[0];
+        dataArrayContent = BaiTapHTML_CSS.getTitles(content);
+        }
         
         setLayout(new BorderLayout());
         setOpaque(false);
@@ -57,8 +84,6 @@ public class QuestionPanel extends JPanel {
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         scrollPane.setPreferredSize(new Dimension(500, 200));
         add(scrollPane, BorderLayout.CENTER);
-        
-        String[] dataArrayContent = BaiTapData.getTitles(content);
 
         for (int i = 1; i <= questionCount; i++) {
             mainPanel.add(createQuestionPanel("Câu hỏi " + i + dataArrayContent[i - 1]));
@@ -119,8 +144,8 @@ public class QuestionPanel extends JPanel {
             } catch (IOException ex) {
                 Logger.getLogger(QuestionPanel.class.getName()).log(Level.SEVERE, null, ex);
             }
-            System.out.println(output.toString());
-            JOptionPane.showMessageDialog(null, output.toString(), "Kết quả", JOptionPane.INFORMATION_MESSAGE);
+            //System.out.println(output.toString());
+            //JOptionPane.showMessageDialog(null, output.toString(), "Kết quả", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
@@ -130,13 +155,13 @@ public class QuestionPanel extends JPanel {
         SwingUtilities.invokeLater(() -> {
             // Tạo Pattern cho việc tìm "đúng", "sai" và điểm số
             Pattern answerPattern = Pattern.compile("(đúng|sai)");
-            Pattern scorePattern = Pattern.compile("Điểm: (\\d+)");
+            Pattern scorePattern = Pattern.compile("điểm: (\\d+)");
             Component[] components = mainPanel.getComponents();
 
             // Tìm các kết quả đúng và sai
             Matcher answerMatcher = answerPattern.matcher(apiResponse);
             while (answerMatcher.find()) {
-                System.out.println(answerMatcher.group());
+                //System.out.println(answerMatcher.group());
 
                 JPanel panel = (JPanel) components[i];
                 JTextArea questionArea = (JTextArea) panel.getComponent(0);
@@ -150,10 +175,20 @@ public class QuestionPanel extends JPanel {
             }
 
         // Tìm điểm số
-        Matcher scoreMatcher = scorePattern.matcher(apiResponse);
-        if (scoreMatcher.find()) {
-            System.out.println(scoreMatcher.group(1));
-        }
+            Matcher scoreMatcher = scorePattern.matcher(apiResponse);
+            if (scoreMatcher.find()) {
+                String scoreText = scoreMatcher.group(1);
+                double score = Double.parseDouble(scoreText);
+                int index = dao.countDiemByNguoiDungAndBaiHoc(maND, mabhct);
+                if(index != 0){
+                    dao.updateDiem(maND, mabhct, score);
+                } else{
+                dao.insertDiem(maND, mabhct, score);
+                }
+                //System.out.println("Điểm: " + scoreText);
+            } else {
+                System.out.println("Điểm: không xác định");
+            }
     });
 }
 

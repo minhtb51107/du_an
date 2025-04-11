@@ -26,13 +26,18 @@ import com.baihoc.ModernBarChart;
 import com.baihoc.QuestionPanel;
 import com.chatAI.ChatAIUI;
 import com.chatAI.Panel;
+import com.dao.ThoiGianHoatDongDAO;
 import com.dao.ThongTinDAO;
+import com.entity.Data;
 import com.entity.HeThong;
+
 import com.entity.NguoiDung;
+import com.entity.ThoiGianHoatDong;
 import com.kehoach.GridBagPanelDemo;
-import com.kehoach.TodoListApp;
+import com.kehoach.KanbanBoardApp;
 import com.trangchu.CustomPanel;
 import com.tuongtac.AICodeCompilerUI;
+import java.awt.AWTEvent;
 import java.awt.BasicStroke;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
@@ -48,22 +53,36 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.RenderingHints;
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.awt.geom.Ellipse2D;
+import java.sql.Date;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
-import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.LocalDate;
+import javax.swing.Timer;
+
 
 /**
  *
@@ -80,8 +99,10 @@ public class MainFrame extends javax.swing.JFrame {
     CustomPanel customPanel = new CustomPanel(this);
 
     GridBagPanelDemo gridBagPanelDemo = new GridBagPanelDemo();
-    
+
     TrangBaiHoc trangBaiHoc;
+    
+    TimeTracker tracker;
 
 //    TrangChinh trangChinh;
     /**
@@ -90,11 +111,28 @@ public class MainFrame extends javax.swing.JFrame {
     public MainFrame(String content) {
 
         ht.setSangtoi(true);
-        
-        ht.setCochu("Vừa");
-        
-        //trangBaiHoc = new TrangBaiHoc(this, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", "");
 
+        tracker = new TimeTracker();
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                tracker.stop();
+                System.exit(0);
+            }
+        });
+
+        Toolkit.getDefaultToolkit().addAWTEventListener(event -> {
+            if (event instanceof MouseEvent || event instanceof KeyEvent) {
+                if (tracker != null) {
+                    tracker.recordInteraction();
+                }
+            }
+        }, AWTEvent.MOUSE_EVENT_MASK | AWTEvent.KEY_EVENT_MASK);
+
+
+        setVisible(true);
+
+        //trangBaiHoc = new TrangBaiHoc(this, "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java", "");
         initComponents();
         setTitle("Full Screen Background Demo");
         setExtendedState(JFrame.MAXIMIZED_BOTH); // Mở rộng cửa sổ toàn màn hình
@@ -312,6 +350,9 @@ public class MainFrame extends javax.swing.JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 JOptionPane.showMessageDialog(null, "Bạn đã đăng xuất");
+                dispose();
+                LoginFrom lg = new LoginFrom();
+                lg.setVisible(true);
             }
         });
 
@@ -439,7 +480,6 @@ public class MainFrame extends javax.swing.JFrame {
 //                updateFontSize();
 //                System.out.println("text2");
 //            }
-
             GradientPaint gradient = new GradientPaint(0, 0, mau, width, 0, mau);
             g2d.setPaint(gradient);
             g2d.fillRect(0, 0, width, height);
@@ -466,10 +506,8 @@ public class MainFrame extends javax.swing.JFrame {
 //        }
 //        dynamicPanelExample.setFontSizes(size);
 //    }
-
-
     class AvatarPanel extends JPanel {
-        
+
         ThongTinDAO dao = new ThongTinDAO();
         NguoiDung nguoiDung = new NguoiDung();
         String maND = nguoiDung.getMaNguoiDung();
@@ -545,6 +583,9 @@ public class MainFrame extends javax.swing.JFrame {
                 mainContent.add(page, "Page" + i);
             }
 
+            Data data = new Data();
+            data.setMonhoc(getLanguage(currentPage + 1));
+
             // Nút Previous
             ImageIcon IconPrve = new ImageIcon(getClass().getResource("/com/img/prev.png"));
             Image scaledImagePrve = IconPrve.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
@@ -557,6 +598,8 @@ public class MainFrame extends javax.swing.JFrame {
                 if (currentPage > 0) {
                     currentPage--;
                     cardLayout.show(mainContent, "Page" + (currentPage + 1));
+                    data.setMonhoc(getLanguage(currentPage + 1));
+        
                 }
             });
 
@@ -572,6 +615,8 @@ public class MainFrame extends javax.swing.JFrame {
                 if (currentPage < totalPages - 1) {
                     currentPage++;
                     cardLayout.show(mainContent, "Page" + (currentPage + 1));
+                    data.setMonhoc(getLanguage(currentPage + 1));
+                    
                 }
             });
 
@@ -584,7 +629,7 @@ public class MainFrame extends javax.swing.JFrame {
         // Phương thức tạo nội dung trang dựa trên chỉ số trang
         private JPanel createPage(int pageIndex, MainFrame mainFrame) {
             JPanel page = new JPanel(new BorderLayout());
-            TrangChinh trangChinh = new TrangChinh(pageIndex - 1, getLanguage(pageIndex), getLanguage(pageIndex), mainFrame);
+            TrangChinh trangChinh = new TrangChinh(pageIndex - 1, getLanguage(pageIndex), getLanguage(pageIndex), mainFrame, customPanel, gridBagPanelDemo);
             trangChinhMap.put(pageIndex, trangChinh);
             page.add(trangChinh, BorderLayout.CENTER);
             return page;
@@ -788,7 +833,6 @@ public class MainFrame extends javax.swing.JFrame {
 //            return button;
 //        }
 //    }
-    
     public class TrangBaiHoc extends JPanel {
 
         private JPanel mainPanel;
@@ -941,7 +985,7 @@ public class MainFrame extends javax.swing.JFrame {
 // Right Panel
             JPanel rightPanel = new JPanel(new BorderLayout());
             rightPanel.setOpaque(false);
-            
+
             dynamicPanelExample = new DynamicPanelExample(content1);
 
             newPanel = new RoundedPanel(50);
@@ -1018,6 +1062,67 @@ public class MainFrame extends javax.swing.JFrame {
             }
         }
     }
+    
+public class TimeTracker {
+
+    private LocalDateTime startTime;
+    private LocalDateTime lastInteractionTime;
+    private long totalTimeSeconds = 0;
+    private Timer inactivityTimer;
+    private static final int TIMEOUT_MINUTES = 5; // timeout sau 5 phút không hoạt động
+    
+    NguoiDung nguoiDung = new NguoiDung();
+    private String maNguoiDung = nguoiDung.getMaNguoiDung(); // Mã người dùng
+    private ThoiGianHoatDongDAO dao = new ThoiGianHoatDongDAO(); // DAO tương tác database
+
+    public TimeTracker() {  
+        this.startTime = LocalDateTime.now();
+        this.lastInteractionTime = startTime;
+        setupInactivityTimer();
+    }
+
+    private void setupInactivityTimer() {
+        int timeoutMillis = TIMEOUT_MINUTES * 60 * 1000;
+
+        inactivityTimer = new Timer(timeoutMillis, e -> {
+            long sessionTime = Duration.between(startTime, lastInteractionTime).getSeconds();
+            totalTimeSeconds += sessionTime;
+            saveTimeToDatabase(); // Lưu vào database khi timeout
+            inactivityTimer.stop();
+        });
+        inactivityTimer.setRepeats(false);
+        inactivityTimer.start();
+    }
+
+    public void recordInteraction() {
+        lastInteractionTime = LocalDateTime.now();
+        inactivityTimer.restart();
+    }
+
+    public void stop() {
+        long sessionTime = Duration.between(startTime, LocalDateTime.now()).getSeconds();
+        totalTimeSeconds += sessionTime;
+        saveTimeToDatabase(); // Lưu khi thoát app
+    }
+
+    private void saveTimeToDatabase() {
+        int todaySeconds = (int) totalTimeSeconds;
+        Date today = Date.valueOf(LocalDate.now());
+
+        ThoiGianHoatDong existingRecord = dao.findByMaNguoiDungAndDate(maNguoiDung, today);
+
+        if (existingRecord != null) {
+            int updatedTime = existingRecord.getThoiGianTongHop() + todaySeconds;
+            dao.update(existingRecord.getMaHoatDong(), updatedTime);
+        } else {
+            dao.insert(maNguoiDung, today, todaySeconds);
+        }
+
+        totalTimeSeconds = 0;
+    }
+}
+
+
 
     /**
      * This method is called from within the constructor to initialize the form.

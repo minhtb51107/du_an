@@ -4,9 +4,14 @@
  */
 package com.lesson.content.java;
 
+import com.dao.HethongDAO;
 import com.data.DanhSachBaiHocConData;
+import com.entity.Data;
+import com.entity.NguoiDung;
+import com.kehoach.GridBagPanelDemo;
 import com.swing.ProfessionalSidebarForm;
 import com.swing.RoundedPanel;
+import com.trangchu.CustomPanel;
 import com.ui.MainFrame;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -33,8 +38,14 @@ public class TrangChinh extends JPanel {
     MainFrame mainFrame;
     
     private JLabel title;
+    
+    CustomPanel customPanel;
+    
+    GridBagPanelDemo gridBagPanelDemo;
 
-    public TrangChinh(int index, String selectedLanguage, String content, MainFrame mainFrame) {
+    public TrangChinh(int index, String selectedLanguage, String content, MainFrame mainFrame, CustomPanel customPanel, GridBagPanelDemo gridBagPanelDemo) {
+        this.customPanel = customPanel;
+        this.gridBagPanelDemo = gridBagPanelDemo;
         this.mainFrame = mainFrame;
 //                System.out.println(content);
         setLayout(new BorderLayout());
@@ -85,7 +96,7 @@ public class TrangChinh extends JPanel {
         panelA1.setLayout(new BorderLayout()); // Đặt layout cho panelA1 để chứa NestedPanelExample
 
         // Thêm NestedPanelExample vào trong RoundedPanel
-        panelA1.add(new KhungGioiThieuNgonNgu(index), BorderLayout.CENTER);
+        panelA1.add(new KhungGioiThieuNgonNgu(index, selectedLanguage, gridBagPanelDemo), BorderLayout.CENTER);
 
         // Thêm panelA1 vào giao diện chính
         add(panelA1, BorderLayout.CENTER);
@@ -194,7 +205,7 @@ public class TrangChinh extends JPanel {
             gbc.weightx = 1;
             gbc.weighty = 0.9;
             gbc.insets = new Insets(0, 10, 0, 10); // Thêm padding giữa tiêu đề và panelA2
-            add(new BieuDoDonut(), gbc);
+            add(new BieuDoDonut(selectedLanguage), gbc);
 
             gbc.gridy = 1;
             gbc.weighty = 0.1;
@@ -206,11 +217,27 @@ public class TrangChinh extends JPanel {
         if (danhSachBaiHocCon != null) {
             bottomSubPanel.remove(danhSachBaiHocCon);
         }
+
+        Data data = new Data();
+        data.setBaihoc(content);
+
         danhSachBaiHocCon = new DanhSachBaiHocCon(content, mainFrame);
         bottomSubPanel.add(danhSachBaiHocCon, BorderLayout.CENTER);
 
         // Cập nhật lại giao diện
         bottomSubPanel.revalidate();
         bottomSubPanel.repaint();
+
+        NguoiDung nguoiDung = new NguoiDung();
+        String maND = nguoiDung.getMaNguoiDung();
+        HethongDAO dao = new HethongDAO();
+        String check = dao.getBaiHocHienTai(maND);
+        if (check != null) {
+            dao.updateBaiHocHienTai(maND, content);
+        } else {
+            dao.insertHeThong(maND, content);
+        }
+        
+        customPanel.updateDanhSachBai(content);
     }
 }

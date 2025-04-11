@@ -4,7 +4,10 @@
  */
 package com.lesson.content.java;
 
+import com.dao.KhoaBieuDAO;
 import com.data.DataHopDangKyKhoaHoc;
+import com.entity.NguoiDung;
+import com.kehoach.GridBagPanelDemo;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,9 +15,12 @@ import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -22,8 +28,10 @@ import javax.swing.JPanel;
  * @author PC
  */
 public class HopDangKyKhoaHoc extends JPanel {
+    GridBagPanelDemo gridBagPanelDemo;
     
-    public HopDangKyKhoaHoc(int index) {
+    public HopDangKyKhoaHoc(int index, String selectedLanguage, GridBagPanelDemo gridBagPanelDemo) {
+        this.gridBagPanelDemo = gridBagPanelDemo;
         setOpaque(false);
         setBorder(null);
         setLayout(new GridBagLayout());
@@ -91,6 +99,119 @@ public class HopDangKyKhoaHoc extends JPanel {
         registerButton.setForeground(Color.BLACK);
         registerButton.setFont(new Font("Arial", Font.BOLD, 16));
         registerButton.setBorder(null);
+   
+        registerButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (selectedLanguage.equals("SQL")) {
+
+                    KhoaBieuDAO dao = new KhoaBieuDAO();
+                    NguoiDung nguoiDung = new NguoiDung();
+                    String o = nguoiDung.getMaNguoiDung();
+                    int id_kehoach = dao.getIdKeHoachByIdUser(o);
+                    dao.deleteAllByKeHoach(id_kehoach);
+
+                    // ======================
+                    // 1) BẢNG KHOABIEU
+                    // ======================
+                    dao.insertKhoaBieu(4, id_kehoach);  // (TUAN = 4, ID_KEHOACH = 1)
+                    dao.insertKhoaBieu(1, id_kehoach);  // (TUAN = 1, ID_KEHOACH = 1)
+
+                    // ======================
+                    // 2) BẢNG TUAN
+                    // ======================
+                    dao.insertTuan(1, 1, 4, "Tuần 1", null, 1, id_kehoach);
+                    dao.insertTuan(2, 2, 2, "Tuần 5", null, 1, id_kehoach);
+                    dao.insertTuan(1, 3, 4, "Tuần 2", null, 2, id_kehoach);
+                    dao.insertTuan(1, 4, 4, "Tuần 3", null, 3, id_kehoach);
+                    dao.insertTuan(1, 5, 4, "Tuần 4", null, 4, id_kehoach);
+
+                    // ======================
+                    // 3) BẢNG NGAY
+                    // ======================
+                    dao.insertNgay(1, 1, "Thứ 2: Giới thiệu SQL", 1, id_kehoach);
+                    dao.insertNgay(2, 2, "Thứ 2: UNIQUE, CHECK, NOT NULL", 2, id_kehoach);
+                    dao.insertNgay(3, 3, "", 3, 1);
+                    dao.insertNgay(4, 4, "Thứ 2: SELECT", 4, 1);
+                    dao.insertNgay(5, 5, null, 5, 1);
+                    dao.insertNgay(6, 6, "Thứ 4: Khái niệm ", 1, 1);
+                    dao.insertNgay(7, 7, null, 1, 1);
+                    dao.insertNgay(8, 8, "Thứ 2: Kiểu dữ liệu số, chuỗi, ngày t...", 1, id_kehoach);
+                    dao.insertNgay(9, 9, "Thứ 4: DEFAULT", 1, 1);
+                    dao.insertNgay(10, 11, "Thứ 4: INSERT", 3, 1);
+                    dao.insertNgay(11, 12, null, 3, 1);
+                    dao.insertNgay(12, 14, "Thứ 6: Kiểu dữ liệu, toán tử, biểu thức", 4, id_kehoach);
+                    dao.insertNgay(13, 16, "Thứ 4: Toán tử số học, so sánh, logic", 4, id_kehoach);
+                    dao.insertNgay(14, 17, null, 4, 1);
+                    dao.insertNgay(15, 18, "Thứ 6: UPDATE + DELETE", 5, id_kehoach);
+                    dao.insertNgay(16, 19, null, 5, 1);
+                    dao.insertNgay(17, 21, "Thứ 6: Hàm tổng hợp", 5, id_kehoach);
+                    dao.insertNgay(18, 22, null, 2, 1);
+                    dao.insertNgay(19, 13, "Thứ 2: Hàm xử lý chuỗi", 3, id_kehoach);
+                    dao.insertNgay(20, 15, null, 4, 1);
+                    dao.insertNgay(21, 20, "Thứ 4: Hàm xử lý ngày tháng", 5, id_kehoach);
+                    dao.insertNgay(22, 23, "Thứ 6: PRIMARY KEY, FOREIGN ...", 2, id_kehoach);
+                    
+                    gridBagPanelDemo.updateKhoaBieu();
+
+                    JOptionPane.showMessageDialog(null, "Đã tạo thời khóa biểu!");
+                }
+                
+                if (selectedLanguage.equals("Java")) {
+
+                    KhoaBieuDAO dao = new KhoaBieuDAO();
+                    NguoiDung nguoiDung = new NguoiDung();
+                    String o = nguoiDung.getMaNguoiDung();
+                    int id_kehoach = dao.getIdKeHoachByIdUser(o);
+                    dao.deleteAllByKeHoach(id_kehoach);
+
+                    // ======================
+                    // 1) BẢNG KHOABIEU
+                    // ======================
+                    dao.insertKhoaBieu(4, id_kehoach);  // (TUAN = 4, ID_KEHOACH = 1)
+                    dao.insertKhoaBieu(1, id_kehoach);  // (TUAN = 1, ID_KEHOACH = 1)
+
+                    // ======================
+                    // 2) BẢNG TUAN
+                    // ======================
+                    dao.insertTuan(1, 1, 4, "Tuần 1", null, 1, id_kehoach);
+                    dao.insertTuan(2, 2, 2, "Tuần 5", null, 1, id_kehoach);
+                    dao.insertTuan(1, 3, 4, "Tuần 2", null, 2, id_kehoach);
+                    dao.insertTuan(1, 4, 4, "Tuần 3", null, 3, id_kehoach);
+                    dao.insertTuan(1, 5, 4, "Tuần 4", null, 4, id_kehoach);
+
+                    // ======================
+                    // 3) BẢNG NGAY
+                    // ======================
+                    dao.insertNgay(1, 1, "Thứ 2: Java là gì? + Lịch sử phát triển của Java", 1, id_kehoach);
+                    dao.insertNgay(2, 2, "", 2, id_kehoach);
+                    dao.insertNgay(3, 3, "", 3, 1);
+                    dao.insertNgay(4, 4, "Thứ 2: Cài đặt JDK + IDE phổ biến", 4, 1);
+                    dao.insertNgay(5, 5, null, 5, 1);
+                    dao.insertNgay(6, 6, "Thứ 4: Lý do chọn Java + Ứng dụng của Java ", 1, 1);
+                    dao.insertNgay(7, 7, null, 1, 1);
+                    dao.insertNgay(8, 8, "Thứ 2: Toán tử trong Java", 1, id_kehoach);
+                    dao.insertNgay(9, 9, "", 1, 1);
+                    dao.insertNgay(10, 11, "Thứ 4: Viết và chạy chương trình Java đầu tiên", 3, 1);
+                    dao.insertNgay(11, 12, null, 3, 1);
+                    dao.insertNgay(12, 14, "Thứ 6: Cấu trúc cơ bản chương trình Java", 4, id_kehoach);
+                    dao.insertNgay(13, 16, "Thứ 4: Xuất dữ liệu ra màn hình", 4, id_kehoach);
+                    dao.insertNgay(14, 17, null, 4, 1);
+                    dao.insertNgay(15, 18, "Thứ 6: Biến và kiểu dữ liệu", 5, id_kehoach);
+                    dao.insertNgay(16, 19, null, 5, 1);
+                    dao.insertNgay(17, 21, "Thứ 6: Nhập dữ liệu từ bàn phím", 5, id_kehoach);
+                    dao.insertNgay(18, 22, null, 2, 1);
+                    dao.insertNgay(19, 13, "Thứ 2: Cấu trúc điều kiện", 3, id_kehoach);
+                    dao.insertNgay(20, 15, null, 4, 1);
+                    dao.insertNgay(21, 20, "Thứ 4: Vòng lặp", 5, id_kehoach);
+                    dao.insertNgay(22, 23, "Thứ 6: Mảng và xử lý chuỗi ...", 2, id_kehoach);
+                    
+                    gridBagPanelDemo.updateKhoaBieu();
+
+                    JOptionPane.showMessageDialog(null, "Đã tạo thời khóa biểu!");
+                }
+            }
+        });
 
         registerButton.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10)); // Thêm padding
          

@@ -1,5 +1,9 @@
 package com.trangchu;
 
+import com.dao.BaiHocDAO;
+import com.entity.DiemTrungKhoaHoc;
+import com.entity.NguoiDung;
+import java.util.List;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -17,6 +21,9 @@ public class HorizontalBarChart extends JPanel {
     
     CategoryPlot plot;
     BarRenderer renderer;
+    
+            NguoiDung nguoiDung = new NguoiDung();
+        String maND = nguoiDung.getMaNguoiDung();
 
     public HorizontalBarChart() {
         setLayout(new BorderLayout());
@@ -89,10 +96,15 @@ public class HorizontalBarChart extends JPanel {
     private CategoryDataset createDataset() {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
         String[] languages = {"Java", "HTML & CSS", "C", "JavaScript", "Python", "SQL"};
-
+        BaiHocDAO dao = new BaiHocDAO();
+        List<DiemTrungKhoaHoc> list = dao.getDiemTrungBinhBaiHocChinh(maND);
+        int i = 0;
         for (String lang : languages) {
-            dataset.addValue((int) (Math.random() * 100), "Số lượng", lang);
+            double diemTB = list.get(i).getDiemTrungBinh();
+            dataset.addValue(diemTB, "Số lượng", lang);
+            i++;
         }
+
 
         return dataset;
     }

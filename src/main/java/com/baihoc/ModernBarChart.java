@@ -1,6 +1,9 @@
 package com.baihoc;
 
+import com.dao.BaiHocDAO;
 import com.data.DanhSachBaiHocData;
+import com.entity.Diem;
+import com.entity.NguoiDung;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -12,8 +15,13 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
 
 public class ModernBarChart extends JPanel {
+    NguoiDung nguoiDung = new NguoiDung();
+    String maND = nguoiDung.getMaNguoiDung();
+    BaiHocDAO dao = new BaiHocDAO();
+    int mabhc;
 
     public ModernBarChart(String title, String content) {
         setLayout(new BorderLayout());
@@ -22,9 +30,11 @@ public class ModernBarChart extends JPanel {
         setBorder(null);
         setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
         //setPreferredSize(new Dimension(400, 400));
+        
+        mabhc = dao.getMaBaiHocConByTen(content);
 
         // Tạo dataset
-        CategoryDataset dataset = createDataset(content);
+        CategoryDataset dataset = createDataset();
 
         // Tạo biểu đồ
         JFreeChart chart = ChartFactory.createBarChart(
@@ -81,12 +91,19 @@ public class ModernBarChart extends JPanel {
         add(scrollPane);
     }
 
-    private CategoryDataset createDataset(String content) {
+    private CategoryDataset createDataset() {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        String[] titles = DanhSachBaiHocData.getTitles(content);
-        for (int i = 1; i <= titles.length; i++) {
-            dataset.addValue(100 + (int) (Math.random() * 100), "", "Bài: " + i);
+
+        // Lấy danh sách điểm
+        List<Diem> danhSachDiem = dao.getDanhSachDiemByNguoiDungVaBaiHocCon(maND, mabhc);
+
+        int i = 1;
+        for (Diem diem : danhSachDiem) {
+            dataset.addValue(diem.getSoDiem(), "", "Bài: " + i);
+            i++;
         }
+
         return dataset;
-    } 
+    }
+
 }

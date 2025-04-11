@@ -4,12 +4,17 @@
  */
 package com.lesson.content.java;
 
+import com.dao.BaiHocDAO;
 import com.data.DanhSachBaiHocChinhData;
+import com.entity.Diem;
+import com.entity.DiemTrungBinhBaiHocChinh;
+import com.entity.NguoiDung;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -30,12 +35,20 @@ class MucConCuaBieuDo extends JPanel {
         new Color(255, 159, 64) // Cam
     };
 
+    BaiHocDAO dao = new BaiHocDAO();
+    Diem diem = new Diem();
+    NguoiDung nguoiDung = new NguoiDung();
+    String maND = nguoiDung.getMaNguoiDung();
+    int makh;
+
     public MucConCuaBieuDo(String selectedLanguage) {
         setLayout(new GridBagLayout());
         setOpaque(false);
         setBorder(null);
         setPreferredSize(new Dimension(300, 150));
         setMinimumSize(new Dimension(300, 150));
+
+        this.makh = dao.getMaKhoaHocByTen(selectedLanguage);
 
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.BOTH;
@@ -49,25 +62,33 @@ class MucConCuaBieuDo extends JPanel {
         int index = 0;
         int soLuong = titles.length; // Thay đổi số lượng bạn muốn hiển thị
 
+        int tong;
+
+        List<DiemTrungBinhBaiHocChinh> list = dao.getDiemTrungBinhBaiHocChinh(maND, makh);
+
         for (int i = 0; i < 3; i++) {
             gbc.gridy = i;
             for (int j = 0; j < 2; j++) {
-                // Điều kiện bỏ bớt cột nếu không đủ số lượng
                 if ((i == 2 && soLuong == 5 && j == 1)
                         || (i == 2 && soLuong == 4)) {
-                    continue; // Bỏ qua cột thứ 2 hoặc toàn bộ hàng
+                    continue;
                 }
-
                 if (index < soLuong && index < titles.length && index < COLORS.length) {
+                    // Lấy điểm tương ứng với index hiện tại,
+                    // nếu list ngắn hơn thì để 0.0
+                    double diemTB = 0.0;
+                    if (index < list.size()) {
+                        diemTB = list.get(index).getDiemTrungBinhBaiHocChinh();
+                    }
                     gbc.gridx = j;
-                    add(createRowPanel(titles[index], COLORS[index]), gbc);
+                    add(createRowPanel(titles[index], diemTB, COLORS[index]), gbc);
                     index++;
                 }
             }
         }
     }
 
-    private JPanel createRowPanel(String subjectName, Color color) {
+    private JPanel createRowPanel(String subjectName, double diem, Color color) {
         JPanel rowPanel = new JPanel(new GridBagLayout());
         rowPanel.setOpaque(false);
         rowPanel.setBorder(null);
@@ -94,10 +115,11 @@ class MucConCuaBieuDo extends JPanel {
         titleLabel.setText(shortenText(subjectName, titleLabel)); // Cắt chữ nếu cần
         rowPanel.add(titleLabel, gbc);
 
+        String soDiem = String.valueOf(diem);
         // Label phần trăm
         gbc.gridx = 2;
         gbc.weightx = 0.2;
-        JLabel percentageLabel = new JLabel("0%/100%", SwingConstants.RIGHT);
+        JLabel percentageLabel = new JLabel(soDiem + "/100%", SwingConstants.RIGHT);
         percentageLabel.setForeground(Color.WHITE);
         rowPanel.add(percentageLabel, gbc);
 

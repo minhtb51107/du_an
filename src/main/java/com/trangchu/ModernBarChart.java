@@ -1,6 +1,8 @@
 package com.trangchu;
 
+import com.dao.ThoiGianHoatDongDAO;
 import com.data.DanhSachBaiHocData;
+import com.entity.NguoiDung;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -13,6 +15,8 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 import javax.swing.*;
 import java.awt.*;
+import java.time.LocalDate;
+import java.util.Map;
 
 public class ModernBarChart extends JPanel {
 
@@ -96,12 +100,43 @@ public class ModernBarChart extends JPanel {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
         String[] daysOfWeek = {"Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "Chủ Nhật"};
 
+        //--- chuẩn bị dữ liệu tuần này và tuần trước ---
+        NguoiDung nguoiDung = new NguoiDung();
+        String maNguoiDung = nguoiDung.getMaNguoiDung();
+        ThoiGianHoatDongDAO dao = new ThoiGianHoatDongDAO();
+
+        LocalDate today = LocalDate.now();
+        // tuần này: từ thứ 2 đến CN
+        LocalDate startOfWeek = today.minusDays(today.getDayOfWeek().getValue() - 1);
+        LocalDate endOfWeek = startOfWeek.plusDays(6);
+        // tuần trước
+        LocalDate startOfLastWeek = startOfWeek.minusWeeks(1);
+        LocalDate endOfLastWeek = startOfWeek.minusDays(1);
+
+        Map<LocalDate, Integer> dataThisWeek
+                = dao.getTongThoiGianTheoNgay(maNguoiDung, startOfWeek, endOfWeek);
+        Map<LocalDate, Integer> dataLastWeek
+                = dao.getTongThoiGianTheoNgay(maNguoiDung, startOfLastWeek, endOfLastWeek);
+
+        //--- vòng lặp tạo 2 cột: "Tuần này" và "Tuần trước" ---
         for (int i = 0; i < 7; i++) {
-            dataset.addValue((int) (Math.random() * 100), "Nhóm 1", daysOfWeek[i]);
-            dataset.addValue((int) (Math.random() * 100), "Nhóm 2", daysOfWeek[i]);
+            LocalDate dateThis = startOfWeek.plusDays(i);
+            LocalDate dateLast = startOfLastWeek.plusDays(i);
+
+            int secondsThis = dataThisWeek.getOrDefault(dateThis, 0);
+            int secondsLast = dataLastWeek.getOrDefault(dateLast, 0);
+
+            // chuyển sang %: percent = seconds * 100 / 7200, cắt max 100
+            double percentThis = Math.min(secondsThis * 100.0 / 7200.0, 100.0);
+            double percentLast = Math.min(secondsLast * 100.0 / 7200.0, 100.0);
+
+            dataset.addValue(percentLast, "Tuần trước", daysOfWeek[i]);
+            dataset.addValue(percentThis, "Tuần này", daysOfWeek[i]);
         }
+
         return dataset;
     }
+
 
     // Phương thức applyTheme để thay đổi màu sắc các thành phần trong biểu đồ
     public void applyTheme(Color barColor, Color axisColor, Color gridlineColor) {

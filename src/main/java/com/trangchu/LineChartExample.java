@@ -1,5 +1,7 @@
 package com.trangchu;
 
+import com.dao.ThoiGianHoatDongDAO;
+import com.entity.NguoiDung;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -9,42 +11,38 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 import javax.swing.*;
 import java.awt.*;
+import java.time.LocalDate;
+import java.util.Map;
 import org.jfree.chart.axis.CategoryAxis;
 import org.jfree.chart.axis.NumberAxis;
 import org.jfree.chart.axis.NumberTickUnit;
 import org.jfree.chart.axis.ValueAxis;
 import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.CategoryDataset;
 
 public class LineChartExample extends JPanel {
-    
+
     private CategoryPlot plot;
     private LineAndShapeRenderer renderer;
 
     public LineChartExample() {
         setLayout(new BorderLayout());
         setOpaque(false);
-        setBorder(BorderFactory.createEmptyBorder(0,20,0,20));
+        setBorder(BorderFactory.createEmptyBorder(0, 20, 0, 20));
 
         // Tạo dataset
-        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        dataset.addValue(10, "Doanh thu", "Thứ 2");
-        dataset.addValue(20, "Doanh thu", "Thứ 3");
-        dataset.addValue(30, "Doanh thu", "Thứ 4");
-        dataset.addValue(25, "Doanh thu", "Thứ 5");
-        dataset.addValue(35, "Doanh thu", "Thứ 6");
-        dataset.addValue(40, "Doanh thu", "Thứ 7");
-        dataset.addValue(50, "Doanh thu", "Chủ Nhật");
+        CategoryDataset dataset = createDataset();
 
         // Tạo biểu đồ
         JFreeChart lineChart = ChartFactory.createLineChart(
-                null,   // Bỏ tiêu đề
-                null,   // Bỏ nhãn trục X
-                null,   // Bỏ nhãn trục Y
-                dataset,            // Dữ liệu
-                PlotOrientation.VERTICAL,  // Hướng vẽ biểu đồ
-                false,              // Không hiển thị chú thích
-                true,               // Hiển thị tooltip
-                false               // Không hiển thị URL
+                null, // Bỏ tiêu đề
+                null, // Bỏ nhãn trục X
+                null, // Bỏ nhãn trục Y
+                dataset, // Dữ liệu
+                PlotOrientation.VERTICAL, // Hướng vẽ biểu đồ
+                false, // Không hiển thị chú thích
+                true, // Hiển thị tooltip
+                false // Không hiển thị URL
         );
 
         // Tùy chỉnh plot
@@ -70,16 +68,18 @@ public class LineChartExample extends JPanel {
         plot.setDomainGridlinePaint(Color.WHITE);
         plot.setRangeGridlinePaint(Color.WHITE);
 
-
         plot.setBackgroundPaint(null);  // Bỏ nền của biểu đồ
         plot.setOutlinePaint(null);     // Bỏ viền của biểu đồ
         plot.setDomainGridlinePaint(Color.BLACK);
         plot.setRangeGridlinePaint(Color.BLACK);
         plot.getRangeAxis().setRange(0, 100);
         plot.setBackgroundPaint(new Color(0, 0, 0, 0));
-        
+
         NumberAxis rangeAxis1 = (NumberAxis) plot.getRangeAxis();
         rangeAxis1.setTickUnit(new NumberTickUnit(10));
+
+        plot.getRangeAxis().setRange(0, 100);
+        ((NumberAxis) plot.getRangeAxis()).setTickUnit(new NumberTickUnit(10));
 
         // Tùy chỉnh đường vẽ
         renderer = new LineAndShapeRenderer();
@@ -93,10 +93,47 @@ public class LineChartExample extends JPanel {
         chartPanel.setPreferredSize(new Dimension(100, 200)); // Kích thước lớn hơn
         chartPanel.setMinimumSize(new Dimension(100, 200));
         chartPanel.setOpaque(false);
+
         add(chartPanel);
     }
-    
-        public void applyTheme(Color color) {
+
+    private CategoryDataset createDataset() {
+        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+        String[] daysOfWeek = {
+            "Thứ 2", "Thứ 3", "Thứ 4",
+            "Thứ 5", "Thứ 6", "Thứ 7", "Chủ Nhật"
+        };
+
+        // Lấy mã người dùng
+        NguoiDung nguoiDung = new NguoiDung();
+        String maNguoiDung = nguoiDung.getMaNguoiDung();
+        ThoiGianHoatDongDAO dao = new ThoiGianHoatDongDAO();
+
+        // Xác định đầu và cuối tuần này
+        LocalDate today = LocalDate.now();
+        LocalDate startOfWeek = today.minusDays(today.getDayOfWeek().getValue() - 1);
+        LocalDate endOfWeek = startOfWeek.plusDays(6);
+
+        // Lấy tổng giây hoạt động mỗi ngày trong tuần này
+        Map<LocalDate, Integer> dataThisWeek
+                = dao.getTongThoiGianTheoNgay(maNguoiDung, startOfWeek, endOfWeek);
+
+        // Đưa vào dataset
+        for (int i = 0; i < 7; i++) {
+            LocalDate date = startOfWeek.plusDays(i);
+            int seconds = dataThisWeek.getOrDefault(date, 0);
+
+            // Chuyển sang %: 7200s = 100%, 1800s = 25%
+            double percent = Math.min(seconds * 100.0 / 7200.0, 100.0);
+
+            // Ở đây ta đặt tên series là "Tuần này"
+            dataset.addValue(percent, "Tuần này", daysOfWeek[i]);
+        }
+
+        return dataset;
+    }
+
+    public void applyTheme(Color color) {
         // Đổi màu line
         renderer.setSeriesPaint(0, color);
 

@@ -83,27 +83,27 @@ public class BieuDoDonut extends JPanel {
         chartPanel.add(lblCenter, BorderLayout.CENTER);
         return chartPanel;
     }
-    
-    public static void main(String[] args) {
-        // Sử dụng SwingUtilities để đảm bảo giao diện người dùng được tạo trong luồng sự kiện đúng
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                // Tạo cửa sổ JFrame
-                JFrame frame = new JFrame("Biểu đồ Donut");
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.setSize(800, 800); // Đặt kích thước cửa sổ
 
-                // Thêm panel chứa biểu đồ donut vào cửa sổ
-                frame.add(new BieuDoDonut());
-
-                // Đặt cửa sổ ở giữa màn hình
-                frame.setLocationRelativeTo(null);
-
-                // Hiển thị cửa sổ
-                frame.setVisible(true);
-            }
-        });
-    }
+//    public static void main(String[] args) {
+//        // Sử dụng SwingUtilities để đảm bảo giao diện người dùng được tạo trong luồng sự kiện đúng
+//        SwingUtilities.invokeLater(new Runnable() {
+//            @Override
+//            public void run() {
+//                // Tạo cửa sổ JFrame
+//                JFrame frame = new JFrame("Biểu đồ Donut");
+//                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//                frame.setSize(800, 800); // Đặt kích thước cửa sổ
+//
+//                // Thêm panel chứa biểu đồ donut vào cửa sổ
+//                frame.add(new BieuDoDonut());
+//
+//                // Đặt cửa sổ ở giữa màn hình
+//                frame.setLocationRelativeTo(null);
+//
+//                // Hiển thị cửa sổ
+//                frame.setVisible(true);
+//            }
+//        });
+//    }
 }
 

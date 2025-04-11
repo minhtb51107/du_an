@@ -12,8 +12,17 @@ import java.awt.Color;
  */
 public class HeThong {
     static boolean sangtoi;
-    
+
     static String cochu;
+
+    long startTime = System.currentTimeMillis(); // Khi user bắt đầu học
+
+// Khi user kết thúc bài học
+    long endTime = System.currentTimeMillis();
+
+    long totalTimeInSeconds = (endTime - startTime) / 1000;
+
+
 
     public String getCochu() {
         return cochu;

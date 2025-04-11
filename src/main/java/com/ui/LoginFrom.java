@@ -42,10 +42,6 @@ import javax.swing.Timer;
 
 public class LoginFrom extends javax.swing.JFrame {
 
-    private static final String CLIENT_ID = "your-client-id.apps.googleusercontent.com";
-    private static final String CLIENT_SECRET = "your-client-secret";
-    private static final String REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob";
-
     GoogleOAuthFlow gg = new GoogleOAuthFlow();
     UserDAO dao = new UserDAO();
     // Biến toàn cục để lưu mã xác thực
@@ -53,29 +49,30 @@ public class LoginFrom extends javax.swing.JFrame {
 
     public LoginFrom() {
         initComponents();
-                mainPanel.setLayout(new CardLayout());
+        mainPanel.setLayout(new CardLayout());
         mainPanel.add(loginPanel, "loginPanel");
-mainPanel.add(registerPanel, "registerPanel");
+        mainPanel.add(registerPanel, "registerPanel");
     }
 
     void dangNhap() {
         // Lấy dữ liệu từ các trường nhập liệu
         String tenDangNhap = txtUser.getText().trim();
-        String matKhau = new String(txtPassword.getPassword());
+        char[] matKhauChars = txtPassword.getPassword();
 
+// So sánh từng ký tự hoặc chuyển sang String sau khi xử lý cẩn thận
         // Kiểm tra người dùng có nhập thông tin hay chưa
-        if (tenDangNhap.isEmpty() || matKhau.isEmpty()) {
+        if (tenDangNhap.isEmpty() || matKhauChars.length == 0) {
             MsgBox.alert(this, "Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu!");
             return;
         }
 
         // Tìm người dùng theo tên đăng nhập
         NguoiDung nguoiDung = dao.selectById(tenDangNhap);
-
+        
         // Kiểm tra thông tin đăng nhập
         if (nguoiDung == null) {
             MsgBox.alert(this, "Tên đăng nhập không tồn tại!");
-        } else if (!matKhau.equals(nguoiDung.getMatKhau())) {
+        } else if (!matKhauChars.equals(nguoiDung.getMatKhau())) {
             MsgBox.alert(this, "Mật khẩu không chính xác!");
         } else if (!nguoiDung.isTrangThai()) {
             MsgBox.alert(this, "Tài khoản của bạn đã bị khóa!");
@@ -86,7 +83,7 @@ mainPanel.add(registerPanel, "registerPanel");
             Auth.user = nguoiDung;
             MainFrame lg = new MainFrame("");
             lg.setVisible(true);
-            
+
             System.out.println(nguoiDung.getMaNguoiDung());
 
             // Có thể thêm logic chuyển đến màn hình chính hoặc phân quyền ở đây
@@ -127,7 +124,6 @@ mainPanel.add(registerPanel, "registerPanel");
         txtPassword = new javax.swing.JPasswordField();
         btnLogin = new javax.swing.JButton();
         btnLoginGG = new javax.swing.JButton();
-        btnLogin2 = new javax.swing.JButton();
         lblBackGround = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -139,7 +135,6 @@ mainPanel.add(registerPanel, "registerPanel");
         registerPanel.setOpaque(false);
 
         lblChonDN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        lblChonDN.setForeground(new java.awt.Color(255, 255, 255));
         lblChonDN.setText("Bạn đã có tài khoản?");
         lblChonDN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -150,15 +145,14 @@ mainPanel.add(registerPanel, "registerPanel");
         txtPassword1.setText("jPasswordField1");
 
         lblHobbies2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblHobbies2.setForeground(new java.awt.Color(255, 255, 255));
+        lblHobbies2.setForeground(new java.awt.Color(51, 51, 51));
         lblHobbies2.setText("Email");
 
         lblSport1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblSport1.setForeground(new java.awt.Color(255, 255, 255));
+        lblSport1.setForeground(new java.awt.Color(51, 51, 51));
         lblSport1.setText("Mã xác thực");
 
         btnGui.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnGui.setForeground(new java.awt.Color(0, 255, 255));
         btnGui.setText("Gửi");
         btnGui.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,19 +162,18 @@ mainPanel.add(registerPanel, "registerPanel");
 
         lblHobbies3.setBackground(new java.awt.Color(255, 255, 255));
         lblHobbies3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        lblHobbies3.setForeground(new java.awt.Color(255, 255, 255));
+        lblHobbies3.setForeground(new java.awt.Color(51, 51, 51));
         lblHobbies3.setText("Register");
 
         lblSport2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblSport2.setForeground(new java.awt.Color(255, 255, 255));
+        lblSport2.setForeground(new java.awt.Color(51, 51, 51));
         lblSport2.setText("Username");
 
         lblSport3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblSport3.setForeground(new java.awt.Color(255, 255, 255));
+        lblSport3.setForeground(new java.awt.Color(51, 51, 51));
         lblSport3.setText("Password");
 
         btnDangky.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnDangky.setForeground(new java.awt.Color(0, 255, 255));
         btnDangky.setText("Đăng ký");
         btnDangky.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -253,7 +246,6 @@ mainPanel.add(registerPanel, "registerPanel");
         loginPanel.setOpaque(false);
 
         lblChonDK.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        lblChonDK.setForeground(new java.awt.Color(255, 255, 255));
         lblChonDK.setText("Bạn chưa có tài khoản?");
         lblChonDK.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -263,21 +255,20 @@ mainPanel.add(registerPanel, "registerPanel");
 
         lblHobbies1.setBackground(new java.awt.Color(255, 255, 255));
         lblHobbies1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        lblHobbies1.setForeground(new java.awt.Color(255, 255, 255));
+        lblHobbies1.setForeground(new java.awt.Color(51, 51, 51));
         lblHobbies1.setText("Login");
 
         lblHobbies.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblHobbies.setForeground(new java.awt.Color(255, 255, 255));
+        lblHobbies.setForeground(new java.awt.Color(51, 51, 51));
         lblHobbies.setText("User name");
 
         lblSport.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblSport.setForeground(new java.awt.Color(255, 255, 255));
+        lblSport.setForeground(new java.awt.Color(51, 51, 51));
         lblSport.setText("Password");
 
         txtPassword.setText("jPasswordField1");
 
         btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnLogin.setForeground(new java.awt.Color(0, 255, 255));
         btnLogin.setText("Đăng nhập");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -294,15 +285,6 @@ mainPanel.add(registerPanel, "registerPanel");
             }
         });
 
-        btnLogin2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnLogin2.setForeground(new java.awt.Color(51, 102, 255));
-        btnLogin2.setText("Facebook");
-        btnLogin2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLogin2ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout loginPanelLayout = new javax.swing.GroupLayout(loginPanel);
         loginPanel.setLayout(loginPanelLayout);
         loginPanelLayout.setHorizontalGroup(
@@ -316,7 +298,6 @@ mainPanel.add(registerPanel, "registerPanel");
                             .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnLoginGG, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnLogin2, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblSport)
                             .addComponent(lblHobbies)
                             .addComponent(lblHobbies1)))
@@ -340,11 +321,9 @@ mainPanel.add(registerPanel, "registerPanel");
                 .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
                 .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(28, 28, 28)
                 .addComponent(btnLoginGG, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnLogin2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
                 .addComponent(lblChonDK)
                 .addGap(18, 18, 18))
         );
@@ -353,7 +332,7 @@ mainPanel.add(registerPanel, "registerPanel");
 
         getContentPane().add(mainPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 120, 470, 530));
 
-        lblBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\NetBeansProjects\\du_an_tot_nghiep\\src\\main\\java\\com\\img\\backgroundFrom.png")); // NOI18N
+        lblBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\NetBeansProjects\\du_an_tot_nghiep\\src\\main\\resources\\com\\img\\nenlogin.png")); // NOI18N
         getContentPane().add(lblBackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
@@ -378,10 +357,6 @@ mainPanel.add(registerPanel, "registerPanel");
             JOptionPane.showMessageDialog(this, "Đăng nhập thất bại!");
         }
     }//GEN-LAST:event_btnLoginGGActionPerformed
-
-    private void btnLogin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogin2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnLogin2ActionPerformed
 
     private void btnGuiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuiActionPerformed
         // Cấu hình thông tin server SMTP
@@ -518,7 +493,6 @@ mainPanel.add(registerPanel, "registerPanel");
     private javax.swing.JButton btnDangky;
     private javax.swing.JButton btnGui;
     private javax.swing.JButton btnLogin;
-    private javax.swing.JButton btnLogin2;
     private javax.swing.JButton btnLoginGG;
     private javax.swing.JLabel lblBackGround;
     private javax.swing.JLabel lblChonDK;

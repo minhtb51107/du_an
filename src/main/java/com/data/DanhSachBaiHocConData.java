@@ -16,12 +16,12 @@ public class DanhSachBaiHocConData {
     private static final Map<String, String[]> TITLE_MAP = new HashMap<>();
 
     static {
-        TITLE_MAP.put("Java", new String[]{
-            "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.",
-            "Cấu trúc chương trình Java, cài đặt JDK, IDE.",
-            "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.",
-            "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi."
-        });
+//        TITLE_MAP.put("Java", new String[]{
+//            "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.",
+//            "Cấu trúc chương trình Java, cài đặt JDK, IDE.",
+//            "Biến, kiểu dữ liệu, toán tử, nhập xuất dữ liệu.",
+//            "Cấu trúc điều kiện, vòng lặp, mảng và xử lý chuỗi."
+//        });
 
         TITLE_MAP.put("Java Cơ Bản", new String[]{
             "Giới thiệu về Java, lịch sử phát triển, lý do chọn Java.",
@@ -52,15 +52,16 @@ public class DanhSachBaiHocConData {
             "Hiệu năng & tối ưu hóa, kiểm thử với JUnit, Mockito."
         });
 
-        TITLE_MAP.put("PYTHON", new String[]{
-            "GIỚI THIỆU VỀ PYTHON",
-            "BIẾN VÀ KIỂU DỮ LIỆU",
-            "CẤU TRÚC ĐIỀU KHIỂN",
-            "HÀM VÀ MODULE",
-            "XỬ LÝ NGOẠI LỆ VÀ FILE",
-            "LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG TRONG PYTHON",
-            "PYTHON CHO PHÂN TÍCH DỮ LIỆU"
-        });
+//        TITLE_MAP.put("PYTHON", new String[]{
+//            "GIỚI THIỆU VỀ PYTHON",
+//            "BIẾN VÀ KIỂU DỮ LIỆU",
+//            "CẤU TRÚC ĐIỀU KHIỂN",
+//            "HÀM VÀ MODULE",
+//            "XỬ LÝ NGOẠI LỆ VÀ FILE",
+//            "LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG TRONG PYTHON",
+//            "PYTHON CHO PHÂN TÍCH DỮ LIỆU"
+//        });
+        
         TITLE_MAP.put("Python Cơ Bản", new String[]{
             "Giới thiệu về Python, lịch sử phát triển, lý do chọn Python.",
             "Cấu trúc chương trình Python, cài đặt môi trường và IDE.",
@@ -89,15 +90,16 @@ public class DanhSachBaiHocConData {
             "Bảo mật, tối ưu hiệu năng và kiểm thử với pytest, unittest."
         });
 
-        TITLE_MAP.put("HTML & CSS", new String[]{
-            "GIỚI THIỆU VỀ HTML & CSS",
-            "CẤU TRÚC CƠ BẢN CỦA HTML",
-            "CÁC THẺ HTML QUAN TRỌNG",
-            "CSS CƠ BẢN VÀ CÁCH ÁP DỤNG",
-            "LAYOUT VỚI FLEXBOX & GRID",
-            "THIẾT KẾ GIAO DIỆN RESPONSIVE",
-            "ANIMATION VÀ HIỆU ỨNG VỚI CSS"
-        });
+//        TITLE_MAP.put("HTML & CSS", new String[]{
+//            "GIỚI THIỆU VỀ HTML & CSS",
+//            "CẤU TRÚC CƠ BẢN CỦA HTML",
+//            "CÁC THẺ HTML QUAN TRỌNG",
+//            "CSS CƠ BẢN VÀ CÁCH ÁP DỤNG",
+//            "LAYOUT VỚI FLEXBOX & GRID",
+//            "THIẾT KẾ GIAO DIỆN RESPONSIVE",
+//            "ANIMATION VÀ HIỆU ỨNG VỚI CSS"
+//        });
+        
         TITLE_MAP.put("HTML Cơ Bản", new String[]{
             "HTML là gì?",
             "CẤU TRÚC CƠ BẢN CỦA HTML",
@@ -185,11 +187,11 @@ public class DanhSachBaiHocConData {
             "Offline Mode & Push Notifications"
         });
 
-        TITLE_MAP.put("JAVASCRIPT", new String[]{
-            "Giới thiệu JavaScript",
-            "Biến và Kiểu dữ liệu",
-            "Toán tử và Cấu trúc điều kiện"
-        });
+//        TITLE_MAP.put("JAVASCRIPT", new String[]{
+//            "Giới thiệu JavaScript",
+//            "Biến và Kiểu dữ liệu",
+//            "Toán tử và Cấu trúc điều kiện"
+//        });
 
         TITLE_MAP.put("JavaScript Cơ Bản", new String[]{
             "Giới thiệu JavaScript",

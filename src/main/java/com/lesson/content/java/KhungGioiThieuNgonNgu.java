@@ -7,6 +7,7 @@ package com.lesson.content.java;
 import com.data.DataHopDangKyKhoaHoc;
 import com.data.DanhSachBaiHocChinhData;
 import com.data.DataPanelA1;
+import com.kehoach.GridBagPanelDemo;
 import com.swing.ProfessionalSidebarForm;
 import com.swing.RoundedPanel;
 import java.awt.BorderLayout;
@@ -26,8 +27,10 @@ import javax.swing.JTextArea;
  * @author PC
  */
 public class KhungGioiThieuNgonNgu extends JPanel {
+    GridBagPanelDemo gridBagPanelDemo;
 
-    public KhungGioiThieuNgonNgu(int index) {
+    public KhungGioiThieuNgonNgu(int index, String content, GridBagPanelDemo gridBagPanelDemo) {
+        this.gridBagPanelDemo = gridBagPanelDemo;
         setLayout(new BorderLayout());
         setOpaque(false);
 
@@ -104,7 +107,7 @@ public class KhungGioiThieuNgonNgu extends JPanel {
         panel2.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         panel4.setBackground(new Color(251,214,138,255));
         panel4.setLayout(new BorderLayout());
-        panel4.add(new HopDangKyKhoaHoc(index), BorderLayout.CENTER);
+        panel4.add(new HopDangKyKhoaHoc(index, content, gridBagPanelDemo), BorderLayout.CENTER);
 
         panel2.add(panel4, gbc2);
 
